@@ -720,6 +720,88 @@ body.onstart{background-image:radial-gradient(520px 420px at 0% 0%,rgba(150,195,
 #pAdd h4,#puExtra h4{margin:8px 0 6px}
 #puExtra{display:grid;gap:10px;border-top:2px solid var(--line);padding-top:10px;margin-top:4px}
 #puExtra[hidden]{display:none}
+
+/* ===== Foreldrasvæði: mælaborð + stillingar ===== */
+#parent{max-width:1080px}
+.pic{border-radius:8px;display:inline-flex;align-items:center;justify-content:center;color:#fff;flex:none}
+.chev{width:16px;height:16px;color:#C7C7CC;flex:none}
+.dhead{margin-bottom:18px}
+.dhead h2{margin:0;font-size:clamp(1.9rem,1.4rem + 1.6vw,2.4rem);font-weight:800;letter-spacing:-.03em}
+.dhead p{margin:2px 0 0}
+.dacts{display:flex;gap:8px;flex-wrap:wrap}
+.dacts .btn{min-height:44px;padding:8px 14px;font-size:.98rem}
+.dacts .btn svg,.pback svg{width:20px;height:20px}
+.dacts .btn.ghost{background:var(--surface);box-shadow:var(--shadow);color:var(--accent)}
+.dacts #parentClose{color:var(--ink)}
+.dbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.dgear{all:unset;box-sizing:border-box;width:48px;height:48px;border-radius:50%;background:var(--surface);box-shadow:var(--shadow);display:grid;place-items:center;color:var(--ink);cursor:pointer}
+.dgear svg{width:26px;height:26px}
+.dgear:focus-visible{outline:4px solid var(--accent);outline-offset:2px}
+.dkids{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;margin-bottom:14px}
+.dkid{all:unset;box-sizing:border-box;background:var(--surface);border-radius:var(--r-card);box-shadow:var(--shadow);padding:14px 16px;display:flex;align-items:center;gap:14px;cursor:pointer;min-height:110px}
+.dkid:focus-visible{outline:4px solid var(--accent);outline-offset:2px}
+.dav{position:relative;width:84px;height:84px;flex:none}
+.kring{position:absolute;inset:0;width:100%;height:100%}
+.dph{position:absolute;inset:11px;border-radius:50%;overflow:hidden;background:var(--surface-2)}
+.dph svg{display:block;width:100%;height:100%}
+.dtx{display:flex;flex-direction:column;min-width:0;flex:1;line-height:1.25}
+.dtx b{font-size:1.2rem;letter-spacing:-.02em}
+.dtx small{font-size:.85rem;color:var(--muted);font-weight:500}
+.dnote{font-size:.88rem;color:var(--muted)}
+.dst{display:flex;gap:14px;margin-top:6px;font-size:.8rem;color:var(--muted);flex-wrap:wrap}
+.dst strong{display:block;font-size:1.05rem;color:var(--ink)}
+.dadd{all:unset;box-sizing:border-box;min-height:110px;border:2px dashed var(--line);border-radius:var(--r-card);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;color:var(--accent);font-weight:700;cursor:pointer}
+.dadd span{font-size:1.8rem;line-height:1;font-weight:400}
+.dadd:focus-visible{outline:4px solid var(--accent)}
+.drow{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:14px}
+@media (max-width:759px){.drow{grid-template-columns:1fr}}
+.drow .pcard{margin-bottom:14px}
+.dct{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+.dleg{display:flex;gap:12px;font-size:.85rem;flex-wrap:wrap}
+.dleg i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px}
+.dpr{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-top:1px solid var(--line)}
+.dpr:first-child{border-top:0;padding-top:2px}
+.dpr p{margin:0;font-size:.95rem;line-height:1.4}
+.dquick{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+@media (max-width:759px){.dquick{grid-template-columns:1fr 1fr}}
+.dq{all:unset;box-sizing:border-box;background:var(--surface);border-radius:var(--r-card);box-shadow:var(--shadow);padding:14px 16px;display:flex;flex-direction:column;gap:6px;cursor:pointer;min-height:110px}
+.dq b{font-size:1rem}.dq span:last-child{font-size:.85rem;color:var(--muted)}
+.dq:focus-visible{outline:4px solid var(--accent)}
+#pSet{display:grid;grid-template-columns:300px minmax(0,1fr);gap:26px;align-items:start}
+.pnav{position:sticky;top:12px}
+.pnav h2{margin:0 6px 12px;font-size:2rem;font-weight:800;letter-spacing:-.03em}
+.pback{all:unset;box-sizing:border-box;display:inline-flex;align-items:center;gap:2px;min-height:44px;color:var(--accent);font-weight:600;font-size:1.02rem;cursor:pointer}
+.pback:focus-visible{outline:3px solid var(--accent);border-radius:8px}
+.pback2{display:none;margin-bottom:6px}
+.ngh{font-size:.75rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin:14px 10px 6px}
+.ngrp{background:var(--surface);border-radius:14px;overflow:hidden;box-shadow:var(--shadow);display:block}
+.nrow{all:unset;box-sizing:border-box;width:100%;min-height:48px;display:flex;align-items:center;gap:12px;padding:6px 12px;font-size:1rem;border-bottom:1px solid var(--line);cursor:pointer;color:var(--ink)}
+.nrow:last-child{border-bottom:0}
+.nrow .nt{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nrow em{font-style:normal;color:var(--muted);font-size:.92rem}
+.nrow[aria-selected="true"]{background:var(--accent);color:#fff}
+.nrow[aria-selected="true"] em,.nrow[aria-selected="true"] .chev{color:#fff}
+.nrow:focus-visible{outline:3px solid var(--accent);outline-offset:-3px}
+.navav{width:30px;height:30px;border-radius:50%;overflow:hidden;flex:none;background:var(--surface-2)}
+.navav svg{display:block;width:100%;height:100%}
+.nplus{width:30px;height:30px;border-radius:50%;background:var(--sky-soft);color:var(--accent);display:grid;place-items:center;font-size:1.3rem;flex:none}
+.pmain{min-width:0}
+.ppane .pcard,.rsec .ptiles{margin-bottom:14px}
+.phd{display:flex;align-items:center;gap:14px;margin:4px 0 14px}
+.phd h2{margin:0;font-size:1.9rem;font-weight:800;letter-spacing:-.03em}
+.phav{width:56px;height:56px;border-radius:50%;overflow:hidden;flex:none;box-shadow:var(--shadow)}
+.phav svg{display:block;width:100%;height:100%}
+.rseg{display:flex;gap:2px;padding:3px;border-radius:12px;background:var(--line);margin-bottom:14px;overflow-x:auto}
+.rseg button{all:unset;box-sizing:border-box;flex:1;min-height:40px;padding:0 12px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-weight:600;font-size:.95rem;cursor:pointer;white-space:nowrap}
+.rseg button[aria-selected="true"]{background:var(--surface);box-shadow:0 1px 3px rgba(0,0,0,.14)}
+.rseg button:focus-visible{outline:3px solid var(--accent)}
+@media (max-width:759px){
+  #pSet{grid-template-columns:1fr;gap:0}
+  .pnav{position:static}
+  #pSet.open .pnav{display:none}
+  #pSet:not(.open) .pmain{display:none}
+  .pback2{display:inline-flex}
+}
 /* persónubankinn */
 .avnow{display:flex;align-items:center;gap:18px;background:var(--surface);border-radius:var(--r-card);box-shadow:var(--shadow);padding:16px 20px;margin-bottom:8px}
 .avbig{width:104px;height:104px;border-radius:50%;overflow:hidden;flex:none;border:4px solid var(--surface);box-shadow:0 8px 20px rgba(20,40,90,.18)}
@@ -1088,148 +1170,194 @@ body.onstart{background-image:radial-gradient(520px 420px at 0% 0%,rgba(150,195,
   </section>
 
   <section id="parent" hidden>
-    <div class="phead"><h2>Foreldrasvæði</h2><button class="btn ghost" id="parentClose" type="button">Loka</button></div>
-    <div class="ptabs" id="pTabs" role="tablist" aria-label="Veldu lesanda"></div>
-    <div class="pcard" id="pAdd" hidden>
-      <h3>Nýr lesandi</h3>
-      <div class="formgrid"><label>Nafn<input id="paName" type="text" maxlength="20" placeholder="t.d. Sara"></label><label>Aldur<input id="paAge" type="number" min="3" max="15" inputmode="numeric" placeholder="t.d. 6"></label></div>
-      <h4>Hvaða sögur á lesandinn að fá?</h4>
-      <div class="chips small" id="paLevel" role="radiogroup" aria-label="Sögur"><button type="button" class="chip" role="radio" aria-checked="true" data-lv="7">Styttri sögur (um 7 ára)</button><button type="button" class="chip" role="radio" aria-checked="false" data-lv="9">Lengri sögur (um 9 ára)</button></div>
-      <p class="pmuted">Lesandinn fær sína eigin stjörnur, persónu, lestrardaga og stað á Íslandskortinu. Hægt er að skipta um sögur seinna.</p>
-      <div class="actions"><button class="btn primary" id="paSave" type="button">Bæta við lesanda</button><button class="btn ghost" id="paCancel" type="button">Hætta við</button></div>
-      <p class="pfeed" id="paFeed" aria-live="polite"></p>
-    </div>
-    <div class="ptiles" id="pTiles"></div>
-    <div class="pcard">
-      <h3>Jóladagatalið</h3>
-      <p class="pmuted">Jóladagatalið er falið þangað til þú kveikir á því. Það gildir fyrir alla lesendur.</p>
-      <label class="chk"><input type="checkbox" id="xmasOn"> Sýna jóladagatalið hjá krökkunum</label>
-      <label class="chk"><input type="checkbox" id="xmasEarly"> Leyfa að opna alla glugga strax (annars einn á dag frá 1. desember)</label>
-      <p class="pfeed" id="xmasInfo"></p>
-    </div>
-    <div class="pcard">
-      <h3>Vikuyfirlit</h3>
-      <div id="weekly"></div>
-    </div>
-    <div class="pcard">
-      <h3>Heimalestur</h3>
-      <p class="pmuted">Lestur í bók heima. Ein stjarna fyrir hverjar 5 mínútur, mest 4 stjörnur á dag. Mínúturnar teljast með í dagsmarkmiðinu, vikunni og Íslandsferðinni en ekki í leshraðanum.</p>
-      <div class="formgrid three"><label>Dagur<input id="phDate" type="date"></label><label>Mínútur<input id="phMin" type="number" min="1" max="180" inputmode="numeric" value="15"></label><label>Bók<input id="phBook" type="text" maxlength="50" placeholder="Nafn bókarinnar"></label></div>
-      <div class="actions"><button class="btn primary" id="phAdd" type="button">Skrá heimalestur</button></div>
-      <p class="pfeed" id="phFeed" aria-live="polite"></p>
-      <div class="reclist" id="phList"></div>
-    </div>
-    <div class="pcard">
-      <h3>Gefa stjörnur</h3>
-      <p class="pmuted">Barnið fær tilkynningu um stjörnurnar næst þegar forsíðan opnast.</p>
-      <div class="actions" id="giveBtns">
-        <button class="btn primary" type="button" data-n="1">+1 stjarna</button>
-        <button class="btn primary" type="button" data-n="3">+3 stjörnur</button>
-        <button class="btn primary" type="button" data-n="5">+5 stjörnur</button>
-        <button class="btn ghost" type="button" data-n="-1">Taka eina af</button>
+    <div id="pDash">
+      <div class="dbar"><button class="pback" id="parentClose" type="button">Loka</button><button class="dgear" id="pSetBtn" type="button" aria-label="Stillingar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.97 10.21 L21.49 10.56 L21.49 13.44 L18.97 13.79 L18.20 15.67 L19.73 17.69 L17.69 19.73 L15.67 18.20 L13.79 18.97 L13.44 21.49 L10.56 21.49 L10.21 18.97 L8.33 18.20 L6.31 19.73 L4.27 17.69 L5.80 15.67 L5.03 13.79 L2.51 13.44 L2.51 10.56 L5.03 10.21 L5.80 8.33 L4.27 6.31 L6.31 4.27 L8.33 5.80 L10.21 5.03 L10.56 2.51 L13.44 2.51 L13.79 5.03 L15.67 5.80 L17.69 4.27 L19.73 6.31 L18.20 8.33Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="12" r="3.2" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button></div>
+      <div class="dhead"><h2 id="dHello">Góðan dag!</h2><p class="pmuted" id="dDate"></p></div>
+      <div class="dkids" id="dKids"></div>
+      <div class="drow">
+        <div class="pcard"><div class="dct"><h3>Mínútur í vikunni</h3><div class="dleg" id="dLeg"></div></div><div class="chartwrap" id="dChart"></div></div>
+        <div class="pcard"><h3>Það sem vert er að hrósa fyrir</h3><div id="dPraise"></div></div>
       </div>
-      <p class="pfeed" id="giveFeed" aria-live="polite"></p>
+      <div class="dquick" id="dQuick"></div>
     </div>
-    <div class="pcard">
-      <h3>Stjörnukrukkan</h3>
-      <p class="pmuted">Allir lesendur safna í sömu krukku. Veljið saman umbun sem þau fá þegar krukkan fyllist.</p>
-      <div class="jarmini" id="jarParent"></div>
-      <div class="formgrid">
-        <label>Stjörnur í fullri krukku<input id="jarGoal" type="number" min="5" max="500" inputmode="numeric"></label>
-        <label>Umbun<input id="jarReward" type="text" maxlength="60" placeholder="t.d. pizzukvöld eða bíóferð"></label>
-      </div>
-      <div class="actions"><button class="btn primary" id="jarSave" type="button">Vista krukkuna</button><button class="btn ghost" id="jarEmpty" type="button">Umbun veitt: byrja nýja krukku</button></div>
-      <div class="confirm" id="jarConfirm" hidden><p>Tæma krukkuna og byrja að safna upp á nýtt? Stjörnur umfram markmiðið flytjast yfir í nýju krukkuna.</p><div class="cbtns"><button type="button" class="yes" id="jarYes">Já, ný krukka</button><button type="button" class="no" id="jarNo">Hætta við</button></div></div>
-      <p class="pfeed" id="jarFeed" aria-live="polite"></p>
-    </div>
-    <div class="pcard">
-      <h3>Leshraði</h3>
-      <p class="pmuted" id="wpmNote"></p>
-      <div class="chartwrap" id="wpmChart"></div>
-    </div>
-    <div class="pcard">
-      <h3>Upptökur af upplestri</h3>
-      <p class="pmuted">Hlustaðu á upptökur frá ólíkum tímum til að heyra framfarirnar. Síðustu 40 upptökur hvers lesanda eru geymdar á þessu tæki.</p>
-      <div class="reclist" id="recList"></div>
-    </div>
-    <div class="pcard">
-      <h3>Bækur heima</h3>
-      <p class="pmuted">Skráðu bækur sem eru til heima eða koma úr skólanum. Skiptu þeim í kafla eftir blaðsíðutölum og skrifaðu eina eða tvær spurningar úr hverjum kafla. Barnið les úr bókinni sjálfri og svarar spurningunum í appinu.</p>
-      <div id="ubList"></div>
-      <div class="actions"><button class="btn primary" id="ubNew" type="button">Skrá nýja bók</button></div>
-      <div class="mkwrap" id="ubEditor" hidden>
-        <label class="mklbl">Heiti bókarinnar<input id="ubTitle" type="text" maxlength="40"></label>
-        <div><span class="pmuted">Fyrir hvern?</span><div class="chips small" id="ubAges" role="group" aria-label="Fyrir hvern"></div></div>
-        <div id="ubChaps" class="mkwrap"></div>
-        <div class="actions"><button class="btn ghost" id="ubAddCh" type="button">Bæta við kafla</button></div>
-        <div class="actions"><button class="btn primary" id="ubSave" type="button">Vista bókina</button><button class="btn ghost" id="ubCancel" type="button">Hætta við</button></div>
-      </div>
-      <p class="pfeed" id="ubFeed" aria-live="polite"></p>
-    </div>
-    <div class="pcard">
-      <h3>Kvittun fyrir heimalestri</h3>
-      <p class="pmuted">Yfirlit yfir lestur vikunnar. Skrifaðu nafnið þitt og prentaðu út, eða vistaðu sem PDF til að senda kennaranum.</p>
-      <div class="chips small" id="kvWeeks" role="radiogroup" aria-label="Vika"></div>
-      <div class="chartwrap" id="kvTable"></div>
-      <p class="pmuted" id="kvStatus"></p>
-      <div class="namerow"><input id="kvName" type="text" maxlength="40" placeholder="Nafn foreldris" aria-label="Nafn foreldris"><button class="btn primary" id="kvSign" type="button">Kvitta og prenta</button></div>
-      <p class="pfeed" id="kvFeed" aria-live="polite"></p>
-    </div>
-    <div class="pcard">
-      <h3>Mamma eða pabbi les fyrst</h3>
-      <p class="pmuted" id="prNote"></p>
-      <div class="mkwrap" id="prWrap"><select id="prStory" aria-label="Veldu sögu"></select><div id="prList" class="mkwrap"></div></div>
-    </div>
-    <div class="pcard">
-      <h3>Viðurkenningarskjöl</h3>
-      <div id="certList"></div>
-    </div>
-    <div class="pcard" id="writeCard">
-      <h3>Endar sem barnið skrifaði</h3>
-      <div id="writeList"></div>
-    </div>
-    <div class="pcard">
-      <h3>Lestrarsaga</h3>
-      <div class="sesslist" id="sessList"></div>
-    </div>
-    <div class="pcard">
-      <h3>Nafn lesanda</h3>
-      <div class="namerow"><input id="pName" type="text" maxlength="20" aria-label="Nafn lesanda"><button class="btn primary" id="pNameSave" type="button">Vista nafn</button></div>
-      <p class="pfeed" id="pNameFeed" aria-live="polite"></p>
-      <p class="pmuted">Nafnið birtist líka í sögunum „Þú ert hetjan“.</p>
-      <div id="puExtra" hidden>
-        <h4>Aldur og sögur</h4>
-        <div class="namerow"><input id="puAge" type="number" min="3" max="15" inputmode="numeric" aria-label="Aldur"><button class="btn ghost" id="puAgeSave" type="button">Vista aldur</button></div>
-        <div class="chips small" id="puLevel" role="radiogroup" aria-label="Sögur"></div>
-        <div class="actions"><button class="btn ghost" id="puDel" type="button">Fjarlægja lesanda</button></div>
-        <div class="confirm" id="puDelConfirm" hidden><p id="puDelTx"></p><div class="cbtns"><button type="button" class="yes" id="puDelYes">Já, fjarlægja</button><button type="button" class="no" id="puDelNo">Hætta við</button></div></div>
-      </div>
-      <p class="pfeed" id="puFeed" aria-live="polite"></p>
-    </div>
-    <div class="pcard">
-      <h3>Stillingar lesanda</h3>
-      <div id="jumpSet"><h4>Stökk upp í sögur fyrir 9 ára</h4><div class="chips small" id="jumpChips" role="radiogroup" aria-label="Stökk upp"></div><p class="pmuted" id="jumpInfo"></p></div>
-      <h4>Upptökuhnappur á lestrarsíðunni</h4><div class="chips small" id="recChips" role="radiogroup" aria-label="Upptökuhnappur"></div>
-      <div id="sylSet"><h4>Atkvæðaskipting á löngum orðum</h4><p class="pmuted">Löng orð fá græna línu undir sig. Þegar barnið ýtir á orðið skiptist það í atkvæði.</p><div class="chips small" id="sylChips" role="radiogroup" aria-label="Atkvæðaskipting"></div></div>
-      <h4>Hvað gerist næst?</h4><p class="pmuted">Einu sinni í hverri sögu giskar barnið á framhaldið áður en það les áfram.</p><div class="chips small" id="predChips" role="radiogroup" aria-label="Giska á framhaldið"></div>
-    </div>
-    <div class="pcard">
-      <h3>Öryggisafrit</h3>
-      <p class="pmuted">Öll gögn eru geymd á þessu tæki. Vistaðu afrit reglulega svo ekkert tapist ef vafragögnum er eytt eða skipt er um spjaldtölvu. Afritið nær yfir alla lesendur.</p>
-      <p class="warnline" id="bkWarn">Mælt er með að vista afrit einu sinni í mánuði.</p>
-      <p class="pmuted" id="bkLast"></p>
-      <label class="chk"><input type="checkbox" id="bkAudio" checked> Taka upptökurnar með (skráin verður stærri)</label>
-      <div class="actions"><button class="btn primary" id="bkSave" type="button">Vista afrit</button><label class="btn ghost filebtn">Sækja afrit<input type="file" id="bkFile" accept=".json,application/json"></label></div>
-      <div class="confirm" id="bkConfirm" hidden><p id="bkWhat"></p><div class="cbtns"><button type="button" class="yes" id="bkYes">Já, sækja afrit</button><button type="button" class="no" id="bkNo">Hætta við</button></div></div>
-      <p class="pfeed" id="bkFeed" aria-live="polite"></p>
-    </div>
-    <div class="pcard">
-      <h3>Gögn</h3>
-      <p class="pmuted">Gögnin eru aðeins vistuð í þessum vafra á þessu tæki.</p>
-      <div class="actions"><button class="btn ghost" id="wipeBtn" type="button">Eyða lestrargögnum þessa lesanda</button></div>
-      <div class="confirm" id="wipeConfirm" hidden>
-        <p>Eyða stjörnum, lestrarsögu og leshraða? Þetta er ekki hægt að afturkalla.</p>
-        <div class="cbtns"><button type="button" class="yes" id="wipeYes">Já, eyða</button><button type="button" class="no" id="wipeNo">Hætta við</button></div>
+    <div id="pSet" hidden>
+      <nav class="pnav" aria-label="Stillingar">
+        <button class="pback" id="pBack" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Mælaborð</button>
+        <h2>Stillingar</h2>
+        <div class="ngh">Lesendur</div><div class="ngrp" id="pTabs" role="tablist" aria-label="Veldu lesanda"></div>
+        <div class="ngh">Sameiginlegt</div><div class="ngrp" id="pNavShared"></div>
+        <div class="ngh">Gögn</div><div class="ngrp" id="pNavData"></div>
+      </nav>
+      <div class="pmain">
+        <button class="pback pback2" id="pBack2" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Stillingar</button>
+        <div class="ppane" data-pane="add">
+        <div class="pcard" id="pAdd">
+          <h3>Nýr lesandi</h3>
+          <div class="formgrid"><label>Nafn<input id="paName" type="text" maxlength="20" placeholder="t.d. Sara"></label><label>Aldur<input id="paAge" type="number" min="3" max="15" inputmode="numeric" placeholder="t.d. 6"></label></div>
+          <h4>Hvaða sögur á lesandinn að fá?</h4>
+          <div class="chips small" id="paLevel" role="radiogroup" aria-label="Sögur"><button type="button" class="chip" role="radio" aria-checked="true" data-lv="7">Styttri sögur (um 7 ára)</button><button type="button" class="chip" role="radio" aria-checked="false" data-lv="9">Lengri sögur (um 9 ára)</button></div>
+          <p class="pmuted">Lesandinn fær sína eigin stjörnur, persónu, lestrardaga og stað á Íslandskortinu. Hægt er að skipta um sögur seinna.</p>
+          <div class="actions"><button class="btn primary" id="paSave" type="button">Bæta við lesanda</button><button class="btn ghost" id="paCancel" type="button">Hætta við</button></div>
+          <p class="pfeed" id="paFeed" aria-live="polite"></p>
+        </div>
+        </div>
+        <div class="ppane" data-pane="reader">
+          <div class="phd" id="pHd"></div>
+          <div class="rseg" id="rSeg" role="tablist"></div>
+          <div class="rsec" data-rs="yfirlit">
+        <div class="ptiles" id="pTiles"></div>
+        <div class="pcard">
+          <h3>Vikuyfirlit</h3>
+          <div id="weekly"></div>
+        </div>
+        <div class="pcard">
+          <h3>Leshraði</h3>
+          <p class="pmuted" id="wpmNote"></p>
+          <div class="chartwrap" id="wpmChart"></div>
+        </div>
+          </div>
+          <div class="rsec" data-rs="stillingar">
+        <div class="pcard">
+          <h3>Nafn lesanda</h3>
+          <div class="namerow"><input id="pName" type="text" maxlength="20" aria-label="Nafn lesanda"><button class="btn primary" id="pNameSave" type="button">Vista nafn</button></div>
+          <p class="pfeed" id="pNameFeed" aria-live="polite"></p>
+          <p class="pmuted">Nafnið birtist líka í sögunum „Þú ert hetjan“.</p>
+          <div id="puExtra" hidden>
+            <h4>Aldur og sögur</h4>
+            <div class="namerow"><input id="puAge" type="number" min="3" max="15" inputmode="numeric" aria-label="Aldur"><button class="btn ghost" id="puAgeSave" type="button">Vista aldur</button></div>
+            <div class="chips small" id="puLevel" role="radiogroup" aria-label="Sögur"></div>
+            <div class="actions"><button class="btn ghost" id="puDel" type="button">Fjarlægja lesanda</button></div>
+            <div class="confirm" id="puDelConfirm" hidden><p id="puDelTx"></p><div class="cbtns"><button type="button" class="yes" id="puDelYes">Já, fjarlægja</button><button type="button" class="no" id="puDelNo">Hætta við</button></div></div>
+          </div>
+          <p class="pfeed" id="puFeed" aria-live="polite"></p>
+        </div>
+        <div class="pcard">
+          <h3>Stillingar lesanda</h3>
+          <div id="jumpSet"><h4>Stökk upp í sögur fyrir 9 ára</h4><div class="chips small" id="jumpChips" role="radiogroup" aria-label="Stökk upp"></div><p class="pmuted" id="jumpInfo"></p></div>
+          <h4>Upptökuhnappur á lestrarsíðunni</h4><div class="chips small" id="recChips" role="radiogroup" aria-label="Upptökuhnappur"></div>
+          <div id="sylSet"><h4>Atkvæðaskipting á löngum orðum</h4><p class="pmuted">Löng orð fá græna línu undir sig. Þegar barnið ýtir á orðið skiptist það í atkvæði.</p><div class="chips small" id="sylChips" role="radiogroup" aria-label="Atkvæðaskipting"></div></div>
+          <h4>Hvað gerist næst?</h4><p class="pmuted">Einu sinni í hverri sögu giskar barnið á framhaldið áður en það les áfram.</p><div class="chips small" id="predChips" role="radiogroup" aria-label="Giska á framhaldið"></div>
+        </div>
+        <div class="pcard">
+          <h3>Gögn</h3>
+          <p class="pmuted">Gögnin eru aðeins vistuð í þessum vafra á þessu tæki.</p>
+          <div class="actions"><button class="btn ghost" id="wipeBtn" type="button">Eyða lestrargögnum þessa lesanda</button></div>
+          <div class="confirm" id="wipeConfirm" hidden>
+            <p>Eyða stjörnum, lestrarsögu og leshraða? Þetta er ekki hægt að afturkalla.</p>
+            <div class="cbtns"><button type="button" class="yes" id="wipeYes">Já, eyða</button><button type="button" class="no" id="wipeNo">Hætta við</button></div>
+          </div>
+        </div>
+          </div>
+          <div class="rsec" data-rs="umbun">
+        <div class="pcard">
+          <h3>Heimalestur</h3>
+          <p class="pmuted">Lestur í bók heima. Ein stjarna fyrir hverjar 5 mínútur, mest 4 stjörnur á dag. Mínúturnar teljast með í dagsmarkmiðinu, vikunni og Íslandsferðinni en ekki í leshraðanum.</p>
+          <div class="formgrid three"><label>Dagur<input id="phDate" type="date"></label><label>Mínútur<input id="phMin" type="number" min="1" max="180" inputmode="numeric" value="15"></label><label>Bók<input id="phBook" type="text" maxlength="50" placeholder="Nafn bókarinnar"></label></div>
+          <div class="actions"><button class="btn primary" id="phAdd" type="button">Skrá heimalestur</button></div>
+          <p class="pfeed" id="phFeed" aria-live="polite"></p>
+          <div class="reclist" id="phList"></div>
+        </div>
+        <div class="pcard">
+          <h3>Gefa stjörnur</h3>
+          <p class="pmuted">Barnið fær tilkynningu um stjörnurnar næst þegar forsíðan opnast.</p>
+          <div class="actions" id="giveBtns">
+            <button class="btn primary" type="button" data-n="1">+1 stjarna</button>
+            <button class="btn primary" type="button" data-n="3">+3 stjörnur</button>
+            <button class="btn primary" type="button" data-n="5">+5 stjörnur</button>
+            <button class="btn ghost" type="button" data-n="-1">Taka eina af</button>
+          </div>
+          <p class="pfeed" id="giveFeed" aria-live="polite"></p>
+        </div>
+        <div class="pcard">
+          <h3>Viðurkenningarskjöl</h3>
+          <div id="certList"></div>
+        </div>
+        <div class="pcard">
+          <h3>Kvittun fyrir heimalestri</h3>
+          <p class="pmuted">Yfirlit yfir lestur vikunnar. Skrifaðu nafnið þitt og prentaðu út, eða vistaðu sem PDF til að senda kennaranum.</p>
+          <div class="chips small" id="kvWeeks" role="radiogroup" aria-label="Vika"></div>
+          <div class="chartwrap" id="kvTable"></div>
+          <p class="pmuted" id="kvStatus"></p>
+          <div class="namerow"><input id="kvName" type="text" maxlength="40" placeholder="Nafn foreldris" aria-label="Nafn foreldris"><button class="btn primary" id="kvSign" type="button">Kvitta og prenta</button></div>
+          <p class="pfeed" id="kvFeed" aria-live="polite"></p>
+        </div>
+          </div>
+          <div class="rsec" data-rs="upptokur">
+        <div class="pcard">
+          <h3>Upptökur af upplestri</h3>
+          <p class="pmuted">Hlustaðu á upptökur frá ólíkum tímum til að heyra framfarirnar. Síðustu 40 upptökur hvers lesanda eru geymdar á þessu tæki.</p>
+          <div class="reclist" id="recList"></div>
+        </div>
+          </div>
+          <div class="rsec" data-rs="saga">
+        <div class="pcard" id="writeCard">
+          <h3>Endar sem barnið skrifaði</h3>
+          <div id="writeList"></div>
+        </div>
+        <div class="pcard">
+          <h3>Lestrarsaga</h3>
+          <div class="sesslist" id="sessList"></div>
+        </div>
+          </div>
+        </div>
+        <div class="ppane" data-pane="jar">
+        <div class="pcard">
+          <h3>Stjörnukrukkan</h3>
+          <p class="pmuted">Allir lesendur safna í sömu krukku. Veljið saman umbun sem þau fá þegar krukkan fyllist.</p>
+          <div class="jarmini" id="jarParent"></div>
+          <div class="formgrid">
+            <label>Stjörnur í fullri krukku<input id="jarGoal" type="number" min="5" max="500" inputmode="numeric"></label>
+            <label>Umbun<input id="jarReward" type="text" maxlength="60" placeholder="t.d. pizzukvöld eða bíóferð"></label>
+          </div>
+          <div class="actions"><button class="btn primary" id="jarSave" type="button">Vista krukkuna</button><button class="btn ghost" id="jarEmpty" type="button">Umbun veitt: byrja nýja krukku</button></div>
+          <div class="confirm" id="jarConfirm" hidden><p>Tæma krukkuna og byrja að safna upp á nýtt? Stjörnur umfram markmiðið flytjast yfir í nýju krukkuna.</p><div class="cbtns"><button type="button" class="yes" id="jarYes">Já, ný krukka</button><button type="button" class="no" id="jarNo">Hætta við</button></div></div>
+          <p class="pfeed" id="jarFeed" aria-live="polite"></p>
+        </div>
+        </div>
+        <div class="ppane" data-pane="xmas">
+        <div class="pcard">
+          <h3>Jóladagatalið</h3>
+          <p class="pmuted">Jóladagatalið er falið þangað til þú kveikir á því. Það gildir fyrir alla lesendur.</p>
+          <label class="chk"><input type="checkbox" id="xmasOn"> Sýna jóladagatalið hjá krökkunum</label>
+          <label class="chk"><input type="checkbox" id="xmasEarly"> Leyfa að opna alla glugga strax (annars einn á dag frá 1. desember)</label>
+          <p class="pfeed" id="xmasInfo"></p>
+        </div>
+        </div>
+        <div class="ppane" data-pane="books">
+        <div class="pcard">
+          <h3>Bækur heima</h3>
+          <p class="pmuted">Skráðu bækur sem eru til heima eða koma úr skólanum. Skiptu þeim í kafla eftir blaðsíðutölum og skrifaðu eina eða tvær spurningar úr hverjum kafla. Barnið les úr bókinni sjálfri og svarar spurningunum í appinu.</p>
+          <div id="ubList"></div>
+          <div class="actions"><button class="btn primary" id="ubNew" type="button">Skrá nýja bók</button></div>
+          <div class="mkwrap" id="ubEditor" hidden>
+            <label class="mklbl">Heiti bókarinnar<input id="ubTitle" type="text" maxlength="40"></label>
+            <div><span class="pmuted">Fyrir hvern?</span><div class="chips small" id="ubAges" role="group" aria-label="Fyrir hvern"></div></div>
+            <div id="ubChaps" class="mkwrap"></div>
+            <div class="actions"><button class="btn ghost" id="ubAddCh" type="button">Bæta við kafla</button></div>
+            <div class="actions"><button class="btn primary" id="ubSave" type="button">Vista bókina</button><button class="btn ghost" id="ubCancel" type="button">Hætta við</button></div>
+          </div>
+          <p class="pfeed" id="ubFeed" aria-live="polite"></p>
+        </div>
+        </div>
+        <div class="ppane" data-pane="first">
+        <div class="pcard">
+          <h3>Mamma eða pabbi les fyrst</h3>
+          <p class="pmuted" id="prNote"></p>
+          <div class="mkwrap" id="prWrap"><select id="prStory" aria-label="Veldu sögu"></select><div id="prList" class="mkwrap"></div></div>
+        </div>
+        </div>
+        <div class="ppane" data-pane="backup">
+        <div class="pcard">
+          <h3>Öryggisafrit</h3>
+          <p class="pmuted">Öll gögn eru geymd á þessu tæki. Vistaðu afrit reglulega svo ekkert tapist ef vafragögnum er eytt eða skipt er um spjaldtölvu. Afritið nær yfir alla lesendur.</p>
+          <p class="warnline" id="bkWarn">Mælt er með að vista afrit einu sinni í mánuði.</p>
+          <p class="pmuted" id="bkLast"></p>
+          <label class="chk"><input type="checkbox" id="bkAudio" checked> Taka upptökurnar með (skráin verður stærri)</label>
+          <div class="actions"><button class="btn primary" id="bkSave" type="button">Vista afrit</button><label class="btn ghost filebtn">Sækja afrit<input type="file" id="bkFile" accept=".json,application/json"></label></div>
+          <div class="confirm" id="bkConfirm" hidden><p id="bkWhat"></p><div class="cbtns"><button type="button" class="yes" id="bkYes">Já, sækja afrit</button><button type="button" class="no" id="bkNo">Hætta við</button></div></div>
+          <p class="pfeed" id="bkFeed" aria-live="polite"></p>
+        </div>
+        </div>
       </div>
     </div>
   </section>
@@ -4461,7 +4589,7 @@ function pressKey(k){
   if(k==='del'){pin=pin.slice(0,-1);pinUI();return}
   if(pin.length>=4)return;pin+=k;pinUI();
   if(pin.length<4)return;
-  if(pin===LOCK){pin='';renderParent();show('parent');return}
+  if(pin===LOCK){pin='';renderParent();pDashShow();show('parent');return}
   $('pinErr').textContent='Rangt lykilorð. Reyndu aftur.';
   const d=$('pinDots');d.classList.remove('shake');void d.offsetWidth;d.classList.add('shake');
   setTimeout(()=>{pin='';pinUI()},500);
@@ -4491,7 +4619,7 @@ function sessHTML(x){const se=x.se;
   return `<div class="sess"><div class="sh">${fmtDate(se.t)}${se===cur?' · í gangi':''}</div><div class="sm">${x.wpm!=null?`<span class="wpmbadge">${x.wpm} orð/mín</span> · `:''}${se.min} mín. valið · ${se.reads}x yfirlestur · ${se.pages.length} síður · ${nf(x.words)} orð · um ${mins} mín. lestur${stop}</div>${st?`<ul>${st}</ul>`:''}</div>`}
 function renderParent(){
   if(!Object.values(S.profiles).includes(PP))PP=S.profiles.p7;
-  $('pTabs').innerHTML=Object.keys(S.profiles).map(id=>`<button type="button" class="ptab" role="tab" data-pp="${id}" aria-selected="${S.profiles[id]===PP}">${esc(S.profiles[id].name)} <small>(${S.profiles[id].yrs||S.profiles[id].age} ára)</small></button>`).join('')+(Object.keys(S.profiles).length<5?`<button type="button" class="ptab padd" id="pAddBtn" aria-label="Bæta við lesanda" aria-expanded="${!$('pAdd').hidden}"><span aria-hidden="true">+</span></button>`:'');
+  renderNav();
   renderUserCard();
   $('pName').value=PP.name;
   const stats=PP.sessions.filter(se=>se.pages.length).map(se=>({se,...sessStats(se)}));
@@ -4778,25 +4906,92 @@ const AVNEW=['handb','karfa','skidi','sund','mark','geimfari','vikingur','ofurhe
 function renderUserCard(){const extra=PP!==S.profiles.p7&&PP!==S.profiles.p9;$('puExtra').hidden=!extra;$('puDelConfirm').hidden=true;$('puDel').hidden=false;
   if(!extra)return;$('puAge').value=PP.yrs||'';
   $('puLevel').innerHTML=[[7,'Styttri sögur (um 7 ára)'],[9,'Lengri sögur (um 9 ára)']].map(([v,l])=>`<button type="button" class="chip" role="radio" aria-checked="${PP.age===v}" data-ulv="${v}">${l}</button>`).join('')}
-$('pTabs').addEventListener('click',e=>{if(!e.target.closest('#pAddBtn'))return;const open=$('pAdd').hidden;$('pAdd').hidden=!open;$('paFeed').textContent='';
-  if(open){$('paName').value='';$('paAge').value='';PA.lv=7;paLevelUI();$('paName').focus()}renderParent()});
+$('pTabs').addEventListener('click',e=>{if(!e.target.closest('#pAddBtn'))return;$('paFeed').textContent='';$('paName').value='';$('paAge').value='';PA.lv=7;paLevelUI();pGo('add');setTimeout(()=>$('paName').focus(),50)});
 function paLevelUI(){[...$('paLevel').children].forEach(b=>b.setAttribute('aria-checked',String(+b.dataset.lv===PA.lv)))}
 $('paLevel').addEventListener('click',e=>{const b=e.target.closest('[data-lv]');if(!b)return;PA.lv=+b.dataset.lv;paLevelUI()});
 $('paAge').addEventListener('input',()=>{const a=+$('paAge').value;if(a>=3&&a<=15){PA.lv=a>=9?9:7;paLevelUI()}});
-$('paCancel').addEventListener('click',()=>{$('pAdd').hidden=true;renderParent()});
+$('paCancel').addEventListener('click',()=>{pGo('reader')});
 $('paSave').addEventListener('click',()=>{const name=$('paName').value.trim().slice(0,20),a=Math.round(+$('paAge').value);
   if(!name){$('paFeed').textContent='Skrifaðu nafn lesandans.';$('paName').focus();return}
   if(Object.keys(S.profiles).length>=5){$('paFeed').textContent='Hámarkið er 5 lesendur.';return}
   const used=Object.values(S.profiles).map(p=>p.avatar).concat(['fotb','lesari']);
   const id='u'+Date.now().toString(36),p=fixP({},PA.lv,name);if(a>=3&&a<=15)p.yrs=a;p.avatar=AVNEW.find(k=>!used.includes(k))||'karfa';
-  S.profiles[id]=p;save();PP=p;$('pAdd').hidden=true;renderParent();$('puFeed').textContent=`Nýr lesandi, ${name}, hefur bæst við og birtist núna á upphafssíðunni.`});
+  S.profiles[id]=p;save();PP=p;renderParent();pGo('reader','stillingar');$('puFeed').textContent=`Nýr lesandi, ${name}, hefur bæst við og birtist núna á upphafssíðunni.`});
 $('puAgeSave').addEventListener('click',()=>{const a=Math.round(+$('puAge').value);if(!(a>=3&&a<=15)){$('puFeed').textContent='Skráðu aldur á bilinu 3 til 15 ára.';return}PP.yrs=a;save();renderParent();$('puFeed').textContent='Aldurinn var vistaður.'});
 $('puLevel').addEventListener('click',e=>{const b=e.target.closest('[data-ulv]');if(!b)return;PP.age=+b.dataset.ulv;save();renderParent();$('puFeed').textContent=PP.age===9?'Lesandinn fær núna lengri sögur.':'Lesandinn fær núna styttri sögur.'});
 $('puDel').addEventListener('click',()=>{$('puDel').hidden=true;$('puDelTx').textContent=`Fjarlægja ${PP.name}? Stjörnum, lestrarsögu og upptökum lesandans verður eytt. Tekur þú afrit fyrst ef þú vilt geta sótt gögnin aftur.`;$('puDelConfirm').hidden=false});
 $('puDelNo').addEventListener('click',()=>{$('puDelConfirm').hidden=true;$('puDel').hidden=false});
 $('puDelYes').addEventListener('click',()=>{const id=pidOf(PP);if(id==='p7'||id==='p9')return;const name=PP.name;
   if(REC.ok)recAll(id).then(L=>Promise.all(L.map(r=>recDel(r.id)))).catch(()=>{});
-  delete S.profiles[id];if(PR===PP)PR=S.profiles.p7;PP=S.profiles.p7;save();renderParent();$('puFeed').textContent='';$('giveFeed').textContent=`Lesandinn ${name} var fjarlægður.`});
+  delete S.profiles[id];if(PR===PP)PR=S.profiles.p7;PP=S.profiles.p7;save();renderParent();pGo('reader','stillingar');$('puFeed').textContent='';$('giveFeed').textContent=`Lesandinn ${name} var fjarlægður.`});
+
+/* ---------- Foreldrasvæði: mælaborð og stillingar ---------- */
+const KCOL=['#0A60D6','#FF9F0A','#34A853','#AF52DE','#FF375F'];
+const PIC={gift:'<rect x="3" y="9" width="18" height="12" rx="2"/><path d="M3 13h18M12 9v12M12 9C9 9 7 7 8 5.5S11 5 12 9c1-4 3-4.5 4-3.5s-1 3.5-4 3.5"/>',
+  trophy:'<path d="M8 4h8v5a4 4 0 01-8 0zM8 6H4.5a3 3 0 003.5 4M16 6h3.5a3 3 0 01-3.5 4M12 13v4M9 17h6v4H9z"/>',
+  chart:'<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>',books:'<path d="M5 4h4v16H5zM10 4h4v16h-4zM15.5 5.2l3.6-1 3 15.3-3.6 1z"/>',
+  home:'<path d="M4 11l8-7 8 7v8.5a1 1 0 01-1 1h-4.5V15h-5v5.5H5a1 1 0 01-1-1z"/>',snow:'<path d="M12 3v18M4.2 7.5l15.6 9M4.2 16.5l15.6-9"/>',
+  printer:'<path d="M6 9V3h12v6"/><rect x="3" y="9" width="18" height="8" rx="2"/><path d="M6 14h12v7H6z"/>',cloud:'<path d="M7 18h10a4 4 0 00.5-8 6 6 0 00-11.5 1.5A3.5 3.5 0 007 18z"/><path d="M12 11v6M9.5 14.5L12 17l2.5-2.5"/>',
+  ear:'<path d="M4 10v4h3l5 4V6L7 10z"/><path d="M16 9a4 4 0 010 6"/>',flame:'<path d="M12 21c-3.9 0-6.5-2.6-6.5-6.3 0-3.5 2.6-5.6 4-8.7.6 2 1.7 3 2.9 3.6.3-2.4 1.6-4.6 3.5-6.1-.3 3 3.6 5.6 3.6 10.6 0 4.1-3 6.9-7.5 6.9z"/>',
+  gear:'<path d="M18.97 10.21 L21.49 10.56 L21.49 13.44 L18.97 13.79 L18.20 15.67 L19.73 17.69 L17.69 19.73 L15.67 18.20 L13.79 18.97 L13.44 21.49 L10.56 21.49 L10.21 18.97 L8.33 18.20 L6.31 19.73 L4.27 17.69 L5.80 15.67 L5.03 13.79 L2.51 13.44 L2.51 10.56 L5.03 10.21 L5.80 8.33 L4.27 6.31 L6.31 4.27 L8.33 5.80 L10.21 5.03 L10.56 2.51 L13.44 2.51 L13.79 5.03 L15.67 5.80 L17.69 4.27 L19.73 6.31 L18.20 8.33Z"/><circle cx="12" cy="12" r="3.2"/>'};
+const PICC={gift:'#FF9F0A',trophy:'#E8A100',chart:'#0A60D6',books:'#AF52DE',home:'#34A853',snow:'#30B0C7',printer:'#636366',cloud:'#007AFF',ear:'#5856D6',flame:'#FF6A2B',gear:'#8E8E93'};
+const pic=(k,s=30)=>`<span class="pic" style="width:${s}px;height:${s}px;background:${PICC[k]}"><svg viewBox="0 0 24 24" aria-hidden="true" style="width:${Math.round(s*.6)}px;height:${Math.round(s*.6)}px"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${PIC[k]}</g></svg></span>`;
+const CHEV='<svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+const PV={view:'dash',pane:'reader',sub:'yfirlit',open:false};
+const isPhone=()=>window.matchMedia('(max-width:759px)').matches;
+function avgWpm(p){const st=p.sessions.filter(se=>se.pages.length).map(se=>sessStats(se)).filter(x=>x.wpm!=null).slice(-5);if(!st.length)return null;const ms=st.reduce((a,x)=>a+x.ms,0);return ms?Math.round(st.reduce((a,x)=>a+x.w,0)/(ms/60000)):null}
+function isoWeek(d){const t=new Date(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate()));const n=t.getUTCDay()||7;t.setUTCDate(t.getUTCDate()+4-n);const y=new Date(Date.UTC(t.getUTCFullYear(),0,1));return Math.ceil(((t-y)/864e5+1)/7)}
+function kidRing(p,size){const g=Math.max(1,+p.settings.min||15),m=todayMin(p),done=p.days.includes(dkey(new Date())),f=done?1:Math.min(1,m/g),c=2*Math.PI*45;
+  return `<svg class="kring" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="45" fill="none" stroke="rgba(255,55,95,.15)" stroke-width="7"/>${f>0?`<circle cx="50" cy="50" r="45" fill="none" stroke="#FF375F" stroke-width="7" stroke-linecap="round" stroke-dasharray="${f1(c*f)} ${f1(c)}" transform="rotate(-90 50 50)"/>`:''}</svg>`}
+const kidNote=p=>{const g=Math.max(1,+p.settings.min||15);return p.days.includes(dkey(new Date()))?'Lestri dagsins lokið':`${todayMin(p)} af ${g} mín í dag`};
+function renderDash(){const h=new Date().getHours(),now=new Date();
+  $('dHello').textContent=h<12?'Góðan daginn!':h<18?'Góðan dag!':'Gott kvöld!';$('dDate').textContent=`${todayLabel()} · vika ${isoWeek(now)}`;
+  const ids=Object.keys(S.profiles);
+  $('dKids').innerHTML=ids.map(id=>{const p=S.profiles[id],w=avgWpm(p);return `<button type="button" class="pcard dkid" data-dk="${id}"><span class="dav">${kidRing(p)}<span class="dph">${avatarSVG(avId(p,id))}</span></span><span class="dtx"><span class="dnm"><b>${esc(p.name)}</b> <small>${p.yrs||p.age} ára</small></span><span class="dnote">${kidNote(p)}</span><span class="dst"><span><strong>${weekCount(p)}/5</strong>dagar</span><span><strong>${w??'–'}</strong>orð/mín</span><span><strong>${nf(p.stars)}</strong>stjörnur</span></span></span>${CHEV}</button>`}).join('')
+    +(ids.length<5?`<button type="button" class="dadd" id="dAdd"><span>+</span>Bæta við lesanda</button>`:'');
+  const ws=weekStart(now),days=[...Array(7)].map((_,i)=>dkey(new Date(ws.getTime()+i*DAY)));
+  const vals=ids.map(id=>days.map(k=>Math.round(appMinOn(S.profiles[id],k)+homeMinOn(S.profiles[id],k))));
+  const ph=isPhone(),mx=Math.max(15,...vals.flat()),Wd=ph?330:600,Hh=ph?120:150,gw=Wd/7,n=ids.length,bw=Math.min(22,gw*.7/n);
+  let svg=`<svg viewBox="0 0 ${Wd} ${Hh+22}" role="img" aria-label="Mínútur hvers dags í vikunni">`;
+  days.forEach((k,i)=>{const x0=i*gw+(gw-bw*n-(n-1)*3)/2;vals.forEach((v,j)=>{const bh=Math.max(3,v[i]/mx*Hh);svg+=`<rect x="${f1(x0+j*(bw+3))}" y="${f1(Hh-bh)}" width="${f1(bw)}" height="${f1(bh)}" rx="4" style="fill:${v[i]?KCOL[j%5]:'var(--line)'}"><title>${esc(S.profiles[ids[j]].name)}: ${v[i]} mín</title></rect>`});
+    svg+=`<text x="${f1(i*gw+gw/2)}" y="${Hh+17}" text-anchor="middle" class="clbl">${DAYS[i]}</text>`});
+  $('dChart').innerHTML=svg+'</svg>';
+  $('dLeg').innerHTML=ids.map((id,j)=>`<span><i style="background:${KCOL[j%5]}"></i>${esc(S.profiles[id].name)}</span>`).join('');
+  const pr=[],prev=new Date(ws.getTime()-7*DAY);
+  for(const id of ids){const p=S.profiles[id],nm=esc(p.name),a=weekAgg(p,ws),b=weekAgg(p,prev),st=streak(p);
+    if(st>=3)pr.push([3,'flame',`${nm} hefur lesið ${st} daga í röð.`]);
+    if(a.days>=5)pr.push([2,'trophy',`${nm} náði vikumarkmiðinu: ${a.days} lestrardagar.`]);
+    if(a.wpm!=null&&b.wpm!=null&&a.wpm>b.wpm)pr.push([2,'chart',`${nm} les nú ${a.wpm} orð á mínútu, ${a.wpm-b.wpm} fleiri en í síðustu viku.`]);
+    if(a.fin>0)pr.push([1,'books',`${nm} kláraði ${a.fin===1?'eina sögu':a.fin+' sögur'} í vikunni.`]);
+    if(a.home>0)pr.push([1,'home',`${nm} las heima í ${a.home} mínútur í vikunni.`]);}
+  pr.sort((x,y)=>y[0]-x[0]);
+  $('dPraise').innerHTML=pr.length?pr.slice(0,4).map(([,i,t])=>`<div class="dpr">${pic(i,30)}<p>${t}</p></div>`).join(''):'<p class="pmuted">Hér birtist það sem vert er að hrósa fyrir þegar börnin hafa lesið í nokkra daga.</p>';
+  $('dQuick').innerHTML=[['home','home','Skrá heimalestur','Mínútur og stjörnur'],['give','gift','Gefa stjörnur','+1, +3 eða +5'],['kv','printer','Prenta kvittun','Fyrir skólann'],['xmas','snow','Jóladagatal',S.xmas.on?'Sýnilegt krökkunum':'Falið krökkunum']]
+    .map(([q,i,t,sub])=>`<button type="button" class="pcard dq" data-q="${q}">${pic(i,34)}<b>${t}</b><span>${sub}</span></button>`).join('');
+}
+function renderNav(){const ids=Object.keys(S.profiles),inR=PV.view==='set'&&PV.pane==='reader';
+  $('pTabs').innerHTML=ids.map(id=>{const p=S.profiles[id],on=inR&&p===PP;return `<button type="button" class="nrow ptab" role="tab" data-pp="${id}" aria-selected="${on}"><span class="navav">${avatarSVG(avId(p,id))}</span><span class="nt">${esc(p.name)}</span><em>${p.yrs||p.age} ára</em>${CHEV}</button>`}).join('')
+    +(ids.length<5?`<button type="button" class="nrow" id="pAddBtn" aria-selected="${PV.view==='set'&&PV.pane==='add'}"><span class="nplus">+</span><span class="nt" style="color:var(--accent)">Bæta við lesanda</span></button>`:'');
+  const row=(pane,i,t,v)=>`<button type="button" class="nrow" data-pane="${pane}" aria-selected="${PV.view==='set'&&PV.pane===pane}">${pic(i,28)}<span class="nt">${t}</span><em>${v}</em>${CHEV}</button>`;
+  $('pNavShared').innerHTML=row('jar','gift','Stjörnukrukkan',`${nf(Math.min(S.jar.n,S.jar.goal))}/${nf(S.jar.goal)}`)+row('xmas','snow','Jóladagatalið',S.xmas.on?'Sýnilegt':'Falið')+row('books','books','Bækur heima',String((S.ubooks||[]).length))+row('first','ear','Mamma eða pabbi les fyrst','');
+  const bk=S.backup?(Date.now()-S.backup<DAY?'Í dag':Date.now()-S.backup<2*DAY?'Í gær':`${Math.floor((Date.now()-S.backup)/DAY)} d.`):'Aldrei';
+  $('pNavData').innerHTML=row('backup','cloud','Afrit',bk);
+  const p=PP,id=pidOf(PP);$('pHd').innerHTML=`<span class="phav">${avatarSVG(avId(p,id))}</span><div><h2>${esc(p.name)}</h2><span class="pmuted">${p.yrs||p.age} ára · ${p.age===9?'lengri sögur':'styttri sögur'}</span></div>`;
+  $('rSeg').innerHTML=[['yfirlit','Yfirlit'],['stillingar','Stillingar'],['umbun','Umbun'],['upptokur','Upptökur'],['saga','Saga']].map(([k,l])=>`<button type="button" role="tab" data-rs="${k}" aria-selected="${PV.sub===k}">${l}</button>`).join('');
+  document.querySelectorAll('#pSet .rsec').forEach(x=>x.hidden=x.dataset.rs!==PV.sub);
+}
+function pDashShow(){PV.view='dash';PV.open=false;$('pDash').hidden=false;$('pSet').hidden=true;renderDash();window.scrollTo(0,0)}
+function pSettings(){PV.view='set';PV.open=false;$('pDash').hidden=true;$('pSet').hidden=false;pApply()}
+function pGo(pane,sub){PV.view='set';PV.pane=pane;if(sub)PV.sub=sub;PV.open=true;$('pDash').hidden=true;$('pSet').hidden=false;pApply();window.scrollTo(0,0)}
+function pApply(){document.querySelectorAll('#pSet .ppane').forEach(x=>x.hidden=x.dataset.pane!==PV.pane);$('pSet').classList.toggle('open',PV.open);renderNav()}
+$('pSetBtn').addEventListener('click',pSettings);
+$('pBack').addEventListener('click',()=>{renderParent();pDashShow()});
+$('pBack2').addEventListener('click',()=>{PV.open=false;pApply();window.scrollTo(0,0)});
+$('dKids').addEventListener('click',e=>{const a=e.target.closest('#dAdd');if(a){$('pTabs').querySelector('#pAddBtn')?.click();return}const b=e.target.closest('[data-dk]');if(!b)return;PP=S.profiles[b.dataset.dk];renderParent();pGo('reader','yfirlit')});
+$('dQuick').addEventListener('click',e=>{const b=e.target.closest('[data-q]');if(!b)return;const q=b.dataset.q;
+  if(q==='set')return pSettings();if(q==='xmas')return pGo('xmas');pGo('reader','umbun');const t={home:'phDate',give:'giveBtns',kv:'kvName'}[q];setTimeout(()=>{const el=$(t);if(el){el.scrollIntoView({block:'center'});if(q==='home')el.focus()}},60)});
+$('pTabs').addEventListener('click',e=>{if(e.target.closest('[data-pp]'))pGo('reader')});
+$('pSet').addEventListener('click',e=>{const n=e.target.closest('.pnav [data-pane]');if(n){pGo(n.dataset.pane);return}const r=e.target.closest('#rSeg [data-rs]');if(r){PV.sub=r.dataset.rs;renderNav()}});
 /* ---------- Tengingar við viðmótið ---------- */
 $('openWords').addEventListener('click',openWords);
 $('wordsClose').addEventListener('click',()=>{renderHome();show('home')});
@@ -5096,7 +5291,7 @@ function renderParent2(){
   $('xmasInfo').textContent=S.xmas.on?(S.xmas.early?'Jóladagatalið sést og allir gluggar eru opnir.':'Jóladagatalið sést. Einn gluggi opnast á dag frá 1. desember.'):'Jóladagatalið er falið hjá krökkunum.';
   const ch=(id,k,def)=>{const v=PP.settings[k]!==undefined?PP.settings[k]:def;$(id).innerHTML=[['1','Á'],['0','Af']].map(([x,l])=>`<button type="button" class="chip" role="radio" aria-checked="${(x==='1')===!!v}" data-set="${k}" data-v="${x}">${l}</button>`).join('')};
   ch('sylChips','syl',true);$('sylSet').hidden=PP.age!==7;ch('predChips','pred',true);
-  ubRender();kvWeek=kvWeek||0;$('kvName').value=S.kvName||'';kvRender();prRender();
+  renderNav();ubRender();kvWeek=kvWeek||0;$('kvName').value=S.kvName||'';kvRender();prRender();
   const cs=PP.certs||[];$('certList').innerHTML=cs.length?cs.slice().reverse().map((c,j)=>{const i=cs.length-1-j;return `<div class="ubrow"><div><b>${esc(c.what)}</b><small>${fmtDate(c.t)}</small></div><button class="btn ghost small" type="button" data-cert="${i}">Prenta</button></div>`}).join(''):'<p class="pmuted">Viðurkenningarskjöl birtast hér þegar barnið klárar bók, finnur alla enda í sögu eða klárar jóladagatalið.</p>';
 }
 $('xmasOn').addEventListener('change',()=>{S.xmas.on=$('xmasOn').checked;save();renderParent2()});
