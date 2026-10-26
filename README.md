@@ -23,7 +23,7 @@ npx serve .
 
 ## Útgáfa
 
-Tengdu þetta repo við Netlify. Þá fer ný útgáfa sjálfkrafa í loftið í hvert sinn sem breyting er sett inn á `main`.
+Appið er hýst á GitHub Pages (https://aronmagnusson.github.io/lestrarstund/). Ný útgáfa fer sjálfkrafa í loftið í hvert sinn sem breyting er sett inn á `main`.
 
 Þegar `index.html` breytist þarf að hækka útgáfunúmerið efst í `sw.js` (t.d. `lestrarstund-v22` → `lestrarstund-v23`), annars getur tækið haldið áfram að sýna gömlu útgáfuna.
 
@@ -33,7 +33,7 @@ Appið virkar án aðgangs. Þá eru öll gögn aðeins á tækinu, eins og áð
 
 1. Farðu á [console.firebase.google.com](https://console.firebase.google.com) og stofnaðu nýtt verkefni (t.d. `lestrarstund`). Slökktu á Google Analytics, appið notar það ekki.
 2. **Authentication** → *Get started* → *Sign-in method*: kveiktu á **Email/Password** og **Google**.
-3. **Authentication** → *Settings* → *Authorized domains*: bættu við léninu á Netlify (t.d. `lestrarstund.netlify.app`) og eigin léni ef það er til.
+3. **Authentication** → *Settings* → *Authorized domains*: bættu við `aronmagnusson.github.io` og eigin léni ef það er til.
 4. **Firestore Database** → *Create database* → *Production mode*. Veldu staðsetningu í Evrópu, t.d. `europe-west1` (Belgía). Þetta er ekki hægt að breyta seinna.
 5. **Firestore Database** → *Rules*: afritaðu innihald `firestore.rules` yfir það sem er þar og ýttu á *Publish*.
 6. **Project settings** (tannhjólið) → *Your apps* → veldu vefapp (`</>`), gefðu því nafn og afritaðu `firebaseConfig`.

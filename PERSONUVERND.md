@@ -34,7 +34,7 @@ Ef barnið les upphátt og tekur sig upp eru upptökurnar eingöngu vistaðar á
 
 **Tæknilegar upplýsingar**
 
-- IP-tala og upplýsingar um tæki og vafra, sem Firebase og Netlify skrá við innskráningu og þegar appið er sótt. Þetta er gert í öryggisskyni og til að koma í veg fyrir misnotkun.
+- IP-tala og upplýsingar um tæki og vafra, sem Firebase og GitHub skrá við innskráningu og þegar appið er sótt. Þetta er gert í öryggisskyni og til að koma í veg fyrir misnotkun.
 - Appið vistar gögn í staðbundinni geymslu tækisins (localStorage) svo það virki án nettengingar. Við notum ekki vafrakökur til rakningar og engar vefgreiningar.
 
 ### 4. Tilgangur og heimild
@@ -59,8 +59,8 @@ Við notum eftirfarandi þjónustuaðila sem vinna upplýsingar fyrir okkar hön
 | Vinnsluaðili | Hlutverk | Staðsetning gagna |
 | --- | --- | --- |
 | Google (Firebase Authentication) | Innskráning foreldra | Bandaríkin |
-| Google (Cloud Firestore) | Geymsla lestrargagna og stillinga | [GAGNASVÆÐI, t.d. europe-west1 í Belgíu] |
-| Netlify | Hýsing á sjálfu appinu (forritsskrár) | Dreift net netþjóna, þar á meðal í Bandaríkjunum |
+| Google (Cloud Firestore) | Geymsla lestrargagna og stillinga | Evrópa (gagnaver Google í Belgíu og Hollandi) |
+| GitHub (GitHub Pages) | Hýsing á sjálfu appinu (forritsskrár) | Dreift net netþjóna, þar á meðal í Bandaríkjunum |
 
 ### 7. Flutningur út fyrir EES
 
