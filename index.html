@@ -802,6 +802,44 @@ body.onstart{background-image:radial-gradient(520px 420px at 0% 0%,rgba(150,195,
   #pSet:not(.open) .pmain{display:none}
   .pback2{display:inline-flex}
 }
+
+/* ===== Bókasafnið: bókakápur ===== */
+.cards{grid-template-columns:repeat(auto-fill,minmax(132px,1fr));gap:20px 16px}
+.card.bkc{background:none;box-shadow:none;border-radius:0;overflow:visible;gap:8px}
+.card.bkc:hover{transform:translateY(-4px);box-shadow:none}
+.card.bkc:focus-visible{outline:4px solid var(--accent);outline-offset:4px;border-radius:10px}
+.bcov{position:relative;display:block;width:100%;aspect-ratio:2/3;border-radius:3px 10px 10px 3px;overflow:hidden;background:var(--c);box-shadow:0 1px 1px rgba(0,0,0,.12),0 12px 20px -8px rgba(20,30,60,.4)}
+.bcov:before{content:"";position:absolute;left:0;top:0;bottom:0;width:14px;z-index:2;background:linear-gradient(90deg,rgba(0,0,0,.28),rgba(255,255,255,.28) 3px,rgba(0,0,0,.08) 7px,rgba(0,0,0,0) 14px)}
+.bcov:after{content:"";position:absolute;inset:0;z-index:2;border-radius:inherit;box-shadow:inset 0 0 0 1px rgba(0,0,0,.08);pointer-events:none}
+.bimg{position:absolute;left:0;right:0;top:0;height:68%}
+.bimg svg{display:block;width:100%;height:100%}
+.btb{position:absolute;left:0;right:0;bottom:0;height:32%;background:var(--c);display:flex;align-items:center;justify-content:center;padding:4px 8px 4px 14px;box-sizing:border-box;text-align:center}
+.btb b,.btb .ctitle{color:#fff;font-family:Nunito,"SF Pro Rounded",var(--f-display);font-weight:900;font-size:clamp(.82rem,.7rem + .4vw,1.02rem);line-height:1.08;letter-spacing:-.01em;text-shadow:0 1px 0 rgba(0,0,0,.2);text-wrap:balance}
+.brib{position:absolute;z-index:3;top:-2px;right:12px;width:20px;height:32px;background:#E0322C;clip-path:polygon(0 0,100% 0,100% 100%,50% 78%,0 100%)}
+.card.bkc .cbody{padding:2px 2px 0;gap:3px}
+.card.bkc .kind{font-size:.7rem}
+.card.bkc .ends i{width:16px;height:16px}
+.card.bkc .bkpos{font-size:.8rem}
+.catseg{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 6px;margin:0 0 16px;scrollbar-width:none}
+.catseg::-webkit-scrollbar{display:none}
+.catseg button{all:unset;box-sizing:border-box;flex:none;min-height:44px;padding:0 16px;border-radius:999px;background:var(--surface);box-shadow:var(--shadow);display:flex;align-items:center;font-weight:600;font-size:.98rem;cursor:pointer;color:var(--ink)}
+.catseg button[aria-selected="true"]{background:var(--ink);color:var(--bg)}
+.catseg button:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.feat{display:flex;align-items:center;gap:30px;border-radius:var(--r-card);background:linear-gradient(120deg,#FFF3E2,#FFE0C2);padding:22px 28px;margin:0 0 22px;overflow:hidden}
+:root[data-theme="dark"] .feat{background:linear-gradient(120deg,#3A2A1A,#2A1E14)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .feat{background:linear-gradient(120deg,#3A2A1A,#2A1E14)}}
+.fbook{flex:none;width:118px;transform:perspective(600px) rotateY(16deg) rotate(-3deg);filter:drop-shadow(-10px 14px 14px rgba(80,40,10,.35))}
+.fbook .bcov{box-shadow:none}
+.ftx{display:flex;flex-direction:column;gap:4px;min-width:0}
+.ftx small{font-size:.78rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;color:#B4501E}
+:root[data-theme="dark"] .ftx small{color:#FFB37A}
+.ftx b{font-size:clamp(1.5rem,1.1rem + 1.2vw,2rem);font-weight:800;letter-spacing:-.03em;line-height:1.1}
+.fp{font-size:.98rem;color:var(--muted);max-width:44ch;line-height:1.4}
+.fact{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:8px}
+.fprog{width:120px;height:6px;border-radius:3px;background:rgba(0,0,0,.1);overflow:hidden}
+.fprog i{display:block;height:100%;background:#C2452D;border-radius:3px}
+.fpl{font-size:.88rem;color:var(--muted)}
+@media (max-width:520px){.feat{gap:18px;padding:18px}.fbook{width:86px}}
 /* persónubankinn */
 .avnow{display:flex;align-items:center;gap:18px;background:var(--surface);border-radius:var(--r-card);box-shadow:var(--shadow);padding:16px 20px;margin-bottom:8px}
 .avbig{width:104px;height:104px;border-radius:50%;overflow:hidden;flex:none;border:4px solid var(--surface);box-shadow:0 8px 20px rgba(20,40,90,.18)}
@@ -980,6 +1018,8 @@ body.onstart{background-image:radial-gradient(520px 420px at 0% 0%,rgba(150,195,
     <div class="note" id="sessionNote" hidden></div>
     <section class="step">
       <h2><span class="num" id="storyNum">3</span>Veldu sögu</h2>
+      <div class="catseg" id="catSeg" role="tablist" aria-label="Flokkar"></div>
+      <div class="feat" id="featCard" hidden></div>
       <h3 class="grouphead first" id="headP">Þú ert hetjan</h3>
       <div class="cards" id="cardsP"></div>
       <h3 class="grouphead" id="headH">Bækur heima</h3>
@@ -4274,7 +4314,7 @@ function startMapHTML(ids){
   return `<div class="mtx"><span class="kind">Ferðalagið um Ísland</span><b>Hvert förum við í dag?</b><p>${lead}</p><p class="msub">Hver lestrardagur færir ykkur á næsta stað.</p></div><div class="mmap"><svg viewBox="0 0 400 290" aria-hidden="true"><path d="${coast}" fill="#C3E7AE" stroke="#fff" stroke-width="3" stroke-linejoin="round"/>${gl}<path d="${road}" fill="none" stroke="#0A60D6" stroke-width="1.6" stroke-dasharray="4 3.5" opacity=".6"/>${dots}</svg>${pins}</div>`}
 function startJarHTML(){const j=S.jar,g=Math.max(1,j.goal),full=j.n>=g,rw=j.reward?esc(j.reward):'umbun sem mamma eða pabbi velja';
   return `<div class="sjrow"><span class="sjic">${jarSVG(j.n,j.goal)}</span><div><b>Stjörnukrukkan</b><span>Allir safna saman</span></div></div><div class="sjbig">${nf(Math.min(j.n,g))} <small>af ${nf(g)} stjörnum</small></div><div class="jarbar" role="img" aria-label="${Math.round(Math.min(1,j.n/g)*100)} prósent full"><i style="width:${Math.min(100,j.n/g*100)}%"></i></div><p class="sjrw">${full?`Krukkan er full! Umbunin er: <b>${rw}</b>`:`Umbun: <b>${rw}</b>`}</p>`}
-function choose(id){PR=S.profiles[id];document.body.classList.toggle('age9',PR.age===9);selMin=Math.max(1,Math.min(60,+PR.settings.min||15));renderHome();show('home')}
+function choose(id){PR=S.profiles[id];CAT='all';document.body.classList.toggle('age9',PR.age===9);selMin=Math.max(1,Math.min(60,+PR.settings.min||15));renderHome();show('home')}
 const LP={t:0,raf:0,b:null,fired:false,t0:0};
 function lpStop(){clearTimeout(LP.t);cancelAnimationFrame(LP.raf);if(LP.b){LP.b.classList.remove('holding');const h=LP.b.querySelector('.whold');if(h)h.setAttribute('stroke-dasharray',`0 ${f1(2*Math.PI*45)}`)}LP.b=null}
 $('who').addEventListener('pointerdown',e=>{const b=e.target.closest('[data-pid]');if(!b||e.button>0)return;lpStop();LP.fired=false;LP.b=b;LP.t0=performance.now();b.classList.add('holding');
@@ -4302,8 +4342,12 @@ function holdStep(btn,d){let t1=0,t2=0;const stop=()=>{clearTimeout(t1);clearInt
   btn.addEventListener('contextmenu',e=>e.preventDefault());}
 holdStep($('minus'),-1);holdStep($('plus'),1);
 const DAYS=['Má','Þr','Mi','Fi','Fö','La','Su'],FULL=['mánudagur','þriðjudagur','miðvikudagur','fimmtudagur','föstudagur','laugardagur','sunnudagur'];
-function card(st){const found=(PR.endings[st.id]||[]).length,total=st.endings.length;
-  return `<button class="card" type="button" data-story="${st.id}" aria-label="${esc(st.title)}"><span class="thumb">${svgWrap(drawScene(st.thumb,st.id),'')}</span><span class="cbody"><span class="kind">${st.label}</span><span class="ctitle">${st.title}</span>${st.book?`<span class="bkpos">${(PR.books||{})[st.id]?`Næst: kafli ${(PR.books||{})[st.id]+1} af ${st.len}`:`${st.len} kaflar`}</span>`:''}<span class="ends" title="Endar fundnir: ${found} af ${total}">${Array.from({length:total},(_,i)=>`<i class="${i<found?'on':''}">${STARSVG}</i>`).join('')}</span></span></button>`}
+const BKCOL=['#2E6BD6','#E2683C','#1F8A4C','#3B3F9E','#C2452D','#2A86B8','#8A5A2E','#9B4DCA','#D9822B','#2E3C7A','#C8102E','#0F8A7A'];
+const bkCol=id=>{let h=0;for(const ch of id)h=(h*31+ch.charCodeAt(0))>>>0;return BKCOL[h%BKCOL.length]};
+function card(st){const found=(PR.endings[st.id]||[]).length,total=st.endings.length,bp=(PR.books||{})[st.id]||0;
+  const meta=st.book?`<span class="bkpos">${bp?`Næst: kafli ${bp+1} af ${st.len}`:`${st.len} kaflar`}</span>`:`<span class="ends" title="Endar fundnir: ${found} af ${total}">${Array.from({length:total},(_,i)=>`<i class="${i<found?'on':''}">${STARSVG}</i>`).join('')}</span>`;
+  const mark=st.book&&bp>0&&bp<st.len?'<span class="brib" aria-hidden="true"></span>':'';
+  return `<button class="card bkc" type="button" data-story="${st.id}" aria-label="${esc(st.title)}"><span class="bcov" style="--c:${bkCol(st.id)}">${mark}<span class="bimg">${svgWrap(drawScene(st.thumb,st.id),'')}</span><span class="btb"><b class="ctitle">${st.title}</b></span></span><span class="cbody"><span class="kind">${st.label}</span>${meta}</span></button>`}
 function renderHome(){
   $('readerName').textContent=`Lesandi: ${PR.name}`;$('switchBtn').hidden=T.active&&!T.done;
   $('groupB').textContent=PR.age===9?'Sannar íþróttasögur':'Sannar sögur um íþróttastjörnur';
@@ -4326,7 +4370,7 @@ function renderHome(){
   $('headM').textContent=`Sögur sem ${nm(S.profiles.p9)} skrifaði`;
   for(const [g,c,hd] of [['p','cardsP','headP'],['h','cardsH','headH'],['a','cardsA','headA'],['b','cardsB','groupB'],['c','cardsC','headC'],['m','cardsM','headM']]){const L=grp(g);$(c).innerHTML=L.map(card).join('');$(c).hidden=!L.length;$(hd).hidden=!L.length}
   const firstHead=['headP','headH','headA','groupB','headC','headM'].find(x=>!$(x).hidden);['headP','headH','headA','groupB','headC','headM'].forEach(x=>$(x).classList.toggle('first',x===firstHead));
-  const jo=jumpOpen(PR);$('jumpBox').hidden=!jo;$('cardsJ').innerHTML=jo?jumpStories().map(card).join(''):'';
+  const jo=jumpOpen(PR);$('jumpBox').hidden=!jo;$('cardsJ').innerHTML=jo?jumpStories().map(card).join(''):'';renderLib();
   if(jo&&!PR.jumpSeen&&PR.settings.jump!=='on'){PR.jumpSeen=true;save();setTimeout(()=>toast('Nýjar sögur opnuðust!','Þú lest svo vel að nú máttu prófa sögur fyrir 9 ára.',{kind:'done',ms:9000}),400)}
   $('shelf').innerHTML=shelfHTML(PR);
   const nw=wordList(PR).length;$('wordCnt').textContent=nw;$('wordDueDot').hidden=!wordsDue(PR);
@@ -4703,7 +4747,7 @@ function shelfHTML(p){
   const ids=Object.keys(STORIES);
   const read=ids.filter(id=>STORIES[id]&&STORIES[id].group!=='x'&&(p.endings[id]||[]).length).map(id=>STORIES[id]);
   if(!read.length)return '<p class="pmuted">Hillan er tóm. Kláraðu sögu og þá birtist fyrsta bókin hér.</p>';
-  const books=read.map(st=>{const i=ids.indexOf(st.id),c=SPINE[i%SPINE.length],h=164+((i*29)%34),f=(p.endings[st.id]||[]).length;
+  const books=read.map(st=>{const i=ids.indexOf(st.id),c=bkCol(st.id),h=164+((i*29)%34),f=(p.endings[st.id]||[]).length;
     return `<button type="button" class="spine" data-story="${st.id}" style="--c:${c};height:${h}px" aria-label="${esc(st.title)}, ${f} af ${st.endings.length} endum fundnir"><span>${esc(st.title)}</span><i>${'★'.repeat(f)}</i></button>`}).join('');
   return `<div class="shelf">${books}</div><p class="pmuted">${read.length===1?'Ein bók':nf(read.length)+' bækur'} í hillunni. Stjörnurnar á kilinum sýna hvað þú hefur fundið marga enda.</p>`}
 
@@ -4992,6 +5036,31 @@ $('dQuick').addEventListener('click',e=>{const b=e.target.closest('[data-q]');if
   if(q==='set')return pSettings();if(q==='xmas')return pGo('xmas');pGo('reader','umbun');const t={home:'phDate',give:'giveBtns',kv:'kvName'}[q];setTimeout(()=>{const el=$(t);if(el){el.scrollIntoView({block:'center'});if(q==='home')el.focus()}},60)});
 $('pTabs').addEventListener('click',e=>{if(e.target.closest('[data-pp]'))pGo('reader')});
 $('pSet').addEventListener('click',e=>{const n=e.target.closest('.pnav [data-pane]');if(n){pGo(n.dataset.pane);return}const r=e.target.closest('#rSeg [data-rs]');if(r){PV.sub=r.dataset.rs;renderNav()}});
+
+/* ---------- Bókasafnið (B) ---------- */
+let CAT='all';
+const LIBG=[['p','cardsP','headP'],['h','cardsH','headH'],['a','cardsA','headA'],['b','cardsB','groupB'],['c','cardsC','headC'],['m','cardsM','headM']];
+function featStory(){
+  const bk=Object.values(STORIES).find(s=>s.age===PR.age&&s.book&&((PR.books||{})[s.id]||0)>0&&(PR.books||{})[s.id]<s.len);
+  if(bk)return bk;
+  for(let i=PR.sessions.length-1;i>=0;i--){const ss=PR.sessions[i].stories||[];for(let j=ss.length-1;j>=0;j--){const st=STORIES[ss[j].s];if(st&&st.group!=='x'&&(st.age===PR.age||st.group==='m'))return st}}
+  return null}
+function renderLib(){
+  const vis=LIBG.filter(([g,c])=>!$(c).hidden&&$(c).children.length);
+  if(CAT!=='all'&&!vis.some(([g])=>g===CAT))CAT='all';
+  $('catSeg').innerHTML=[['all','Allar']].concat(vis.map(([g,c,h])=>[g,({p:'Þú ert hetjan',h:'Bækur heima',a:'Ævintýri',b:'Íþróttir',c:'Ísland',m:'Sögusmiðjan'})[g]||$(h).textContent])).map(([g,l])=>`<button type="button" role="tab" data-cat="${g}" aria-selected="${CAT===g}">${esc(l)}</button>`).join('');
+  $('catSeg').hidden=vis.length<2;
+  for(const [g,c,h] of vis){const on=CAT==='all'||CAT===g;$(c).hidden=!on;$(h).hidden=!on}
+  if(CAT!=='all'){$('jumpBox').hidden=true}
+  const first=vis.find(([g])=>CAT==='all'||CAT===g);LIBG.forEach(([g,c,h])=>$(h).classList.toggle('first',!!first&&first[2]===h));
+  const st=featStory(),fc=$('featCard');fc.hidden=!st||CAT!=='all';
+  if(st&&CAT==='all'){const bp=(PR.books||{})[st.id]||0,found=(PR.endings[st.id]||[]).length,total=(st.endings||[]).length;
+    const txt=st.book?`Þú ert kominn í ${bp+1}. kafla af ${st.len}. Lestu kaflann í bókinni og svaraðu svo spurningunum.`:found>=total&&total?'Þú hefur fundið alla endana. Lestu söguna aftur eða veldu nýja!':`Þú hefur fundið ${found} af ${total} endum. Prófaðu nýja leið!`;
+    const pct=st.book?Math.round(bp/st.len*100):total?Math.round(found/total*100):0;
+    fc.innerHTML=`<span class="fbook"><span class="bcov" style="--c:${bkCol(st.id)}">${st.book?'<span class="brib" aria-hidden="true"></span>':''}<span class="bimg">${svgWrap(drawScene(st.thumb,st.id),'')}</span><span class="btb"><b>${st.title}</b></span></span></span><span class="ftx"><small>Halda áfram</small><b>${st.title}</b><span class="fp">${txt}</span><span class="fact"><button type="button" class="btn primary" data-feat="${st.id}">${st.book?`Lesa ${bp+1}. kafla`:found>=total&&total?'Lesa aftur':'Lesa áfram'}</button><span class="fprog"><i style="width:${pct}%"></i></span><span class="fpl">${st.book?`${bp} af ${st.len} köflum`:`${found} af ${total} endum`}</span></span></span>`}
+}
+$('catSeg').addEventListener('click',e=>{const b=e.target.closest('[data-cat]');if(!b)return;CAT=b.dataset.cat;renderLib()});
+$('featCard').addEventListener('click',e=>{const b=e.target.closest('[data-feat]');if(b)startStory(b.dataset.feat)});
 /* ---------- Tengingar við viðmótið ---------- */
 $('openWords').addEventListener('click',openWords);
 $('wordsClose').addEventListener('click',()=>{renderHome();show('home')});
