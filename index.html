@@ -1058,6 +1058,82 @@ button.wps{cursor:pointer}
 .wobtn{display:flex;gap:10px;flex-wrap:wrap}
 /* foreldrar */
 #worldSet .pmuted{margin:0 0 6px}
+/* ---------- Handbók og leiðarvísir ---------- */
+#tour,#ready{max-width:760px;margin-inline:auto}
+#ready{max-width:600px}
+#guide{max-width:820px;margin-inline:auto}
+.tour{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:20px;align-items:center;background:var(--surface-2);border-radius:20px;padding:16px}
+@media (max-width:640px){.tour{grid-template-columns:1fr}}
+.tpic{min-height:290px;display:grid;place-items:center;border-radius:16px;background:var(--surface);padding:12px}
+.tn{font-size:.85rem;font-weight:700;color:var(--accent)}
+.ttx h2{margin:6px 0 8px!important;font-size:1.45rem!important;letter-spacing:-.02em;line-height:1.15}
+.ttx p{margin:0;font-family:var(--f-read);font-size:1.05rem;line-height:1.55;color:var(--ink)}
+.tdots{display:flex;gap:6px;margin-top:18px}.tdots i{width:8px;height:8px;border-radius:4px;background:var(--line)}.tdots i.on{width:22px;background:var(--accent)}
+.tnav>span{display:flex;gap:10px;flex-wrap:wrap}
+.tart{width:100%;display:grid;gap:10px}
+.tscene svg{display:block;width:100%;height:auto;border-radius:12px}
+.tch{display:grid;gap:6px}.tch span{background:var(--sky-soft);color:var(--accent-deep);border-radius:12px;padding:9px 12px;font-weight:700;font-size:.92rem}
+.tart1{grid-template-columns:1fr 80px;align-items:center}
+.tq{display:grid;gap:6px}.tq small{color:var(--muted);font-weight:600}.tq b{font-size:1rem;line-height:1.3;margin-bottom:2px}
+.tq span{background:var(--surface-2);border-radius:10px;padding:8px 10px;font-weight:600;font-size:.9rem}
+.tq span.ok{background:var(--leaf-soft);box-shadow:inset 0 0 0 2px var(--leaf-deep)}
+.tjar svg{width:80px;height:auto;display:block}
+.tart2 svg{width:100%;height:auto;display:block;border-radius:12px}
+.tart3{grid-template-columns:1fr 1fr}
+.tt{background:var(--surface-2);border-radius:14px;padding:10px 12px;display:grid;gap:1px}
+.tt span{font-size:.78rem;font-weight:700;color:var(--muted)}.tt b{font-size:1.4rem;letter-spacing:-.02em}.tt small{font-size:.8rem;color:var(--muted)}
+.rdok{width:64px;height:64px;border-radius:50%;background:var(--leaf-soft);color:var(--leaf-deep);display:grid;place-items:center}
+.rdok svg{width:32px;height:32px}
+.rdkids{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px}
+.rdkid{display:flex;align-items:center;gap:12px;background:var(--surface-2);border-radius:16px;padding:10px 12px}
+.rdav{width:46px;height:46px;border-radius:50%;overflow:hidden;flex:none}.rdav svg{width:100%;height:100%;display:block}
+.rdkid b{display:block}.rdkid small{color:var(--muted)}
+.rdtips{display:grid;gap:10px;border-top:1px solid var(--line);padding-top:14px}
+.rdtips>div{display:flex;gap:12px;align-items:flex-start;line-height:1.45}
+.rdacts{display:flex;gap:10px;flex-wrap:wrap}.rdacts .obbtn{flex:1 1 200px;width:auto}
+/* handbókin sjálf */
+.hbwrap{display:grid;gap:14px}
+.hbtop{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap}
+.hbtop h2,.hbah h2,.hbwrap>h2{margin:0;font-size:1.7rem;letter-spacing:-.025em}
+.hbtop p{margin:4px 0 0}
+.hbsearch{display:flex;align-items:center;gap:8px;height:44px;width:min(100%,260px);border-radius:12px;background:var(--surface);box-shadow:var(--shadow);padding:0 12px;color:var(--muted)}
+.hbsearch svg{width:18px;height:18px;flex:none}
+.hbsearch input{border:0;outline:0;background:none;font:inherit;font-size:1rem;color:var(--ink);width:100%;min-width:0}
+.hbquick{background:linear-gradient(160deg,#2F7BFF,#0A50C8);color:#fff;border-radius:20px;padding:16px 18px}
+.hbquick b{display:block;font-size:1.05rem;margin-bottom:10px}
+.hbquick ol{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;counter-reset:q}
+.hbquick li{font-size:.92rem;line-height:1.4;counter-increment:q}
+.hbquick li:before{content:counter(q);display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:#fff;color:#0A60D6;font-weight:800;font-size:.8rem;margin-bottom:6px}
+.hbchs{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px}
+.hbch{all:unset;box-sizing:border-box;display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:16px;background:var(--surface);box-shadow:var(--shadow);cursor:pointer;min-height:64px}
+.hbch:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.hbch>span:not(.pic){flex:1;min-width:0}.hbch b{display:block;font-size:1rem}.hbch small{display:block;color:var(--muted);font-size:.86rem;line-height:1.35}
+.hbch .chev{width:16px;height:16px;color:var(--muted);flex:none}
+.hbfoot{display:flex;gap:6px;flex-wrap:wrap}
+.hbh{margin:6px 0 0;font-size:1.05rem}
+.hbcrumb{justify-self:start;padding-left:0!important}
+.hbah{display:flex;align-items:center;gap:14px}
+.hbbody{background:var(--surface);border-radius:20px;box-shadow:var(--shadow);padding:20px 22px;line-height:1.55}
+.hbbody h3{margin:18px 0 6px;font-size:1.1rem}.hbbody h3:first-child{margin-top:0}
+.hbbody p{margin:0 0 8px}.hbbody ul{margin:0 0 8px;padding-left:20px;display:grid;gap:5px}
+.hbsteps{list-style:none;margin:0 0 10px;padding:0;display:grid;gap:8px;counter-reset:s}
+.hbsteps li{counter-increment:s;position:relative;padding-left:36px;min-height:26px}
+.hbsteps li:before{content:counter(s);position:absolute;left:0;top:0;width:24px;height:24px;border-radius:50%;background:var(--accent);color:#fff;font-weight:700;font-size:.8rem;display:grid;place-items:center}
+.hbtip{background:var(--sun-soft);border-radius:14px;padding:12px 14px;margin-top:10px}
+.hbtip b{color:var(--sun-deep)}
+.hbgo{display:flex;gap:8px;flex-wrap:wrap}
+.hbpn{display:flex;justify-content:space-between;gap:10px;border-top:1px solid var(--line);padding-top:10px}
+.hbpn .linkbtn{display:grid;gap:2px;text-align:left}.hbpn small{color:var(--muted);font-weight:500;font-size:.8rem}
+.hbfaq{background:var(--surface);border-radius:18px;box-shadow:var(--shadow);overflow:hidden}
+.hbq{border-top:1px solid var(--line)}.hbq:first-child{border-top:0}
+.hbq button{all:unset;box-sizing:border-box;width:100%;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:14px 18px;font-weight:600;cursor:pointer;min-height:52px}
+.hbq button:focus-visible{outline:3px solid var(--accent);outline-offset:-3px}
+.hbq button svg{width:18px;height:18px;flex:none;color:var(--muted);transition:transform .2s}
+.hbq.open{background:var(--surface-2)}.hbq.open button svg{transform:rotate(180deg)}
+.hbq p{margin:0;padding:0 18px 14px;line-height:1.55}
+.hbcontact{display:flex;gap:14px;align-items:center;background:var(--surface);border-radius:18px;box-shadow:var(--shadow);padding:14px 18px;margin-top:12px}
+.hbcontact b{display:block}
+.wlguide{margin-top:4px}
 </style>
 </head>
 <body>
@@ -1182,13 +1258,19 @@ button.wps{cursor:pointer}
         <div class="wlmark"><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5C6.5 4 9.5 4 12 6c2.5-2 5.5-2 8-.5V19c-2.5-1.5-5.5-1.5-8 .5-2.5-2-5.5-2-8-.5z M12 6v13.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></i>Lestrarstund</div>
         <h1>Lestrarstund fyrir alla fjölskylduna</h1>
         <p class="wllead">Íslenskt lestrarapp fyrir krakka 7–10 ára. Barnið les, velur hvernig sagan fer og safnar stjörnum.</p>
-        <ul class="wlft"><li><i style="background:#0A60D6"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5C6.5 4 9.5 4 12 6c2.5-2 5.5-2 8-.5V19c-2.5-1.5-5.5-1.5-8 .5-2.5-2-5.5-2-8-.5z M12 6v13.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></i><div><b>Sögur þar sem barnið velur leiðina</b><span>Yfir 30 sögur og bækur til að lesa heima</span></div></li><li><i style="background:#AF52DE"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 00-3.6 10.8c.6.5 1 1.2 1.1 2V16h5v-.2c.1-.8.5-1.5 1.1-2A6 6 0 0012 3z"/></svg></i><div><b>Byggir upp lesskilning</b><span>Spurningar í lok hverrar sögu dýpka skilning á textanum</span></div></li><li><i style="background:#1E8E3E"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></i><div><b>Yfirlit fyrir foreldra</b><span>Lestrardagar, mínútur og leshraði</span></div></li><li><i style="background:#C25E00"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9a15 15 0 0120 0M5 12.5a10 10 0 0114 0M8.5 16a5 5 0 017 0"/><circle cx="12" cy="19.5" r="1"/></svg></i><div><b>Virkar líka án nets</b><span>Í spjaldtölvu og síma</span></div></li></ul>
-        <div class="wlacts"><button class="obbtn primary" id="wlNew" type="button">Stofna aðgang</button><button class="obbtn soft" id="wlLogin" type="button">Ég á aðgang: skrá inn</button><button class="obbtn plain" id="wlLocal" type="button">Prófa fyrst án aðgangs</button></div>
+        <ul class="wlft"><li><i style="background:#0A60D6"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5C6.5 4 9.5 4 12 6c2.5-2 5.5-2 8-.5V19c-2.5-1.5-5.5-1.5-8 .5-2.5-2-5.5-2-8-.5z M12 6v13.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></i><div><b>Sögur þar sem barnið velur leiðina</b><span>Yfir 40 sögur á tveimur þyngdarstigum</span></div></li><li><i style="background:#AF52DE"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 00-3.6 10.8c.6.5 1 1.2 1.1 2V16h5v-.2c.1-.8.5-1.5 1.1-2A6 6 0 0012 3z"/></svg></i><div><b>Byggir upp lesskilning</b><span>Spurningar í lok hverrar sögu dýpka skilning á textanum</span></div></li><li><i style="background:#1E8E3E"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></i><div><b>Yfirlit fyrir foreldra</b><span>Lestrardagar, mínútur og leshraði</span></div></li><li><i style="background:#C25E00"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9a15 15 0 0120 0M5 12.5a10 10 0 0114 0M8.5 16a5 5 0 017 0"/><circle cx="12" cy="19.5" r="1"/></svg></i><div><b>Virkar líka án nets</b><span>Í spjaldtölvu og síma</span></div></li></ul>
+        <div class="wlacts"><button class="obbtn primary" id="wlNew" type="button">Stofna aðgang</button><button class="obbtn soft" id="wlLogin" type="button">Ég á aðgang: skrá inn</button><button class="obbtn plain" id="wlLocal" type="button">Prófa fyrst án aðgangs</button><button class="obbtn plain wlguide" id="wlGuide" type="button">Hvernig virkar appið?</button></div>
         <p class="wlfoot"><button type="button" class="oblink" data-legal="privacy">Persónuvernd</button> · <button type="button" class="oblink" data-legal="terms">Skilmálar</button></p>
       </div>
     </div>
   </section>
   <section id="onb" hidden><div id="obBox"></div></section>
+  <section id="tour" hidden><div id="tourBox"></div></section>
+  <section id="ready" hidden><div id="readyBox"></div></section>
+  <section id="guide" hidden>
+    <div class="phead"><button class="btn ghost" id="guideBack" type="button">Til baka</button></div>
+    <div class="hbwrap" id="guideBox"></div>
+  </section>
   <section id="legal" hidden>
     <div class="phead"><h2 id="lgTitle"></h2><button class="btn ghost" id="lgBack" type="button">Til baka</button></div>
     <div class="legal" id="lgBody"></div>
@@ -1472,6 +1554,7 @@ button.wps{cursor:pointer}
         <div class="ngh">Lesendur</div><div class="ngrp" id="pTabs" role="tablist" aria-label="Veldu lesanda"></div>
         <div class="ngh">Sameiginlegt</div><div class="ngrp" id="pNavShared"></div>
         <div class="ngh">Gögn</div><div class="ngrp" id="pNavData"></div>
+        <div class="ngh">Hjálp</div><div class="ngrp" id="pNavHelp"></div>
       </nav>
       <div class="pmain">
         <button class="pback pback2" id="pBack2" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Stillingar</button>
@@ -1663,6 +1746,8 @@ button.wps{cursor:pointer}
         </div>
         <p class="pfeed" id="acFeed" aria-live="polite"></p>
         </div>
+        <div class="ppane" data-pane="hb"><div class="hbwrap" id="hbBox"></div></div>
+        <div class="ppane" data-pane="faq"><div class="hbwrap" id="faqBox"></div></div>
         <div class="ppane" data-pane="backup">
         <div class="pcard">
           <h3>Öryggisafrit</h3>
@@ -5504,7 +5589,7 @@ function toast(title,sub,{kind='calm',persist=false,ms=7000}={}){
 }
 
 /* ================= Heim ================= */
-const SECTIONS=['welcome','onb','legal','start','home','read','quiz','reward','lock','parent','done','words','advent','trip','world','wcountry','wpass','wopen','buddy','maker','avatars','homeread'];
+const SECTIONS=['welcome','onb','tour','ready','guide','legal','start','home','read','quiz','reward','lock','parent','done','words','advent','trip','world','wcountry','wpass','wopen','buddy','maker','avatars','homeread'];
 function show(id){document.body.classList.toggle('onstart',id==='start');if(id!=='read'&&typeof REC!=='undefined'&&REC.mr)recStop();for(const s of SECTIONS)$(s).hidden=s!==id;window.scrollTo(0,0)}
 let selMin=15;
 function weekCount(p){const now=new Date(),mon=new Date(now);mon.setDate(now.getDate()-((now.getDay()+6)%7));let n=0;for(let i=0;i<7;i++){const d=new Date(mon);d.setDate(mon.getDate()+i);if(p.days.includes(dkey(d)))n++}return n}
@@ -6244,6 +6329,7 @@ function renderNav(){const ids=visIds(),inR=PV.view==='set'&&PV.pane==='reader';
   $('pNavShared').innerHTML=row('jar','gift','Stjörnukrukkan',`${nf(Math.min(S.jar.n,S.jar.goal))}/${nf(S.jar.goal)}`)+row('xmas','snow','Jóladagatalið',S.xmas.on?'Sýnilegt':'Falið')+row('first','ear','Mamma eða pabbi les fyrst','');
   const bk=S.backup?(Date.now()-S.backup<DAY?'Í dag':Date.now()-S.backup<2*DAY?'Í gær':`${Math.floor((Date.now()-S.backup)/DAY)} d.`):'Aldrei';
   $('pNavData').innerHTML=row('acct','shield','Aðgangur',AC.mode==='cloud'&&AC.fid?'Tengt':'Ekki tengt')+row('backup','cloud','Afrit',bk);
+  $('pNavHelp').innerHTML=row('hb','hbook','Handbók','')+row('faq','help','Algengar spurningar','');
   const p=PP,id=pidOf(PP);$('pHd').innerHTML=`<span class="phav">${avatarSVG(avId(p,id))}</span><div><h2>${esc(p.name)}</h2><span class="pmuted">${p.yrs||p.age} ára · ${p.age===9?'lengri sögur':'styttri sögur'}</span></div>`;
   $('rSeg').innerHTML=[['yfirlit','Yfirlit'],['stillingar','Stillingar'],['umbun','Umbun'],['upptokur','Upptökur'],['saga','Saga']].map(([k,l])=>`<button type="button" role="tab" data-rs="${k}" aria-selected="${PV.sub===k}">${l}</button>`).join('');
   document.querySelectorAll('#pSet .rsec').forEach(x=>x.hidden=x.dataset.rs!==PV.sub);
@@ -6251,7 +6337,7 @@ function renderNav(){const ids=visIds(),inR=PV.view==='set'&&PV.pane==='reader';
 function pDashShow(){PV.view='dash';PV.open=false;$('pDash').hidden=false;$('pSet').hidden=true;renderDash();window.scrollTo(0,0)}
 function pSettings(){PV.view='set';PV.open=false;$('pDash').hidden=true;$('pSet').hidden=false;pApply()}
 function pGo(pane,sub){PV.view='set';PV.pane=pane;if(sub)PV.sub=sub;PV.open=true;$('pDash').hidden=true;$('pSet').hidden=false;pApply();window.scrollTo(0,0)}
-function pApply(){document.querySelectorAll('#pSet .ppane').forEach(x=>x.hidden=x.dataset.pane!==PV.pane);$('pSet').classList.toggle('open',PV.open);renderNav();if(PV.pane==='acct')renderAcct();if(PV.pane==='backup')$('bkInfo').textContent=AC.mode==='cloud'&&AC.fid?'Gögnin eru samstillt við aðganginn þinn. Upptökur eru þó aðeins geymdar á þessu tæki, svo gott er að vista afrit með upptökunum öðru hvoru.':'Öll gögn eru geymd á þessu tæki. Vistaðu afrit reglulega svo ekkert tapist ef vafragögnum er eytt eða skipt er um spjaldtölvu. Afritið nær yfir alla lesendur.'}
+function pApply(){document.querySelectorAll('#pSet .ppane').forEach(x=>x.hidden=x.dataset.pane!==PV.pane);$('pSet').classList.toggle('open',PV.open);renderNav();if(PV.pane==='hb'){HBCTX='parent';HBFAQ=false;hbRender()}if(PV.pane==='faq')faqRender();if(PV.pane==='acct')renderAcct();if(PV.pane==='backup')$('bkInfo').textContent=AC.mode==='cloud'&&AC.fid?'Gögnin eru samstillt við aðganginn þinn. Upptökur eru þó aðeins geymdar á þessu tæki, svo gott er að vista afrit með upptökunum öðru hvoru.':'Öll gögn eru geymd á þessu tæki. Vistaðu afrit reglulega svo ekkert tapist ef vafragögnum er eytt eða skipt er um spjaldtölvu. Afritið nær yfir alla lesendur.'}
 $('pSetBtn').addEventListener('click',pSettings);
 $('pBack').addEventListener('click',()=>{renderParent();pDashShow()});
 $('pBack2').addEventListener('click',()=>{PV.open=false;pApply();window.scrollTo(0,0)});
@@ -6259,7 +6345,7 @@ $('dKids').addEventListener('click',e=>{const a=e.target.closest('#dAdd');if(a){
 $('dQuick').addEventListener('click',e=>{const b=e.target.closest('[data-q]');if(!b)return;const q=b.dataset.q;
   if(q==='set')return pSettings();if(q==='xmas')return pGo('xmas');pGo('reader','umbun');const t={home:'phDate',give:'giveBtns',kv:'kvName'}[q];setTimeout(()=>{const el=$(t);if(el){el.scrollIntoView({block:'center'});if(q==='home')el.focus()}},60)});
 $('pTabs').addEventListener('click',e=>{if(e.target.closest('[data-pp]'))pGo('reader')});
-$('pSet').addEventListener('click',e=>{const n=e.target.closest('.pnav [data-pane]');if(n){pGo(n.dataset.pane);return}const r=e.target.closest('#rSeg [data-rs]');if(r){PV.sub=r.dataset.rs;renderNav()}});
+$('pSet').addEventListener('click',e=>{const n=e.target.closest('.pnav [data-pane]');if(n){if(n.dataset.pane==='hb'){HBV.ch=null;HBV.q=''}pGo(n.dataset.pane);return}const r=e.target.closest('#rSeg [data-rs]');if(r){PV.sub=r.dataset.rs;renderNav()}});
 
 /* ---------- Bókasafnið (B) ---------- */
 let CAT='all';
@@ -6797,6 +6883,187 @@ function worldNote(){const p=PR;if(worldOpen(p))worldCheck(p);if(!p.wnote)return
   setTimeout(()=>toast(n.m==='home'?'Ferðin byrjar aftur á Íslandi':'Einn reit til baka',`Það datt út lestrardagur, svo nú ertu ${n.to}. Lestu í dag til að fljúga áfram!`,{kind:'soft',ms:10000}),900)}
 function worldIntro(){const p=PR;if(!worldOpen(p)||p.wseen)return;setTimeout(()=>{if($('home').hidden||PR!==p||p.wseen)return;p.wseen=true;p.wfrom=p.wfrom||Date.now();save();renderWOpen();show('wopen')},700)}
 
+/* ---------- Handbók og leiðarvísir ---------- */
+PIC.hbook='<path d="M4 5.5C6.5 4 9.5 4 12 6c2.5-2 5.5-2 8-.5V19c-2.5-1.5-5.5-1.5-8 .5-2.5-2-5.5-2-8-.5z"/><path d="M12 6v13.5"/>';PICC.hbook='#34C759';
+PIC.help='<circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 114 2c-1 .6-1.5 1.1-1.5 2.2M12 17h.01"/>';PICC.help='#8E8E93';
+PIC.play='<path d="M7 4.5v15l12-7.5z"/>';PICC.play='#FF9500';
+PIC.bulb='<path d="M9 18h6M10 21h4M12 3a6 6 0 00-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0012 3z"/>';PICC.bulb='#AF52DE';
+PIC.star='<path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9z"/>';PICC.star='#FFB800';
+PIC.globe='<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14.5 0 18M12 3c-3 3.5-3 14.5 0 18"/>';PICC.globe='#34C759';
+PIC.hblue='<path d="M4 5.5C6.5 4 9.5 4 12 6c2.5-2 5.5-2 8-.5V19c-2.5-1.5-5.5-1.5-8 .5-2.5-2-5.5-2-8-.5z"/><path d="M12 6v13.5"/>';PICC.hblue='#0A60D6';
+PIC.hchart='<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>';PICC.hchart='#0A84FF';
+PIC.hhome='<path d="M5 4h4v16H5zM10 4h4v16h-4zM15.5 5.2l3.6-1 3 15.3-3.6 1z"/>';PICC.hhome='#FF6B35';
+PIC.mail='<rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5L12 13l8.5-6.5"/>';PICC.mail='#0A60D6';
+
+const HB=[
+ {id:'byrja',ic:'hblue',t:'Fyrstu skrefin',d:'Heimaskjár, aðgangur, börn og lykilorð',b:`
+<h3>Setja appið á heimaskjáinn</h3>
+<p>Lestrarstund er vefapp. Þegar það er komið á heimaskjáinn opnast það eins og venjulegt app og virkar líka án nettengingar.</p>
+<ul><li><b>iPad og iPhone:</b> Opnaðu slóðina í Safari, ýttu á Deila-táknið og veldu „Bæta á heimaskjá“.</li><li><b>Android:</b> Opnaðu slóðina í Chrome, ýttu á ⋮ og veldu „Setja upp forrit“ eða „Bæta á heimaskjá“.</li></ul>
+<h3>Aðgangur</h3>
+<p>Með aðgangi geymist lesturinn í skýinu og samstillist á milli tækja. Þú getur líka notað appið án aðgangs. Þá eru gögnin aðeins á þessu tæki og hægt er að tengja aðgang seinna undir Stillingar → Aðgangur.</p>
+<h3>Börnin</h3>
+<p>Hægt er að hafa allt að fimm lesendur. Fyrir hvert barn velur þú nafn, aldur, þyngdarstig og mynd. Styttri sögurnar henta 7–8 ára og lengri sögurnar 9–10 ára. Nafnið birtist í sögunum þar sem barnið er sjálft hetjan.</p>
+<h3>Lykilorð foreldra</h3>
+<p>Fjögurra stafa lykilorð læsir foreldrasvæðinu og heimalestri. Ekki nota sama númer og á greiðslukorti eða síma. Foreldrasvæðið læsist sjálfkrafa eftir tvær mínútur án notkunar.</p>`,go:[['Opna aðgang','acct']]},
+ {id:'lestur',ic:'play',t:'Daglegur lestur',d:'Svona les barnið sögu frá upphafi til enda',b:`
+<ol class="hbsteps"><li><b>Barnið ýtir á myndina sína</b> á upphafssíðunni. Hringurinn í kringum myndina sýnir hversu langt lestri dagsins er komið.</li>
+<li><b>Velur lestrartíma og sögu.</b> Á heimasíðu barnsins er valið hversu lengi á að lesa, sjálfgefið 15 mínútur, og hvort hver síða er lesin einu sinni eða tvisvar. Valið geymist.</li>
+<li><b>Les og ræður framhaldinu.</b> Neðst á hverri síðu velur barnið hvað gerist næst. Hver saga á sér þrjá ólíka enda.</li>
+<li><b>Klárar daginn.</b> Klukkan telur niður. Þegar tíminn er búinn klárar barnið síðuna í rólegheitum og dagurinn telst sem lestrardagur.</li></ol>
+<h3>Hnapparnir efst</h3>
+<p><b>Pása</b> stöðvar klukkuna, til dæmis ef barnið þarf að fara frá. <b>Ég er búinn</b> lýkur lestrinum. Mínúturnar sem barnið las teljast samt með.</p>
+<h3>Sögurnar</h3>
+<p>Sögurnar skiptast í flokkana Þú ert hetjan, Ævintýri, Sannar sögur um íþróttastjörnur og Saga og náttúra. Í desember bætist jóladagatalið við ef það er opið.</p>
+<div class="hbtip"><b>Skipta um mynd:</b> Barnið heldur fingri á myndinni sinni á upphafssíðunni í þrjár sekúndur.</div>`},
+ {id:'skilningur',ic:'bulb',t:'Lestrarhjálp og lesskilningur',d:'Orðskýringar, atkvæði, lesstika og spurningar',b:`
+<h3>Á meðan barnið les</h3>
+<ul><li><b>Orðskýringar:</b> Erfið orð eru undirstrikuð. Barnið ýtir á orðið og fær skýringu og orðið fer í orðabankann.</li>
+<li><b>Atkvæðaskipting:</b> Löng orð fá græna línu. Þegar barnið ýtir á þau skiptast þau í atkvæði. Hægt er að slökkva á þessu fyrir hvert barn.</li>
+<li><b>Leturstærð og lesstika:</b> A− og A+ breyta stærð letursins og lesstikan hjálpar barninu að fylgja línunni.</li>
+<li><b>Myndaverkefni:</b> Á sumum síðum á barnið að finna eitthvað á myndinni. Til þess þarf það að lesa textann vel.</li>
+<li><b>Hvað gerist næst?</b> Einu sinni í hverri sögu giskar barnið á framhaldið áður en það les áfram.</li></ul>
+<h3>Í lok sögunnar</h3>
+<p>Barnið svarar spurningum um efni sögunnar og merkingu orða. Fyrir hverja kláraða sögu fær það eina stjörnu og eina í viðbót fyrir hvert rétt svar. Ef barnið skrifar sinn eigin endi, 12 orð eða fleiri, fær það líka stjörnu og þið getið lesið endinn í foreldrasvæðinu.</p>
+<h3>Orðabankinn</h3>
+<p>Orðin sem barnið hefur skoðað safnast í orðabankann. Þar getur það rifjað þau upp með stuttum æfingum og fengið stjörnur.</p>`,go:[['Stillingar barns','reader:stillingar']]},
+ {id:'stjornur',ic:'star',t:'Stjörnur og umbun',d:'Stjörnukrukkan og að gefa stjörnur',b:`
+<h3>Svona fær barnið stjörnur</h3>
+<ul><li>Ein stjarna fyrir hverja kláraða sögu og ein fyrir hvert rétt svar.</li><li>Ein stjarna fyrir eigin endi á sögu, 12 orð eða fleiri.</li><li>Ein stjarna fyrir hverjar 5 mínútur af heimalestri, mest fjórar á dag.</li><li>Tvær stjörnur fyrir hvern stimpil í vegabréfið.</li></ul>
+<h3>Stjörnukrukkan</h3>
+<p>Öll börnin á heimilinu safna í sömu krukkuna. Þið veljið hversu margar stjörnur þarf og hver umbunin er, til dæmis bíóferð eða pizzukvöld. Þegar krukkan fyllist sjá börnin það á upphafssíðunni og þið tæmið hana í stillingunum.</p>
+<h3>Gefa stjörnur</h3>
+<p>Á mælaborðinu er Gefa stjörnur. Þar getið þið gefið eina, þrjár eða fimm stjörnur, til dæmis fyrir lestur í skólanum. Barnið fær tilkynningu næst þegar það opnar appið.</p>`,go:[['Opna stjörnukrukkuna','jar']]},
+ {id:'ferd',ic:'globe',t:'Ferðalögin',d:'Ísland, heimurinn og vegabréfið',b:`
+<p>Hver lestrardagur færir barnið á nýjan stað á kortinu. Fyrst fer það hringinn um Ísland og svo um heiminn.</p>
+<h3>Hvenær telst dagur sem lestrardagur?</h3>
+<p>Þegar barnið hefur lesið jafn lengi og lestrartíminn segir til um, í appinu eða í heimalestri sem þið skráið. Hver dagur telst aðeins einu sinni.</p>
+<h3>Ísland og heimurinn</h3>
+<p>Hringurinn um Ísland er 23 staðir og hverjum fylgir fróðleiksmoli. Eftir hringinn fær barnið vegabréf og flýgur til 30 landa í öllum heimsálfum, auk leynilegs bónuss. Í hverju landi les barnið um sögu landsins, sér þjóðfánann og lærir að heilsa. Rétt svar við spurningunni gefur stimpil og tvær stjörnur.</p>
+<h3>Að opna heimsferðina strax</h3>
+<ol class="hbsteps"><li>Veldu barnið undir Lesendur í stillingunum.</li><li>Opnaðu flipann <b>Stillingar</b>.</li><li>Undir Ferðalagið um heiminn velur þú <b>Opna núna</b>.</li></ol>
+<div class="hbtip"><b>Lesa samfleytt?</b> Á sama stað getið þið valið hvort barnið þurfi að lesa á hverjum degi. Ef dagur dettur út fer það þá einn reit til baka eða aftur heim til Íslands. Stimplarnir haldast alltaf.</div>`,go:[['Stillingar barns','reader:stillingar']]},
+ {id:'heima',ic:'hhome',t:'Heimalestur',d:'Lestur í bókum og kvittun fyrir skólann',b:`
+<p>Lestur í venjulegum bókum telst líka með. Hann gefur stjörnur og getur fært barnið á næsta stað á kortinu.</p>
+<h3>Barnið skráir sjálft</h3>
+<p>Á heimasíðu barnsins er hnappurinn Ég las bók heima. Barnið velur mínúturnar og þú staðfestir með lykilorði foreldra.</p>
+<h3>Foreldri skráir</h3>
+<p>Á mælaborðinu er Skrá heimalestur. Þar er hægt að skrá lestur aftur í tímann, til dæmis ef gleymdist að skrá í gær. Ef færslu er eytt eru stjörnurnar dregnar frá.</p>
+<h3>Kvittun fyrir skólann</h3>
+<p>Prenta kvittun á mælaborðinu sýnir lestur vikunnar dag fyrir dag: hvað var lesið og hversu lengi. Þú kvittar fyrir vikuna og prentar blaðið út fyrir skólann.</p>`},
+ {id:'foreldrar',ic:'hchart',t:'Foreldrasvæðið',d:'Mælaborð, leshraði og stillingar hvers barns',b:`
+<h3>Mælaborðið</h3>
+<p>Sýnir hvert barn, lestur dagsins, mínútur vikunnar og það sem vert er að hrósa fyrir. Ýttu á barn til að sjá nánar.</p>
+<h3>Leshraði</h3>
+<p>Leshraðinn er reiknaður í orðum á mínútu út frá tímanum sem hver síða er opin. Pásur og tími í myndaverkefnum teljast ekki með og síður sem eru opnar mjög stutt eða mjög lengi eru ekki teknar með. Línuritið sýnir framfarir síðustu vikna.</p>
+<h3>Flipar hvers barns</h3>
+<ul><li><b>Yfirlit:</b> Stjörnur, leshraði, lestrardagar og hvernig gengur með spurningarnar.</li><li><b>Stillingar:</b> Nafn, þyngdarstig, stökk upp, atkvæðaskipting, ferðalagið og fleira.</li><li><b>Umbun:</b> Heimalestur, gefa stjörnur og viðurkenningarskjöl.</li><li><b>Upptökur:</b> Upplestur barnsins, ef það hefur tekið sig upp.</li><li><b>Saga:</b> Öll lestrarskipti með sögum, endum og svörum.</li></ul>
+<h3>Mamma eða pabbi les fyrst</h3>
+<p>Undir Sameiginlegt getur foreldri lesið sögu upphátt og tekið lesturinn upp. Barnið getur þá hlustað á söguna áður en það les hana sjálft.</p>
+<h3>Stökk upp</h3>
+<p>Þegar barn á styttri sögum les 70 orð á mínútu eða meira og svarar 80% spurninga rétt opnast sjálfkrafa auðveldustu sögurnar fyrir 9–10 ára. Þið getið líka opnað eða lokað fyrir það handvirkt.</p>`},
+ {id:'adgangur',ic:'shield',t:'Aðgangur og öryggi',d:'Samstilling, boðskóði, afrit og persónuvernd',b:`
+<h3>Samstilling</h3>
+<p>Þegar aðgangur er tengdur samstillist lesturinn sjálfkrafa á milli tækja. Hvert barn getur lesið á sínu tæki án þess að tækin skrifi yfir gögn hvors annars.</p>
+<h3>Annað foreldri</h3>
+<p>Undir Aðgangur býrð þú til boðskóða. Hitt foreldrið stofnar aðgang og slær inn kóðann. Kóðinn gildir í sjö daga.</p>
+<h3>Gleymt lykilorð</h3>
+<p>Ýttu á Gleymt lykilorð? á lykilorðsskjánum. Þú skráir þig inn með netfanginu og velur nýtt lykilorð. Eftir fimm rangar tilraunir læsist lykilorðið tímabundið.</p>
+<h3>Afrit</h3>
+<p>Undir Afrit getur þú vistað öll gögn í eina skrá, líka upptökurnar, og sótt þau aftur á nýju tæki.</p>
+<h3>Persónuvernd</h3>
+<p>Engar auglýsingar eru í appinu og engin rakning. Börnin skrá sig aldrei inn og geta ekki haft samskipti við aðra. Upptökur af lestri eru eingöngu geymdar á tækinu og fara aldrei í skýið.</p>`,go:[['Opna aðgang','acct'],['Opna afrit','backup']]},
+];
+const FAQ=[
+ ['Ég gleymdi lykilorði foreldra. Hvað geri ég?','Ýttu á „Gleymt lykilorð?“ á lykilorðsskjánum. Þú skráir þig inn með netfanginu þínu og velur nýtt lykilorð. Ef appið er notað án aðgangs þarf að sækja afrit eða byrja upp á nýtt.'],
+ ['Getum við bæði foreldrin notað appið?','Já. Farðu í Stillingar → Aðgangur og búðu til boðskóða. Hitt foreldrið stofnar aðgang í sínu tæki og slær inn kóðann. Kóðinn gildir í sjö daga.'],
+ ['Hvernig set ég appið á heimaskjáinn?','Á iPad og iPhone opnar þú slóðina í Safari, ýtir á Deila-táknið og velur „Bæta á heimaskjá“. Á Android opnar þú slóðina í Chrome, ýtir á ⋮ og velur „Setja upp forrit“.'],
+ ['Hvernig færi ég barn á milli þyngdarstiga?','Veldu barnið í stillingunum, opnaðu flipann Stillingar og veldu Styttri sögur (7–8 ára) eða Lengri sögur (9–10 ára) undir Aldur og sögur.'],
+ ['Hvað gerist ef barnið missir úr degi?','Sjálfgefið ekkert. Barnið færist áfram á kortinu fyrir hvern lestrardag. Ef þið hafið valið að barnið þurfi að lesa samfleytt fer það einn reit til baka eða aftur heim til Íslands.'],
+ ['Virkar appið án nettengingar?','Já. Þegar appið hefur verið opnað einu sinni virkar það líka án nets og samstillist þegar tenging kemst aftur á.'],
+ ['Hvert fara upptökurnar af lestrinum?','Þær eru eingöngu geymdar á tækinu og fara aldrei í skýið. Ef þú vilt geyma þær er best að vista afrit.'],
+ ['Barnið sér ekki nýjustu útgáfuna af appinu.','Lokaðu appinu alveg og opnaðu það aftur. Ef það dugar ekki skaltu endurhlaða síðuna einu sinni.'],
+];
+const HBV={ch:null,q:'',open:-1};
+function hbKids(){return visIds().map(id=>[id,S.profiles[id].name])}
+function hbHomeHTML(ctx){const q=HBV.q.trim().toLowerCase();
+  const strip=s=>s.replace(/<[^>]+>/g,' ').toLowerCase();
+  const chs=HB.filter(c=>!q||(c.t+' '+c.d+' '+strip(c.b)).toLowerCase().includes(q));
+  const fq=q?FAQ.map((f,i)=>[f,i]).filter(([f])=>(f[0]+' '+f[1]).toLowerCase().includes(q)):[];
+  return `<div class="hbtop"><div><h2>Handbók</h2><p class="pmuted">Allt um Lestrarstund á einum stað.</p></div><label class="hbsearch"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="M20 20l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><input type="search" id="hbQ" placeholder="Leita í handbókinni" value="${esc(HBV.q)}" aria-label="Leita í handbókinni"></label></div>
+  ${q?'':`<div class="hbquick"><b>Í stuttu máli</b><ol><li>Barnið ýtir á myndina sína og velur sögu.</li><li>Les í þann tíma sem er valinn og ræður framhaldinu.</li><li>Svarar spurningum og fær stjörnur.</li><li>Hver lestrardagur færir það á nýjan stað á kortinu.</li></ol></div>`}
+  <div class="hbchs">${chs.map(c=>`<button type="button" class="hbch" data-hbch="${c.id}">${pic(c.ic,36)}<span><b>${c.t}</b><small>${c.d}</small></span>${CHEV}</button>`).join('')}</div>
+  ${q&&!chs.length&&!fq.length?`<p class="pmuted">Ekkert fannst fyrir „${esc(HBV.q)}“. Prófaðu annað orð eða skoðaðu algengar spurningar.</p>`:''}
+  ${fq.length?`<h3 class="hbh">Algengar spurningar</h3>${faqHTML(fq)}`:''}
+  <div class="hbfoot"><button type="button" class="linkbtn" data-hbtour="1">Sýna leiðarvísinn aftur</button>${ctx==='parent'?'':`<button type="button" class="linkbtn" data-hbfaq="1">Algengar spurningar</button>`}</div>`}
+function hbChapterHTML(ctx){const i=HB.findIndex(c=>c.id===HBV.ch),c=HB[i],pv=HB[i-1],nx=HB[i+1];
+  let go='';if(ctx==='parent'&&c.go){go=c.go.map(([l,t])=>t==='reader:stillingar'?hbKids().map(([id,n])=>`<button type="button" class="btn ghost small" data-hbgo="${t}" data-kid="${id}">Stillingar: ${esc(n)}</button>`).join(''):`<button type="button" class="btn ghost small" data-hbgo="${t}">${l}</button>`).join('');go=`<div class="hbgo">${go}</div>`}
+  return `<button type="button" class="linkbtn hbcrumb" data-hbhome="1">‹ Handbók</button><div class="hbah">${pic(c.ic,44)}<h2>${c.t}</h2></div><div class="hbbody">${c.b}</div>${go}
+  <div class="hbpn">${pv?`<button type="button" class="linkbtn" data-hbch="${pv.id}"><small>Fyrri kafli</small>‹ ${pv.t}</button>`:'<span></span>'}${nx?`<button type="button" class="linkbtn" data-hbch="${nx.id}" style="text-align:right"><small>Næsti kafli</small>${nx.t} ›</button>`:'<span></span>'}</div>`}
+function faqHTML(list){return `<div class="hbfaq">${list.map(([f,i])=>`<div class="hbq${HBV.open===i?' open':''}"><button type="button" data-faq="${i}" aria-expanded="${HBV.open===i}"><span>${f[0]}</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>${HBV.open===i?`<p>${f[1]}</p>`:''}</div>`).join('')}</div>`}
+function faqPageHTML(){return `<h2>Algengar spurningar</h2><p class="pmuted" style="margin-bottom:12px">Stutt svör við því sem foreldrar spyrja oftast um.</p>${faqHTML(FAQ.map((f,i)=>[f,i]))}<div class="hbcontact">${pic('mail',40)}<div><b>Fannstu ekki svarið?</b><span class="pmuted">Sendu okkur línu á ${esc(CONTACT_EMAIL)} og við svörum eins fljótt og hægt er.</span></div></div>`}
+const CONTACT_EMAIL='[NETFANG]';
+let HBCTX='parent',HBFAQ=false;
+function faqRender(){$('faqBox').innerHTML=faqPageHTML()}
+$('faqBox').addEventListener('click',e=>{const t=e.target.closest('[data-faq]');if(!t)return;const i=+t.dataset.faq;HBV.open=HBV.open===i?-1:i;faqRender()});
+$('hbBox').addEventListener('click',hbClick);
+function hbRender(){const box=HBCTX==='parent'?$('hbBox'):$('guideBox');if(!box)return;
+  box.innerHTML=HBFAQ?`${HBCTX==='parent'?'':'<button type="button" class="linkbtn hbcrumb" data-hbhome="1">‹ Handbók</button>'}${faqPageHTML()}`:HBV.ch?hbChapterHTML(HBCTX):hbHomeHTML(HBCTX);
+  const q=box.querySelector('#hbQ');if(q){q.oninput=()=>{HBV.q=q.value;const pos=q.selectionStart;hbRender();const n=box.querySelector('#hbQ');n.focus();try{n.setSelectionRange(pos,pos)}catch(e){}}}}
+function hbClick(e){const t=e.target.closest('[data-hbch],[data-hbhome],[data-faq],[data-hbgo],[data-hbtour],[data-hbfaq]');if(!t)return;
+  if(t.dataset.hbch){HBV.ch=t.dataset.hbch;HBFAQ=false;hbRender();(HBCTX==='parent'?$('hbBox'):$('guideBox')).scrollIntoView({block:'start'});window.scrollTo(0,0);return}
+  if(t.dataset.hbhome){HBV.ch=null;HBFAQ=false;hbRender();return}
+  if(t.dataset.hbfaq){HBFAQ=true;HBV.ch=null;hbRender();window.scrollTo(0,0);return}
+  if(t.dataset.faq!=null){const i=+t.dataset.faq;HBV.open=HBV.open===i?-1:i;hbRender();return}
+  if(t.dataset.hbtour){tourOpen(HBCTX==='parent'?'parent':'guide');return}
+  if(t.dataset.hbgo){const g=t.dataset.hbgo;if(g==='reader:stillingar'){PP=S.profiles[t.dataset.kid];renderParent();pGo('reader','stillingar')}else pGo(g);return}}
+function guideOpen(back){HBCTX='guide';HBV.ch=null;HBV.q='';HBFAQ=false;GUIDE_BACK=back||'start';hbRender();show('guide')}
+let GUIDE_BACK='start';
+
+/* ---------- Leiðarvísirinn (4 spjöld) ---------- */
+function tourArt(i){
+  const st=STORIES.dreki,pg0=st&&st.pages[st.start];
+  if(i===0)return `<div class="tart tart0"><div class="tscene">${svgWrap(drawScene(pg0.scene,st.id),'')}</div><div class="tch">${pg0.choices.map(c=>`<span>${esc(pers(c[0]))}</span>`).join('')}</div></div>`;
+  if(i===1)return `<div class="tart tart1"><div class="tq"><small>Spurning 1 af 3</small><b>${esc(pg0.q[0])}</b>${pg0.q[1].map((o,j)=>`<span${j===0?' class="ok"':''}>${esc(o)}</span>`).join('')}</div><div class="tjar">${jarSVG(37,60)}</div></div>`;
+  if(i===2)return `<div class="tart tart2">${tripSVG({trip:7},false)}</div>`;
+  return `<div class="tart tart3"><div class="tt"><span>Leshraði</span><b>76</b><small>orð á mínútu</small></div><div class="tt"><span>Lestrardagar</span><b>4 af 5</b><small>í þessari viku</small></div><div class="tt"><span>Stjörnukrukkan</span><b>37/60</b><small>Bíóferð</small></div><div class="tt"><span>Lykilorð</span><b>••••</b><small>læsir svæðinu</small></div></div>`}
+const TOUR=[
+ ['Barnið les á hverjum degi','Barnið ýtir á myndina sína og velur sögu. Klukkan telur niður lestrartímann og á hverri síðu ræður barnið framhaldinu. Hver saga á sér þrjá ólíka enda.'],
+ ['Spurningar dýpka skilninginn','Í lok sögunnar svarar barnið spurningum. Rétt svör gefa stjörnur sem fara í sameiginlega stjörnukrukku. Þið veljið umbunina þegar krukkan fyllist.'],
+ ['Hver lestrardagur færir barnið áfram','Fyrst ferðast barnið hringinn um Ísland og svo um heiminn. Kortið á upphafssíðunni sýnir hvar hvert barn er statt.'],
+ ['Þið fylgist með í foreldrasvæðinu','Ýttu á Foreldrar og sláðu inn lykilorðið. Þar eru leshraði, vikuyfirlit, heimalestur og allar stillingar. Handbókin er þar líka, undir Hjálp.'],
+];
+const TV={i:0,from:'onb'};
+function tourHTML(){const i=TV.i,[t,d]=TOUR[i];
+  return `<div class="tour"><div class="tpic">${tourArt(i)}</div><div class="ttx"><span class="tn">${i+1} af ${TOUR.length}</span><h2>${t}</h2><p>${d}</p><div class="tdots" aria-hidden="true">${TOUR.map((_,j)=>`<i class="${j===i?'on':''}"></i>`).join('')}</div></div></div>`}
+function tourOpen(from){TV.i=0;TV.from=from;$('tourBox').innerHTML=`<div class="obcard wide">${tourInner()}</div>`;show('tour')}
+function tourInner(){const last=TV.i===TOUR.length-1;
+  return `${TV.from==='onb'?obHeadTour():`<div class="obhd"><div class="wlmark"><i>${BOOKIC}</i>Lestrarstund</div></div>`}<h1>Svona virkar Lestrarstund</h1>${TV.from==='onb'?'<p class="obsub">Fjögur stutt atriði áður en börnin byrja. Þú finnur allt þetta aftur í handbókinni.</p>':''}${tourHTML()}
+  <div class="obnav tnav"><button type="button" class="linkbtn" data-tv="skip">${TV.from==='onb'?'Sleppa leiðarvísinum':'Loka'}</button><span>${TV.i?'<button type="button" class="obbtn soft" data-tv="prev">Til baka</button>':''}<button type="button" class="obbtn primary" data-tv="next">${last?(TV.from==='onb'?'Áfram':'Loka'):'Áfram'}</button></span></div>`}
+function tourRender(){$('tourBox').innerHTML=`<div class="obcard wide">${tourInner()}</div>`}
+function obHeadTour(){const L=AC.mode==='cloud'?['Aðgangur','Börnin','Lykilorð foreldra','Leiðarvísir']:['Börnin','Lykilorð foreldra','Leiðarvísir'];const cur=L.length-1;
+  return `<div class="obhd"><div class="wlmark"><i>${BOOKIC}</i>Lestrarstund</div><ol class="obsteps" aria-label="Skref">${L.map((l,i)=>`<li class="${i<cur?'ok':i===cur?'on':''}"${i===cur?' aria-current="step"':''}><b>${i<cur?'✓':i+1}</b><span>${l}</span></li>`).join('')}</ol></div>`}
+function tourEnd(){if(TV.from==='onb'){renderReady();show('ready');return}if(TV.from==='guide'){hbRender();show('guide');return}renderParent();show('parent')}
+$('tourBox').addEventListener('click',e=>{const b=e.target.closest('[data-tv]');if(!b)return;const a=b.dataset.tv;
+  if(a==='skip')return tourEnd();if(a==='prev'){TV.i=Math.max(0,TV.i-1);tourRender();return}
+  if(TV.i<TOUR.length-1){TV.i++;tourRender()}else tourEnd()});
+
+/* ---------- Allt tilbúið ---------- */
+function renderReady(){const ids=visIds();
+  $('readyBox').innerHTML=`<div class="obcard"><div class="obhd"><div class="wlmark"><i>${BOOKIC}</i>Lestrarstund</div></div>
+  <div class="rdok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+  <h1>Allt er tilbúið!</h1><p class="obsub">${ids.length>1?'Börnin geta':'Barnið getur'} byrjað að lesa strax. Hér er það sem gott er að vita fyrstu dagana.</p>
+  <div class="rdkids">${ids.map(id=>{const p=S.profiles[id];return `<div class="rdkid"><span class="rdav">${avatarSVG(avId(p,id))}</span><span><b>${esc(p.name)}</b><small>${p.age===9?'Lengri sögur (9–10 ára)':'Styttri sögur (7–8 ára)'}</small></span></div>`}).join('')}</div>
+  <div class="rdtips"><div>${pic('hblue',30)}<span><b>Fyrsti lesturinn.</b> ${ids.length>1?'Hvert barn ýtir':'Barnið ýtir'} á myndina sína á upphafssíðunni og velur sögu.</span></div>
+  <div>${pic('gift',30)}<span><b>Stjörnukrukkan.</b> Veljið saman umbun sem fjölskyldan fær þegar krukkan fyllist. Það er gert í foreldrastillingum.</span></div>
+  <div>${pic('help',30)}<span><b>Handbókin.</b> Er alltaf undir Foreldrar → Stillingar → Handbók.</span></div></div>
+  <div class="rdacts"><button type="button" class="obbtn soft" id="rdGuide">Opna handbókina</button><button type="button" class="obbtn primary" id="rdGo">Byrja að lesa</button></div></div>`;
+  $('rdGo').onclick=()=>{enterApp();toast('Góða skemmtun!',ids.length>1?'Börnin velja myndina sína og byrja að lesa.':'Barnið velur myndina sína og byrjar að lesa.')};$('rdGuide').onclick=()=>guideOpen('ready')}
+$('guideBack').addEventListener('click',()=>{if(GUIDE_BACK==='ready'){renderReady();show('ready')}else if(GUIDE_BACK==='welcome'){show('welcome')}else{renderStart();show('start')}});
+$('guideBox').addEventListener('click',hbClick);
+
+$('wlGuide').addEventListener('click',()=>guideOpen('welcome'));
+
 /* ---------- Lestrarvinir ---------- */
 function renderBuddy(){const kid7=S.profiles.p7;$('buddyLead').textContent=`Veldu sögu til að lesa upphátt fyrir litla bróður þinn. Taktu upp lesturinn, þá getur ${nm(kid7)} hlustað á hann seinna. Þið fáið báðir stjörnur.`;
   $('cardsBud').innerHTML=Object.values(STORIES).filter(s=>s.age===7&&!s.book&&s.group!=='x').map(card).join('')}
@@ -6894,7 +7161,7 @@ $('lgBack').addEventListener('click',()=>{const b=LG.back;if(b==='start')renderS
 const OB={step:'',flow:'new',mode:'cloud',kids:[],f:null,edit:-1,pin:'',pin1:'',stage:1,err:'',ok:'',busy:false,user:null,terms:false,prov:null,fid:null,sv:{}};
 function obNewForm(){const used=OB.kids.map(k=>k.av);return {name:'',age:7,lv:7,av:AVPICK.find(a=>!used.includes(a))||AVPICK[0]}}
 function obStart(step,flow,mode){Object.assign(OB,{step,flow,mode,err:'',ok:'',busy:false,pin:'',pin1:'',stage:1,edit:-1,sv:{}});if(flow==='new'){OB.kids=[];OB.user=null;OB.terms=false}OB.f=obNewForm();obRender();show('onb')}
-function obSteps(){const L=OB.mode==='cloud'?['Aðgangur','Börnin','Lykilorð foreldra']:['Börnin','Lykilorð foreldra'];
+function obSteps(){const L=OB.mode==='cloud'?['Aðgangur','Börnin','Lykilorð foreldra','Leiðarvísir']:['Börnin','Lykilorð foreldra','Leiðarvísir'];
   const cur={signup:0,login:0,kids:OB.mode==='cloud'?1:0,pin:OB.mode==='cloud'?2:1}[OB.step];if(OB.flow!=='new'||cur===undefined)return '';
   return `<ol class="obsteps" aria-label="Skref">${L.map((l,i)=>`<li class="${i<cur?'ok':i===cur?'on':''}"${i===cur?' aria-current="step"':''}><b>${i<cur?'✓':i+1}</b><span>${l}</span></li>`).join('')}</ol>`}
 function obHead(){return `<div class="obhd"><div class="wlmark"><i>${BOOKIC}</i>Lestrarstund</div>${obSteps()}</div>`}
@@ -6990,8 +7257,7 @@ function applyKids(kids){for(const k of Object.keys(S.profiles))if(k!=='p7'&&k!=
 async function obFinish(){OB.busy=true;obRender();
   try{applyKids(OB.kids);
     if(OB.mode==='cloud'){const api=await fb();commitUser(OB.user);await uploadAll(api,null)}else AC.mode='local';
-    AC.done=true;saveAC();localSave();OB.busy=false;enterApp();
-    toast('Allt tilbúið!',OB.kids.length>1?'Börnin velja myndina sína og byrja að lesa.':'Barnið velur myndina sína og byrjar að lesa.')}
+    AC.done=true;saveAC();localSave();OB.busy=false;PR=firstP();PP=firstP();tourOpen('onb')}
   catch(e){OB.busy=false;OB.step='pin';OB.stage=1;OB.pin='';OB.pin1='';OB.err=errText(e)+' Sláðu lykilorðið inn aftur til að reyna á ný.';obRender()}}
 function pinDone(){const f=OB.flow;OB.busy=false;
   if(f==='new'){obFinish();return}
