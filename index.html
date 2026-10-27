@@ -962,6 +962,102 @@ body.onstart{background-image:radial-gradient(520px 420px at 0% 0%,rgba(150,195,
 @media (prefers-reduced-motion: reduce){
   *,*::before,*::after{animation:none!important;transition:none!important}
 }
+/* ---------- Ferðalagið um heiminn ---------- */
+.wfl{display:inline-block;vertical-align:middle;border-radius:4px;overflow:hidden;box-shadow:0 0 0 1px rgba(0,0,0,.1);flex:none;line-height:0}
+.wfl svg{display:block;width:100%;height:100%}
+.mmap.wm{aspect-ratio:auto;width:min(100%,360px);align-self:center;padding-top:30px}
+.wmin{position:relative}
+.mmap.wm svg{border-radius:14px}
+.tripmap.wmini{flex:0 0 240px}.tripmap.wmini svg{width:240px;height:auto;border-radius:14px;display:block}
+.triptx b .wfl{margin:-4px 6px 0 0}
+.wcb{display:flex;gap:8px;flex-wrap:wrap}
+#world .phead,#wcountry .phead,#wpass .phead{flex-direction:row-reverse;justify-content:flex-end;gap:14px}
+.wtop{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:12px}
+.wtop p{margin:0;flex:1 1 280px}
+.wprog{display:flex;align-items:center;gap:10px;font-weight:700;white-space:nowrap}
+.wpb{width:140px;height:10px;border-radius:5px;background:var(--line);overflow:hidden}.wpb i{display:block;height:100%;border-radius:5px;background:var(--accent)}
+.wmapbig{position:relative;border-radius:20px;overflow:hidden;box-shadow:var(--shadow);background:#BFE3F5;padding-top:44px}
+.wmapbig svg{display:block;width:100%;height:auto}
+.wmapbig .mpin{width:44px;height:44px}
+.wstop.vis{cursor:pointer}.wstop.vis:hover circle:last-child,.wstop.vis:focus circle:last-child{stroke:#FFD84A}
+.wstop:focus{outline:none}
+.wchips{display:flex;gap:6px;flex-wrap:wrap;margin:12px 0}
+.wch{display:inline-flex;align-items:center;gap:6px;height:36px;padding:0 12px;border-radius:12px;background:var(--surface);box-shadow:var(--shadow);font-weight:600;font-size:.92rem;white-space:nowrap}
+.wch i{width:12px;height:12px;border-radius:50%}
+.wch em{font-style:normal;color:var(--muted);font-weight:500}
+.wch.ok{background:var(--leaf-soft)}
+.wnext{display:flex;align-items:center;gap:16px;background:var(--surface);border-radius:20px;box-shadow:var(--shadow);padding:14px 18px;flex-wrap:wrap}
+.wnext .x{flex:1 1 220px;display:grid;gap:3px;min-width:0}
+.wnext b{font-size:1.25rem}.wnext .x>span:last-child{color:var(--muted);font-size:.98rem}
+.wbtns{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+/* landið */
+.wc{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:20px;align-items:start}
+@media (max-width:760px){.wc{grid-template-columns:1fr}}
+.wcart{position:relative;border-radius:26px;overflow:hidden;background:linear-gradient(165deg,color-mix(in srgb,var(--k) 30%,#fff),color-mix(in srgb,var(--k) 8%,#fff));padding:56px 20px 20px;display:grid;gap:18px;justify-items:center}
+.wcfrom{position:absolute;left:14px;top:14px;background:rgba(255,255,255,.88);color:#1C1C1E;padding:6px 12px;border-radius:12px;font-weight:700;font-size:.9rem}
+.wcflag{transform:rotate(-3deg);filter:drop-shadow(0 12px 18px rgba(0,0,0,.2))}
+.wcflag .wfl{width:min(200px,60vw)!important;height:auto!important;aspect-ratio:3/2;border-radius:10px}
+.wcloc{width:100%}.wcloc svg{display:block;width:100%;height:auto;border-radius:14px}
+.wcmain{display:grid;gap:12px;min-width:0}
+.wcmain h3{margin:6px 0 0;font-size:1.1rem}
+.wfacts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+@media (max-width:460px){.wfacts{grid-template-columns:1fr}}
+.wfacts div{background:var(--surface);border-radius:14px;padding:10px 12px;box-shadow:var(--shadow)}
+.wfacts span{display:block;font-size:.8rem;color:var(--muted);font-weight:700}.wfacts b{font-size:1.02rem;line-height:1.25}
+.wsaga{margin:0;font-family:var(--f-read);font-size:1.12rem;line-height:1.6}
+.wdyk{background:var(--sun-soft);border-radius:16px;padding:12px 14px;font-family:var(--f-read);font-size:1.05rem;line-height:1.5}
+.wdyk b{color:var(--sun-deep);font-family:var(--f-display)}
+.wsay{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px}
+.wsay>div{background:var(--surface);border-radius:14px;padding:10px 12px;display:flex;align-items:center;gap:10px;box-shadow:var(--shadow)}
+.wsi{width:38px;height:38px;flex:none;display:grid;place-items:center;font-size:1.2rem}
+.wspk{width:38px;height:38px;border-radius:50%;border:0;background:var(--sky-soft);color:var(--accent);display:grid;place-items:center;cursor:pointer}
+.wsay b{display:block;font-size:1.08rem}.wsay span{font-size:.9rem;color:var(--muted)}
+.wquiz{background:var(--surface);border-radius:20px;padding:16px;box-shadow:var(--shadow);display:grid;gap:10px;margin-top:4px}
+.wquiz h3{margin:0;font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;color:var(--accent)}
+.wq{margin:0;font-size:1.3rem;font-weight:800;line-height:1.25}
+.wopts{display:grid;gap:8px}
+.wopt{display:flex;align-items:center;gap:12px;min-height:56px;border-radius:16px;border:0;background:var(--surface-2);color:var(--ink);font:inherit;font-size:1.1rem;font-weight:600;padding:0 16px;text-align:left;cursor:pointer}
+.wopt i{width:30px;height:30px;border-radius:50%;background:var(--surface);display:grid;place-items:center;font-style:normal;font-weight:800;flex:none}
+.wopt.ok{background:var(--leaf-soft);box-shadow:inset 0 0 0 2px var(--leaf-deep)}.wopt.ok i{background:var(--leaf-deep);color:#fff}
+.wopt.no{opacity:.5;text-decoration:line-through}
+.wfb{margin:0;color:var(--muted);font-size:.98rem}
+.wqdone{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.wqdone>div{display:grid;gap:6px;flex:1 1 200px}.wqdone b{font-size:1.25rem}.wqdone span{color:var(--muted)}
+.wstamp{width:130px;height:130px;transform:rotate(-8deg);flex:none}
+/* vegabréfið */
+.wpbook{display:grid;grid-template-columns:minmax(0,300px) minmax(0,1fr);border-radius:22px;overflow:hidden;box-shadow:var(--shadow-lg);background:#FBF7EE;color:#1C1C1E}
+@media (max-width:760px){.wpbook{grid-template-columns:1fr}}
+.wpl{background:#F7F1E4;border-right:2px dashed #E0D6C0;padding:22px;display:grid;gap:12px;align-content:start}
+.wpme{display:flex;gap:12px;align-items:center}.wpme b{display:block;font-size:1.3rem}.wpme span{font-size:.85rem;color:#7A6E58}
+.wpav{width:60px;height:60px;border-radius:50%;overflow:hidden;flex:none;box-shadow:0 0 0 3px #fff}.wpav svg{display:block;width:100%;height:100%}
+.wpbig{display:flex;gap:10px}.wpbig div{flex:1;background:#fff;border-radius:14px;padding:10px 12px}.wpbig b{display:block;font-size:1.6rem}.wpbig span{font-size:.8rem;color:#7A6E58}
+.wcbar div{display:flex;justify-content:space-between;font-size:.85rem;font-weight:600;margin-bottom:4px}
+.wcbar p{margin:0;height:8px;border-radius:4px;background:#EAE2D0}.wcbar p i{display:block;height:100%;border-radius:4px}
+.wpr{padding:22px}
+.wpttl{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:14px}.wpttl b{font-size:1.25rem}.wpttl span{font-size:.85rem;color:#7A6E58}
+.wpgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(78px,1fr));gap:12px 8px}
+.wps{display:flex;flex-direction:column;align-items:center;gap:4px;font:inherit;font-size:.78rem;font-weight:600;text-align:center;line-height:1.15;background:none;border:0;padding:0;color:#1C1C1E}
+button.wps{cursor:pointer}
+.wps .c{width:62px;height:62px;border-radius:50%;display:flex;align-items:center;justify-content:center}
+.wps.on .c{border:2.5px solid var(--k);background:#fff}
+.wps.half .c{border:2px dashed var(--k);background:#fff}.wps.half .wfl{opacity:.55}
+.wps em{font-style:normal;font-size:.7rem;color:#B5700A}
+.wps.off{color:#B3A88E}.wps.off .c{border:2px dashed #C9BFA8;font-weight:800;font-size:1.1rem}
+/* hringnum lokið */
+.wo{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:28px;align-items:center}
+@media (max-width:760px){.wo{grid-template-columns:1fr}}
+.woart{position:relative;border-radius:28px;overflow:hidden;background:linear-gradient(170deg,#0A60D6,#0B3A7E);min-height:360px;display:grid;place-items:center}
+.woconf{position:absolute;inset:0;width:100%;height:100%}
+.wopp{position:relative;width:200px;height:auto;transform:rotate(-6deg);filter:drop-shadow(0 20px 30px rgba(0,0,0,.35))}
+.wotx{display:grid;gap:12px}
+.wotx h2{margin:0;font-size:2.2rem;line-height:1.08;letter-spacing:-.03em}
+.wotx p{margin:0;font-size:1.1rem;line-height:1.5;color:var(--muted)}
+.wostat{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.wostat div{background:var(--surface);border-radius:16px;padding:12px;box-shadow:var(--shadow)}.wostat b{display:block;font-size:1.6rem}.wostat span{font-size:.82rem;color:var(--muted)}
+.woflags{display:flex;gap:6px;flex-wrap:wrap;align-items:center}.woflags span{font-size:.85rem;color:var(--muted)}
+.wobtn{display:flex;gap:10px;flex-wrap:wrap}
+/* foreldrar */
+#worldSet .pmuted{margin:0 0 6px}
 </style>
 </head>
 <body>
@@ -1085,7 +1181,7 @@ body.onstart{background-image:radial-gradient(520px 420px at 0% 0%,rgba(150,195,
       <div class="wlside">
         <div class="wlmark"><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5C6.5 4 9.5 4 12 6c2.5-2 5.5-2 8-.5V19c-2.5-1.5-5.5-1.5-8 .5-2.5-2-5.5-2-8-.5z M12 6v13.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></i>Lestrarstund</div>
         <h1>Lestrarstund fyrir alla fjölskylduna</h1>
-        <p class="wllead">Íslenskt lestrarapp fyrir krakka 6–10 ára. Barnið les, velur hvernig sagan fer og safnar stjörnum.</p>
+        <p class="wllead">Íslenskt lestrarapp fyrir krakka 7–10 ára. Barnið les, velur hvernig sagan fer og safnar stjörnum.</p>
         <ul class="wlft"><li><i style="background:#0A60D6"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5C6.5 4 9.5 4 12 6c2.5-2 5.5-2 8-.5V19c-2.5-1.5-5.5-1.5-8 .5-2.5-2-5.5-2-8-.5z M12 6v13.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></i><div><b>Sögur þar sem barnið velur leiðina</b><span>Yfir 30 sögur og bækur til að lesa heima</span></div></li><li><i style="background:#AF52DE"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 00-3.6 10.8c.6.5 1 1.2 1.1 2V16h5v-.2c.1-.8.5-1.5 1.1-2A6 6 0 0012 3z"/></svg></i><div><b>Byggir upp lesskilning</b><span>Spurningar í lok hverrar sögu dýpka skilning á textanum</span></div></li><li><i style="background:#1E8E3E"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></i><div><b>Yfirlit fyrir foreldra</b><span>Lestrardagar, mínútur og leshraði</span></div></li><li><i style="background:#C25E00"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9a15 15 0 0120 0M5 12.5a10 10 0 0114 0M8.5 16a5 5 0 017 0"/><circle cx="12" cy="19.5" r="1"/></svg></i><div><b>Virkar líka án nets</b><span>Í spjaldtölvu og síma</span></div></li></ul>
         <div class="wlacts"><button class="obbtn primary" id="wlNew" type="button">Stofna aðgang</button><button class="obbtn soft" id="wlLogin" type="button">Ég á aðgang: skrá inn</button><button class="obbtn plain" id="wlLocal" type="button">Prófa fyrst án aðgangs</button></div>
         <p class="wlfoot"><button type="button" class="oblink" data-legal="privacy">Persónuvernd</button> · <button type="button" class="oblink" data-legal="terms">Skilmálar</button></p>
@@ -1155,7 +1251,7 @@ body.onstart{background-image:radial-gradient(520px 420px at 0% 0%,rgba(150,195,
       <h3 class="grouphead" id="headM">Sögur eftir stóra bróður</h3>
       <div class="cards" id="cardsM"></div>
       <div id="jumpBox" hidden>
-        <h3 class="grouphead">Stökk upp: sögur fyrir 9 ára</h3>
+        <h3 class="grouphead">Stökk upp: sögur fyrir 9–10 ára</h3>
         <p class="pmuted jumpnote">Þú lest svo vel að nú máttu prófa lengri sögur!</p>
         <div class="cards" id="cardsJ"></div>
       </div>
@@ -1275,6 +1371,32 @@ body.onstart{background-image:radial-gradient(520px 420px at 0% 0%,rgba(150,195,
     <div class="tripbig" id="tripBig"></div>
     <ul class="tripfacts" id="tripFacts"></ul>
   </section>
+  <section id="world" hidden>
+    <div class="phead"><h2>Ferðalagið um heiminn</h2><button class="btn ghost" id="wBack" type="button">Til baka</button></div>
+    <div class="wtop"><p class="pmuted" id="wLead"></p><div class="wprog"><span id="wProgTx"></span><div class="wpb"><i id="wProgBar"></i></div></div></div>
+    <div class="wmapbig" id="wMap"></div>
+    <div class="wchips" id="wChips"></div>
+    <div class="wnext" id="wNext"></div>
+    <div class="wbtns"><button class="btn primary" id="wPassBtn" type="button">Vegabréfið mitt</button><button class="btn ghost" id="wIce" type="button">Ferðin um Ísland</button></div>
+  </section>
+  <section id="wcountry" hidden>
+    <div class="phead"><h2 id="wcTitle"></h2><button class="btn ghost" id="wcBack" type="button">Til baka</button></div>
+    <div class="wc" id="wcBody"></div>
+  </section>
+  <section id="wpass" hidden>
+    <div class="phead"><h2>Vegabréfið mitt</h2><button class="btn ghost" id="wpBack" type="button">Til baka</button></div>
+    <div class="wpbook"><div class="wpl" id="wpLeft"></div><div class="wpr"><div class="wpttl"><b>Stimplarnir mínir</b><span>Ýttu á fána til að lesa um landið aftur</span></div><div class="wpgrid" id="wpGrid"></div></div></div>
+  </section>
+  <section id="wopen" hidden>
+    <div class="wo">
+      <div class="woart" aria-hidden="true"><svg class="woconf" viewBox="0 0 470 520" preserveAspectRatio="xMidYMid slice"><rect x="0" y="0" width="8" height="14" rx="2" fill="#FFD84A" transform="rotate(0 0 0)" opacity=".8"/><rect x="53" y="37" width="8" height="14" rx="2" fill="#5CF2A0" transform="rotate(29 53 37)" opacity=".8"/><rect x="106" y="74" width="8" height="14" rx="2" fill="#FF8BC7" transform="rotate(58 106 74)" opacity=".8"/><rect x="159" y="111" width="8" height="14" rx="2" fill="#8FCBF2" transform="rotate(87 159 111)" opacity=".8"/><rect x="212" y="148" width="8" height="14" rx="2" fill="#FFD84A" transform="rotate(26 212 148)" opacity=".8"/><rect x="265" y="185" width="8" height="14" rx="2" fill="#5CF2A0" transform="rotate(55 265 185)" opacity=".8"/><rect x="318" y="222" width="8" height="14" rx="2" fill="#FF8BC7" transform="rotate(84 318 222)" opacity=".8"/><rect x="371" y="259" width="8" height="14" rx="2" fill="#8FCBF2" transform="rotate(23 371 259)" opacity=".8"/><rect x="424" y="296" width="8" height="14" rx="2" fill="#FFD84A" transform="rotate(52 424 296)" opacity=".8"/><rect x="7" y="333" width="8" height="14" rx="2" fill="#5CF2A0" transform="rotate(81 7 333)" opacity=".8"/><rect x="60" y="370" width="8" height="14" rx="2" fill="#FF8BC7" transform="rotate(20 60 370)" opacity=".8"/><rect x="113" y="407" width="8" height="14" rx="2" fill="#8FCBF2" transform="rotate(49 113 407)" opacity=".8"/><rect x="166" y="444" width="8" height="14" rx="2" fill="#FFD84A" transform="rotate(78 166 444)" opacity=".8"/><rect x="219" y="481" width="8" height="14" rx="2" fill="#5CF2A0" transform="rotate(17 219 481)" opacity=".8"/><rect x="272" y="518" width="8" height="14" rx="2" fill="#FF8BC7" transform="rotate(46 272 518)" opacity=".8"/><rect x="325" y="35" width="8" height="14" rx="2" fill="#8FCBF2" transform="rotate(75 325 35)" opacity=".8"/><rect x="378" y="72" width="8" height="14" rx="2" fill="#FFD84A" transform="rotate(14 378 72)" opacity=".8"/><rect x="431" y="109" width="8" height="14" rx="2" fill="#5CF2A0" transform="rotate(43 431 109)" opacity=".8"/><rect x="14" y="146" width="8" height="14" rx="2" fill="#FF8BC7" transform="rotate(72 14 146)" opacity=".8"/><rect x="67" y="183" width="8" height="14" rx="2" fill="#8FCBF2" transform="rotate(11 67 183)" opacity=".8"/><rect x="120" y="220" width="8" height="14" rx="2" fill="#FFD84A" transform="rotate(40 120 220)" opacity=".8"/><rect x="173" y="257" width="8" height="14" rx="2" fill="#5CF2A0" transform="rotate(69 173 257)" opacity=".8"/><rect x="226" y="294" width="8" height="14" rx="2" fill="#FF8BC7" transform="rotate(8 226 294)" opacity=".8"/><rect x="279" y="331" width="8" height="14" rx="2" fill="#8FCBF2" transform="rotate(37 279 331)" opacity=".8"/><rect x="332" y="368" width="8" height="14" rx="2" fill="#FFD84A" transform="rotate(66 332 368)" opacity=".8"/><rect x="385" y="405" width="8" height="14" rx="2" fill="#5CF2A0" transform="rotate(5 385 405)" opacity=".8"/><rect x="438" y="442" width="8" height="14" rx="2" fill="#FF8BC7" transform="rotate(34 438 442)" opacity=".8"/><rect x="21" y="479" width="8" height="14" rx="2" fill="#8FCBF2" transform="rotate(63 21 479)" opacity=".8"/><rect x="74" y="516" width="8" height="14" rx="2" fill="#FFD84A" transform="rotate(2 74 516)" opacity=".8"/><rect x="127" y="33" width="8" height="14" rx="2" fill="#5CF2A0" transform="rotate(31 127 33)" opacity=".8"/></svg><svg class="wopp" viewBox="0 0 250 320"><rect x="14" y="10" width="222" height="300" rx="16" fill="#0B3A7E"/><rect x="24" y="10" width="212" height="300" rx="14" fill="#124A9C"/><circle cx="130" cy="140" r="54" fill="none" stroke="#E8C66A" stroke-width="5"/><path d="M76 140h108M130 86c22 26 22 82 0 108M130 86c-22 26-22 82 0 108M86 112h88M86 168h88" stroke="#E8C66A" stroke-width="3.5" fill="none"/><text x="130" y="236" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-weight="800" font-size="22" letter-spacing="3" fill="#E8C66A">VEGABRÉF</text><text x="130" y="262" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-weight="600" font-size="14" letter-spacing="1" fill="#E8C66A">LESTRARSTUND</text></svg></div>
+      <div class="wotx"><span class="kind" id="woEy"></span><h2 id="woH"></h2><p id="woLead"></p>
+        <div class="wostat"><div><b>30</b><span>lönd að heimsækja</span></div><div><b>7</b><span>heimsálfur</span></div><div><b>1</b><span>leynilegur bónus</span></div></div>
+        <div class="woflags" id="woFlags"></div>
+        <div class="wobtn"><button class="btn primary" id="woGo" type="button">Leggja af stað út í heim</button><button class="btn ghost" id="woLater" type="button">Seinna</button></div>
+      </div>
+    </div>
+  </section>
   <section id="buddy" hidden>
     <div class="phead"><h2>Lesa fyrir litla bróður</h2><button class="btn ghost" id="buddyBack" type="button">Til baka</button></div>
     <p class="pmuted" id="buddyLead" style="margin-bottom:14px"></p>
@@ -1358,7 +1480,7 @@ body.onstart{background-image:radial-gradient(520px 420px at 0% 0%,rgba(150,195,
           <h3>Nýr lesandi</h3>
           <div class="formgrid"><label>Nafn<input id="paName" type="text" maxlength="20" placeholder="t.d. Sara"></label><label>Aldur<input id="paAge" type="number" min="3" max="15" inputmode="numeric" placeholder="t.d. 6"></label></div>
           <h4>Hvaða sögur á lesandinn að fá?</h4>
-          <div class="chips small" id="paLevel" role="radiogroup" aria-label="Sögur"><button type="button" class="chip" role="radio" aria-checked="true" data-lv="7">Styttri sögur (um 7 ára)</button><button type="button" class="chip" role="radio" aria-checked="false" data-lv="9">Lengri sögur (um 9 ára)</button></div>
+          <div class="chips small" id="paLevel" role="radiogroup" aria-label="Sögur"><button type="button" class="chip" role="radio" aria-checked="true" data-lv="7">Styttri sögur (7–8 ára)</button><button type="button" class="chip" role="radio" aria-checked="false" data-lv="9">Lengri sögur (9–10 ára)</button></div>
           <p class="pmuted">Lesandinn fær sína eigin stjörnur, persónu, lestrardaga og stað á Íslandskortinu. Hægt er að skipta um sögur seinna.</p>
           <div class="actions"><button class="btn primary" id="paSave" type="button">Bæta við lesanda</button><button class="btn ghost" id="paCancel" type="button">Hætta við</button></div>
           <p class="pfeed" id="paFeed" aria-live="polite"></p>
@@ -1396,7 +1518,8 @@ body.onstart{background-image:radial-gradient(520px 420px at 0% 0%,rgba(150,195,
         </div>
         <div class="pcard">
           <h3>Stillingar lesanda</h3>
-          <div id="jumpSet"><h4>Stökk upp í sögur fyrir 9 ára</h4><div class="chips small" id="jumpChips" role="radiogroup" aria-label="Stökk upp"></div><p class="pmuted" id="jumpInfo"></p></div>
+          <div id="jumpSet"><h4>Stökk upp í sögur fyrir 9–10 ára</h4><div class="chips small" id="jumpChips" role="radiogroup" aria-label="Stökk upp"></div><p class="pmuted" id="jumpInfo"></p></div>
+          <div id="worldSet"><h4>Ferðalagið um heiminn</h4><p class="pmuted" id="worldInfo"></p><div class="chips small" id="worldChips" role="radiogroup" aria-label="Ferðalagið um heiminn"></div><h4>Þarf að lesa á hverjum degi?</h4><p class="pmuted">Sjálfgefið færist barnið einn reit áfram fyrir hvern lestrardag, líka þótt dagur detti út á milli. Þið getið líka valið að barnið þurfi að lesa samfleytt. Þá fer það einn reit til baka, eða aftur heim til Íslands, ef dagur dettur út. Allir dagar vikunnar teljast með. Stimplarnir haldast alltaf.</p><div class="chips small" id="wmodeChips" role="radiogroup" aria-label="Lesa á hverjum degi"></div></div>
           <h4>Upptökuhnappur á lestrarsíðunni</h4><div class="chips small" id="recChips" role="radiogroup" aria-label="Upptökuhnappur"></div>
           <div id="sylSet"><h4>Atkvæðaskipting á löngum orðum</h4><p class="pmuted">Löng orð fá græna línu undir sig. Þegar barnið ýtir á orðið skiptist það í atkvæði.</p><div class="chips small" id="sylChips" role="radiogroup" aria-label="Atkvæðaskipting"></div></div>
           <h4>Hvað gerist næst?</h4><p class="pmuted">Einu sinni í hverri sögu giskar barnið á framhaldið áður en það les áfram.</p><div class="chips small" id="predChips" role="radiogroup" aria-label="Giska á framhaldið"></div>
@@ -5167,7 +5290,7 @@ for(const st of Object.values(STORIES)){
 
 /* ================= Geymsla ================= */
 const KEY='lestrarstund.v2',OLDKEY='lestrarstund.v1';
-const DEFP=(age,name)=>({name,age,stars:0,days:[],endings:{},sessions:[],settings:{min:15,reads:2,jump:'auto',rec:true},gift:0,log:[],words:{},wordRev:0,writings:[],jumpSeen:false,books:{},advent:{},certs:[],trip:null,bud:0,signed:{}});
+const DEFP=(age,name)=>({name,age,stars:0,days:[],endings:{},sessions:[],settings:{min:15,reads:2,jump:'auto',rec:true,world:'auto',wmode:'free'},gift:0,log:[],words:{},wordRev:0,writings:[],jumpSeen:false,books:{},advent:{},certs:[],trip:null,bud:0,signed:{},world:0,wst:{},wlast:null,wpen:null,wseen:false});
 const DEFJAR=()=>({goal:60,reward:'',n:0,t:Date.now(),hist:[]});
 function fixP(d,age,name){const def=DEFP(age,name);d=d||{};return {...def,...d,age,settings:{...def.settings,...(d.settings||{})}}}
 function allProfiles(P){P=P||{};const o={p7:fixP(P.p7,7,'7 ára'),p9:fixP(P.p9,9,'9 ára')};
@@ -5328,7 +5451,7 @@ function tick(){
 setInterval(tick,250);
 function finishTime(){
   T.done=true;T.running=false;$('pauseBtn').hidden=true;$('pausePanel').hidden=true;document.body.classList.remove('is-paused');
-  const k=dkey(new Date());if(!PR.days.includes(k)){PR.days.push(k);PR.days=PR.days.slice(-90);tripStep()}
+  const k=dkey(new Date());if(!PR.days.includes(k)){PR.days.push(k);PR.days=PR.days.slice(-90);tripStep(k)}
   if(cur)cur.done=true;save();
   toast('Tíminn er búinn!','Vel gert! Kláraðu síðuna í rólegheitum.',{kind:'done',persist:true,ms:20000});
   try{wake&&wake.release()}catch(e){}
@@ -5357,7 +5480,7 @@ function finishReading(){
   const now=performance.now();if(T.active&&T.running&&!T.done)T.elapsed+=now-T.last;T.last=now;
   const el=Math.min(T.elapsed,T.total),mins=Math.max(1,Math.round(el/60000));
   const full=T.done||el>=T.total*0.9;
-  if(full){const k=dkey(new Date());if(!PR.days.includes(k)){PR.days.push(k);PR.days=PR.days.slice(-90);tripStep()}}
+  if(full){const k=dkey(new Date());if(!PR.days.includes(k)){PR.days.push(k);PR.days=PR.days.slice(-90);tripStep(k)}}
   if(cur){cur.done=full;cur.read=Math.round(el/1000)}
   pg=null;endSession();$('toasts').innerHTML='';
   $('doneStars').innerHTML=full?STARSVG:'';
@@ -5381,7 +5504,7 @@ function toast(title,sub,{kind='calm',persist=false,ms=7000}={}){
 }
 
 /* ================= Heim ================= */
-const SECTIONS=['welcome','onb','legal','start','home','read','quiz','reward','lock','parent','done','words','advent','trip','buddy','maker','avatars','homeread'];
+const SECTIONS=['welcome','onb','legal','start','home','read','quiz','reward','lock','parent','done','words','advent','trip','world','wcountry','wpass','wopen','buddy','maker','avatars','homeread'];
 function show(id){document.body.classList.toggle('onstart',id==='start');if(id!=='read'&&typeof REC!=='undefined'&&REC.mr)recStop();for(const s of SECTIONS)$(s).hidden=s!==id;window.scrollTo(0,0)}
 let selMin=15;
 function weekCount(p){const now=new Date(),mon=new Date(now);mon.setDate(now.getDate()-((now.getDay()+6)%7));let n=0;for(let i=0;i<7;i++){const d=new Date(mon);d.setDate(mon.getDate()+i);if(p.days.includes(dkey(d)))n++}return n}
@@ -5394,11 +5517,12 @@ function renderStart(){
   $('who').innerHTML=ids.map(id=>{const p=S.profiles[id],g=Math.max(1,+p.settings.min||15),m=todayMin(p),done=p.days.includes(dkey(new Date())),f=done?1:Math.min(1,m/g),c=2*Math.PI*45;
     const note=done?'Lestri dagsins lokið':`${m} af ${g} mín í dag`;
     return `<button class="whob" type="button" data-pid="${id}" aria-label="${esc(p.name)}, ${note}. Haltu inni til að skipta um útlit."><span class="wav"><svg class="wring" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="45" class="wtrack"/>${f>0?`<circle cx="50" cy="50" r="45" class="wfill" stroke-dasharray="${f1(c*f)} ${f1(c)}" transform="rotate(-90 50 50)"/>`:''}<circle cx="50" cy="50" r="45" class="whold" stroke-dasharray="0 ${f1(c)}" transform="rotate(-90 50 50)"/></svg><span class="wph">${avatarSVG(avId(p,id))}</span>${done?`<span class="wdone">${DONEIC}</span>`:''}</span><span class="wn">${esc(p.name)}</span><span class="wm">${note}</span><span class="wchips"><span class="chip2"><i class="fl">${FLAME}</i>${streak(p)}</span><span class="chip2"><i class="st">${STARSVG}</i>${nf(p.stars)}</span></span></button>`}).join('');
-  $('startMap').innerHTML=startMapHTML(ids);
+  ids.forEach(id=>worldCheck(S.profiles[id]));$('startMap').innerHTML=startMapHTML(ids);
   $('jarStart').innerHTML=startJarHTML();$('jarStart').classList.toggle('full',S.jar.n>=S.jar.goal);
 }
 const FLAME=`<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21c-3.9 0-6.5-2.6-6.5-6.3 0-3.5 2.6-5.6 4-8.7.6 2 1.7 3 2.9 3.6.3-2.4 1.6-4.6 3.5-6.1-.3 3 3.6 5.6 3.6 10.6 0 4.1-3 6.9-7.5 6.9z" fill="currentColor"/></svg>`;
 function startMapHTML(ids){
+  if(ids.some(id=>worldOpen(S.profiles[id])))return startWorldHTML(ids);
   const coast='M'+ISLCOAST.map(([a,b])=>PX(a,b).join(' ')).join(' L')+'Z',pts=TRIP.map(t=>PX(t[2],t[3]));
   const road='M'+pts.map(q=>q.join(' ')).join(' L')+'Z';
   const gl=[[-16.8,64.4,34,16],[-19.0,64.85,12,7],[-20.2,64.62,12,6],[-22.25,66.17,8,5]].map(([a,b,rx,ry])=>{const q=PX(a,b);return `<ellipse cx="${q[0]}" cy="${q[1]}" rx="${rx}" ry="${ry}" fill="#fff" opacity=".95"/>`}).join('');
@@ -5470,13 +5594,13 @@ function renderHome(){
   for(const [g,c,hd] of [['p','cardsP','headP'],['h','cardsH','headH'],['a','cardsA','headA'],['b','cardsB','groupB'],['c','cardsC','headC'],['m','cardsM','headM']]){const L=grp(g);$(c).innerHTML=L.map(card).join('');$(c).hidden=!L.length;$(hd).hidden=!L.length}
   const firstHead=['headP','headH','headA','groupB','headC','headM'].find(x=>!$(x).hidden);['headP','headH','headA','groupB','headC','headM'].forEach(x=>$(x).classList.toggle('first',x===firstHead));
   const jo=jumpOpen(PR);$('jumpBox').hidden=!jo;$('cardsJ').innerHTML=jo?jumpStories().map(card).join(''):'';renderLib();
-  if(jo&&!PR.jumpSeen&&PR.settings.jump!=='on'){PR.jumpSeen=true;save();setTimeout(()=>toast('Nýjar sögur opnuðust!','Þú lest svo vel að nú máttu prófa sögur fyrir 9 ára.',{kind:'done',ms:9000}),400)}
+  if(jo&&!PR.jumpSeen&&PR.settings.jump!=='on'){PR.jumpSeen=true;save();setTimeout(()=>toast('Nýjar sögur opnuðust!','Þú lest svo vel að nú máttu prófa sögur fyrir 9–10 ára.',{kind:'done',ms:9000}),400)}
   $('shelf').innerHTML=shelfHTML(PR);
   const nw=wordList(PR).length;$('wordCnt').textContent=nw;$('wordDueDot').hidden=!wordsDue(PR);
-  if(PR.homeNote){const h=PR.homeNote;PR.homeNote=null;save();setTimeout(()=>toast('Heimalesturinn þinn var skráður!',(h.n?`Þú fékkst ${stjornur(h.n)} fyrir ${h.min} mínútur.`:`${h.min} mínútur bættust við.`)+(h.day?' Þú færðist líka á næsta stað á Íslandskortinu.':''),{kind:'done',ms:9000}),700)}
+  if(PR.homeNote){const h=PR.homeNote;PR.homeNote=null;save();setTimeout(()=>toast('Heimalesturinn þinn var skráður!',(h.n?`Þú fékkst ${stjornur(h.n)} fyrir ${h.min} mínútur.`:`${h.min} mínútur bættust við.`)+(h.day?(worldOpen(PR)?' Þú flaugst líka til næsta lands.':' Þú færðist líka á næsta stað á Íslandskortinu.'):''),{kind:'done',ms:9000}),700)}
   if(PR.gift>0){const n=PR.gift;PR.gift=0;save();toast(`Þú fékkst ${stjornur(n)} frá mömmu eða pabba!`,'Vel gert að lesa!',{kind:'done',ms:9000})}
   $('advCard').hidden=!S.xmas.on;if(S.xmas.on){$('advCount').textContent=`${advCount(PR)} af 24 kortabútum fundnir`;if(!$('advThumb').firstChild)$('advThumb').innerHTML=svgWrap(drawScene('adv_thumb',null,false),'')}
-  $('tripCard').innerHTML=tripHTML(PR);$('tripOpen').onclick=()=>{renderTrip();show('trip')};
+  worldNote();$('tripCard').innerHTML=worldOpen(PR)?worldCardHTML(PR):tripHTML(PR);$('tripOpen').onclick=()=>{if(worldOpen(PR)){renderWorld();show('world')}else{renderTrip();show('trip')}};{const b=$('wCurBtn');if(b)b.onclick=()=>openCountry(wpos(PR)-1,'home')}worldIntro();
   const nine=PR.age===9;$('buddyOpen').hidden=!nine||!!S.profiles.p7.off;$('mkOpen').hidden=!nine;$('buddyLbl').textContent='Lesa fyrir litla bróður';
   if(PR.bud>0){const n=PR.bud;PR.bud=0;save();setTimeout(()=>toast(`${PR.budFrom||'Stóri bróðir'} las fyrir þig!`,n===1?'Þú færð eina stjörnu.':`Þú færð ${stjornur(n)}.`,{kind:'done',ms:9000}),600)}
   if(PR.madeNote){const m=PR.madeNote;PR.madeNote=null;save();setTimeout(()=>toast(`${m.from} las söguna þína!`,`„${m.title}“. Þú færð eina stjörnu.`,{kind:'done',ms:9000}),900)}
@@ -5787,8 +5911,9 @@ function renderParent(){
   $('jumpSet').hidden=PP.age!==7;
   if(PP.age===7){const m=PP.settings.jump||'auto',rs=readerStats(PP);
     $('jumpChips').innerHTML=[['auto','Sjálfvirkt'],['on','Opið'],['off','Lokað']].map(([k,l])=>`<button type="button" class="chip" role="radio" aria-checked="${m===k}" data-jump="${k}">${l}</button>`).join('');
-    $('jumpInfo').textContent=`Sjálfvirkt: þrjár auðveldustu 9 ára sögurnar opnast þegar leshraðinn er 70 orð á mínútu eða meira og 80% svara eru rétt. Núna: ${rs.wpm!=null?rs.wpm+' orð/mín':'of lítil gögn'}${rs.acc!=null?', '+Math.round(rs.acc*100)+'% rétt':''}. Staða: ${jumpOpen(PP)?'opið':'lokað'}.`}
+    $('jumpInfo').textContent=`Sjálfvirkt: þrjár auðveldustu sögurnar fyrir 9–10 ára opnast þegar leshraðinn er 70 orð á mínútu eða meira og 80% svara eru rétt. Núna: ${rs.wpm!=null?rs.wpm+' orð/mín':'of lítil gögn'}${rs.acc!=null?', '+Math.round(rs.acc*100)+'% rétt':''}. Staða: ${jumpOpen(PP)?'opið':'lokað'}.`}
   const rc=PP.settings.rec!==false;$('recChips').innerHTML=[['1','Sýna'],['0','Fela']].map(([k,l])=>`<button type="button" class="chip" role="radio" aria-checked="${rc===(k==='1')}" data-rec="${k}">${l}</button>`).join('');
+  {const wo=PP.settings.world||'auto',wm=PP.settings.wmode||'free';$('worldChips').innerHTML=[['auto','Eftir Íslandshringinn'],['on','Opna núna']].map(([k,l])=>`<button type="button" class="chip" role="radio" aria-checked="${wo===k}" data-world="${k}">${l}</button>`).join('');$('wmodeChips').innerHTML=[['free','Nei'],['back1','Já, annars einn reit til baka'],['home','Já, annars aftur heim']].map(([k,l])=>`<button type="button" class="chip" role="radio" aria-checked="${wm===k}" data-wmode="${k}">${l}</button>`).join('');$('worldInfo').textContent=worldInfo(PP)}
   renderBackupInfo();renderRecs();renderParent2();
   $('sessList').innerHTML=stats.length?stats.slice().reverse().slice(0,30).map(sessHTML).join(''):'<p class="pmuted">Engin lestrarskipti enn. Þau birtast hér þegar barnið hefur lesið.</p>';
 }
@@ -5989,11 +6114,11 @@ function addHome(p,k,min,book,quiet){
   p.home.push(e);if(p.home.length>400)p.home.splice(0,p.home.length-400);
   if(n)addStars(p,n);
   const goal=Math.max(1,+p.settings.min||15);
-  if(!p.days.includes(k)&&appMinOn(p,k)+homeMinOn(p,k)>=goal){p.days.push(k);p.days=p.days.slice(-90);e.day=true;if(quiet){p.trip=(p.trip||0)+1;if(p.trip%TRIP.length===0)addCert(p,'Hringinn í kringum Ísland','fyrir að lesa jafn marga daga og þarf til að ferðast hringinn í kringum landið.')}else{const keep=PR;PR=p;tripStep();PR=keep}}
+  if(!p.days.includes(k)&&appMinOn(p,k)+homeMinOn(p,k)>=goal){p.days.push(k);p.days=p.days.slice(-90);e.day=true;{const keep=PR;PR=p;e.wd=tripStep(k,quiet);PR=keep}}
   save();return e}
 function delHome(p,id){const i=(p.home||[]).findIndex(h=>h.id===id);if(i<0)return;const e=p.home[i];p.home.splice(i,1);
   if(e.stars){p.stars=Math.max(0,p.stars-e.stars);S.jar.n=Math.max(0,S.jar.n-e.stars)}
-  if(e.day&&appMinOn(p,e.d)+homeMinOn(p,e.d)<Math.max(1,+p.settings.min||15)){const j=p.days.indexOf(e.d);if(j>=0){p.days.splice(j,1);p.trip=Math.max(0,(p.trip||0)-1)}}
+  if(e.day&&appMinOn(p,e.d)+homeMinOn(p,e.d)<Math.max(1,+p.settings.min||15)){const j=p.days.indexOf(e.d);if(j>=0){p.days.splice(j,1);p.trip=Math.max(0,(p.trip||0)-1);if(e.wd)p.world=Math.max(0,(p.world||0)-1)}}
   if(p.homeNote){p.homeNote.n=Math.max(0,p.homeNote.n-e.stars);p.homeNote.min=Math.max(0,p.homeNote.min-e.min);if(!p.homeNote.min)p.homeNote=null}
   save()}
 const HR={book:null,other:'',min:15,when:0,pin:''};
@@ -6048,7 +6173,7 @@ const PA={lv:7};
 const AVNEW=['handb','karfa','skidi','sund','mark','geimfari','vikingur','ofurhetja','visindi','kongur'];
 function renderUserCard(){const extra=true;$('puExtra').hidden=!extra;$('puDelConfirm').hidden=true;$('puDel').hidden=visIds().length<2;
   if(!extra)return;$('puAge').value=PP.yrs||'';
-  $('puLevel').innerHTML=[[7,'Styttri sögur (um 7 ára)'],[9,'Lengri sögur (um 9 ára)']].map(([v,l])=>`<button type="button" class="chip" role="radio" aria-checked="${PP.age===v}" data-ulv="${v}">${l}</button>`).join('')}
+  $('puLevel').innerHTML=[[7,'Styttri sögur (7–8 ára)'],[9,'Lengri sögur (9–10 ára)']].map(([v,l])=>`<button type="button" class="chip" role="radio" aria-checked="${PP.age===v}" data-ulv="${v}">${l}</button>`).join('')}
 $('pTabs').addEventListener('click',e=>{if(!e.target.closest('#pAddBtn'))return;$('paFeed').textContent='';$('paName').value='';$('paAge').value='';PA.lv=7;paLevelUI();pGo('add');setTimeout(()=>$('paName').focus(),50)});
 function paLevelUI(){[...$('paLevel').children].forEach(b=>b.setAttribute('aria-checked',String(+b.dataset.lv===PA.lv)))}
 $('paLevel').addEventListener('click',e=>{const b=e.target.closest('[data-lv]');if(!b)return;PA.lv=+b.dataset.lv;paLevelUI()});
@@ -6184,6 +6309,9 @@ $('jarSave').addEventListener('click',()=>{const g=Math.max(5,Math.min(500,Math.
 $('jarEmpty').addEventListener('click',()=>{$('jarEmpty').hidden=true;$('jarConfirm').hidden=false});
 $('jarNo').addEventListener('click',()=>{$('jarConfirm').hidden=true;$('jarEmpty').hidden=false});
 $('jarYes').addEventListener('click',()=>{(S.jar.hist=S.jar.hist||[]).push({t:Date.now(),goal:S.jar.goal,reward:S.jar.reward,n:S.jar.n});S.jar.n=Math.max(0,S.jar.n-S.jar.goal);save();renderParent();$('jarFeed').textContent='Ný krukka er hafin. Til hamingju með umbunina!'});
+function worldInfo(p){const nm=p.name||'Barnið';if(worldOpen(p)){const nV=WORLD.filter((w,i)=>w.k!=='aq'&&wvis(p,i)).length,nS=WORLD.filter(w=>w.k!=='aq'&&wst(p)[w.k]).length;return `${nm} er ${wloc(p)}. ${nV} af ${WTOT} löndum heimsótt og ${nS} ${nS===1?'stimpill':'stimplar'} í vegabréfinu.`}const left=Math.max(0,TRIP.length-(p.trip||0));return `Opnast sjálfkrafa þegar barnið hefur farið hringinn um Ísland. ${nm} er ${TRIP[(p.trip||0)%TRIP.length][1]} og á ${left===1?'einn lestrardag':left+' lestrardaga'} eftir af hringnum. Þið getið líka opnað ferðina strax.`}
+$('worldChips').addEventListener('click',e=>{const b=e.target.closest('[data-world]');if(!b)return;const was=worldOpen(PP);PP.settings.world=b.dataset.world;if(!was&&worldOpen(PP)){PP.wseen=false;PP.wfrom=PP.wfrom||Date.now();PP.wlast=null;PP.wpen=null}save();renderParent()});
+$('wmodeChips').addEventListener('click',e=>{const b=e.target.closest('[data-wmode]');if(!b)return;PP.settings.wmode=b.dataset.wmode;PP.wpen=PP.wlast;save();renderParent()});
 $('jumpChips').addEventListener('click',e=>{const b=e.target.closest('[data-jump]');if(!b)return;PP.settings.jump=b.dataset.jump;save();renderParent()});
 $('recChips').addEventListener('click',e=>{const b=e.target.closest('[data-rec]');if(!b)return;PP.settings.rec=b.dataset.rec==='1';save();renderParent()});
 $('bkSave').addEventListener('click',async()=>{const f=$('bkFeed');f.textContent='Útbý afrit…';
@@ -6392,9 +6520,282 @@ function renderTrip(){const p=PR,n=p.trip||0,at=n%TRIP.length,lap=Math.floor(n/T
   const seen=TRIP.map((t,i)=>({t,i})).filter(x=>lap>0||x.i<=at).reverse();
   $('tripFacts').innerHTML=seen.map(({t,i})=>`<li${i===at?' class="cur"':''}><b>${i+1}. ${esc(t[0])}</b><span>${esc(t[4])}</span></li>`).join('');
   $('tripLead').textContent=`Þú hefur lesið ${n===1?'einn dag':nf(n)+' daga'}. ${lap?`Þú ert á hring ${lap+1} í kringum landið.`:`Eftir ${TRIP.length-1-at===1?'einn lestrardag':(TRIP.length-1-at)+' lestrardaga'} hefur þú farið hringinn.`}`}
-function tripStep(){PR.trip=(PR.trip||0)+1;save();const t=TRIP[PR.trip%TRIP.length];setTimeout(()=>toast(`Ný stoppistöð: ${t[0]}!`,'Skoðaðu kortið á forsíðunni.',{kind:'soft',ms:8000}),1200);if(PR.trip%TRIP.length===0)addCert(PR,'Hringinn í kringum Ísland','fyrir að lesa jafn marga daga og þarf til að ferðast hringinn í kringum landið.')}
+function tripStep(k,quiet){k=k||dkey(new Date());const was=worldOpen(PR);PR.trip=(PR.trip||0)+1;let wd=false;if(PR.trip%TRIP.length===0)addCert(PR,'Hringinn í kringum Ísland','fyrir að lesa jafn marga daga og þarf til að ferðast hringinn í kringum landið.');if(was){worldStep(PR,k,quiet);wd=true}else if(worldOpen(PR)){PR.wlast=k;PR.wfrom=PR.wfrom||Date.now()}else if(!quiet){const t=TRIP[PR.trip%TRIP.length];setTimeout(()=>toast(`Ný stoppistöð: ${t[0]}!`,'Skoðaðu kortið á forsíðunni.',{kind:'soft',ms:8000}),1200)}save();return wd}
 $('tripBack').addEventListener('click',()=>{renderHome();show('home')});
 $('tripBig').addEventListener('click',e=>{const g=e.target.closest('.tstop.vis');if(!g)return;const li=$('tripFacts').querySelectorAll('li');const i=+g.dataset.stop;const el=[...li].find(x=>x.textContent.startsWith(i+1+'. '));if(el){el.scrollIntoView({behavior:'smooth',block:'center'});el.classList.add('flash');setTimeout(()=>el.classList.remove('flash'),1200)}});
+
+/* ---------- Ferðalagið um heiminn: gögn ---------- */
+/* k, nafn, „í X“, „til X“, höfuðborg, íbúar, tungumál, heimsálfa, lon, lat, saga, vissir þú, [orð, framburður, merking, tts-texti], [spurning, rétt, rangt, rangt], tts-tungumál */
+const WORLD=[
+ ['no','Noregur','í Noregi','til Noregs','Ósló','Um 5,5 milljónir','Norska','eu',10.75,59.9,
+  'Noregur er langt land með háum fjöllum og djúpum fjörðum. Flestir landnámsmenn Íslands komu frá Noregi fyrir meira en 1100 árum. Í dag er Noregur ríkt land, meðal annars vegna olíu sem finnst undir hafsbotninum.',
+  'Nyrst í Noregi sest sólin ekki í margar vikur á sumrin. Það kallast miðnætursól. Á veturna kemur sólin aftur á móti ekki upp í margar vikur.',
+  [['Hei','hæ','halló'],['Takk','takk','takk']],['Hvað kallast það þegar sólin sest ekki á sumrin?','Miðnætursól','Tunglskin','Sólmyrkvi'],'nb-NO'],
+ ['de','Þýskaland','í Þýskalandi','til Þýskalands','Berlín','Um 84 milljónir','Þýska','eu',13.4,52.5,
+  'Þýskaland er í miðri Evrópu. Í mörg ár skiptist landið í tvennt og hár múr lá þvert í gegnum Berlín. Árið 1989 var múrinn opnaður og ári seinna varð Þýskaland aftur eitt land.',
+  'Í Þýskalandi eru til yfir þúsund tegundir af pylsum. Jólamarkaðir með ljósum og piparkökum eru líka gömul þýsk hefð.',
+  [['Hallo','halló','halló'],['Danke','danke','takk']],['Hvað lá þvert í gegnum Berlín í mörg ár?','Múr','Fljót','Járnbraut'],'de-DE'],
+ ['gb','Bretland','í Bretlandi','til Bretlands','London','Um 69 milljónir','Enska','eu',-0.1,51.5,
+  'Bretland er eyríki og í því eru England, Skotland, Wales og Norður-Írland. Konungar og drottningar hafa ríkt þar í meira en þúsund ár. Fótbolti eins og við þekkjum hann í dag varð til á Englandi.',
+  'Frægi klukkuturninn í London er oft kallaður Big Ben. En í raun heitir stóra bjallan inni í turninum Big Ben.',
+  [['Hello','helló','halló'],['Thank you','þenk jú','takk']],['Hvað heitir stóra bjallan í klukkuturninum í London?','Big Ben','Litli Tom','Stóra Stína'],'en-GB'],
+ ['fr','Frakkland','í Frakklandi','til Frakklands','París','Um 68 milljónir','Franska','eu',2.35,48.85,
+  'Frakkland er stærsta land Vestur-Evrópu. Árið 1789 gerði fólkið byltingu og konungurinn missti völdin. Í dag koma fleiri ferðamenn til Frakklands en til nokkurs annars lands í heiminum.',
+  'Eiffelturninn var byggður fyrir stóra sýningu árið 1889. Hann átti bara að standa í 20 ár, en hann stendur enn!',
+  [['Bonjour','bonsjúr','góðan dag'],['Merci','mersí','takk']],['Hvað átti Eiffelturninn upphaflega að standa lengi?','Í 20 ár','Í 2 daga','Í 500 ár'],'fr-FR'],
+ ['es','Spánn','á Spáni','til Spánar','Madríd','Um 49 milljónir','Spænska','eu',-3.7,40.4,
+  'Spánn er í suðurhluta Evrópu. Fyrir meira en 500 árum sigldi Kristófer Kólumbus frá Spáni yfir Atlantshafið. Eftir það fór fólk að tala spænsku í stórum hluta Ameríku, og í dag er spænska eitt mest talaða tungumál heims.',
+  'Kirkjan Sagrada Família í Barcelona hefur verið í byggingu síðan árið 1882. Það er meira en 140 ár!',
+  [['Hola','óla','halló'],['Gracias','grasías','takk']],['Hvað hefur Sagrada Família verið lengi í byggingu?','Í meira en 140 ár','Í eina viku','Í tíu ár'],'es-ES'],
+ ['it','Ítalía','á Ítalíu','til Ítalíu','Róm','Um 59 milljónir','Ítalska','eu',12.5,41.9,
+  'Ítalía er í laginu eins og stígvél. Fyrir um 2000 árum var Róm höfuðborg Rómaveldis, sem náði yfir stóran hluta Evrópu. Inni í Róm er líka Vatíkanið, minnsta land í heimi.',
+  'Pítsan kemur frá borginni Napólí á Ítalíu. Pítsa Margherita er rauð, hvít og græn, alveg eins og ítalski fáninn.',
+  [['Ciao','tsjá-ó','halló'],['Grazie','grattsíe','takk']],['Í laginu eins og hvað er Ítalía?','Stígvél','Hattur','Fiskur'],'it-IT'],
+ ['gr','Grikkland','í Grikklandi','til Grikklands','Aþena','Um 10 milljónir','Gríska','eu',23.7,38,
+  'Grikkland á sér mjög langa sögu. Fyrir meira en 2500 árum fundu Forn-Grikkir upp lýðræði, þar sem fólkið fékk sjálft að kjósa. Ólympíuleikarnir byrjuðu líka í Grikklandi til forna.',
+  'Í kringum Grikkland eru þúsundir eyja, en aðeins rúmlega 200 þeirra eru byggðar.',
+  [['Geia sou','jassú','halló','Γειά σου'],['Efcharistó','efkharistó','takk','Ευχαριστώ']],['Hvaða íþróttaleikar byrjuðu í Grikklandi til forna?','Ólympíuleikarnir','HM í fótbolta','Vetrarleikarnir'],'el-GR'],
+ ['tr','Tyrkland','í Tyrklandi','til Tyrklands','Ankara','Um 85 milljónir','Tyrkneska','as',32.8,39.9,
+  'Tyrkland er bæði í Evrópu og Asíu. Stærsta borgin, Istanbúl, liggur beggja vegna við sund, svo hluti hennar er í Evrópu og hluti í Asíu. Í meira en 600 ár var landið miðja í stóru veldi sem hét Tyrkjaveldi.',
+  'Túlípanar bárust til Hollands frá Tyrklandi fyrir meira en 400 árum. Áður voru þeir eftirlætisblóm soldánanna í Istanbúl.',
+  [['Merhaba','merhaba','halló'],['Teşekkürler','tesjekkúrler','takk']],['Í hvaða tveimur heimsálfum er Istanbúl?','Í Evrópu og Asíu','Í Afríku og Ameríku','Í Asíu og Eyjaálfu'],'tr-TR'],
+ ['eg','Egyptaland','í Egyptalandi','til Egyptalands','Kaíró','Yfir 110 milljónir','Arabíska','af',31.2,30,
+  'Fyrir um 4500 árum byggðu Egyptar pýramídana miklu sem grafhýsi fyrir faraóana, konunga Egyptalands. Fljótið Níl rennur í gegnum landið. Án þess væri þar nánast bara eyðimörk.',
+  'Egyptar til forna skrifuðu með myndletri sem kallast híeróglýfur. Þeir bjuggu líka til eins konar pappír úr plöntu sem heitir papýrus.',
+  [['Marhaban','marhaba','halló','مرحبا'],['Shukran','sjúkran','takk','شكرا']],['Hvað hétu konungar Egyptalands til forna?','Faraóar','Keisarar','Jarlar'],'ar-EG'],
+ ['ma','Marokkó','í Marokkó','til Marokkó','Rabat','Um 37 milljónir','Arabíska og berbamál','af',-6.8,34,
+  'Marokkó er í norðvesturhorni Afríku, aðeins um 14 kílómetra frá Spáni. Í landinu eru há fjöll sem heita Atlasfjöll og hluti af Saharaeyðimörkinni. Í gömlu borgunum eru þröngar götur og litríkir markaðir.',
+  'Í Marokkó eru geitur sem klifra upp í tré til að borða ávextina af arganviðnum!',
+  [['Salam','salam','halló','سلام'],['Shukran','sjúkran','takk','شكرا']],['Hvaða dýr klifra upp í tré í Marokkó?','Geitur','Kýr','Hestar'],'ar-MA'],
+ ['gh','Gana','í Gana','til Gana','Akkra','Um 34 milljónir','Enska og mörg önnur mál','af',-0.2,5.6,
+  'Gana er í Vestur-Afríku. Áður hét landið Gullströndin, vegna gullsins sem þar fannst. Árið 1957 varð Gana fyrsta landið sunnan Sahara til að losna undan stjórn Evrópuríkis og verða sjálfstætt.',
+  'Gana er eitt af stærstu kakóræktarlöndum heims. Súkkulaðið sem þú borðar gæti verið búið til úr kakóbaunum frá Gana!',
+  [['Akwaaba','akvaaba','velkomin'],['Medaase','medaasí','takk']],['Hvað hét Gana áður?','Gullströndin','Silfurfjöllin','Bláa landið'],''],
+ ['ke','Kenía','í Kenía','til Kenía','Naíróbí','Um 56 milljónir','Svahílí og enska','af',36.8,-1.3,
+  'Kenía er í Austur-Afríku og miðbaugurinn liggur þvert í gegnum landið. Í Kenía hafa fundist einhver elstu bein forfeðra okkar mannanna. Landið varð sjálfstætt árið 1963.',
+  'Á hverju ári ganga meira en milljón gnýir og sebrahestar yfir slétturnar í Kenía og Tansaníu í leit að grasi.',
+  [['Jambo','djambó','halló'],['Asante','asante','takk']],['Hvaða lína liggur í gegnum Kenía?','Miðbaugurinn','Daglínan','Heimskautsbaugurinn'],'sw-KE'],
+ ['za','Suður-Afríka','í Suður-Afríku','til Suður-Afríku','Pretoría','Um 63 milljónir','12 opinber tungumál','af',28.2,-25.7,
+  'Suður-Afríka er syðst í Afríku. Í mörg ár máttu svart fólk og hvítt ekki búa í sömu hverfum eða ganga í sömu skóla. Nelson Mandela barðist gegn þessu óréttlæti, sat 27 ár í fangelsi og varð svo forseti landsins árið 1994.',
+  'Suður-Afríka hefur þrjár höfuðborgir og 12 opinber tungumál. Eitt þeirra er táknmál!',
+  [['Sawubona','savúbóna','halló (á súlú)'],['Ngiyabonga','ngíjabonga','takk (á súlú)']],['Hver varð forseti Suður-Afríku árið 1994?','Nelson Mandela','Kristófer Kólumbus','Roald Amundsen'],'zu-ZA'],
+ ['in','Indland','á Indlandi','til Indlands','Nýja-Delí','Yfir 1400 milljónir','Hindí, enska og fleiri','as',77.2,28.6,
+  'Indland er fjölmennasta land í heimi. Þar eru töluð hundruð tungumála. Taj Mahal er frægt hvítt grafhýsi sem keisari lét reisa til minningar um konuna sína.',
+  'Skákin á rætur sínar að rekja til Indlands fyrir um 1500 árum.',
+  [['Namaste','namaste','halló','नमस्ते'],['Dhanyavaad','danjavad','takk','धन्यवाद']],['Hvaða leikur á rætur að rekja til Indlands?','Skák','Monopoly','Yatzy'],'hi-IN'],
+ ['cn','Kína','í Kína','til Kína','Peking','Um 1400 milljónir','Kínverska','as',116.4,39.9,
+  'Kína er eitt elsta ríki heims. Kínverjar fundu upp pappír, áttavitann og flugelda. Kínamúrinn var byggður á mörg hundruð árum til að verja landið og er þúsundir kílómetra langur.',
+  'Villtar risapöndur lifa bara í fjöllunum í Kína. Þær borða bambus meira en hálfan daginn!',
+  [['Nǐ hǎo','ní há-ó','halló','你好'],['Xièxie','sjé-sje','takk','谢谢']],['Hvað borða risapöndur aðallega?','Bambus','Fisk','Banana'],'zh-CN'],
+ ['kr','Suður-Kórea','í Suður-Kóreu','til Suður-Kóreu','Seúl','Um 52 milljónir','Kóreska','as',127,37.5,
+  'Eftir stríð um árið 1950 skiptist Kóreuskaginn í tvö lönd, Norður-Kóreu og Suður-Kóreu. Suður-Kórea var þá fátækt land en er í dag eitt tæknivæddasta land heims. Þar eru framleiddir margir símar, bílar og sjónvörp.',
+  'Kóngur bjó til kóreska stafrófið, hangúl, fyrir næstum 600 árum. Það er svo einfalt að margir læra það á einum degi.',
+  [['Annyeonghaseyo','anjonghasejó','halló','안녕하세요'],['Gamsahamnida','kamsahamnída','takk','감사합니다']],['Hvað heitir kóreska stafrófið?','Hangúl','Rúnir','Kanji'],'ko-KR'],
+ ['jp','Japan','í Japan','til Japans','Tókýó','Um 124 milljónir','Japanska','as',139.7,35.7,
+  'Japan er eyríki í Kyrrahafinu, gert úr fjórum stórum eyjum og þúsundum smærri. Í mörg hundruð ár réðu samúræjar og herforingjar landinu. Í dag er Japan þekkt fyrir hraðlestir, vélmenni, tölvuleiki og sushi.',
+  'Rauði hringurinn á fánanum er sólin. Japan er stundum kallað land rísandi sólar. Hraðlestin Shinkansen kemst á yfir 300 km hraða, eins og að fara frá Reykjavík til Akureyrar á rúmum klukkutíma!',
+  [['Konnichiwa','konnítsjíva','halló','こんにちは'],['Arigatō','arígató','takk','ありがとう']],['Hvað táknar rauði hringurinn á fána Japans?','Sólina','Bolta','Epli'],'ja-JP'],
+ ['vn','Víetnam','í Víetnam','til Víetnam','Hanoí','Um 100 milljónir','Víetnamska','as',105.8,21,
+  'Víetnam er langt og mjótt land í Suðaustur-Asíu. Þar eru stórir hrísgrjónaakrar og Víetnam selur hrísgrjón um allan heim. Í Ha Long-flóa rísa um 2000 klettaeyjar upp úr sjónum.',
+  'Samkvæmt gamalli þjóðsögu bjuggu drekar til eyjarnar í Ha Long-flóa. Ha Long þýðir „þar sem drekinn steig niður“.',
+  [['Xin chào','sín tsjá-ó','halló'],['Cảm ơn','kam ön','takk']],['Hvað bjó til eyjarnar í Ha Long-flóa samkvæmt þjóðsögunni?','Drekar','Risar','Hvalir'],'vi-VN'],
+ ['th','Taíland','í Taílandi','til Taílands','Bangkok','Um 70 milljónir','Taílenska','as',100.5,13.75,
+  'Taíland er eina landið í Suðaustur-Asíu sem Evrópuríki réðu aldrei yfir. Áður hét landið Síam. Þar er konungur og fólkið ber mikla virðingu fyrir honum.',
+  'Fíllinn er þjóðartákn Taílands. Fullt nafn Bangkok er eitt lengsta borgarnafn í heimi, yfir 160 stafir á okkar letri!',
+  [['Sawasdee','savaddí','halló','สวัสดี'],['Khop khun','kopp kun','takk','ขอบคุณ']],['Hvað hét Taíland áður?','Síam','Persía','Gallía'],'th-TH'],
+ ['id','Indónesía','í Indónesíu','til Indónesíu','Djakarta','Um 280 milljónir','Indónesíska','as',106.8,-6.2,
+  'Indónesía er stærsta eyríki heims, með meira en 17.000 eyjum. Þar eru mörg virk eldfjöll, eins og á Íslandi. Hollendingar réðu landinu lengi en Indónesía varð sjálfstæð árið 1945.',
+  'Á eyjunni Komodo lifa komodódrekar, stærstu eðlur í heimi. Þeir geta orðið þriggja metra langir!',
+  [['Halo','haló','halló'],['Terima kasih','teríma kasí','takk']],['Hvaða dýr lifa á eyjunni Komodo?','Komodódrekar','Ísbirnir','Kengúrur'],'id-ID'],
+ ['au','Ástralía','í Ástralíu','til Ástralíu','Canberra','Um 27 milljónir','Enska','oc',149.1,-35.3,
+  'Ástralía er bæði land og heil heimsálfa. Frumbyggjar hafa búið þar í að minnsta kosti 50.000 ár. Við strönd landsins er Kóralrifið mikla, stærsta kóralrif í heimi.',
+  'Kengúrur og kóalabirnir lifa hvergi villt nema í Ástralíu. Kengúruungar vaxa í poka á maga móður sinnar.',
+  [['G’day','gedæ','halló'],['Thanks, mate','þenks meit','takk, vinur']],['Hvar vex kengúruungi?','Í poka á maga móður sinnar','Í hreiðri uppi í tré','Í holu undir steini'],'en-AU'],
+ ['nz','Nýja-Sjáland','á Nýja-Sjálandi','til Nýja-Sjálands','Wellington','Um 5,3 milljónir','Enska og maórí','oc',174.8,-41.3,
+  'Nýja-Sjáland er gert úr tveimur stórum eyjum, Norðurey og Suðurey. Maórar sigldu þangað á bátum fyrir um 700 árum og urðu fyrstu íbúarnir. Í dag eru maórí og enska bæði töluð í landinu.',
+  'Kívífuglinn er tákn Nýja-Sjálands. Hann getur ekki flogið og leitar að mat á nóttunni. Nýsjálendingar eru oft kallaðir kívíar.',
+  [['Kia ora','kía óra','halló'],['Ka kite anō','ka kíte anó','sjáumst']],['Hvað getur kívífuglinn ekki?','Flogið','Gengið','Borðað'],''],
+ ['aq','Suðurskautslandið','á Suðurskautslandinu','til Suðurskautslandsins','Engin','Enginn býr þar alltaf','Vísindafólk frá mörgum löndum','an',166.7,-69,
+  'Suðurskautslandið er kaldasta, vindasamasta og þurrasta heimsálfa jarðar. Þar býr enginn alltaf, en nokkur þúsund vísindamenn dvelja þar í rannsóknarstöðvum. Árið 1911 varð Norðmaðurinn Roald Amundsen fyrstur til að komast á suðurpólinn.',
+  'Þar hefur mælst næstum 90 stiga frost. Mörgæsir búa á Suðurskautslandinu en engir ísbirnir. Þeir búa á norðurslóðum, langt í burtu.',
+  [['Brrr!','brrr','svona kalt er hér'],['Mörgæs','mörgæs','á ensku: penguin']],['Hver varð fyrstur á suðurpólinn?','Roald Amundsen','Leifur heppni','Nelson Mandela'],''],
+ ['ar','Argentína','í Argentínu','til Argentínu','Búenos Aíres','Um 46 milljónir','Spænska','sa',-58.4,-34.6,
+  'Argentína er næststærsta land Suður-Ameríku. Andesfjöllin liggja eftir vesturhluta landsins og syðst er Eldland, nálægt Suðurskautslandinu. Argentína hefur þrisvar orðið heimsmeistari í fótbolta, síðast árið 2022 með Lionel Messi.',
+  'Í Argentínu fundust bein einnar stærstu risaeðlu sem fundist hefur. Hún var næstum jafn löng og þrír strætisvagnar!',
+  [['Hola','óla','halló'],['¡Che!','tsje','heyrðu, vinur!']],['Hver var fyrirliði Argentínu þegar liðið varð heimsmeistari 2022?','Lionel Messi','Cristiano Ronaldo','Mohamed Salah'],'es-AR'],
+ ['cl','Síle','í Síle','til Síle','Santíagó','Um 20 milljónir','Spænska','sa',-70.7,-33.4,
+  'Síle er eitt lengsta og mjósta land í heimi, meira en 4000 kílómetra langt en víðast innan við 200 kílómetra breitt. Í norðri er Atacama-eyðimörkin, ein sú þurrasta á jörðinni.',
+  'Síle á Páskaeyju langt úti í Kyrrahafi. Þar standa næstum þúsund risastórar steinstyttur sem kallast moai.',
+  [['Hola','óla','halló'],['¿Cachai?','katsjæ','skilurðu?']],['Hvað kallast steinstytturnar á Páskaeyju?','Moai','Tótem','Tröll'],'es-CL'],
+ ['pe','Perú','í Perú','til Perú','Líma','Um 34 milljónir','Spænska og kvetsjúa','sa',-77,-12,
+  'Í Perú var Inkaveldið, stórt ríki sem náði eftir Andesfjöllunum. Inkarnir byggðu borgina Machu Picchu hátt uppi í fjöllunum fyrir um 600 árum. Seinna lögðu Spánverjar ríkið undir sig.',
+  'Kartaflan kemur upphaflega frá Perú og Andesfjöllunum. Þar eru ræktaðar þúsundir tegunda af kartöflum!',
+  [['Allillanchu','aljiljantsjú','hvernig hefur þú það? (á kvetsjúa)'],['Sulpayki','súlpæki','takk (á kvetsjúa)']],['Hvaða matur kemur upphaflega frá Perú?','Kartaflan','Gulrótin','Hvítkálið'],''],
+ ['br','Brasilía','í Brasilíu','til Brasilíu','Brasilía','Um 212 milljónir','Portúgalska','sa',-47.9,-15.8,
+  'Brasilía er stærsta land Suður-Ameríku. Þar er stærsti hluti Amazon-regnskógarins, sem er stærsti regnskógur heims. Portúgalar komu þangað árið 1500 og þess vegna er töluð portúgalska í Brasilíu.',
+  'Brasilía hefur unnið HM í fótbolta oftar en nokkurt annað land, fimm sinnum!',
+  [['Olá','óla','halló'],['Obrigado','óbrígadú','takk']],['Hvaða tungumál er talað í Brasilíu?','Portúgalska','Spænska','Enska'],'pt-BR'],
+ ['jm','Jamaíka','á Jamaíku','til Jamaíku','Kingston','Um 2,8 milljónir','Enska og jamaíska','na',-76.8,18,
+  'Jamaíka er eyja í Karíbahafinu. Frumbyggjarnir kölluðu hana land skóga og vatns. Jamaíka varð sjálfstæð frá Bretum árið 1962. Reggítónlist, eins og lögin hans Bobs Marley, varð til á Jamaíku.',
+  'Usain Bolt frá Jamaíku er fljótasti maður sem mælst hefur. Hann hljóp 100 metra á 9,58 sekúndum!',
+  [['Wah gwaan','va gván','hvað segirðu?'],['Respect','rispekt','takk, virðing']],['Hvaða tónlist varð til á Jamaíku?','Reggí','Ópera','Rímur'],'en-JM'],
+ ['mx','Mexíkó','í Mexíkó','til Mexíkó','Mexíkóborg','Um 130 milljónir','Spænska','na',-99.1,19.4,
+  'Í Mexíkó bjuggu Majar og Astekar sem byggðu stórar borgir og pýramída. Höfuðborg Asteka var byggð á eyju úti í stöðuvatni, þar sem Mexíkóborg stendur núna.',
+  'Súkkulaði, maís og avókadó koma upphaflega frá Mexíkó og nágrannalöndunum. Astekar drukku kakó sem beiskan drykk.',
+  [['Hola','óla','halló'],['¡Qué padre!','ke padre','en flott!']],['Hvaða þjóðir byggðu pýramída í Mexíkó?','Majar og Astekar','Víkingar','Rómverjar'],'es-MX'],
+ ['us','Bandaríkin','í Bandaríkjunum','til Bandaríkjanna','Washington','Um 340 milljónir','Enska','na',-77,38.9,
+  'Bandaríkin eru gerð úr 50 fylkjum. Landið varð sjálfstætt frá Bretum árið 1776. Árið 1969 urðu bandarískir geimfarar fyrstu mennirnir til að ganga á tunglinu.',
+  'Leifur Eiríksson kom til Norður-Ameríku um árið 1000, nærri 500 árum á undan Kólumbusi!',
+  [['Hi','hæ','hæ'],['Awesome!','ásöm','æðislegt!']],['Hvað eru fylkin í Bandaríkjunum mörg?','50','12','100'],'en-US'],
+ ['ca','Kanada','í Kanada','til Kanada','Ottawa','Um 41 milljón','Enska og franska','na',-75.7,45.4,
+  'Kanada er næststærsta land í heimi, á eftir Rússlandi. Þar eru töluð bæði enska og franska. Margir Íslendingar fluttu til Kanada fyrir um 150 árum og settust að í Nýja-Íslandi, þar sem bærinn Gimli er.',
+  'Kanada á fleiri stöðuvötn en öll önnur lönd heims til samans. Laufið á fánanum er af hlynstré, og úr safa hlynsins er búið til hlynsíróp.',
+  [['Hello · Bonjour','helló · bonsjúr','halló á ensku og frönsku','Bonjour'],['Merci','mersí','takk á frönsku']],['Hvað heitir byggðin sem Íslendingar stofnuðu í Kanada?','Nýja-Ísland','Litla-Reykjavík','Vínland'],'fr-CA'],
+].map(a=>({k:a[0],n:a[1],loc:a[2],til:a[3],cap:a[4],pop:a[5],lang:a[6],c:a[7],lo:a[8],la:a[9],saga:a[10],fact:a[11],say:a[12],q:a[13],tl:a[14]}));
+
+const WFLAG={"no":"<rect width=\"36\" height=\"24\" fill=\"#BA0C2F\"/><path d=\"M0 12H36M13 0V24\" stroke=\"#fff\" stroke-width=\"6\"/><path d=\"M0 12H36M13 0V24\" stroke=\"#00205B\" stroke-width=\"3\"/>","de":"<rect width=\"36\" height=\"8\" fill=\"#000\"/><rect y=\"8\" width=\"36\" height=\"8\" fill=\"#DD0000\"/><rect y=\"16\" width=\"36\" height=\"8\" fill=\"#FFCE00\"/>","gb":"<rect width=\"36\" height=\"24\" fill=\"#1F3A93\"/><path d=\"M0 0L36 24M36 0L0 24\" stroke=\"#fff\" stroke-width=\"4.8\"/><path d=\"M0 0L36 24M36 0L0 24\" stroke=\"#C8102E\" stroke-width=\"1.6\"/><path d=\"M18 0V24M0 12H36\" stroke=\"#fff\" stroke-width=\"7.2\"/><path d=\"M18 0V24M0 12H36\" stroke=\"#C8102E\" stroke-width=\"4\"/>","fr":"<rect width=\"12\" height=\"24\" fill=\"#002395\"/><rect x=\"12\" width=\"12\" height=\"24\" fill=\"#fff\"/><rect x=\"24\" width=\"12\" height=\"24\" fill=\"#ED2939\"/>","es":"<rect width=\"36\" height=\"24\" fill=\"#AA151B\"/><rect y=\"6\" width=\"36\" height=\"12\" fill=\"#F1BF00\"/><rect x=\"8\" y=\"9\" width=\"5\" height=\"6\" rx=\"1\" fill=\"#AA151B\" opacity=\".55\"/>","it":"<rect width=\"12\" height=\"24\" fill=\"#009246\"/><rect x=\"12\" width=\"12\" height=\"24\" fill=\"#fff\"/><rect x=\"24\" width=\"12\" height=\"24\" fill=\"#CE2B37\"/>","gr":"<rect y=\"0.00\" width=\"36\" height=\"2.72\" fill=\"#0D5EAF\"/><rect y=\"2.67\" width=\"36\" height=\"2.72\" fill=\"#fff\"/><rect y=\"5.33\" width=\"36\" height=\"2.72\" fill=\"#0D5EAF\"/><rect y=\"8.00\" width=\"36\" height=\"2.72\" fill=\"#fff\"/><rect y=\"10.67\" width=\"36\" height=\"2.72\" fill=\"#0D5EAF\"/><rect y=\"13.33\" width=\"36\" height=\"2.72\" fill=\"#fff\"/><rect y=\"16.00\" width=\"36\" height=\"2.72\" fill=\"#0D5EAF\"/><rect y=\"18.67\" width=\"36\" height=\"2.72\" fill=\"#fff\"/><rect y=\"21.33\" width=\"36\" height=\"2.72\" fill=\"#0D5EAF\"/><rect width=\"13.3\" height=\"13.3\" fill=\"#0D5EAF\"/><path d=\"M6.67 0V13.3M0 6.67H13.3\" stroke=\"#fff\" stroke-width=\"2.67\"/>","tr":"<rect width=\"36\" height=\"24\" fill=\"#E30A17\"/><circle cx=\"13\" cy=\"12\" r=\"6\" fill=\"#fff\"/><circle cx=\"14.6\" cy=\"12\" r=\"4.8\" fill=\"#E30A17\"/><path d=\"M18.40,12.00 L20.15,11.38 L20.20,9.53 L21.32,11.00 L23.10,10.47 L22.05,12.00 L23.10,13.53 L21.32,13.00 L20.20,14.47 L20.15,12.62Z\" fill=\"#fff\"/>","eg":"<rect width=\"36\" height=\"8\" fill=\"#CE1126\"/><rect y=\"8\" width=\"36\" height=\"8\" fill=\"#fff\"/><rect y=\"16\" width=\"36\" height=\"8\" fill=\"#000\"/><path d=\"M18 9.2l1.6 1.2v3.6h-3.2v-3.6z\" fill=\"#C09300\"/>","ma":"<rect width=\"36\" height=\"24\" fill=\"#C1272D\"/><path d=\"M18.00,7.20 L19.18,10.78 L22.95,10.79 L19.90,13.02 L21.06,16.61 L18.00,14.40 L14.94,16.61 L16.10,13.02 L13.05,10.79 L16.82,10.78Z\" fill=\"none\" stroke=\"#006233\" stroke-width=\"1\"/>","gh":"<rect width=\"36\" height=\"8\" fill=\"#CE1126\"/><rect y=\"8\" width=\"36\" height=\"8\" fill=\"#FCD116\"/><rect y=\"16\" width=\"36\" height=\"8\" fill=\"#006B3F\"/><path d=\"M18.00,8.40 L18.85,10.84 L21.42,10.89 L19.37,12.44 L20.12,14.91 L18.00,13.44 L15.88,14.91 L16.63,12.44 L14.58,10.89 L17.15,10.84Z\" fill=\"#000\"/>","ke":"<rect width=\"36\" height=\"24\" fill=\"#fff\"/><rect width=\"36\" height=\"7\" fill=\"#000\"/><rect y=\"8.5\" width=\"36\" height=\"7\" fill=\"#BB0000\"/><rect y=\"17\" width=\"36\" height=\"7\" fill=\"#006600\"/><ellipse cx=\"18\" cy=\"12\" rx=\"3.2\" ry=\"7\" fill=\"#BB0000\" stroke=\"#000\" stroke-width=\".6\"/><path d=\"M18 5.5V18.5\" stroke=\"#fff\" stroke-width=\".8\"/><ellipse cx=\"18\" cy=\"12\" rx=\"1.4\" ry=\"3\" fill=\"#000\"/>","za":"<rect width=\"36\" height=\"12\" fill=\"#E03C31\"/><rect y=\"12\" width=\"36\" height=\"12\" fill=\"#001489\"/><path d=\"M0 0L14 12L0 24\" fill=\"none\" stroke=\"#fff\" stroke-width=\"8\"/><path d=\"M14 12H36\" stroke=\"#fff\" stroke-width=\"8\"/><path d=\"M0 0L14 12L0 24\" fill=\"none\" stroke=\"#007749\" stroke-width=\"5\"/><path d=\"M14 12H36\" stroke=\"#007749\" stroke-width=\"5\"/><path d=\"M0 3.5L10 12L0 20.5Z\" fill=\"#FFB81C\"/><path d=\"M0 5.5L7.6 12L0 18.5Z\" fill=\"#000\"/>","in":"<rect width=\"36\" height=\"8\" fill=\"#FF9933\"/><rect y=\"8\" width=\"36\" height=\"8\" fill=\"#fff\"/><rect y=\"16\" width=\"36\" height=\"8\" fill=\"#138808\"/><circle cx=\"18\" cy=\"12\" r=\"3\" fill=\"none\" stroke=\"#000080\" stroke-width=\".7\"/><circle cx=\"18\" cy=\"12\" r=\".7\" fill=\"#000080\"/>","cn":"<rect width=\"36\" height=\"24\" fill=\"#DE2910\"/><path d=\"M6.00,2.40 L6.85,4.84 L9.42,4.89 L7.37,6.44 L8.12,8.91 L6.00,7.44 L3.88,8.91 L4.63,6.44 L2.58,4.89 L5.15,4.84Z\" fill=\"#FFDE00\"/><path d=\"M12.00,1.20 L12.28,2.01 L13.14,2.03 L12.46,2.55 L12.71,3.37 L12.00,2.88 L11.29,3.37 L11.54,2.55 L10.86,2.03 L11.72,2.01Z\" fill=\"#FFDE00\"/><path d=\"M14.40,3.60 L14.68,4.41 L15.54,4.43 L14.86,4.95 L15.11,5.77 L14.40,5.28 L13.69,5.77 L13.94,4.95 L13.26,4.43 L14.12,4.41Z\" fill=\"#FFDE00\"/><path d=\"M14.40,7.20 L14.68,8.01 L15.54,8.03 L14.86,8.55 L15.11,9.37 L14.40,8.88 L13.69,9.37 L13.94,8.55 L13.26,8.03 L14.12,8.01Z\" fill=\"#FFDE00\"/><path d=\"M12.00,9.60 L12.28,10.41 L13.14,10.43 L12.46,10.95 L12.71,11.77 L12.00,11.28 L11.29,11.77 L11.54,10.95 L10.86,10.43 L11.72,10.41Z\" fill=\"#FFDE00\"/>","kr":"<rect width=\"36\" height=\"24\" fill=\"#fff\"/><path d=\"M12.5 12a5.5 5.5 0 0111 0Z\" fill=\"#CD2E3A\"/><path d=\"M12.5 12a5.5 5.5 0 0011 0Z\" fill=\"#0047A0\"/><circle cx=\"15.25\" cy=\"12\" r=\"2.75\" fill=\"#CD2E3A\"/><circle cx=\"20.75\" cy=\"12\" r=\"2.75\" fill=\"#0047A0\"/><g transform=\"translate(7 5) rotate(-56)\"><path d=\"M-2.4 -1.6H2.4M-2.4 0H2.4M-2.4 1.6H2.4\" stroke=\"#000\" stroke-width=\".9\"/></g><g transform=\"translate(29 19) rotate(-56)\"><path d=\"M-2.4 -1.6H2.4M-2.4 0H2.4M-2.4 1.6H2.4\" stroke=\"#000\" stroke-width=\".9\"/></g><g transform=\"translate(29 5) rotate(56)\"><path d=\"M-2.4 -1.6H2.4M-2.4 0H2.4M-2.4 1.6H2.4\" stroke=\"#000\" stroke-width=\".9\"/></g><g transform=\"translate(7 19) rotate(56)\"><path d=\"M-2.4 -1.6H2.4M-2.4 0H2.4M-2.4 1.6H2.4\" stroke=\"#000\" stroke-width=\".9\"/></g>","jp":"<rect width=\"36\" height=\"24\" fill=\"#fff\"/><circle cx=\"18\" cy=\"12\" r=\"7.2\" fill=\"#BC002D\"/>","vn":"<rect width=\"36\" height=\"24\" fill=\"#DA251D\"/><path d=\"M18.00,5.60 L19.65,10.33 L24.66,10.44 L20.66,13.47 L22.11,18.26 L18.00,15.40 L13.89,18.26 L15.34,13.47 L11.34,10.44 L16.35,10.33Z\" fill=\"#FFFF00\"/>","th":"<rect width=\"36\" height=\"24\" fill=\"#A51931\"/><rect y=\"4\" width=\"36\" height=\"16\" fill=\"#F4F5F8\"/><rect y=\"8\" width=\"36\" height=\"8\" fill=\"#2D2A4A\"/>","id":"<rect width=\"36\" height=\"12\" fill=\"#CE1126\"/><rect y=\"12\" width=\"36\" height=\"12\" fill=\"#fff\"/>","au":"<rect width=\"36\" height=\"24\" fill=\"#00247D\"/><rect width=\"18\" height=\"12\" fill=\"#1F3A93\"/><path d=\"M0 0L18 12M18 0L0 12\" stroke=\"#fff\" stroke-width=\"2.4\"/><path d=\"M0 0L18 12M18 0L0 12\" stroke=\"#C8102E\" stroke-width=\".9\"/><path d=\"M9 0V12M0 6H18\" stroke=\"#fff\" stroke-width=\"3.6\"/><path d=\"M9 0V12M0 6H18\" stroke=\"#C8102E\" stroke-width=\"2\"/><path d=\"M9.00,15.50 L9.56,17.33 L11.35,16.63 L10.27,18.21 L11.92,19.17 L10.02,19.31 L10.30,21.20 L9.00,19.80 L7.70,21.20 L7.98,19.31 L6.08,19.17 L7.73,18.21 L6.65,16.63 L8.44,17.33Z\" fill=\"#fff\"/><path d=\"M27.00,18.00 L27.29,18.89 L28.17,18.56 L27.66,19.35 L28.46,19.83 L27.53,19.92 L27.65,20.85 L27.00,20.18 L26.35,20.85 L26.47,19.92 L25.54,19.83 L26.34,19.35 L25.83,18.56 L26.71,18.89Z\" fill=\"#fff\"/><path d=\"M22.50,8.60 L22.77,9.43 L23.59,9.13 L23.11,9.86 L23.86,10.31 L22.99,10.39 L23.11,11.26 L22.50,10.63 L21.89,11.26 L22.01,10.39 L21.14,10.31 L21.89,9.86 L21.41,9.13 L22.23,9.43Z\" fill=\"#fff\"/><path d=\"M27.00,3.10 L27.27,3.93 L28.09,3.63 L27.61,4.36 L28.36,4.81 L27.49,4.89 L27.61,5.76 L27.00,5.13 L26.39,5.76 L26.51,4.89 L25.64,4.81 L26.39,4.36 L25.91,3.63 L26.73,3.93Z\" fill=\"#fff\"/><path d=\"M31.00,7.60 L31.27,8.43 L32.09,8.13 L31.61,8.86 L32.36,9.31 L31.49,9.39 L31.61,10.26 L31.00,9.63 L30.39,10.26 L30.51,9.39 L29.64,9.31 L30.39,8.86 L29.91,8.13 L30.73,8.43Z\" fill=\"#fff\"/><path d=\"M28.50,11.20 L28.69,11.74 L29.26,11.75 L28.80,12.10 L28.97,12.65 L28.50,12.32 L28.03,12.65 L28.20,12.10 L27.74,11.75 L28.31,11.74Z\" fill=\"#fff\"/>","nz":"<rect width=\"36\" height=\"24\" fill=\"#00247D\"/><rect width=\"18\" height=\"12\" fill=\"#1F3A93\"/><path d=\"M0 0L18 12M18 0L0 12\" stroke=\"#fff\" stroke-width=\"2.4\"/><path d=\"M0 0L18 12M18 0L0 12\" stroke=\"#C8102E\" stroke-width=\".9\"/><path d=\"M9 0V12M0 6H18\" stroke=\"#fff\" stroke-width=\"3.6\"/><path d=\"M9 0V12M0 6H18\" stroke=\"#C8102E\" stroke-width=\"2\"/><path d=\"M27.00,17.80 L27.40,18.95 L28.62,18.97 L27.65,19.71 L28.00,20.88 L27.00,20.18 L26.00,20.88 L26.35,19.71 L25.38,18.97 L26.60,18.95Z\" fill=\"#CC142B\" stroke=\"#fff\" stroke-width=\".5\"/><path d=\"M24.00,8.50 L24.35,9.51 L25.43,9.54 L24.57,10.19 L24.88,11.21 L24.00,10.60 L23.12,11.21 L23.43,10.19 L22.57,9.54 L23.65,9.51Z\" fill=\"#CC142B\" stroke=\"#fff\" stroke-width=\".5\"/><path d=\"M27.50,3.00 L27.85,4.01 L28.93,4.04 L28.07,4.69 L28.38,5.71 L27.50,5.10 L26.62,5.71 L26.93,4.69 L26.07,4.04 L27.15,4.01Z\" fill=\"#CC142B\" stroke=\"#fff\" stroke-width=\".5\"/><path d=\"M31.00,7.70 L31.31,8.58 L32.24,8.60 L31.49,9.16 L31.76,10.05 L31.00,9.52 L30.24,10.05 L30.51,9.16 L29.76,8.60 L30.69,8.58Z\" fill=\"#CC142B\" stroke=\"#fff\" stroke-width=\".5\"/>","aq":"<rect width=\"36\" height=\"24\" fill=\"#3A7DCE\"/><path d=\"M10 9c3-3 6-2 8-4 3 0 4 2 7 2 3 2 3 5 1 7-2 3-5 2-7 4-3 1-6 0-8-2-2-2-3-5-1-7z\" fill=\"#fff\"/>","ar":"<rect width=\"36\" height=\"24\" fill=\"#74ACDF\"/><rect y=\"8\" width=\"36\" height=\"8\" fill=\"#fff\"/><circle cx=\"18\" cy=\"12\" r=\"2.4\" fill=\"#F6B40E\"/>","cl":"<rect width=\"36\" height=\"12\" fill=\"#fff\"/><rect y=\"12\" width=\"36\" height=\"12\" fill=\"#D52B1E\"/><rect width=\"12\" height=\"12\" fill=\"#0039A6\"/><path d=\"M6.00,3.40 L6.61,5.16 L8.47,5.20 L6.99,6.32 L7.53,8.10 L6.00,7.04 L4.47,8.10 L5.01,6.32 L3.53,5.20 L5.39,5.16Z\" fill=\"#fff\"/>","pe":"<rect width=\"12\" height=\"24\" fill=\"#D91023\"/><rect x=\"12\" width=\"12\" height=\"24\" fill=\"#fff\"/><rect x=\"24\" width=\"12\" height=\"24\" fill=\"#D91023\"/>","br":"<rect width=\"36\" height=\"24\" fill=\"#009C3B\"/><path d=\"M18 2.5L33 12L18 21.5L3 12Z\" fill=\"#FFDF00\"/><circle cx=\"18\" cy=\"12\" r=\"5.2\" fill=\"#002776\"/><path d=\"M13 11.2Q18 9.6 23 12.6\" stroke=\"#fff\" stroke-width=\"1\" fill=\"none\"/>","jm":"<rect width=\"36\" height=\"24\" fill=\"#009B3A\"/><path d=\"M0 0L18 12L0 24Z M36 0L18 12L36 24Z\" fill=\"#000\"/><path d=\"M0 0L36 24M36 0L0 24\" stroke=\"#FED100\" stroke-width=\"3.2\"/>","mx":"<rect width=\"12\" height=\"24\" fill=\"#006847\"/><rect x=\"12\" width=\"12\" height=\"24\" fill=\"#fff\"/><rect x=\"24\" width=\"12\" height=\"24\" fill=\"#CE1126\"/><circle cx=\"18\" cy=\"12\" r=\"2.6\" fill=\"#8C5A1E\" opacity=\".85\"/><path d=\"M15.6 13.6q2.4 1.6 4.8 0\" stroke=\"#006847\" stroke-width=\".8\" fill=\"none\"/>","us":"<rect y=\"0.00\" width=\"36\" height=\"1.90\" fill=\"#B22234\"/><rect y=\"1.85\" width=\"36\" height=\"1.90\" fill=\"#fff\"/><rect y=\"3.69\" width=\"36\" height=\"1.90\" fill=\"#B22234\"/><rect y=\"5.54\" width=\"36\" height=\"1.90\" fill=\"#fff\"/><rect y=\"7.38\" width=\"36\" height=\"1.90\" fill=\"#B22234\"/><rect y=\"9.23\" width=\"36\" height=\"1.90\" fill=\"#fff\"/><rect y=\"11.08\" width=\"36\" height=\"1.90\" fill=\"#B22234\"/><rect y=\"12.92\" width=\"36\" height=\"1.90\" fill=\"#fff\"/><rect y=\"14.77\" width=\"36\" height=\"1.90\" fill=\"#B22234\"/><rect y=\"16.62\" width=\"36\" height=\"1.90\" fill=\"#fff\"/><rect y=\"18.46\" width=\"36\" height=\"1.90\" fill=\"#B22234\"/><rect y=\"20.31\" width=\"36\" height=\"1.90\" fill=\"#fff\"/><rect y=\"22.15\" width=\"36\" height=\"1.90\" fill=\"#B22234\"/><rect width=\"15\" height=\"12.9\" fill=\"#3C3B6E\"/><circle cx=\"1.6\" cy=\"1.4\" r=\".45\" fill=\"#fff\"/><circle cx=\"4.0\" cy=\"1.4\" r=\".45\" fill=\"#fff\"/><circle cx=\"6.4\" cy=\"1.4\" r=\".45\" fill=\"#fff\"/><circle cx=\"8.8\" cy=\"1.4\" r=\".45\" fill=\"#fff\"/><circle cx=\"11.2\" cy=\"1.4\" r=\".45\" fill=\"#fff\"/><circle cx=\"13.6\" cy=\"1.4\" r=\".45\" fill=\"#fff\"/><circle cx=\"2.8\" cy=\"3.4\" r=\".45\" fill=\"#fff\"/><circle cx=\"5.2\" cy=\"3.4\" r=\".45\" fill=\"#fff\"/><circle cx=\"7.6\" cy=\"3.4\" r=\".45\" fill=\"#fff\"/><circle cx=\"10.0\" cy=\"3.4\" r=\".45\" fill=\"#fff\"/><circle cx=\"12.4\" cy=\"3.4\" r=\".45\" fill=\"#fff\"/><circle cx=\"1.6\" cy=\"5.5\" r=\".45\" fill=\"#fff\"/><circle cx=\"4.0\" cy=\"5.5\" r=\".45\" fill=\"#fff\"/><circle cx=\"6.4\" cy=\"5.5\" r=\".45\" fill=\"#fff\"/><circle cx=\"8.8\" cy=\"5.5\" r=\".45\" fill=\"#fff\"/><circle cx=\"11.2\" cy=\"5.5\" r=\".45\" fill=\"#fff\"/><circle cx=\"13.6\" cy=\"5.5\" r=\".45\" fill=\"#fff\"/><circle cx=\"2.8\" cy=\"7.5\" r=\".45\" fill=\"#fff\"/><circle cx=\"5.2\" cy=\"7.5\" r=\".45\" fill=\"#fff\"/><circle cx=\"7.6\" cy=\"7.5\" r=\".45\" fill=\"#fff\"/><circle cx=\"10.0\" cy=\"7.5\" r=\".45\" fill=\"#fff\"/><circle cx=\"12.4\" cy=\"7.5\" r=\".45\" fill=\"#fff\"/><circle cx=\"1.6\" cy=\"9.6\" r=\".45\" fill=\"#fff\"/><circle cx=\"4.0\" cy=\"9.6\" r=\".45\" fill=\"#fff\"/><circle cx=\"6.4\" cy=\"9.6\" r=\".45\" fill=\"#fff\"/><circle cx=\"8.8\" cy=\"9.6\" r=\".45\" fill=\"#fff\"/><circle cx=\"11.2\" cy=\"9.6\" r=\".45\" fill=\"#fff\"/><circle cx=\"13.6\" cy=\"9.6\" r=\".45\" fill=\"#fff\"/><circle cx=\"2.8\" cy=\"11.7\" r=\".45\" fill=\"#fff\"/><circle cx=\"5.2\" cy=\"11.7\" r=\".45\" fill=\"#fff\"/><circle cx=\"7.6\" cy=\"11.7\" r=\".45\" fill=\"#fff\"/><circle cx=\"10.0\" cy=\"11.7\" r=\".45\" fill=\"#fff\"/><circle cx=\"12.4\" cy=\"11.7\" r=\".45\" fill=\"#fff\"/>","ca":"<rect width=\"36\" height=\"24\" fill=\"#fff\"/><rect width=\"9\" height=\"24\" fill=\"#D52B1E\"/><rect x=\"27\" width=\"9\" height=\"24\" fill=\"#D52B1E\"/><path d=\"M18 4.5l1.3 2.5 1.6-.8-.5 3.6 2-2 .5 1.3 2.3-.4-.8 2.3 1 .6-3.6 3 .4 1.3-3.4-.5V19h-1.6v-3.6l-3.4.5.4-1.3-3.6-3 1-.6-.8-2.3 2.3.4.5-1.3 2 2-.5-3.6 1.6.8z\" fill=\"#D52B1E\"/>","is":"<rect width=\"36\" height=\"24\" fill=\"#02529C\"/><path d=\"M0 12H36M13 0V24\" stroke=\"#fff\" stroke-width=\"6\"/><path d=\"M0 12H36M13 0V24\" stroke=\"#DC1E35\" stroke-width=\"3\"/>"};
+const WLAND=[["na",[[-165,60],[-160,70],[-140,70],[-125,72],[-95,72],[-80,74],[-62,66],[-55,52],[-66,45],[-75,38],[-80,32],[-81,26],[-83,29],[-90,30],[-97,26],[-97,21],[-90,21],[-87,16],[-83,10],[-79,9],[-86,13],[-92,15],[-105,20],[-110,24],[-114,30],[-117,33],[-124,40],[-124,48],[-130,55],[-140,59],[-152,58],[-165,54]]],["na",[[-55,60],[-44,60],[-35,66],[-20,70],[-18,78],[-30,83],[-60,82],[-72,78],[-58,70]]],["sa",[[-80,9],[-75,11],[-62,11],[-50,2],[-35,-5],[-38,-13],[-41,-22],[-48,-26],[-58,-34],[-62,-40],[-66,-48],[-68,-55],[-74,-50],[-73,-40],[-71,-30],[-70,-18],[-76,-14],[-81,-5],[-80,1]]],["eu",[[-10,36],[-9,43],[-2,44],[-5,48],[2,51],[5,53],[8,57],[5,60],[8,63],[14,68],[20,70],[28,71],[40,68],[45,62],[55,55],[50,45],[40,42],[30,41],[26,40],[22,37],[20,40],[18,40],[16,38],[12,44],[8,44],[3,43],[0,39],[-5,36]]],["eu",[[-6,50],[1,51],[2,53],[-2,56],[-3,59],[-6,58],[-5,54]]],["eu",[[-10,52],[-6,52],[-6,55],[-9,54]]],["eu",[[-24,64],[-22,66],[-15,66.5],[-13,65],[-18,63.4]]],["af",[[-17,21],[-16,12],[-12,7],[-5,5],[8,4],[10,0],[12,-6],[13,-17],[18,-34],[26,-34],[33,-28],[35,-22],[40,-15],[40,-6],[51,11],[43,12],[37,19],[33,31],[20,32],[10,37],[-5,36],[-10,30]]],["af",[[44,-25],[47,-25],[50,-15],[49,-12]]],["as",[[27,41],[36,36],[34,30],[43,13],[53,17],[59,22],[57,27],[66,25],[73,20],[77,8],[80,15],[87,22],[92,21],[98,16],[100,13],[103,1],[105,10],[109,12],[108,21],[117,23],[122,30],[121,38],[126,40],[129,35],[130,43],[141,48],[143,56],[160,60],[170,65],[180,68],[180,72],[140,73],[110,77],[80,73],[68,70],[60,69],[55,55],[45,62],[40,68],[30,60],[40,50],[45,45],[40,42]]],["as",[[130,31],[135,34],[140,35],[142,40],[141,45],[144,44],[140,41],[136,37],[131,34]]],["as",[[95,5],[98,4],[106,-6],[102,-4]]],["as",[[109,1],[117,7],[119,1],[116,-4],[110,-3]]],["as",[[105,-6],[115,-8],[106,-7]]],["oc",[[131,-1],[141,-3],[150,-10],[142,-9],[135,-4]]],["oc",[[114,-22],[122,-18],[130,-12],[137,-12],[142,-11],[146,-19],[153,-26],[150,-37],[141,-38],[135,-35],[130,-32],[115,-34]]],["oc",[[172,-34],[178,-38],[175,-41],[173,-41]]],["oc",[[172,-41],[174,-42],[171,-46],[167,-46]]]];
+/* ---------- Ferðalagið um heiminn ---------- */
+const WCONT={eu:['Evrópa','#3E6FD1'],af:['Afríka','#E8A94A'],as:['Asía','#E0574A'],oc:['Eyjaálfa','#2E9E6A'],an:['Suðurskautslandið','#7FA9C9'],sa:['Suður-Ameríka','#8A5AD6'],na:['Norður-Ameríka','#D9773A']};
+const WLEN=WORLD.length+1;                       /* Ísland + 31 áfangastaður */
+const WTOT=WORLD.filter(w=>w.k!=='aq').length;   /* 30 lönd */
+const WNUM=i=>WORLD[i].k==='aq'?null:WORLD.slice(0,i).filter(w=>w.k!=='aq').length+1;
+const WHOME=[-21.9,64.1];
+const WV={i:0,from:'world'};
+function worldOpen(p){return !!p&&!p.off&&((p.settings&&p.settings.world==='on')||(p.trip||0)>=TRIP.length)}
+const wpos=p=>(p.world||0)%WLEN, wlap=p=>Math.floor((p.world||0)/WLEN);
+const wvis=(p,i)=>wlap(p)>0||i<wpos(p);
+const wst=p=>(p.wst=p.wst||{});
+const wdat=w=>w.loc.replace(/^\S+ /,'');
+function wflag(k,w){return `<span class="wfl" style="width:${w}px;height:${f1(w*2/3)}px"><svg viewBox="0 0 36 24" preserveAspectRatio="none" aria-hidden="true">${WFLAG[k]}</svg></span>`}
+function wloc(p){if(!worldOpen(p))return TRIP[(p.trip||0)%TRIP.length][1];const ps=wpos(p);return ps===0?(wlap(p)?'aftur heima á Íslandi':'á Íslandi'):WORLD[ps-1].loc}
+function wnextName(p){const ps=wpos(p);return ps>=WORLD.length?'heim til Íslands':WORLD[ps].n}
+function wdd(a,b){return Math.round((new Date(b+'T12:00:00')-new Date(a+'T12:00:00'))/DAY)}
+
+/* Kort: jafnhyrnt vörpun eins og í drögunum */
+function wpts(W,H){const pr=(lo,la)=>[(lo+180)/360*W,(82-la)/160*H];return [pr(...WHOME),...WORLD.map(w=>pr(w.lo,w.la)),pr(...WHOME)]}
+function wmapSVG(p,{W=960,H=462,pr=6.5,big=false,hl=-1}={}){
+  const ps=p?wpos(p):0,lap=p?wlap(p):0,doneN=p?(lap>0&&ps===0?WLEN:ps):0,P=wpts(W,H);
+  const proj=(lo,la)=>[(lo+180)/360*W,(82-la)/160*H];
+  let s=`<rect width="${W}" height="${H}" fill="#BFE3F5"/><path d="M0 ${f1(H*.9)} Q${f1(W*.25)} ${f1(H*.86)} ${f1(W*.5)} ${f1(H*.9)} T${W} ${f1(H*.89)} V${H} H0Z" fill="#F4F8FB"/>`;
+  for(const [c,pts] of WLAND){const col=WCONT[c][1];s+=`<path d="M${pts.map(q=>proj(q[0],q[1]).map(f1).join(',')).join(' L')}Z" fill="${col}" fill-opacity=".28" stroke="${col}" stroke-opacity=".55" stroke-width="${f1(W/800)}" stroke-linejoin="round"/>`}
+  const lons=[WHOME[0],...WORLD.map(w=>w.lo),WHOME[0]],sw=W/400;
+  for(let i=0;i<P.length-1;i++){const [x1,y1]=P[i],[x2,y2]=P[i+1],dn=i<doneN;
+    const st=`stroke="${dn?'#0A60D6':'#7E8AA0'}" stroke-width="${f1(dn?sw*1.05:sw*.75)}" fill="none" stroke-linecap="round"${dn?'':` stroke-dasharray="${f1(sw*1.6)} ${f1(sw*2)}"`}`;
+    if(Math.abs(lons[i+1]-lons[i])>180){const ym=y1+(y2-y1)*.5;s+=`<path d="M${f1(x1)} ${f1(y1)} L${W} ${f1(ym)} M0 ${f1(ym)} L${f1(x2)} ${f1(y2)}" ${st}/>`}
+    else{const cx=(x1+x2)/2,cy=(y1+y2)/2-Math.min(H*.065,Math.abs(x2-x1)*.18);s+=`<path d="M${f1(x1)} ${f1(y1)} Q${f1(cx)} ${f1(cy)} ${f1(x2)} ${f1(y2)}" ${st}/>`}}
+  const [hx,hy]=P[0];s+=`<circle cx="${f1(hx)}" cy="${f1(hy)}" r="${f1(pr+1.5)}" fill="#fff" stroke="#DC1E35" stroke-width="${f1(pr*.38)}"/>`;
+  WORLD.forEach((w,i)=>{const [x,y]=P[i+1],v=p&&wvis(p,i),cur=p&&ps===i+1,col=WCONT[w.c][1],h=i===hl;let g='';
+    if(big)g+=`<circle cx="${f1(x)}" cy="${f1(y)}" r="${f1(pr*2.6)}" fill="transparent"/>`;
+    if(h)g+=`<circle cx="${f1(x)}" cy="${f1(y)}" r="${f1(pr*2.2)}" fill="${col}" opacity=".3"/>`;
+    if(v||h)g+=`<circle cx="${f1(x)}" cy="${f1(y)}" r="${f1(cur||h?pr*1.25:pr)}" fill="${col}" stroke="#fff" stroke-width="${f1(pr*.3)}"/>`;
+    else if(w.k==='aq'){const R=pr+3,r=pr*.6;let d='';for(let j=0;j<10;j++){const a=(-90+j*36)*Math.PI/180,q=j%2?r:R;d+=(j?'L':'M')+f1(x+Math.cos(a)*q)+','+f1(y+Math.sin(a)*q)}s+='';g+=`<path d="${d}Z" fill="#fff" stroke="#7FA9C9" stroke-width="${f1(pr*.28)}"/>`}
+    else g+=`<circle cx="${f1(x)}" cy="${f1(y)}" r="${f1(pr-1.5)}" fill="#fff" stroke="#9AA3B4" stroke-width="${f1(pr*.28)}"/>`;
+    s+=big?`<g class="wstop${v?' vis':''}" data-w="${i}"${v?` role="button" tabindex="0" aria-label="${esc(w.n)}"`:''}>${g}</g>`:g});
+  return `<svg viewBox="0 0 ${W} ${H}" ${big?'role="img" aria-label="Heimskort með ferðaleiðinni"':'aria-hidden="true"'}>${s}</svg>`}
+function wpinHTML(p,id,W,H,dup){const P=wpts(W,H),q=worldOpen(p)?P[wpos(p)]:P[0];
+  return `<span class="mpin" style="left:${f1(q[0]/W*100)}%;top:${f1(q[1]/H*100)}%;margin-left:${(dup||0)*16}px" title="${esc(p.name)}">${avatarSVG(avId(p,id))}</span>`}
+
+/* Upphafssíðan */
+function startWorldHTML(ids){const P=ids.map(id=>S.profiles[id]),W=960,H=462;
+  const key=p=>worldOpen(p)?'w'+wpos(p):'i';
+  const pins=ids.map((id,i)=>wpinHTML(S.profiles[id],id,W,H,ids.slice(0,i).filter(j=>key(S.profiles[j])===key(S.profiles[id])).length)).join('');
+  let lead;
+  if(P.length===1)lead=`${esc(P[0].name)} er ${wloc(P[0])}.`;
+  else if(P.length===2)lead=wloc(P[0])===wloc(P[1])?`${esc(P[0].name)} og ${esc(P[1].name)} eru ${wloc(P[0])}.`:`${esc(P[0].name)} er ${wloc(P[0])} og ${esc(P[1].name)} ${wloc(P[1])}.`;
+  else{const sc=p=>worldOpen(p)?1000+(p.world||0):(p.trip||0),best=P.reduce((a,b)=>sc(b)>sc(a)?b:a);lead=`${P.length} lesendur á ferðalagi. ${esc(best.name)} hefur farið lengst og er ${wloc(best)}.`}
+  return `<div class="mtx"><span class="kind">Ferðalagið um heiminn</span><b>Hvert förum við í dag?</b><p>${lead}</p><p class="msub">Hver lestrardagur flýgur ykkur til nýs lands.</p></div><div class="mmap wm"><div class="wmin">${wmapStart(P,W,H)}${pins}</div></div>`}
+function wmapStart(P,W,H){const best=P.filter(worldOpen).reduce((a,b)=>!a||(b.world||0)>(a.world||0)?b:a,null);return wmapSVG(best,{W,H,pr:5})}
+
+/* Spjaldið á heimasíðu barnsins */
+function worldCardHTML(p){const ps=wpos(p),lap=wlap(p),cur=ps?WORLD[ps-1]:null,stamped=cur&&wst(p)[cur.k];
+  const title=cur?`Þú ert ${cur.loc}`:(lap?'Heim til Íslands!':'Ferðin hefst á Íslandi');
+  const nx=wnextName(p);
+  const sub=cur?`${cur.k==='aq'?'Leynilegur bónus! ':`Land ${WNUM(ps-1)} af ${WTOT}. `}${stamped?'Stimpillinn er kominn í vegabréfið.':'Lestu um landið og fáðu stimpil.'} Næst: ${esc(nx)}.`:(lap?`Þú fórst allan hringinn í kringum heiminn! Næsti lestrardagur flýgur þér aftur til Noregs.`:'Næsti lestrardagur flýgur þér til Noregs.');
+  return `<div class="tripmap wmini">${wmapSVG(p,{W:480,H:231,pr:4})}</div><div class="triptx"><span class="kind">Ferðalagið um heiminn</span><b>${cur?wflag(cur.k,30)+' ':''}${title}</b><p>${sub}</p><div class="wcb">${cur&&!stamped?`<button class="btn primary small" type="button" id="wCurBtn">Lesa um landið</button>`:''}<button class="btn ghost small" type="button" id="tripOpen">Skoða heimskortið</button></div></div>`}
+
+/* Heimskortið */
+function renderWorld(){const p=PR,ps=wpos(p),lap=wlap(p),cur=ps?WORLD[ps-1]:null,W=960,H=462;
+  const nVis=WORLD.filter((w,i)=>w.k!=='aq'&&wvis(p,i)).length,mode=p.settings.wmode||'free';
+  $('wLead').textContent=`Þú hefur heimsótt ${nVis} af ${WTOT} löndum. `+(cur?`Núna ertu ${cur.loc}.`:(lap?'Þú fórst allan hringinn í kringum heiminn!':'Ferðin hefst á Íslandi.'))+(mode==='free'?'':` Mundu að lesa á hverjum degi, annars ferðu ${mode==='home'?'aftur heim til Íslands':'einn reit til baka'}.`);
+  $('wProgTx').textContent=`${nVis} af ${WTOT} löndum`;$('wProgBar').style.width=f1(nVis/WTOT*100)+'%';
+  $('wMap').innerHTML='<div class="wmin">'+wmapSVG(p,{W,H,pr:7,big:true})+wpinHTML(p,pidOf(p),W,H,0)+'</div>';
+  $('wChips').innerHTML=Object.entries(WCONT).map(([c,[n,col]])=>{const L=WORLD.map((w,i)=>({w,i})).filter(x=>x.w.c===c),dn=L.filter(x=>wvis(p,x.i)).length,ok=c!=='an'&&dn===L.length;
+    return `<span class="wch${ok?' ok':''}"><i style="background:${col}"></i>${n}<em>${c==='an'?(dn?'★':'bónus'):dn+'/'+L.length}</em></span>`}).join('');
+  const ni=ps<WORLD.length?ps:-1,nx=ni>=0?WORLD[ni]:null,today=p.days.includes(dkey(new Date()));
+  $('wNext').innerHTML=`${nx?wflag(nx.k,60):wflag('is',60)}<div class="x"><span class="kind">Næsti áfangastaður${nx&&WNUM(ni)?' · land '+WNUM(ni):''}</span><b>${nx?(nx.k==='aq'?'Leynilegur bónus':esc(nx.n)):'Heim til Íslands'}</b><span>${today?'Lestu á morgun til að fljúga þangað.':'Kláraðu lestur dagsins til að fljúga þangað.'}</span></div>${cur?`<button class="btn ghost small" type="button" id="wAgain">Skoða landið aftur</button>`:''}`;
+  const a=$('wAgain');if(a)a.onclick=()=>openCountry(ps-1,'world');
+  $('wIce').hidden=false}
+$('wMap').addEventListener('click',e=>{const g=e.target.closest('.wstop.vis');if(g)openCountry(+g.dataset.w,'world')});
+$('wMap').addEventListener('keydown',e=>{if(e.key!=='Enter'&&e.key!==' ')return;const g=e.target.closest('.wstop.vis');if(g){e.preventDefault();openCountry(+g.dataset.w,'world')}});
+$('wBack').addEventListener('click',()=>{renderHome();show('home')});
+$('wPassBtn').addEventListener('click',()=>{renderPass();show('wpass')});
+$('wIce').addEventListener('click',()=>{renderTrip();show('trip')});
+
+/* Landið */
+function wstampSVG(w,t){const col='#C8102E',d=new Date(t||Date.now()),ds=`${d.getDate()}.${d.getMonth()+1}.${d.getFullYear()}`;
+  return `<svg class="wstamp" viewBox="0 0 220 220" aria-hidden="true"><circle cx="110" cy="110" r="100" fill="none" stroke="${col}" stroke-width="6"/><circle cx="110" cy="110" r="86" fill="none" stroke="${col}" stroke-width="2.5" stroke-dasharray="3 4"/><path id="warc" d="M33 110 A77 77 0 0 1 187 110" fill="none"/><text font-family="Inter,system-ui,sans-serif" font-weight="800" font-size="${w.n.length>12?15:20}" letter-spacing="2" fill="${col}"><textPath href="#warc" startOffset="50%" text-anchor="middle">${esc(w.n.toUpperCase())}</textPath></text><g transform="translate(74 92) scale(2)">${WFLAG[w.k]}</g><rect x="74" y="92" width="72" height="48" fill="none" stroke="${col}" stroke-width="2"/><text x="110" y="168" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-weight="700" font-size="14" fill="${col}">${esc((w.k==='aq'?'BÓNUS':w.cap).toUpperCase())} · ${ds}</text></svg>`}
+function wcanSay(l){try{if(!l||!('speechSynthesis' in window))return false;const v=speechSynthesis.getVoices();return !v.length||v.some(x=>x.lang&&x.lang.replace('_','-').toLowerCase().startsWith(l.slice(0,2).toLowerCase()))}catch(e){return false}}
+function wsay(t,l){try{const u=new SpeechSynthesisUtterance(t);u.lang=l;u.rate=.8;speechSynthesis.cancel();speechSynthesis.speak(u)}catch(e){}}
+const WSPK=`<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10v4h3l5 4V6L7 10z"/><path d="M16 9a4 4 0 010 6"/></svg>`;
+function openCountry(i,from){WV.i=i;WV.from=from||'world';renderCountry();show('wcountry')}
+function renderCountry(){const p=PR,i=WV.i,w=WORLD[i],col=WCONT[w.c][1],prev=i?wdat(WORLD[i-1]):'Íslandi';
+  $('wcTitle').textContent=`Velkomin ${w.til}!`;
+  const say=w.say.map((s,j)=>{const can=wcanSay(w.tl);return `<div><span class="wsi">${can?`<button type="button" class="wspk" data-say="${j}" aria-label="Hlusta á ${esc(s[0])}">${WSPK}</button>`:'💬'}</span><div><b>${esc(s[0])}</b><span>„${esc(s[1])}“ · ${esc(s[2])}</span></div></div>`}).join('');
+  $('wcBody').innerHTML=`<div class="wcart" style="--k:${col}"><span class="wcfrom">✈ Flug frá ${esc(prev)}</span><div class="wcflag">${wflag(w.k,200)}</div><div class="wcloc">${wmapSVG(p,{W:480,H:231,pr:4,hl:i})}</div></div>
+  <div class="wcmain"><span class="kind" style="color:${col}">${w.k==='aq'?'Leynilegur bónus':`Land ${WNUM(i)} af ${WTOT}`} · ${WCONT[w.c][0]}</span>
+  <div class="wfacts"><div><span>Höfuðborg</span><b>${esc(w.cap)}</b></div><div><span>Íbúar</span><b>${esc(w.pop)}</b></div><div><span>Tungumál</span><b>${esc(w.lang)}</b></div></div>
+  <h3>Saga í stuttu máli</h3><p class="wsaga">${esc(w.saga)}</p>
+  <div class="wdyk"><b>Vissir þú?</b> ${esc(w.fact)}</div>
+  <h3>${w.k==='aq'?'Orð dagsins':'Svona heilsar fólkið'}</h3><div class="wsay">${say}</div>
+  <div class="wquiz" id="wQuiz"></div></div>`;
+  $('wcBody').querySelectorAll('.wspk').forEach(b=>b.onclick=()=>{const s=w.say[+b.dataset.say];wsay(s[3]||s[0],w.tl)});
+  renderWQuiz()}
+function renderWQuiz(){const p=PR,w=WORLD[WV.i],t=wst(p)[w.k],box=$('wQuiz');
+  if(t){const nS=Object.keys(wst(p)).length;box.innerHTML=`<div class="wqdone">${wstampSVG(w,t)}<div><b>Stimpillinn frá ${esc(wdat(w))} er kominn í vegabréfið!</b><span>${nS===1?'Fyrsti stimpillinn þinn.':`${nS} stimplar komnir.`}</span><div class="wcb"><button class="btn primary small" type="button" id="wqPass">Opna vegabréfið</button><button class="btn ghost small" type="button" id="wqMap">Á kortið</button></div></div></div>`;
+    $('wqPass').onclick=()=>{renderPass();show('wpass')};$('wqMap').onclick=()=>{renderWorld();show('world')};return}
+  const o=[w.q[1],w.q[2],w.q[3]],sh=[0,1,2].sort((a,b)=>((a*7+WV.i*3)%5)-((b*7+WV.i*3)%5));
+  box.innerHTML=`<h3>Spurning frá ${esc(wdat(w))}</h3><p class="wq">${esc(w.q[0])}</p><div class="wopts">${sh.map((j,n)=>`<button type="button" class="wopt" data-ok="${j===0?1:0}"><i>${'ABC'[n]}</i>${esc(o[j])}</button>`).join('')}</div><p class="wfb" id="wFb" aria-live="polite">Rétt svar gefur stimpil í vegabréfið og 2 stjörnur.</p>`;
+  box.querySelectorAll('.wopt').forEach(b=>b.onclick=()=>{if(b.dataset.ok==='1'){b.classList.add('ok');wst(p)[w.k]=Date.now();addStars(p,2);save();
+      toast(`Stimpill frá ${wdat(w)}!`,'Þú fékkst 2 stjörnur.',{kind:'done',ms:6000});setTimeout(renderWQuiz,900)}
+    else{b.classList.add('no');b.disabled=true;$('wFb').textContent='Ekki alveg. Lestu textann aftur og reyndu svo aftur.'}})}
+$('wcBack').addEventListener('click',()=>{const f=WV.from;if(f==='wpass'){renderPass();show('wpass')}else if(f==='home'){renderHome();show('home')}else{renderWorld();show('world')}});
+
+/* Vegabréfið */
+function renderPass(){const p=PR,id=pidOf(p),S0=wst(p),nS=WORLD.filter(w=>w.k!=='aq'&&S0[w.k]).length;
+  const conts=Object.keys(WCONT).filter(c=>WORLD.some((w,i)=>w.c===c&&wvis(p,i))).length;
+  const d=new Date(p.wfrom||Date.now());
+  $('wpLeft').innerHTML=`<div class="wpme"><span class="wpav">${avatarSVG(avId(p,id))}</span><div><b>Vegabréf</b><span>${esc(p.name)} · gefið út ${d.getDate()}.${d.getMonth()+1}.${d.getFullYear()}</span></div></div>
+  <div class="wpbig"><div><b>${nS}</b><span>af ${WTOT} stimplum</span></div><div><b>${conts}</b><span>af 7 heimsálfum</span></div></div>`+
+  Object.entries(WCONT).map(([c,[n,col]])=>{const L=WORLD.map((w,i)=>({w,i})).filter(x=>x.w.c===c),dn=L.filter(x=>S0[x.w.k]).length;return `<div class="wcbar"><div><span>${n}</span><span>${c==='an'?(dn?'bónus ★':'bónus'):dn+' af '+L.length}</span></div><p><i style="width:${f1(dn/L.length*100)}%;background:${col}"></i></p></div>`}).join('');
+  $('wpGrid').innerHTML=WORLD.map((w,i)=>{const v=wvis(p,i),st=S0[w.k],col=WCONT[w.c][1];
+    if(v)return `<button type="button" class="wps ${st?'on':'half'}" style="--k:${col}" data-w="${i}"><span class="c">${wflag(w.k,42)}</span>${esc(w.n)}${st?'':'<em>Vantar stimpil</em>'}</button>`;
+    return `<div class="wps off"><span class="c">${w.k==='aq'?'★':WNUM(i)}</span>${w.k==='aq'?'Leynilegur bónus':'?'}</div>`}).join('')}
+$('wpGrid').addEventListener('click',e=>{const b=e.target.closest('[data-w]');if(b)openCountry(+b.dataset.w,'wpass')});
+$('wpBack').addEventListener('click',()=>{renderWorld();show('world')});
+
+/* Hringnum lokið: heimsferðin opnast */
+function renderWOpen(){const p=PR,early=(p.trip||0)<TRIP.length;
+  $('woH').textContent=early?'Nú getur þú ferðast um heiminn!':`Þú fórst allan hringinn, ${p.name}!`;
+  $('woEy').textContent=early?'Ný ferð opnaðist':'Ferðalaginu um Ísland er lokið';
+  $('woLead').textContent=(early?'Mamma eða pabbi opnuðu ferðalagið um heiminn fyrir þig. ':`Þú last í ${TRIP.length} daga og heimsóttir alla staðina á Íslandi. `)+'Nú færð þú vegabréf og getur flogið út í heim. Á hverjum lestrardegi ferðu til nýs lands.';
+  $('woFlags').innerHTML=WORLD.slice(0,11).map(w=>wflag(w.k,34)).join('')+`<span>+ ${WTOT-11} lönd og bónus</span>`}
+$('woGo').addEventListener('click',()=>{renderWorld();show('world')});
+$('woLater').addEventListener('click',()=>{renderHome();show('home')});
+
+/* Framgangur */
+function worldCheck(p,k,quiet){k=k||dkey(new Date());const m=p.settings.wmode||'free';
+  if(!worldOpen(p)||m==='free'||!p.wlast||p.wpen===p.wlast||k<=p.wlast||wdd(p.wlast,k)<2)return false;
+  p.wpen=p.wlast;const ps=wpos(p);if(!ps)return false;
+  if(m==='home')p.world=(p.world||0)-ps;else p.world=Math.max(0,(p.world||0)-1);
+  p.wnote={m,to:wloc(p)};save();return true}
+function worldStep(p,k,quiet){worldCheck(p,k,quiet);p.world=(p.world||0)+1;p.wlast=k;const ps=wpos(p);
+  if(ps===0)addCert(p,'Ferðalagið um heiminn',`fyrir að lesa jafn marga daga og þarf til að heimsækja ${WTOT} lönd í öllum heimsálfum.`);
+  if(!quiet)setTimeout(()=>toast(ps?`Þú flaugst ${WORLD[ps-1].til}!`:'Velkomin heim til Íslands!',ps?'Lestu um landið og fáðu stimpil í vegabréfið.':'Þú fórst allan hringinn í kringum heiminn!',{kind:'soft',ms:8000}),1200);
+  save()}
+function worldNote(){const p=PR;if(worldOpen(p))worldCheck(p);if(!p.wnote)return;const n=p.wnote;p.wnote=null;save();
+  setTimeout(()=>toast(n.m==='home'?'Ferðin byrjar aftur á Íslandi':'Einn reit til baka',`Það datt út lestrardagur, svo nú ertu ${n.to}. Lestu í dag til að fljúga áfram!`,{kind:'soft',ms:10000}),900)}
+function worldIntro(){const p=PR;if(!worldOpen(p)||p.wseen)return;setTimeout(()=>{if($('home').hidden||PR!==p||p.wseen)return;p.wseen=true;p.wfrom=p.wfrom||Date.now();save();renderWOpen();show('wopen')},700)}
 
 /* ---------- Lestrarvinir ---------- */
 function renderBuddy(){const kid7=S.profiles.p7;$('buddyLead').textContent=`Veldu sögu til að lesa upphátt fyrir litla bróður þinn. Taktu upp lesturinn, þá getur ${nm(kid7)} hlustað á hann seinna. Þið fáið báðir stjörnur.`;
@@ -6524,7 +6925,7 @@ function obRender(){const s=OB.step,B=OB.busy?' disabled':'';let h='';
     ${full?'<p class="obnote">Hámarkið er 5 lesendur.</p>':`<div class="obform"><h2>${OB.edit>=0?'Breyta barni':OB.kids.length?'Annað barn':'Fyrsta barnið'}</h2>
       <label class="obf">Nafn<input id="obKName" type="text" maxlength="20" autocomplete="off" value="${esc(f.name)}"></label>
       <div class="obf"><span id="obAgeL">Aldur</span><div class="obchips" role="radiogroup" aria-labelledby="obAgeL">${[5,6,7,8,9,10,11].map(a=>`<button type="button" class="obchip" role="radio" aria-checked="${f.age===a}" data-ka="${a}">${a}</button>`).join('')}</div></div>
-      <div class="obf"><span id="obLvL">Sögur</span><div class="obchips" role="radiogroup" aria-labelledby="obLvL">${[[7,'Styttri sögur (um 7 ára)'],[9,'Lengri sögur (um 9 ára)']].map(([v,l])=>`<button type="button" class="obchip" role="radio" aria-checked="${f.lv===v}" data-kl="${v}">${l}</button>`).join('')}</div></div>
+      <div class="obf"><span id="obLvL">Sögur</span><div class="obchips" role="radiogroup" aria-labelledby="obLvL">${[[7,'Styttri sögur (7–8 ára)'],[9,'Lengri sögur (9–10 ára)']].map(([v,l])=>`<button type="button" class="obchip" role="radio" aria-checked="${f.lv===v}" data-kl="${v}">${l}</button>`).join('')}</div></div>
       <div class="obf"><span id="obAvL">Persóna <small>· barnið getur skipt seinna</small></span><div class="obavs" role="radiogroup" aria-labelledby="obAvL">${AVPICK.map(a=>`<button type="button" class="obav" role="radio" aria-checked="${f.av===a}" aria-label="${esc(AV[a].n)}" data-kav="${a}">${avatarSVG(a)}</button>`).join('')}</div></div>
       <div class="obrow"><button type="button" class="obbtn soft" data-ob="kidSave">${OB.edit>=0?'Vista breytingar':'Bæta barninu við'}</button>${OB.edit>=0?'<button type="button" class="linkbtn" data-ob="kidCancel">Hætta við</button>':''}</div></div>
       <p class="obnote">Hægt er að hafa allt að 5 lesendur. Þú getur bætt við og breytt seinna.</p>`}
