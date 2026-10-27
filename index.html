@@ -1134,6 +1134,14 @@ button.wps{cursor:pointer}
 .hbcontact{display:flex;gap:14px;align-items:center;background:var(--surface);border-radius:18px;box-shadow:var(--shadow);padding:14px 18px;margin-top:12px}
 .hbcontact b{display:block}
 .wlguide{margin-top:4px}
+
+/* Velkomin: persónur úr sögunum */
+.wlhero{position:relative;overflow:hidden;justify-content:flex-start}
+.wlart{margin:auto -44px -44px;pointer-events:none}
+.wlart svg{display:block;width:100%;height:auto}
+.wlver{display:block;margin-top:6px;font-size:.78rem;color:var(--muted)}
+.pver{margin:14px 10px 0;font-size:.78rem;color:var(--muted)}
+@media (max-width:760px){.wlart{display:none}.wlhero{justify-content:space-between}}
 </style>
 </head>
 <body>
@@ -1253,14 +1261,14 @@ button.wps{cursor:pointer}
 <main class="app">
   <section id="welcome" hidden>
     <div class="wl">
-      <div class="wlhero"><div class="wlbk"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5C6.5 4 9.5 4 12 6c2.5-2 5.5-2 8-.5V19c-2.5-1.5-5.5-1.5-8 .5-2.5-2-5.5-2-8-.5z M12 6v13.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></div><p>Lestur á hverjum degi, eitt ævintýri í einu.</p></div>
+      <div class="wlhero"><div class="wlbk"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5C6.5 4 9.5 4 12 6c2.5-2 5.5-2 8-.5V19c-2.5-1.5-5.5-1.5-8 .5-2.5-2-5.5-2-8-.5z M12 6v13.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></div><p>Lestur á hverjum degi, eitt ævintýri í einu.</p><div class="wlart" id="wlArt" aria-hidden="true"></div></div>
       <div class="wlside">
         <div class="wlmark"><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5C6.5 4 9.5 4 12 6c2.5-2 5.5-2 8-.5V19c-2.5-1.5-5.5-1.5-8 .5-2.5-2-5.5-2-8-.5z M12 6v13.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></i>Lestrarstund</div>
         <h1>Lestrarstund fyrir alla fjölskylduna</h1>
         <p class="wllead">Íslenskt lestrarapp fyrir krakka 7–10 ára. Barnið les, velur hvernig sagan fer og safnar stjörnum.</p>
         <ul class="wlft"><li><i style="background:#0A60D6"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5C6.5 4 9.5 4 12 6c2.5-2 5.5-2 8-.5V19c-2.5-1.5-5.5-1.5-8 .5-2.5-2-5.5-2-8-.5z M12 6v13.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></i><div><b>Sögur þar sem barnið velur leiðina</b><span>Yfir 40 sögur á tveimur þyngdarstigum</span></div></li><li><i style="background:#AF52DE"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 00-3.6 10.8c.6.5 1 1.2 1.1 2V16h5v-.2c.1-.8.5-1.5 1.1-2A6 6 0 0012 3z"/></svg></i><div><b>Byggir upp lesskilning</b><span>Spurningar í lok hverrar sögu dýpka skilning á textanum</span></div></li><li><i style="background:#1E8E3E"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></i><div><b>Yfirlit fyrir foreldra</b><span>Lestrardagar, mínútur og leshraði</span></div></li><li><i style="background:#C25E00"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9a15 15 0 0120 0M5 12.5a10 10 0 0114 0M8.5 16a5 5 0 017 0"/><circle cx="12" cy="19.5" r="1"/></svg></i><div><b>Virkar líka án nets</b><span>Í spjaldtölvu og síma</span></div></li></ul>
-        <div class="wlacts"><button class="obbtn primary" id="wlNew" type="button">Stofna aðgang</button><button class="obbtn soft" id="wlLogin" type="button">Ég á aðgang: skrá inn</button><button class="obbtn plain" id="wlLocal" type="button">Prófa fyrst án aðgangs</button><button class="obbtn plain wlguide" id="wlGuide" type="button">Hvernig virkar appið?</button></div>
-        <p class="wlfoot"><button type="button" class="oblink" data-legal="privacy">Persónuvernd</button> · <button type="button" class="oblink" data-legal="terms">Skilmálar</button></p>
+        <div class="wlacts"><button class="obbtn primary" id="wlNew" type="button">Stofna aðgang</button><button class="obbtn soft" id="wlLogin" type="button">Ég er með aðgang: skrá inn</button><button class="obbtn plain" id="wlLocal" type="button">Prófa fyrst án aðgangs</button><button class="obbtn plain wlguide" id="wlGuide" type="button">Hvernig virkar appið?</button></div>
+        <p class="wlfoot"><button type="button" class="oblink" data-legal="privacy">Persónuvernd</button> · <button type="button" class="oblink" data-legal="terms">Skilmálar</button><span class="wlver">Útgáfa 28</span></p>
       </div>
     </div>
   </section>
@@ -1555,6 +1563,7 @@ button.wps{cursor:pointer}
         <div class="ngh">Sameiginlegt</div><div class="ngrp" id="pNavShared"></div>
         <div class="ngh">Gögn</div><div class="ngrp" id="pNavData"></div>
         <div class="ngh">Hjálp</div><div class="ngrp" id="pNavHelp"></div>
+        <p class="pver">Lestrarstund · útgáfa 28</p>
       </nav>
       <div class="pmain">
         <button class="pback pback2" id="pBack2" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Stillingar</button>
@@ -5390,7 +5399,7 @@ function save(){if(WIPE)return;try{localStorage.setItem(KEY,JSON.stringify(S))}c
 /* ================= Aðgangar: kjarni (PIN, samstilling, Firebase) ================= */
 /* Firebase: settu hér inn firebaseConfig úr Firebase console (Project settings > Your apps).
    Á meðan þetta er null virkar appið eingöngu á tækinu, eins og áður. Sjá README. */
-const FB_CONFIG=null;
+const FB_CONFIG={apiKey:"AIzaSyC02AkXxOEBgDO9rc1Skpmofa2tewiGhG4",authDomain:"lestrarstund.firebaseapp.com",projectId:"lestrarstund",storageBucket:"lestrarstund.firebasestorage.app",messagingSenderId:"620707322177",appId:"1:620707322177:web:24dcc2753fd234648969c0"};
 const FBV='13.1.0',ACK='lestrarstund.acct',LKK='lestrarstund.lk',DEFPIN='6487';
 var WIPE=false;
 const AC=(()=>{try{return JSON.parse(localStorage.getItem(ACK)||'null')||{}}catch(e){return {}}})();
@@ -6962,13 +6971,15 @@ const HB=[
 <p>Undir Sameiginlegt getur foreldri lesið sögu upphátt og tekið lesturinn upp. Barnið getur þá hlustað á söguna áður en það les hana sjálft.</p>
 <h3>Stökk upp</h3>
 <p>Þegar barn á styttri sögum les 70 orð á mínútu eða meira og svarar 80% spurninga rétt opnast sjálfkrafa auðveldustu sögurnar fyrir 9–10 ára. Þið getið líka opnað eða lokað fyrir það handvirkt.</p>`},
- {id:'adgangur',ic:'shield',t:'Aðgangur og öryggi',d:'Samstilling, boðskóði, afrit og persónuvernd',b:`
+ {id:'adgangur',ic:'shield',t:'Aðgangur og öryggi',d:'Samstilling, boðskóði, útskráning, afrit og persónuvernd',b:`
 <h3>Samstilling</h3>
 <p>Þegar aðgangur er tengdur samstillist lesturinn sjálfkrafa á milli tækja. Hvert barn getur lesið á sínu tæki án þess að tækin skrifi yfir gögn hvors annars.</p>
 <h3>Annað foreldri</h3>
 <p>Undir Aðgangur býrð þú til boðskóða. Hitt foreldrið stofnar aðgang og slær inn kóðann. Kóðinn gildir í sjö daga.</p>
 <h3>Gleymt lykilorð</h3>
 <p>Ýttu á Gleymt lykilorð? á lykilorðsskjánum. Þú skráir þig inn með netfanginu og velur nýtt lykilorð. Eftir fimm rangar tilraunir læsist lykilorðið tímabundið.</p>
+<h3>Skrá út</h3>
+<p>Undir Aðgangur er hnappurinn Skrá út af þessu tæki. Gögnin haldast í aðganginum og koma aftur þegar þú skráir þig inn, en upptökur eru aðeins á tækinu og eyðast. Vistaðu afrit fyrst ef þú vilt halda þeim.</p>
 <h3>Afrit</h3>
 <p>Undir Afrit getur þú vistað öll gögn í eina skrá, líka upptökurnar, og sótt þau aftur á nýju tæki.</p>
 <h3>Persónuvernd</h3>
@@ -6980,6 +6991,7 @@ const FAQ=[
  ['Hvernig set ég appið á heimaskjáinn?','Á iPad og iPhone opnar þú slóðina í Safari, ýtir á Deila-táknið og velur „Bæta á heimaskjá“. Á Android opnar þú slóðina í Chrome, ýtir á ⋮ og velur „Setja upp forrit“.'],
  ['Hvernig færi ég barn á milli þyngdarstiga?','Veldu barnið í stillingunum, opnaðu flipann Stillingar og veldu Styttri sögur (7–8 ára) eða Lengri sögur (9–10 ára) undir Aldur og sögur.'],
  ['Hvað gerist ef barnið missir úr degi?','Sjálfgefið ekkert. Barnið færist áfram á kortinu fyrir hvern lestrardag. Ef þið hafið valið að barnið þurfi að lesa samfleytt fer það einn reit til baka eða aftur heim til Íslands.'],
+ ['Hvernig skrái ég mig út?','Farðu í Stillingar → Aðgangur og ýttu á „Skrá út af þessu tæki“. Lesturinn er geymdur í aðganginum og kemur aftur þegar þú skráir þig inn. Upptökur eru aðeins á tækinu og eyðast, svo vistaðu afrit fyrst ef þú vilt halda þeim.'],
  ['Virkar appið án nettengingar?','Já. Þegar appið hefur verið opnað einu sinni virkar það líka án nets og samstillist þegar tenging kemst aftur á.'],
  ['Hvert fara upptökurnar af lestrinum?','Þær eru eingöngu geymdar á tækinu og fara aldrei í skýið. Ef þú vilt geyma þær er best að vista afrit.'],
  ['Barnið sér ekki nýjustu útgáfuna af appinu.','Lokaðu appinu alveg og opnaðu það aftur. Ef það dugar ekki skaltu endurhlaða síðuna einu sinni.'],
@@ -7063,6 +7075,16 @@ $('guideBack').addEventListener('click',()=>{if(GUIDE_BACK==='ready'){renderRead
 $('guideBox').addEventListener('click',hbClick);
 
 $('wlGuide').addEventListener('click',()=>guideOpen('welcome'));
+
+
+/* ---------- Velkomin: persónur úr sögunum ---------- */
+function wlArt(){const lb=(x,y,r,t)=>`<circle cx="${x}" cy="${y}" r="${r}" fill="#fff" fill-opacity=".22" stroke="#fff" stroke-opacity=".7" stroke-width="1.4"/><text x="${x}" y="${y+r*.42}" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-weight="800" font-size="${r*1.15}" fill="#fff">${t}</text>`;
+  const sp=(x,y,r)=>`<path d="M${x} ${y-r}Q${x} ${y} ${x+r} ${y}Q${x} ${y} ${x} ${y+r}Q${x} ${y} ${x-r} ${y}Q${x} ${y} ${x} ${y-r}Z" fill="#fff" opacity=".55"/>`;
+  return `<svg viewBox="32 34 342 166" aria-hidden="true"><path d="M0 150 Q100 118 200 140 T400 128 V200 H0Z" fill="#fff" opacity=".12"/><path d="M0 172 Q120 150 230 168 T400 160 V200 H0Z" fill="#fff" opacity=".12"/>`
+   +sp(250,60,6)+sp(330,82,4)+sp(196,44,3.5)+sp(60,70,4)
+   +dragon(82,188,.66,{mouth:'blow'})+lb(134,110,10,'A')+lb(156,86,8,'B')+lb(172,64,6.5,'Ö')
+   +kid(206,194,.56,{arms:'wave'})+owl(258,152,.5)+puffin(296,186,.9)+fox(346,192,.6)+'</svg>'}
+try{$('wlArt').innerHTML=wlArt()}catch(e){}
 
 /* ---------- Lestrarvinir ---------- */
 function renderBuddy(){const kid7=S.profiles.p7;$('buddyLead').textContent=`Veldu sögu til að lesa upphátt fyrir litla bróður þinn. Taktu upp lesturinn, þá getur ${nm(kid7)} hlustað á hann seinna. Þið fáið báðir stjörnur.`;
