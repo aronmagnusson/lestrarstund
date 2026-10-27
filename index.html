@@ -475,6 +475,9 @@ body.is-paused .page{opacity:.45}
 .namerow{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
 .namerow input{font:inherit;font-size:1.1rem;padding:10px 14px;border-radius:14px;border:2px solid var(--line);background:var(--surface-2);color:var(--ink);min-width:0;flex:1 1 180px}
 body.age9 .storytext{font-size:clamp(1.22rem,.98rem + 1.1vw,1.55rem);line-height:1.62;max-width:44ch}
+body.age9 .storytext.fsm1{font-size:clamp(1.05rem,.85rem + .9vw,1.3rem)}
+body.age9 .storytext.fs1{font-size:clamp(1.45rem,1.1rem + 1.4vw,1.85rem);max-width:40ch}
+body.age9 .storytext.fs2{font-size:clamp(1.7rem,1.3rem + 1.8vw,2.2rem);max-width:36ch}
 .blink{animation:blink 1.4s ease-in-out infinite}
 .b2{animation-delay:.35s}.b3{animation-delay:.7s}
 @keyframes blink{50%{opacity:.25}}
@@ -1142,6 +1145,96 @@ button.wps{cursor:pointer}
 .wlver{display:block;margin-top:6px;font-size:.78rem;color:var(--muted)}
 .pver{margin:14px 10px 0;font-size:.78rem;color:var(--muted)}
 @media (max-width:760px){.wlart{display:none}.wlhero{justify-content:space-between}}
+
+#wlTag{transition:opacity .45s ease}#wlTag.fade{opacity:0}
+@media (prefers-reduced-motion:reduce){#wlTag{transition:none}}
+
+.sbot.nojar{grid-template-columns:1fr}
+.sjlist{display:grid;gap:10px}
+.sjk{display:grid;gap:4px}.sjkt{display:flex;justify-content:space-between;font-size:.92rem}.sjkt span{color:var(--muted);font-weight:600}
+.sjk small{color:var(--muted);font-size:.8rem}.sjk.full small{color:var(--sun-deep);font-weight:700}
+#jarKids{margin-top:2px}
+/* ---------- v33: kort allra, heimalestur, bókasafnsútlit ---------- */
+#startMap{cursor:pointer}
+#startMap:focus-visible{outline:4px solid var(--accent);outline-offset:3px}
+#startMap .mtx:after{content:"Ýttu til að sjá kortið";font-size:.8rem;font-weight:700;color:#0B4F8A;margin-top:4px}
+#mapall{max-width:980px;margin-inline:auto}
+#mapall .phead{flex-direction:row-reverse;justify-content:flex-end;gap:14px}
+.mamaps{display:grid;gap:14px}
+.mamap{position:relative;border-radius:16px;overflow:hidden;background:#BFE3F5}
+.mamap svg{display:block;width:100%;height:auto}
+.mamap.ice{aspect-ratio:400/290;width:100%;max-width:640px;margin-inline:auto}
+.mamap.ice svg{height:100%}
+.mamap.wld{padding-top:40px}
+.mamap .mpin{width:40px;height:40px}
+.malist{display:grid;gap:10px;margin-top:14px}
+.maitem{all:unset;box-sizing:border-box;display:flex;align-items:center;gap:12px;background:var(--surface);border-radius:18px;box-shadow:var(--shadow);padding:10px 14px;cursor:pointer;min-height:64px}
+.maitem:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.maav{width:48px;height:48px;border-radius:50%;overflow:hidden;flex:none}.maav svg{width:100%;height:100%;display:block}
+.matx{flex:1;min-width:0;display:grid;gap:2px}.matx b{font-size:1.05rem}.matx small{color:var(--muted);font-size:.88rem}
+.maitem .chev{width:16px;height:16px;color:var(--muted);flex:none}
+/* heimalestur: mínútur */
+.hrstep{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.hrstep .stepval{min-width:120px;text-align:center}
+.hrhint{margin:0;color:var(--muted);font-size:.92rem}
+/* bókasafn: sameiginlegt */
+.libalt{margin-top:6px}
+.lcv{display:block;flex:none}.lcv .bcov{width:100%}
+.lstars{display:inline-flex;gap:1px}.lstars i{width:14px;height:14px;color:#D1D1D6;display:inline-flex}.lstars i.on{color:#E8A100}.lstars i svg{width:100%;height:100%}
+/* D · Opin bók */
+.libD{background:#5A3E2B;border-radius:24px;padding:18px}
+.ldspread{display:flex;filter:drop-shadow(0 14px 20px rgba(0,0,0,.35))}
+.ldpg{flex:1;background:#FBF7EE;color:#3A2A1E;position:relative;padding:24px 26px 40px;min-width:0}
+.ldl{border-radius:14px 4px 4px 14px;background:linear-gradient(90deg,#FBF7EE 85%,#EFE6D3);flex:0 1 38%}
+.ldr{border-radius:4px 14px 14px 4px;background:linear-gradient(90deg,#EDE3CF,#FBF7EE 10%)}
+.ldpg h3{margin:0 0 4px;font-family:"Source Serif 4",Georgia,serif;font-size:1.7rem;font-weight:600}
+.ldsub{margin:0 0 14px;font-family:"Source Serif 4",Georgia,serif;font-style:italic;color:#7A6550}
+.ldtoc{display:grid;gap:2px}
+.ldti{all:unset;box-sizing:border-box;display:flex;align-items:center;gap:8px;min-height:48px;padding:0 10px;border-radius:12px;font-family:"Source Serif 4",Georgia,serif;font-size:1.15rem;cursor:pointer}
+.ldti .n{font-family:var(--f-display);font-size:.8rem;font-weight:800;color:#B4501E;width:22px}
+.ldti .dl{flex:1;border-bottom:2px dotted #CDBFA6;transform:translateY(4px)}
+.ldti em{font-style:normal;font-family:var(--f-display);font-size:.9rem;font-weight:700;color:#7A6550}
+.ldti.on{background:#3A2A1E;color:#FBF7EE}.ldti.on .dl{border-color:rgba(255,255,255,.35)}.ldti.on em{color:#FBF7EE}.ldti.on .n{color:#FFD08A}
+.ldti:focus-visible{outline:3px solid #B4501E}
+.ldr h3{margin-bottom:14px}
+.ldgr{display:grid;grid-template-columns:repeat(auto-fill,minmax(118px,1fr));gap:16px 14px}
+.ldbk{all:unset;box-sizing:border-box;cursor:pointer;display:grid;gap:5px;justify-items:start}
+.ldbk b{font-size:.85rem;line-height:1.2}
+.ldbk:focus-visible{outline:3px solid #B4501E;outline-offset:3px;border-radius:6px}
+.ldfoot{position:absolute;bottom:12px;left:0;right:0;text-align:center;font-family:"Source Serif 4",Georgia,serif;color:#9A8670;font-size:.85rem}
+@media (max-width:700px){.ldspread{flex-direction:column}.ldl,.ldr{border-radius:14px;flex:1}.ldl{margin-bottom:10px}.libD{padding:10px}.ldpg{padding:18px 14px 36px}.ldgr{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px 10px}.ldbk .lcv{width:100%!important}}
+/* E · Hringekja */
+.libE{background:radial-gradient(900px 500px at 50% 30%,#FFFFFF,#E6EBF5);border-radius:24px;padding:18px 10px 16px;overflow:hidden}
+:root[data-theme="dark"] .libE{background:radial-gradient(900px 500px at 50% 30%,#2C2C2E,#1C1C1E)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .libE{background:radial-gradient(900px 500px at 50% 30%,#2C2C2E,#1C1C1E)}}
+.lechips{display:flex;justify-content:center;gap:8px;flex-wrap:wrap}
+.lechips button{all:unset;cursor:pointer;min-height:44px;padding:0 16px;border-radius:999px;background:var(--surface);display:flex;align-items:center;font-weight:600;box-shadow:0 1px 2px rgba(0,0,0,.06)}
+.lechips button.on{background:var(--accent);color:#fff}
+.leflow{position:relative;height:330px;margin-top:16px;perspective:900px;touch-action:pan-y}
+.lebk{all:unset;cursor:pointer;position:absolute;left:50%;top:6px;transition:transform .35s ease,opacity .35s;transform-origin:center}
+.lebk:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+.learr{position:absolute;top:50%;transform:translateY(-50%);z-index:20;width:48px;height:48px;border-radius:50%;border:0;background:var(--surface);box-shadow:var(--shadow);font-size:1.8rem;line-height:1;color:var(--ink);cursor:pointer}
+.learr.l{left:6px}.learr.r{right:6px}.learr:disabled{opacity:.3;cursor:default}
+.leinfo{text-align:center;display:grid;justify-items:center;gap:6px;margin-top:4px}
+.leinfo small{font-size:.8rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#B4501E}
+.leinfo h3{margin:0;font-size:1.8rem;letter-spacing:-.03em}
+.les{display:flex;gap:6px;align-items:center;color:var(--muted);font-size:.9rem}
+.ledots{display:flex;justify-content:center;gap:6px;margin-top:10px}.ledots i{width:7px;height:7px;border-radius:50%;background:#C7C7CC}.ledots i.on{width:22px;border-radius:4px;background:var(--ink)}
+@media (prefers-reduced-motion:reduce){.lebk{transition:none}}
+@media (max-width:600px){.leflow{height:260px}.lebk .lcv{width:150px!important}}
+/* F · Bókaskápurinn */
+.libF{background:linear-gradient(#F7F1E7,#EFE5D5);border-radius:24px;padding:22px 14px 26px}
+.lfcab{background:#8A5A36;border-radius:18px 18px 8px 8px;padding:16px 16px 6px;box-shadow:0 20px 30px -12px rgba(60,30,10,.5),inset 0 0 0 6px #7A4E2E;max-width:860px;margin-inline:auto}
+.lfrow{position:relative;margin-bottom:28px}
+.lfsh{position:relative;min-height:190px;background:linear-gradient(#5E3B22,#6E4528 30%);border-radius:6px;display:flex;align-items:flex-end;gap:6px;padding:16px 18px 0;box-shadow:inset 0 10px 16px rgba(0,0,0,.35);overflow-x:auto;scrollbar-width:none;justify-content:safe center}
+.lfsh::-webkit-scrollbar{display:none}
+.lfrow:after{content:"";position:absolute;left:-6px;right:-6px;bottom:-8px;height:10px;background:#A8754B;border-radius:3px;box-shadow:0 3px 0 #7A4E2E}
+.lfbk,.lfsp{all:unset;cursor:pointer;flex:none;position:relative;z-index:1;transition:transform .15s}
+.lfbk:hover,.lfsp:hover{transform:translateY(-6px)}
+.lfbk:focus-visible,.lfsp:focus-visible{outline:3px solid #FFD08A;outline-offset:2px}
+.lfsp{border-radius:3px 3px 1px 1px;background:var(--c);display:flex;align-items:center;justify-content:center;box-shadow:inset -5px 0 0 rgba(0,0,0,.15),inset 2px 0 0 rgba(255,255,255,.2)}
+.lfsp b{writing-mode:vertical-rl;transform:rotate(180deg);color:#fff;font-family:Nunito,var(--f-display);font-weight:900;font-size:.8rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-height:calc(100% - 14px)}
+.lfplate{position:absolute;left:50%;bottom:-13px;transform:translateX(-50%);z-index:3;height:24px;padding:0 12px;border-radius:5px;background:linear-gradient(#F5D98A,#D9A93E);color:#4A3200;font-size:.75rem;font-weight:800;letter-spacing:.04em;display:flex;align-items:center;white-space:nowrap;box-shadow:0 1px 2px rgba(0,0,0,.4);text-transform:uppercase}
 </style>
 </head>
 <body>
@@ -1261,20 +1354,25 @@ button.wps{cursor:pointer}
 <main class="app">
   <section id="welcome" hidden>
     <div class="wl">
-      <div class="wlhero"><div class="wlbk"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5C6.5 4 9.5 4 12 6c2.5-2 5.5-2 8-.5V19c-2.5-1.5-5.5-1.5-8 .5-2.5-2-5.5-2-8-.5z M12 6v13.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></div><p>Lestur á hverjum degi, eitt ævintýri í einu.</p><div class="wlart" id="wlArt" aria-hidden="true"></div></div>
+      <div class="wlhero"><div class="wlbk"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5C6.5 4 9.5 4 12 6c2.5-2 5.5-2 8-.5V19c-2.5-1.5-5.5-1.5-8 .5-2.5-2-5.5-2-8-.5z M12 6v13.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></div><p id="wlTag">Hver lestrardagur er nýtt ævintýri.</p><div class="wlart" id="wlArt" aria-hidden="true"></div></div>
       <div class="wlside">
         <div class="wlmark"><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5C6.5 4 9.5 4 12 6c2.5-2 5.5-2 8-.5V19c-2.5-1.5-5.5-1.5-8 .5-2.5-2-5.5-2-8-.5z M12 6v13.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></i>Lestrarstund</div>
         <h1>Lestrarstund fyrir alla fjölskylduna</h1>
         <p class="wllead">Íslenskt lestrarapp fyrir krakka 7–10 ára. Barnið les, velur hvernig sagan fer og safnar stjörnum.</p>
         <ul class="wlft"><li><i style="background:#0A60D6"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5C6.5 4 9.5 4 12 6c2.5-2 5.5-2 8-.5V19c-2.5-1.5-5.5-1.5-8 .5-2.5-2-5.5-2-8-.5z M12 6v13.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></i><div><b>Sögur þar sem barnið velur leiðina</b><span>Yfir 40 sögur á tveimur þyngdarstigum</span></div></li><li><i style="background:#AF52DE"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 00-3.6 10.8c.6.5 1 1.2 1.1 2V16h5v-.2c.1-.8.5-1.5 1.1-2A6 6 0 0012 3z"/></svg></i><div><b>Byggir upp lesskilning</b><span>Spurningar í lok hverrar sögu dýpka skilning á textanum</span></div></li><li><i style="background:#1E8E3E"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></i><div><b>Yfirlit fyrir foreldra</b><span>Lestrardagar, mínútur og leshraði</span></div></li><li><i style="background:#C25E00"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9a15 15 0 0120 0M5 12.5a10 10 0 0114 0M8.5 16a5 5 0 017 0"/><circle cx="12" cy="19.5" r="1"/></svg></i><div><b>Virkar líka án nets</b><span>Í spjaldtölvu og síma</span></div></li></ul>
         <div class="wlacts"><button class="obbtn primary" id="wlNew" type="button">Stofna aðgang</button><button class="obbtn soft" id="wlLogin" type="button">Ég er með aðgang: skrá inn</button><button class="obbtn plain" id="wlLocal" type="button">Prófa fyrst án aðgangs</button><button class="obbtn plain wlguide" id="wlGuide" type="button">Hvernig virkar appið?</button></div>
-        <p class="wlfoot"><button type="button" class="oblink" data-legal="privacy">Persónuvernd</button> · <button type="button" class="oblink" data-legal="terms">Skilmálar</button><span class="wlver">Útgáfa 28</span></p>
+        <p class="wlfoot"><button type="button" class="oblink" data-legal="privacy">Persónuvernd</button> · <button type="button" class="oblink" data-legal="terms">Skilmálar</button><span class="wlver">Útgáfa 33</span></p>
       </div>
     </div>
   </section>
   <section id="onb" hidden><div id="obBox"></div></section>
   <section id="tour" hidden><div id="tourBox"></div></section>
   <section id="ready" hidden><div id="readyBox"></div></section>
+  <section id="mapall" hidden>
+    <div class="phead"><h2>Hvar eru allir?</h2><button class="btn ghost" id="maBack" type="button">Til baka</button></div>
+    <div class="mamaps" id="maMaps"></div>
+    <div class="malist" id="maList"></div>
+  </section>
   <section id="guide" hidden>
     <div class="phead"><button class="btn ghost" id="guideBack" type="button">Til baka</button></div>
     <div class="hbwrap" id="guideBox"></div>
@@ -1326,6 +1424,7 @@ button.wps{cursor:pointer}
     <div class="note" id="sessionNote" hidden></div>
     <section class="step">
       <h2><span class="num" id="storyNum">3</span>Veldu sögu</h2>
+      <div id="libB">
       <div class="catseg" id="catSeg" role="tablist" aria-label="Flokkar"></div>
       <div class="feat" id="featCard" hidden></div>
       <h3 class="grouphead first" id="headP">Þú ert hetjan</h3>
@@ -1345,6 +1444,7 @@ button.wps{cursor:pointer}
         <p class="pmuted jumpnote">Þú lest svo vel að nú máttu prófa lengri sögur!</p>
         <div class="cards" id="cardsJ"></div>
       </div>
+      </div><div id="libAlt" class="libalt" hidden></div>
     </section>
     <section class="step">
       <h2><span class="num">★</span>Hillan mín</h2>
@@ -1412,7 +1512,7 @@ button.wps{cursor:pointer}
       </div>
       <div class="pcard">
         <h3>Hvað last þú lengi?</h3>
-        <div class="chips small" id="hrMins" role="radiogroup" aria-label="Mínútur"></div>
+        <div class="hrstep"><div class="stepper" role="group" aria-label="Mínútur"><button class="stepbtn" id="hrMinus" type="button" aria-label="Færri mínútur">−</button><output class="stepval" id="hrMinVal" aria-live="polite">15 mín</output><button class="stepbtn" id="hrPlus" type="button" aria-label="Fleiri mínútur">+</button></div><p class="hrhint">Haltu inni til að breyta hraðar.</p></div>
       </div>
       <div class="pcard">
         <h3>Hvenær last þú?</h3>
@@ -1563,7 +1663,7 @@ button.wps{cursor:pointer}
         <div class="ngh">Sameiginlegt</div><div class="ngrp" id="pNavShared"></div>
         <div class="ngh">Gögn</div><div class="ngrp" id="pNavData"></div>
         <div class="ngh">Hjálp</div><div class="ngrp" id="pNavHelp"></div>
-        <p class="pver">Lestrarstund · útgáfa 28</p>
+        <p class="pver">Lestrarstund · útgáfa 33</p>
       </nav>
       <div class="pmain">
         <button class="pback pback2" id="pBack2" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Stillingar</button>
@@ -1612,6 +1712,7 @@ button.wps{cursor:pointer}
           <h3>Stillingar lesanda</h3>
           <div id="jumpSet"><h4>Stökk upp í sögur fyrir 9–10 ára</h4><div class="chips small" id="jumpChips" role="radiogroup" aria-label="Stökk upp"></div><p class="pmuted" id="jumpInfo"></p></div>
           <div id="worldSet"><h4>Ferðalagið um heiminn</h4><p class="pmuted" id="worldInfo"></p><div class="chips small" id="worldChips" role="radiogroup" aria-label="Ferðalagið um heiminn"></div><h4>Þarf að lesa á hverjum degi?</h4><p class="pmuted">Sjálfgefið færist barnið einn reit áfram fyrir hvern lestrardag, líka þótt dagur detti út á milli. Þið getið líka valið að barnið þurfi að lesa samfleytt. Þá fer það einn reit til baka, eða aftur heim til Íslands, ef dagur dettur út. Allir dagar vikunnar teljast með. Stimplarnir haldast alltaf.</p><div class="chips small" id="wmodeChips" role="radiogroup" aria-label="Lesa á hverjum degi"></div></div>
+          <div id="libSet"><h4>Útlit bókasafnsins</h4><p class="pmuted">Hvernig sögurnar birtast á heimasíðu barnsins. Allt annað á síðunni helst eins: vikan, heimalesturinn og ferðalagið.</p><div class="chips small" id="libChips" role="radiogroup" aria-label="Útlit bókasafnsins"></div></div>
           <h4>Upptökuhnappur á lestrarsíðunni</h4><div class="chips small" id="recChips" role="radiogroup" aria-label="Upptökuhnappur"></div>
           <div id="sylSet"><h4>Atkvæðaskipting á löngum orðum</h4><p class="pmuted">Löng orð fá græna línu undir sig. Þegar barnið ýtir á orðið skiptist það í atkvæði.</p><div class="chips small" id="sylChips" role="radiogroup" aria-label="Atkvæðaskipting"></div></div>
           <h4>Hvað gerist næst?</h4><p class="pmuted">Einu sinni í hverri sögu giskar barnið á framhaldið áður en það les áfram.</p><div class="chips small" id="predChips" role="radiogroup" aria-label="Giska á framhaldið"></div>
@@ -1681,7 +1782,10 @@ button.wps{cursor:pointer}
         <div class="ppane" data-pane="jar">
         <div class="pcard">
           <h3>Stjörnukrukkan</h3>
-          <p class="pmuted">Allir lesendur safna í sömu krukku. Veljið saman umbun sem þau fá þegar krukkan fyllist.</p>
+          <div class="chips small" id="jarMode" role="radiogroup" aria-label="Stjörnukrukkan"></div>
+          <p class="pmuted" id="jarModeTx"></p>
+          <div class="chips small" id="jarKids" role="radiogroup" aria-label="Krukka hvers barns" hidden></div>
+          <div id="jarForm">
           <div class="jarmini" id="jarParent"></div>
           <div class="formgrid">
             <label>Stjörnur í fullri krukku<input id="jarGoal" type="number" min="5" max="500" inputmode="numeric"></label>
@@ -1689,6 +1793,7 @@ button.wps{cursor:pointer}
           </div>
           <div class="actions"><button class="btn primary" id="jarSave" type="button">Vista krukkuna</button><button class="btn ghost" id="jarEmpty" type="button">Umbun veitt: byrja nýja krukku</button></div>
           <div class="confirm" id="jarConfirm" hidden><p>Tæma krukkuna og byrja að safna upp á nýtt? Stjörnur umfram markmiðið flytjast yfir í nýju krukkuna.</p><div class="cbtns"><button type="button" class="yes" id="jarYes">Já, ný krukka</button><button type="button" class="no" id="jarNo">Hætta við</button></div></div>
+          </div>
           <p class="pfeed" id="jarFeed" aria-live="polite"></p>
         </div>
         </div>
@@ -5385,7 +5490,10 @@ for(const st of Object.values(STORIES)){
 /* ================= Geymsla ================= */
 const KEY='lestrarstund.v2',OLDKEY='lestrarstund.v1';
 const DEFP=(age,name)=>({name,age,stars:0,days:[],endings:{},sessions:[],settings:{min:15,reads:2,jump:'auto',rec:true,world:'auto',wmode:'free'},gift:0,log:[],words:{},wordRev:0,writings:[],jumpSeen:false,books:{},advent:{},certs:[],trip:null,bud:0,signed:{},world:0,wst:{},wlast:null,wpen:null,wseen:false});
-const DEFJAR=()=>({goal:60,reward:'',n:0,t:Date.now(),hist:[]});
+const DEFJAR=()=>({goal:60,reward:'',n:0,t:Date.now(),hist:[],mode:'shared'});
+const jarMode=()=>(S.jar&&S.jar.mode)||'shared';const jarOn=()=>jarMode()!=='off';
+function jarOf(p){if(jarMode()!=='each'||!p)return S.jar;if(!p.jar)p.jar={n:0,goal:Math.min(S.jar.goal||60,40),reward:'',hist:[]};return p.jar}
+const readsOf=p=>p.settings.readsSet?(+p.settings.reads||1):(((+p.yrs||(p.age===9?9:7))<=8)?2:1);
 function fixP(d,age,name){const def=DEFP(age,name);d=d||{};return {...def,...d,age,settings:{...def.settings,...(d.settings||{})}}}
 function allProfiles(P){P=P||{};const o={p7:fixP(P.p7,7,'7 ára'),p9:fixP(P.p9,9,'9 ára')};
   for(const k of Object.keys(P))if(k!=='p7'&&k!=='p9'&&P[k]&&Object.values(o).filter(p=>!p.off).length<5)o[k]=fixP(P[k],P[k].age===9?9:7,P[k].name||'Lesandi');return o}
@@ -5527,7 +5635,7 @@ const $=id=>document.getElementById(id);
 const fmt=ms=>{const s=Math.max(0,Math.ceil(ms/1000));return `${String(Math.floor(s/60)).padStart(2,'0')}:${String(s%60).padStart(2,'0')}`};
 function startSession(min){
   Object.assign(T,{total:min*60000,elapsed:0,running:true,last:performance.now(),active:true,done:false,n2:min<=2,n1:min<=1,min});
-  cur={t:Date.now(),min,reads:PR.settings.reads,pages:[],stories:[],done:false};
+  cur={t:Date.now(),min,reads:readsOf(PR),pages:[],stories:[],done:false};
   PR.sessions.push(cur);if(PR.sessions.length>150)PR.sessions.splice(0,PR.sessions.length-150);save();
   document.body.classList.add('session');setPauseUI(false);$('pauseWrap').hidden=false;$('pauseBtn').hidden=false;
   try{navigator.wakeLock&&navigator.wakeLock.request('screen').then(w=>wake=w).catch(()=>{})}catch(e){}
@@ -5598,7 +5706,7 @@ function toast(title,sub,{kind='calm',persist=false,ms=7000}={}){
 }
 
 /* ================= Heim ================= */
-const SECTIONS=['welcome','onb','tour','ready','guide','legal','start','home','read','quiz','reward','lock','parent','done','words','advent','trip','world','wcountry','wpass','wopen','buddy','maker','avatars','homeread'];
+const SECTIONS=['welcome','onb','tour','ready','guide','mapall','legal','start','home','read','quiz','reward','lock','parent','done','words','advent','trip','world','wcountry','wpass','wopen','buddy','maker','avatars','homeread'];
 function show(id){document.body.classList.toggle('onstart',id==='start');if(id!=='read'&&typeof REC!=='undefined'&&REC.mr)recStop();for(const s of SECTIONS)$(s).hidden=s!==id;window.scrollTo(0,0)}
 let selMin=15;
 function weekCount(p){const now=new Date(),mon=new Date(now);mon.setDate(now.getDate()-((now.getDay()+6)%7));let n=0;for(let i=0;i<7;i++){const d=new Date(mon);d.setDate(mon.getDate()+i);if(p.days.includes(dkey(d)))n++}return n}
@@ -5612,7 +5720,7 @@ function renderStart(){
     const note=done?'Lestri dagsins lokið':`${m} af ${g} mín í dag`;
     return `<button class="whob" type="button" data-pid="${id}" aria-label="${esc(p.name)}, ${note}. Haltu inni til að skipta um útlit."><span class="wav"><svg class="wring" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="45" class="wtrack"/>${f>0?`<circle cx="50" cy="50" r="45" class="wfill" stroke-dasharray="${f1(c*f)} ${f1(c)}" transform="rotate(-90 50 50)"/>`:''}<circle cx="50" cy="50" r="45" class="whold" stroke-dasharray="0 ${f1(c)}" transform="rotate(-90 50 50)"/></svg><span class="wph">${avatarSVG(avId(p,id))}</span>${done?`<span class="wdone">${DONEIC}</span>`:''}</span><span class="wn">${esc(p.name)}</span><span class="wm">${note}</span><span class="wchips"><span class="chip2"><i class="fl">${FLAME}</i>${streak(p)}</span><span class="chip2"><i class="st">${STARSVG}</i>${nf(p.stars)}</span></span></button>`}).join('');
   ids.forEach(id=>worldCheck(S.profiles[id]));$('startMap').innerHTML=startMapHTML(ids);
-  $('jarStart').innerHTML=startJarHTML();$('jarStart').classList.toggle('full',S.jar.n>=S.jar.goal);
+  $('jarStart').hidden=!jarOn();$('jarStart').parentElement.classList.toggle('nojar',!jarOn());if(jarOn()){$('jarStart').innerHTML=startJarHTML(ids);$('jarStart').classList.toggle('full',jarMode()==='shared'&&S.jar.n>=S.jar.goal)}
 }
 const FLAME=`<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21c-3.9 0-6.5-2.6-6.5-6.3 0-3.5 2.6-5.6 4-8.7.6 2 1.7 3 2.9 3.6.3-2.4 1.6-4.6 3.5-6.1-.3 3 3.6 5.6 3.6 10.6 0 4.1-3 6.9-7.5 6.9z" fill="currentColor"/></svg>`;
 function startMapHTML(ids){
@@ -5629,7 +5737,7 @@ function startMapHTML(ids){
   else if(P.length===2)lead=at(ids[0])===at(ids[1])?`${esc(P[0].name)} og ${esc(P[1].name)} eru ${TRIP[at(ids[0])][1]}.`:`${esc(P[0].name)} er ${TRIP[at(ids[0])][1]} og ${esc(P[1].name)} ${TRIP[at(ids[1])][1]}.`;
   else{const best=P.reduce((a,b)=>(b.trip||0)>(a.trip||0)?b:a),same=P.every(p=>(p.trip||0)===(best.trip||0));lead=`${P.length} lesendur á ferð um landið. `+(same?((best.trip||0)===0?'Allir byrja í Reykjavík.':'Allir eru á sama stað.'):`${esc(best.name)} hefur farið lengst.`)}
   return `<div class="mtx"><span class="kind">Ferðalagið um Ísland</span><b>Hvert förum við í dag?</b><p>${lead}</p><p class="msub">Hver lestrardagur færir ykkur á næsta stað.</p></div><div class="mmap"><svg viewBox="0 0 400 290" aria-hidden="true"><path d="${coast}" fill="#C3E7AE" stroke="#fff" stroke-width="3" stroke-linejoin="round"/>${gl}<path d="${road}" fill="none" stroke="#0A60D6" stroke-width="1.6" stroke-dasharray="4 3.5" opacity=".6"/>${dots}</svg>${pins}</div>`}
-function startJarHTML(){const j=S.jar,g=Math.max(1,j.goal),full=j.n>=g,rw=j.reward?esc(j.reward):'umbun sem mamma eða pabbi velja';
+function startJarHTML(ids){if(jarMode()==='each')return startJarsHTML(ids||visIds());const j=S.jar,g=Math.max(1,j.goal),full=j.n>=g,rw=j.reward?esc(j.reward):'umbun sem mamma eða pabbi velja';
   return `<div class="sjrow"><span class="sjic">${jarSVG(j.n,j.goal)}</span><div><b>Stjörnukrukkan</b><span>Allir safna saman</span></div></div><div class="sjbig">${nf(Math.min(j.n,g))} <small>af ${nf(g)} stjörnum</small></div><div class="jarbar" role="img" aria-label="${Math.round(Math.min(1,j.n/g)*100)} prósent full"><i style="width:${Math.min(100,j.n/g*100)}%"></i></div><p class="sjrw">${full?`Krukkan er full! Umbunin er: <b>${rw}</b>`:`Umbun: <b>${rw}</b>`}</p>`}
 function choose(id){PR=S.profiles[id];CAT='all';document.body.classList.toggle('age9',PR.age===9);selMin=Math.max(1,Math.min(60,+PR.settings.min||15));renderHome();show('home')}
 const LP={t:0,raf:0,b:null,fired:false,t0:0};
@@ -5680,14 +5788,14 @@ function renderHome(){
   else if(T.done)note.innerHTML='<p>Lestri dagsins er lokið. Þú mátt alveg lesa meira!</p><button class="btn ghost" type="button" id="newSession">Nýr lestrartími</button>';
   const hr=$('homeReset');if(hr)hr.onclick=resetSession;
   const ns=$('newSession');if(ns)ns.onclick=()=>{endSession();renderHome()};
-  $('readChips').innerHTML=[1,2].map(n=>`<button class="chip" type="button" role="radio" aria-checked="${PR.settings.reads===n}" data-reads="${n}">${n===1?'1 sinni':'2 sinnum'}</button>`).join('');
+  $('readChips').innerHTML=[1,2].map(n=>`<button class="chip" type="button" role="radio" aria-checked="${readsOf(PR)===n}" data-reads="${n}">${n===1?'1 sinni':'2 sinnum'}</button>`).join('');
   setMin(selMin);
   const all=Object.values(STORIES);
   const grp=g=>g==='h'?[]:all.filter(s=>s.age===PR.age&&s.group===g);
   $('headM').textContent=`Sögur sem ${nm(S.profiles.p9)} skrifaði`;
   for(const [g,c,hd] of [['p','cardsP','headP'],['h','cardsH','headH'],['a','cardsA','headA'],['b','cardsB','groupB'],['c','cardsC','headC'],['m','cardsM','headM']]){const L=grp(g);$(c).innerHTML=L.map(card).join('');$(c).hidden=!L.length;$(hd).hidden=!L.length}
   const firstHead=['headP','headH','headA','groupB','headC','headM'].find(x=>!$(x).hidden);['headP','headH','headA','groupB','headC','headM'].forEach(x=>$(x).classList.toggle('first',x===firstHead));
-  const jo=jumpOpen(PR);$('jumpBox').hidden=!jo;$('cardsJ').innerHTML=jo?jumpStories().map(card).join(''):'';renderLib();
+  const jo=jumpOpen(PR);$('jumpBox').hidden=!jo;$('cardsJ').innerHTML=jo?jumpStories().map(card).join(''):'';renderLib();renderLibAlt();
   if(jo&&!PR.jumpSeen&&PR.settings.jump!=='on'){PR.jumpSeen=true;save();setTimeout(()=>toast('Nýjar sögur opnuðust!','Þú lest svo vel að nú máttu prófa sögur fyrir 9–10 ára.',{kind:'done',ms:9000}),400)}
   $('shelf').innerHTML=shelfHTML(PR);
   const nw=wordList(PR).length;$('wordCnt').textContent=nw;$('wordDueDot').hidden=!wordsDue(PR);
@@ -5709,15 +5817,16 @@ const homeMinOn=(p,k)=>(p.home||[]).filter(h=>h.d===k).reduce((a,h)=>a+h.min,0);
 function todayMin(p){const k=dkey(new Date());return Math.round(appMinOn(p,k)+homeMinOn(p,k))}
 function ringArc(r,w,f,col,bg){const c=2*Math.PI*r,v=Math.max(0,Math.min(1,f));
   return `<circle cx="80" cy="80" r="${r}" fill="none" stroke="${bg}" stroke-width="${w}"/>`+(v>0?`<circle cx="80" cy="80" r="${r}" fill="none" stroke="${col}" stroke-width="${w}" stroke-linecap="round" stroke-dasharray="${(c*v).toFixed(1)} ${c.toFixed(1)}" transform="rotate(-90 80 80)"/>`:'')}
-function ringsHTML(p){const g=Math.max(1,+p.settings.min||15),m=todayMin(p),wk=weekCount(p),j=S.jar,jg=Math.max(1,j.goal);
-  const svg=`<svg viewBox="0 0 160 160" aria-hidden="true">${ringArc(68,17,m/g,'#FF375F','#3A1820')}${ringArc(48,17,j.n/jg,'#A6E22E','#25330D')}${ringArc(28,17,wk/5,'#22C8F5','#0E2C36')}</svg>`;
-  return svg+`<div class="rlg"><div class="r1"><b>${m}/${g}</b><span>mínútur í dag</span></div><div class="r2"><b>${nf(Math.min(j.n,jg))}/${nf(jg)}</b><span>í stjörnukrukkunni</span></div><div class="r3"><b>${wk}/5</b><span>lestrardagar í viku</span></div></div>`}
+function ringsHTML(p){const g=Math.max(1,+p.settings.min||15),m=todayMin(p),wk=weekCount(p),j=jarOf(p),jg=Math.max(1,j.goal),on=jarOn();
+  const svg=`<svg viewBox="0 0 160 160" aria-hidden="true">${ringArc(68,17,m/g,'#FF375F','#3A1820')}${on?ringArc(48,17,j.n/jg,'#A6E22E','#25330D'):''}${ringArc(28,17,wk/5,'#22C8F5','#0E2C36')}</svg>`;
+  return svg+`<div class="rlg"><div class="r1"><b>${m}/${g}</b><span>mínútur í dag</span></div>${on?`<div class="r2"><b>${nf(Math.min(j.n,jg))}/${nf(jg)}</b><span>${jarMode()==='each'?'í krukkunni þinni':'í stjörnukrukkunni'}</span></div>`:''}<div class="r3"><b>${wk}/5</b><span>lestrardagar í viku</span></div></div>`}
+function startJarsHTML(ids){return `<div class="sjrow"><span class="sjic">${jarSVG(3,6)}</span><div><b>Stjörnukrukkurnar</b><span>Hvert barn safnar fyrir sinni umbun</span></div></div><div class="sjlist">${ids.map(id=>{const p=S.profiles[id],J=jarOf(p),g=Math.max(1,J.goal);return `<div class="sjk${J.n>=g?' full':''}"><div class="sjkt"><b>${esc(p.name)}</b><span>${nf(Math.min(J.n,g))}/${nf(g)}</span></div><div class="jarbar" role="img" aria-label="${esc(p.name)}: ${Math.round(Math.min(1,J.n/g)*100)} prósent"><i style="width:${Math.min(100,J.n/g*100)}%"></i></div>${J.reward?`<small>${J.n>=g?'Full! ':''}${esc(J.reward)}</small>`:''}</div>`}).join('')}</div>`}
 function avaSVG(p){const v=p.age===9||p===S.profiles.p9?'147 62 86 86':'131 75 80 80';return `<svg viewBox="${v}" preserveAspectRatio="xMidYMid slice">${drawScene(p===S.profiles.p9?'av9':'av7',null,true)}</svg>`}
 function renderTopA(){if(!PR)return;$('todayLbl').textContent=todayLabel();$('hiName').textContent=/\d/.test(PR.name||'1')?'Hæ!':`Hæ, ${PR.name}!`;
   const id=pidOf(PR);const av=avId(PR,id);if($('ava').dataset.p!==id+av){$('ava').innerHTML=avatarSVG(av);$('ava').dataset.p=id+av}
   const g=Math.max(1,+PR.settings.min||15),m=todayMin(PR);$('rings').innerHTML=ringsHTML(PR);
-  $('rings').setAttribute('aria-label',`${m} af ${g} mínútum í dag, ${S.jar.n} af ${S.jar.goal} stjörnum í krukkunni, ${weekCount(PR)} af 5 lestrardögum í vikunni`)}
-$('readChips').addEventListener('click',e=>{const b=e.target.closest('[data-reads]');if(!b)return;PR.settings.reads=+b.dataset.reads;save();renderHome()});
+  const J=jarOf(PR);$('rings').setAttribute('aria-label',`${m} af ${g} mínútum í dag, ${jarOn()?`${J.n} af ${J.goal} stjörnum í krukkunni, `:''}${weekCount(PR)} af 5 lestrardögum í vikunni`)}
+$('readChips').addEventListener('click',e=>{const b=e.target.closest('[data-reads]');if(!b)return;PR.settings.reads=+b.dataset.reads;PR.settings.readsSet=true;save();renderHome()});
 for(const id of ['cardsA','cardsB'])$(id).addEventListener('click',e=>{const c=e.target.closest('.card');if(c)startStory(c.dataset.story)});
 
 /* ================= Lestur ================= */
@@ -5908,7 +6017,7 @@ function finishQuiz(){
     $('bigStars').innerHTML=Array.from({length:earned},()=>STARSVG).join('');
     $('rTitle').textContent=Q.score===n0?'Þú kannt öll orðin!':Q.score>0?'Vel gert!':'Gott að æfa sig!';
     $('rText').textContent=`Þú svaraðir ${Q.score} af ${n0} rétt og færð ${stjornur(earned)} fyrir upprifjunina.`;
-    $('rTotal').textContent=`Stjörnusafnið þitt: ${stjornur(PR.stars)}`;$('rJar').textContent=`Krukkan ykkar: ${nf(Math.min(S.jar.n,S.jar.goal))} af ${nf(S.jar.goal)} stjörnum`;
+    $('rTotal').textContent=`Stjörnusafnið þitt: ${stjornur(PR.stars)}`;rJarSet();
     show('reward');return}
   if(Q.mode==='chapter'){const earned=Q.score;if(earned)addStars(PR,earned);(PR.books=PR.books||{})[run.story]=Q.ch;
     if(curStory){curStory.qd=(curStory.qd||[]).concat(Q.res);const qq=curStory.quiz||[0,0];curStory.quiz=[qq[0]+Q.score,qq[1]+n0]}save();
@@ -5916,7 +6025,7 @@ function finishQuiz(){
     $('bigStars').innerHTML=Array.from({length:earned},()=>STARSVG).join('');
     $('rTitle').textContent=`Kafli ${Q.ch} er búinn!`;
     $('rText').textContent=earned?`Þú svaraðir ${Q.score} af ${n0} rétt og færð ${stjornur(earned)}.`:'Gott að reyna! Þú getur flett aftur í bókinni og rifjað upp kaflann.';
-    $('rTotal').textContent=`Stjörnusafnið þitt: ${stjornur(PR.stars)}`;$('rJar').textContent=`Krukkan ykkar: ${nf(Math.min(S.jar.n,S.jar.goal))} af ${nf(S.jar.goal)} stjörnum`;
+    $('rTotal').textContent=`Stjörnusafnið þitt: ${stjornur(PR.stars)}`;rJarSet();
     show('reward');return}
   const earned=Q.score+1;addStars(PR,earned);const fst=STORIES[run.story];if(fst.book)(PR.books=PR.books||{})[run.story]=0;
   if(fst.advent){PR.advent[fst.advent]=true;Q.advent=true;$('rAgain').hidden=true;$('rPick').textContent='Aftur í jóladagatalið';if(advCount(PR)===24&&!PR.certs.some(c=>c.what==='Jóladagatalið'))lastCert=addCert(PR,'Jóladagatalið','fyrir að hjálpa Stúfi að finna alla 24 kortabútana.')}
@@ -5930,7 +6039,7 @@ function finishQuiz(){
   $('rTitle').textContent=T.done?'Lestri dagsins lokið!':Q.score===n?'Frábært!':Q.score>0?'Vel gert!':'Gott hjá þér!';
   $('rText').textContent=(n?`Þú fékkst ${stjornur(earned)}: eina fyrir lesturinn og ${Q.score===1?'eina':Q.score} fyrir rétt svör.`:'Þú fékkst eina stjörnu fyrir að klára bókina.')+(T.done?' Sjáumst aftur á morgun!':'');
   $('rTotal').textContent=`Stjörnusafnið þitt: ${stjornur(PR.stars)}`;
-  $('rJar').textContent=S.jar.n>=S.jar.goal?'Krukkan ykkar er full! Segðu mömmu eða pabba frá.':`Krukkan ykkar: ${nf(S.jar.n)} af ${nf(S.jar.goal)} stjörnum`;
+  rJarSet();
   show('reward');
 }
 $('rPick').addEventListener('click',()=>{if(Q&&Q.mode==='chapter'){run.path.push(Q.next);show('read');renderPage();return}if(Q&&Q.advent){autoPause();renderAdvent();show('advent');return}if(Q&&Q.mode!=='words')autoPause();renderHome();show('home')});
@@ -5999,7 +6108,7 @@ function renderParent(){
   $('wpmNote').textContent='Orð í sögutextanum sinnum fjöldi yfirlestra (1x eða 2x, eins og valið var á forsíðunni), deilt með tímanum sem síðan var opin. Pásur og tími í myndaverkefnum teljast ekki með. Síður sem voru opnar mjög stutt eða mjög lengi eru ekki teknar með.';
   $('wpmChart').innerHTML=chartSVG(withW.slice(-10));
   $('weekly').innerHTML=weeklyHTML(PP);renderHomeParent();
-  $('jarParent').innerHTML=jarHTML();$('jarGoal').value=S.jar.goal;$('jarReward').value=S.jar.reward||'';$('jarEmpty').hidden=S.jar.n<=0;$('jarConfirm').hidden=true;
+  renderJarPane();
   const wr=(PP.writings||[]).slice().reverse();$('writeCard').hidden=PP.age!==9&&!wr.length;
   $('writeList').innerHTML=wr.length?wr.slice(0,30).map(x=>`<div class="wrt"><div class="sh">${fmtDate(x.t)} · ${esc(STORIES[x.s]?STORIES[x.s].title:x.s)}</div><div class="pmuted">Endirinn í sögunni: „${esc(pers(x.end||''))}“</div><p>${esc(x.text)}</p></div>`).join(''):'<p class="pmuted">Í lok hverrar sögu getur barnið skrifað sinn eigin endi. Hann birtist hér.</p>';
   $('jumpSet').hidden=PP.age!==7;
@@ -6007,13 +6116,13 @@ function renderParent(){
     $('jumpChips').innerHTML=[['auto','Sjálfvirkt'],['on','Opið'],['off','Lokað']].map(([k,l])=>`<button type="button" class="chip" role="radio" aria-checked="${m===k}" data-jump="${k}">${l}</button>`).join('');
     $('jumpInfo').textContent=`Sjálfvirkt: þrjár auðveldustu sögurnar fyrir 9–10 ára opnast þegar leshraðinn er 70 orð á mínútu eða meira og 80% svara eru rétt. Núna: ${rs.wpm!=null?rs.wpm+' orð/mín':'of lítil gögn'}${rs.acc!=null?', '+Math.round(rs.acc*100)+'% rétt':''}. Staða: ${jumpOpen(PP)?'opið':'lokað'}.`}
   const rc=PP.settings.rec!==false;$('recChips').innerHTML=[['1','Sýna'],['0','Fela']].map(([k,l])=>`<button type="button" class="chip" role="radio" aria-checked="${rc===(k==='1')}" data-rec="${k}">${l}</button>`).join('');
-  {const wo=PP.settings.world||'auto',wm=PP.settings.wmode||'free';$('worldChips').innerHTML=[['auto','Eftir Íslandshringinn'],['on','Opna núna']].map(([k,l])=>`<button type="button" class="chip" role="radio" aria-checked="${wo===k}" data-world="${k}">${l}</button>`).join('');$('wmodeChips').innerHTML=[['free','Nei'],['back1','Já, annars einn reit til baka'],['home','Já, annars aftur heim']].map(([k,l])=>`<button type="button" class="chip" role="radio" aria-checked="${wm===k}" data-wmode="${k}">${l}</button>`).join('');$('worldInfo').textContent=worldInfo(PP)}
+  {const wo=PP.settings.world||'auto',wm=PP.settings.wmode||'free';$('worldChips').innerHTML=[['auto','Eftir Íslandshringinn'],['on','Opna núna']].map(([k,l])=>`<button type="button" class="chip" role="radio" aria-checked="${wo===k}" data-world="${k}">${l}</button>`).join('');$('wmodeChips').innerHTML=[['free','Nei'],['back1','Já, annars einn reit til baka'],['home','Já, annars aftur heim']].map(([k,l])=>`<button type="button" class="chip" role="radio" aria-checked="${wm===k}" data-wmode="${k}">${l}</button>`).join('');$('worldInfo').textContent=worldInfo(PP);const lb=PP.settings.lib||'B';$('libChips').innerHTML=LIBSTYLES.map(([k,l])=>`<button type="button" class="chip" role="radio" aria-checked="${lb===k}" data-lib="${k}">${l}</button>`).join('')}
   renderBackupInfo();renderRecs();renderParent2();
   $('sessList').innerHTML=stats.length?stats.slice().reverse().slice(0,30).map(sessHTML).join(''):'<p class="pmuted">Engin lestrarskipti enn. Þau birtast hér þegar barnið hefur lesið.</p>';
 }
 $('giveBtns').addEventListener('click',e=>{const b=e.target.closest('[data-n]');if(!b)return;
   const n=+b.dataset.n,before=PP.stars;PP.stars=Math.max(0,PP.stars+n);const real=PP.stars-before;
-  PP.gift=Math.max(0,PP.gift+real);S.jar.n=Math.max(0,S.jar.n+real);if(real)PP.log.push({t:Date.now(),n:real});save();renderParent();
+  PP.gift=Math.max(0,PP.gift+real);if(jarOn()){const J=jarOf(PP);J.n=Math.max(0,J.n+real)}if(real)PP.log.push({t:Date.now(),n:real});save();renderParent();
   $('giveFeed').textContent=real>0?`${stjornur(real)} bætt við. Samtals: ${stjornur(PP.stars)}.`:real<0?`Ein stjarna tekin af. Samtals: ${stjornur(PP.stars)}.`:'Engin stjarna til að taka af.'});
 $('wipeBtn').addEventListener('click',()=>{$('wipeBtn').hidden=true;$('wipeConfirm').hidden=false;$('wipeNo').focus()});
 $('wipeNo').addEventListener('click',()=>{$('wipeConfirm').hidden=true;$('wipeBtn').hidden=false});
@@ -6026,7 +6135,9 @@ const heroName=()=>{let p=PR;try{if(run&&run.buddy)p=S.profiles.p7}catch(e){}ret
 const pers=t=>String(t).replace(/\{NAFN\}/g,heroName());
 const weekStart=d=>{const m=new Date(d);m.setHours(0,0,0,0);m.setDate(m.getDate()-((m.getDay()+6)%7));return m};
 const DAY=86400000;
-function addStars(p,n){p.stars=Math.max(0,p.stars+n);if(n>0)S.jar.n+=n;save()}
+function rJarSet(){const el=$('rJar');if(!el)return;el.hidden=!jarOn();if(!jarOn())return;const J=jarOf(PR),each=jarMode()==='each';
+  el.textContent=J.n>=J.goal?(each?'Krukkan þín er full! Segðu mömmu eða pabba frá.':'Krukkan ykkar er full! Segðu mömmu eða pabba frá.'):`${each?'Krukkan þín':'Krukkan ykkar'}: ${nf(J.n)} af ${nf(J.goal)} stjörnum`}
+function addStars(p,n){p.stars=Math.max(0,p.stars+n);if(n>0&&jarOn())jarOf(p).n+=n;save()}
 
 /* ---------- Stjörnukrukkan ---------- */
 function jarSVG(n,goal){
@@ -6034,8 +6145,16 @@ function jarSVG(n,goal){
   let st='';for(let i=0;i<shown;i++){const r=Math.floor(i/cols),c=i%cols;const x=34+c*13+(r%2?6:0),y=150-r*13;st+=`<path d="${starPath(6.4,2.9)}" transform="translate(${x} ${y}) rotate(${(i*37)%40-20})" fill="url(#gStar)" stroke="#C98A00" stroke-width=".8"/>`}
   const full=n>=cap;
   return `<svg viewBox="0 0 140 180" aria-hidden="true">${full?'<circle cx="70" cy="100" r="78" fill="url(#gGlow)"/>':''}<rect x="40" y="10" width="60" height="16" rx="5" fill="#C98E5A" stroke="#7A4A26" stroke-width="2"/><path d="M34 30 H106 Q118 30 118 44 V160 Q118 172 104 172 H36 Q22 172 22 160 V44 Q22 30 34 30Z" fill="#DDF3FF" fill-opacity=".35" stroke="#7FA6C9" stroke-width="3"/>${st}<path d="M30 48 Q28 100 32 150" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".6" fill="none"/></svg>`}
-function jarHTML(){const j=S.jar,full=j.n>=j.goal,rw=j.reward?esc(j.reward):'umbun sem mamma eða pabbi velja';
-  return `<div class="jarpic">${jarSVG(j.n,j.goal)}</div><div class="jartx"><span class="kind">Sameiginleg stjörnukrukka</span><b>${nf(Math.min(j.n,j.goal))} af ${nf(j.goal)} stjörnum</b><div class="jarbar" role="img" aria-label="${Math.round(Math.min(1,j.n/j.goal)*100)} prósent full"><i style="width:${Math.min(100,j.n/j.goal*100)}%"></i></div><p>${full?`Krukkan er full! Segið mömmu eða pabba frá. Umbunin er: <b>${rw}</b>`:`Allar stjörnur sem þið safnið fara líka í krukkuna. Þegar hún fyllist fáið þið: <b>${rw}</b>`}</p></div>`}
+let JK=null;
+function jarCur(){if(jarMode()!=='each')return S.jar;const ids=visIds();if(!JK||!ids.includes(JK))JK=ids[0];return jarOf(S.profiles[JK])}
+function renderJarPane(){const m=jarMode();
+  $('jarMode').innerHTML=[['shared','Allir safna saman'],['each','Hver safnar sínum'],['off','Fela krukkuna']].map(([k,l])=>`<button type="button" class="chip" role="radio" aria-checked="${m===k}" data-jm="${k}">${l}</button>`).join('');
+  $('jarModeTx').textContent=m==='shared'?'Allir lesendur safna í sömu krukku. Veljið saman umbun sem þau fá þegar krukkan fyllist.':m==='each'?'Hvert barn á sína eigin krukku og safnar fyrir sinni umbun. Veldu barn til að stilla krukkuna þess.':'Krukkan er falin. Börnin safna áfram stjörnum en sjá ekki krukkuna á upphafssíðunni.';
+  $('jarKids').hidden=m!=='each';if(m==='each'){jarCur();$('jarKids').innerHTML=visIds().map(id=>`<button type="button" class="chip" role="radio" aria-checked="${id===JK}" data-jk="${id}">${esc(S.profiles[id].name)}</button>`).join('')}
+  $('jarForm').hidden=m==='off';if(m==='off')return;
+  const J=jarCur();$('jarParent').innerHTML=jarHTML();$('jarGoal').value=J.goal;$('jarReward').value=J.reward||'';$('jarEmpty').hidden=J.n<=0;$('jarConfirm').hidden=true}
+function jarHTML(){const j=jarCur(),each=jarMode()==='each',who=each?esc(S.profiles[JK].name):'',full=j.n>=j.goal,rw=j.reward?esc(j.reward):'umbun sem mamma eða pabbi velja';
+  return `<div class="jarpic">${jarSVG(j.n,j.goal)}</div><div class="jartx"><span class="kind">${each?who:'Sameiginleg stjörnukrukka'}</span><b>${nf(Math.min(j.n,j.goal))} af ${nf(j.goal)} stjörnum</b><div class="jarbar" role="img" aria-label="${Math.round(Math.min(1,j.n/j.goal)*100)} prósent full"><i style="width:${Math.min(100,j.n/j.goal*100)}%"></i></div><p>${full?`Krukkan er full! Umbunin er: <b>${rw}</b>`:each?`Stjörnurnar sem ${who} safnar fara í þessa krukku. Þegar hún fyllist: <b>${rw}</b>`:`Allar stjörnur sem börnin safna fara líka í krukkuna. Þegar hún fyllist fá þau: <b>${rw}</b>`}</p></div>`}
 
 /* ---------- Orðabankinn ---------- */
 function noteWord(w,d){const k=w.toLowerCase();const o=PR.words[k]||(PR.words[k]={w,d,n:0,t:Date.now(),ok:0,bad:0});o.n++;o.last=Date.now();o.d=d;save()}
@@ -6211,7 +6330,7 @@ function addHome(p,k,min,book,quiet){
   if(!p.days.includes(k)&&appMinOn(p,k)+homeMinOn(p,k)>=goal){p.days.push(k);p.days=p.days.slice(-90);e.day=true;{const keep=PR;PR=p;e.wd=tripStep(k,quiet);PR=keep}}
   save();return e}
 function delHome(p,id){const i=(p.home||[]).findIndex(h=>h.id===id);if(i<0)return;const e=p.home[i];p.home.splice(i,1);
-  if(e.stars){p.stars=Math.max(0,p.stars-e.stars);S.jar.n=Math.max(0,S.jar.n-e.stars)}
+  if(e.stars){p.stars=Math.max(0,p.stars-e.stars);if(jarOn()){const J=jarOf(p);J.n=Math.max(0,J.n-e.stars)}}
   if(e.day&&appMinOn(p,e.d)+homeMinOn(p,e.d)<Math.max(1,+p.settings.min||15)){const j=p.days.indexOf(e.d);if(j>=0){p.days.splice(j,1);p.trip=Math.max(0,(p.trip||0)-1);if(e.wd)p.world=Math.max(0,(p.world||0)-1)}}
   if(p.homeNote){p.homeNote.n=Math.max(0,p.homeNote.n-e.stars);p.homeNote.min=Math.max(0,p.homeNote.min-e.min);if(!p.homeNote.min)p.homeNote=null}
   save()}
@@ -6220,17 +6339,23 @@ function hrBooks(){const L=[];
   for(const h of (PR.home||[]).slice().reverse())if(h.book&&!L.includes(h.book)&&L.length<6)L.push(h.book);return L}
 function openHomeRead(){Object.assign(HR,{book:null,other:'',min:15,when:0,pin:''});const L=hrBooks();HR.book=L[0]||'__other';
   $('hrForm').hidden=false;$('hrLock').hidden=true;$('hrDone').hidden=true;$('hrOther').value='';renderHomeRead();show('homeread')}
-function hrKey(){const d=new Date();if(HR.when)d.setDate(d.getDate()-1);return dkey(d)}
+function hrKey(){const d=new Date();d.setDate(d.getDate()-(HR.when||0));return dkey(d)}
+const hrWhenTx=()=>['í dag','í gær','í fyrradag'][HR.when||0];
 function renderHomeRead(){const L=hrBooks();
   $('hrBooks').innerHTML=L.map(t=>`<button type="button" class="chip" role="radio" aria-checked="${HR.book===t}" data-hb="${esc(t)}">${esc(t)}</button>`).join('')+`<button type="button" class="chip" role="radio" aria-checked="${HR.book==='__other'}" data-hb="__other">Önnur bók</button>`;
   $('hrOtherWrap').hidden=HR.book!=='__other';
-  $('hrMins').innerHTML=[5,10,15,20,25,30,45].map(m=>`<button type="button" class="chip" role="radio" aria-checked="${HR.min===m}" data-hm="${m}">${m} mín</button>`).join('');
-  $('hrWhen').innerHTML=['Í dag','Í gær'].map((l,i)=>`<button type="button" class="chip" role="radio" aria-checked="${HR.when===i}" data-hw="${i}">${l}</button>`).join('');
+  $('hrMinVal').textContent=`${HR.min} mín`;$('hrMinus').disabled=HR.min<=1;$('hrPlus').disabled=HR.min>=240;
+  $('hrWhen').innerHTML=['Í dag','Í gær','Í fyrradag'].map((l,i)=>`<button type="button" class="chip" role="radio" aria-checked="${HR.when===i}" data-hw="${i}">${l}</button>`).join('');
   const k=hrKey(),left=homeStarsLeft(PR,k),n=Math.min(Math.floor(HR.min/HR_PER),left);
-  $('hrPrev').innerHTML=n?`Þú færð <b>${stjornur(n)}</b> fyrir ${HR.min} mínútur.`:left?`Lestu í að minnsta kosti 5 mínútur til að fá stjörnu.`:`Þú hefur þegar fengið ${HR_MAX} stjörnur fyrir heimalestur ${HR.when?'í gær':'í dag'}. Mínúturnar teljast samt með!`;
+  $('hrPrev').innerHTML=n?`Þú færð <b>${stjornur(n)}</b> fyrir ${HR.min} mínútur.`:left?`Lestu í að minnsta kosti 5 mínútur til að fá stjörnu.`:`Þú hefur þegar fengið ${HR_MAX} stjörnur fyrir heimalestur ${hrWhenTx()}. Mínúturnar teljast samt með!`;
   $('hrAsk').disabled=false}
 $('hrBooks').addEventListener('click',e=>{const b=e.target.closest('[data-hb]');if(!b)return;HR.book=b.dataset.hb;renderHomeRead();if(HR.book==='__other')$('hrOther').focus()});
-$('hrMins').addEventListener('click',e=>{const b=e.target.closest('[data-hm]');if(!b)return;HR.min=+b.dataset.hm;renderHomeRead()});
+function holdRep(btn,fn){let t1=0,t2=0;const stop=()=>{clearTimeout(t1);clearInterval(t2)};
+  btn.addEventListener('pointerdown',e=>{if(e.button>0)return;e.preventDefault();stop();fn();t1=setTimeout(()=>{t2=setInterval(()=>{if(btn.disabled)return stop();fn()},90)},420)});
+  ['pointerup','pointerleave','pointercancel'].forEach(ev=>btn.addEventListener(ev,stop));document.addEventListener('pointerup',stop);
+  btn.addEventListener('click',e=>{if(e.detail===0)fn()});btn.addEventListener('contextmenu',e=>e.preventDefault())}
+function hrSetMin(v){HR.min=Math.max(1,Math.min(240,v));renderHomeRead()}
+holdRep($('hrMinus'),()=>hrSetMin(HR.min-1));holdRep($('hrPlus'),()=>hrSetMin(HR.min+1));
 $('hrWhen').addEventListener('click',e=>{const b=e.target.closest('[data-hw]');if(!b)return;HR.when=+b.dataset.hw;renderHomeRead()});
 $('hrOther').addEventListener('input',()=>{$('hrAsk').disabled=!$('hrOther').value.trim()});
 $('hrOpen').addEventListener('click',openHomeRead);
@@ -6246,7 +6371,7 @@ function hrPress(k){
   tryPin(HR.pin).then(r=>{if(r==='ok'){HR.pin='';const book=HR.book==='__other'?$('hrOther').value.trim().slice(0,50):HR.book;const e=addHome(PR,hrKey(),HR.min,book);
     $('hrLock').hidden=true;$('hrDone').hidden=false;$('hrStars').innerHTML=STARSVG.repeat(Math.max(1,Math.min(4,e.stars)));
     $('hrDoneT').textContent=`Vel gert, ${PR.name}!`;
-    $('hrDoneTx').textContent=(e.stars?`Þú fékkst ${stjornur(e.stars)} fyrir að lesa${book?' '+book:''} í ${HR.min} mínútur.`:`${HR.min} mínútur bættust við lesturinn ${HR.when?'í gær':'í dag'}.`)+(e.day?' Þetta telst sem lestrardagur og þú færist á næsta stað á Íslandskortinu!':'');
+    $('hrDoneTx').textContent=(e.stars?`Þú fékkst ${stjornur(e.stars)} fyrir að lesa${book?' '+book:''} í ${HR.min} mínútur.`:`${HR.min} mínútur bættust við lesturinn ${hrWhenTx()}.`)+(e.day?' Þetta telst sem lestrardagur og þú færist á næsta stað á Íslandskortinu!':'');
     return}
   $('hrErr').textContent=pinErrText(r);const d=$('hrDots');d.classList.remove('shake');void d.offsetWidth;d.classList.add('shake');setTimeout(()=>{HR.pin='';hrDotsUI()},500)})}
 $('hrPad').addEventListener('click',e=>{const b=e.target.closest('.key[data-hk]');if(b)hrPress(b.dataset.hk)});
@@ -6335,7 +6460,7 @@ function renderNav(){const ids=visIds(),inR=PV.view==='set'&&PV.pane==='reader';
   $('pTabs').innerHTML=ids.map(id=>{const p=S.profiles[id],on=inR&&p===PP;return `<button type="button" class="nrow ptab" role="tab" data-pp="${id}" aria-selected="${on}"><span class="navav">${avatarSVG(avId(p,id))}</span><span class="nt">${esc(p.name)}</span><em>${p.yrs||p.age} ára</em>${CHEV}</button>`}).join('')
     +(ids.length<5?`<button type="button" class="nrow" id="pAddBtn" aria-selected="${PV.view==='set'&&PV.pane==='add'}"><span class="nplus">+</span><span class="nt" style="color:var(--accent)">Bæta við lesanda</span></button>`:'');
   const row=(pane,i,t,v)=>`<button type="button" class="nrow" data-pane="${pane}" aria-selected="${PV.view==='set'&&PV.pane===pane}">${pic(i,28)}<span class="nt">${t}</span><em>${v}</em>${CHEV}</button>`;
-  $('pNavShared').innerHTML=row('jar','gift','Stjörnukrukkan',`${nf(Math.min(S.jar.n,S.jar.goal))}/${nf(S.jar.goal)}`)+row('xmas','snow','Jóladagatalið',S.xmas.on?'Sýnilegt':'Falið')+row('first','ear','Mamma eða pabbi les fyrst','');
+  $('pNavShared').innerHTML=row('jar','gift','Stjörnukrukkan',jarMode()==='off'?'Falin':jarMode()==='each'?'Hver sína':`${nf(Math.min(S.jar.n,S.jar.goal))}/${nf(S.jar.goal)}`)+row('xmas','snow','Jóladagatalið',S.xmas.on?'Sýnilegt':'Falið')+row('first','ear','Mamma eða pabbi les fyrst','');
   const bk=S.backup?(Date.now()-S.backup<DAY?'Í dag':Date.now()-S.backup<2*DAY?'Í gær':`${Math.floor((Date.now()-S.backup)/DAY)} d.`):'Aldrei';
   $('pNavData').innerHTML=row('acct','shield','Aðgangur',AC.mode==='cloud'&&AC.fid?'Tengt':'Ekki tengt')+row('backup','cloud','Afrit',bk);
   $('pNavHelp').innerHTML=row('hb','hbook','Handbók','')+row('faq','help','Algengar spurningar','');
@@ -6346,7 +6471,7 @@ function renderNav(){const ids=visIds(),inR=PV.view==='set'&&PV.pane==='reader';
 function pDashShow(){PV.view='dash';PV.open=false;$('pDash').hidden=false;$('pSet').hidden=true;renderDash();window.scrollTo(0,0)}
 function pSettings(){PV.view='set';PV.open=false;$('pDash').hidden=true;$('pSet').hidden=false;pApply()}
 function pGo(pane,sub){PV.view='set';PV.pane=pane;if(sub)PV.sub=sub;PV.open=true;$('pDash').hidden=true;$('pSet').hidden=false;pApply();window.scrollTo(0,0)}
-function pApply(){document.querySelectorAll('#pSet .ppane').forEach(x=>x.hidden=x.dataset.pane!==PV.pane);$('pSet').classList.toggle('open',PV.open);renderNav();if(PV.pane==='hb'){HBCTX='parent';HBFAQ=false;hbRender()}if(PV.pane==='faq')faqRender();if(PV.pane==='acct')renderAcct();if(PV.pane==='backup')$('bkInfo').textContent=AC.mode==='cloud'&&AC.fid?'Gögnin eru samstillt við aðganginn þinn. Upptökur eru þó aðeins geymdar á þessu tæki, svo gott er að vista afrit með upptökunum öðru hvoru.':'Öll gögn eru geymd á þessu tæki. Vistaðu afrit reglulega svo ekkert tapist ef vafragögnum er eytt eða skipt er um spjaldtölvu. Afritið nær yfir alla lesendur.'}
+function pApply(){document.querySelectorAll('#pSet .ppane').forEach(x=>x.hidden=x.dataset.pane!==PV.pane);$('pSet').classList.toggle('open',PV.open);renderNav();if(PV.pane==='hb'){HBCTX='parent';HBFAQ=false;hbRender()}if(PV.pane==='faq')faqRender();if(PV.pane==='jar')renderJarPane();if(PV.pane==='acct')renderAcct();if(PV.pane==='backup')$('bkInfo').textContent=AC.mode==='cloud'&&AC.fid?'Gögnin eru samstillt við aðganginn þinn. Upptökur eru þó aðeins geymdar á þessu tæki, svo gott er að vista afrit með upptökunum öðru hvoru.':'Öll gögn eru geymd á þessu tæki. Vistaðu afrit reglulega svo ekkert tapist ef vafragögnum er eytt eða skipt er um spjaldtölvu. Afritið nær yfir alla lesendur.'}
 $('pSetBtn').addEventListener('click',pSettings);
 $('pBack').addEventListener('click',()=>{renderParent();pDashShow()});
 $('pBack2').addEventListener('click',()=>{PV.open=false;pApply();window.scrollTo(0,0)});
@@ -6400,11 +6525,14 @@ $('writeSave').addEventListener('click',()=>{
   if(n>=12&&!run.wroteStar){run.wroteStar=true;addStars(PR,1);msg='Endirinn þinn er vistaður og þú færð eina stjörnu fyrir að skrifa!'}else if(n<12&&!run.wroteStar)msg+=' Ef þú skrifar 12 orð eða fleiri færðu stjörnu.';
   save();$('writeFeed').textContent=msg});
 $('recList').addEventListener('click',async e=>{const b=e.target.closest('[data-recdel]');if(!b)return;if(b.dataset.armed!=='1'){b.dataset.armed='1';b.textContent='Ýttu aftur til að eyða';return}await recDel(b.dataset.recdel);renderRecs()});
-$('jarSave').addEventListener('click',()=>{const g=Math.max(5,Math.min(500,Math.round(+$('jarGoal').value||60)));S.jar.goal=g;S.jar.reward=$('jarReward').value.trim().slice(0,60);save();renderParent();$('jarFeed').textContent='Krukkan var uppfærð.'});
+$('jarMode').addEventListener('click',e=>{const b=e.target.closest('[data-jm]');if(!b)return;S.jar.mode=b.dataset.jm;save();renderParent();$('jarFeed').textContent=S.jar.mode==='each'?'Nú safnar hvert barn í sína krukku.':S.jar.mode==='off'?'Krukkan er falin.':'Nú safna allir í sömu krukku.'});
+$('jarKids').addEventListener('click',e=>{const b=e.target.closest('[data-jk]');if(!b)return;JK=b.dataset.jk;renderJarPane()});
+$('jarSave').addEventListener('click',()=>{const g=Math.max(5,Math.min(500,Math.round(+$('jarGoal').value||60))),J=jarCur();J.goal=g;J.reward=$('jarReward').value.trim().slice(0,60);save();renderParent();$('jarFeed').textContent='Krukkan var uppfærð.'});
 $('jarEmpty').addEventListener('click',()=>{$('jarEmpty').hidden=true;$('jarConfirm').hidden=false});
 $('jarNo').addEventListener('click',()=>{$('jarConfirm').hidden=true;$('jarEmpty').hidden=false});
-$('jarYes').addEventListener('click',()=>{(S.jar.hist=S.jar.hist||[]).push({t:Date.now(),goal:S.jar.goal,reward:S.jar.reward,n:S.jar.n});S.jar.n=Math.max(0,S.jar.n-S.jar.goal);save();renderParent();$('jarFeed').textContent='Ný krukka er hafin. Til hamingju með umbunina!'});
+$('jarYes').addEventListener('click',()=>{const J=jarCur();(J.hist=J.hist||[]).push({t:Date.now(),goal:J.goal,reward:J.reward,n:J.n});J.n=Math.max(0,J.n-J.goal);save();renderParent();$('jarFeed').textContent='Ný krukka er hafin. Til hamingju með umbunina!'});
 function worldInfo(p){const nm=p.name||'Barnið';if(worldOpen(p)){const nV=WORLD.filter((w,i)=>w.k!=='aq'&&wvis(p,i)).length,nS=WORLD.filter(w=>w.k!=='aq'&&wst(p)[w.k]).length;return `${nm} er ${wloc(p)}. ${nV} af ${WTOT} löndum heimsótt og ${nS} ${nS===1?'stimpill':'stimplar'} í vegabréfinu.`}const left=Math.max(0,TRIP.length-(p.trip||0));return `Opnast sjálfkrafa þegar barnið hefur farið hringinn um Ísland. ${nm} er ${TRIP[(p.trip||0)%TRIP.length][1]} og á ${left===1?'einn lestrardag':left+' lestrardaga'} eftir af hringnum. Þið getið líka opnað ferðina strax.`}
+$('libChips').addEventListener('click',e=>{const b=e.target.closest('[data-lib]');if(!b)return;PP.settings.lib=b.dataset.lib;save();renderParent()});
 $('worldChips').addEventListener('click',e=>{const b=e.target.closest('[data-world]');if(!b)return;const was=worldOpen(PP);PP.settings.world=b.dataset.world;if(!was&&worldOpen(PP)){PP.wseen=false;PP.wfrom=PP.wfrom||Date.now();PP.wlast=null;PP.wpen=null}save();renderParent()});
 $('wmodeChips').addEventListener('click',e=>{const b=e.target.closest('[data-wmode]');if(!b)return;PP.settings.wmode=b.dataset.wmode;PP.wpen=PP.wlast;save();renderParent()});
 $('jumpChips').addEventListener('click',e=>{const b=e.target.closest('[data-jump]');if(!b)return;PP.settings.jump=b.dataset.jump;save();renderParent()});
@@ -6616,7 +6744,7 @@ function renderTrip(){const p=PR,n=p.trip||0,at=n%TRIP.length,lap=Math.floor(n/T
   $('tripFacts').innerHTML=seen.map(({t,i})=>`<li${i===at?' class="cur"':''}><b>${i+1}. ${esc(t[0])}</b><span>${esc(t[4])}</span></li>`).join('');
   $('tripLead').textContent=`Þú hefur lesið ${n===1?'einn dag':nf(n)+' daga'}. ${lap?`Þú ert á hring ${lap+1} í kringum landið.`:`Eftir ${TRIP.length-1-at===1?'einn lestrardag':(TRIP.length-1-at)+' lestrardaga'} hefur þú farið hringinn.`}`}
 function tripStep(k,quiet){k=k||dkey(new Date());const was=worldOpen(PR);PR.trip=(PR.trip||0)+1;let wd=false;if(PR.trip%TRIP.length===0)addCert(PR,'Hringinn í kringum Ísland','fyrir að lesa jafn marga daga og þarf til að ferðast hringinn í kringum landið.');if(was){worldStep(PR,k,quiet);wd=true}else if(worldOpen(PR)){PR.wlast=k;PR.wfrom=PR.wfrom||Date.now()}else if(!quiet){const t=TRIP[PR.trip%TRIP.length];setTimeout(()=>toast(`Ný stoppistöð: ${t[0]}!`,'Skoðaðu kortið á forsíðunni.',{kind:'soft',ms:8000}),1200)}save();return wd}
-$('tripBack').addEventListener('click',()=>{renderHome();show('home')});
+$('tripBack').addEventListener('click',()=>{if(MAPBACK){MAPBACK=false;renderMapAll();show('mapall');return}renderHome();show('home')});
 $('tripBig').addEventListener('click',e=>{const g=e.target.closest('.tstop.vis');if(!g)return;const li=$('tripFacts').querySelectorAll('li');const i=+g.dataset.stop;const el=[...li].find(x=>x.textContent.startsWith(i+1+'. '));if(el){el.scrollIntoView({behavior:'smooth',block:'center'});el.classList.add('flash');setTimeout(()=>el.classList.remove('flash'),1200)}});
 
 /* ---------- Ferðalagið um heiminn: gögn ---------- */
@@ -6823,7 +6951,7 @@ function renderWorld(){const p=PR,ps=wpos(p),lap=wlap(p),cur=ps?WORLD[ps-1]:null
   $('wIce').hidden=false}
 $('wMap').addEventListener('click',e=>{const g=e.target.closest('.wstop.vis');if(g)openCountry(+g.dataset.w,'world')});
 $('wMap').addEventListener('keydown',e=>{if(e.key!=='Enter'&&e.key!==' ')return;const g=e.target.closest('.wstop.vis');if(g){e.preventDefault();openCountry(+g.dataset.w,'world')}});
-$('wBack').addEventListener('click',()=>{renderHome();show('home')});
+$('wBack').addEventListener('click',()=>{if(MAPBACK){MAPBACK=false;renderMapAll();show('mapall');return}renderHome();show('home')});
 $('wPassBtn').addEventListener('click',()=>{renderPass();show('wpass')});
 $('wIce').addEventListener('click',()=>{renderTrip();show('trip')});
 
@@ -6936,11 +7064,12 @@ const HB=[
 <p>Barnið svarar spurningum um efni sögunnar og merkingu orða. Fyrir hverja kláraða sögu fær það eina stjörnu og eina í viðbót fyrir hvert rétt svar. Ef barnið skrifar sinn eigin endi, 12 orð eða fleiri, fær það líka stjörnu og þið getið lesið endinn í foreldrasvæðinu.</p>
 <h3>Orðabankinn</h3>
 <p>Orðin sem barnið hefur skoðað safnast í orðabankann. Þar getur það rifjað þau upp með stuttum æfingum og fengið stjörnur.</p>`,go:[['Stillingar barns','reader:stillingar']]},
- {id:'stjornur',ic:'star',t:'Stjörnur og umbun',d:'Stjörnukrukkan og að gefa stjörnur',b:`
+ {id:'stjornur',ic:'star',t:'Stjörnur og umbun',d:'Stjörnukrukkan, ein eða fyrir hvert barn, og að gefa stjörnur',b:`
 <h3>Svona fær barnið stjörnur</h3>
 <ul><li>Ein stjarna fyrir hverja kláraða sögu og ein fyrir hvert rétt svar.</li><li>Ein stjarna fyrir eigin endi á sögu, 12 orð eða fleiri.</li><li>Ein stjarna fyrir hverjar 5 mínútur af heimalestri, mest fjórar á dag.</li><li>Tvær stjörnur fyrir hvern stimpil í vegabréfið.</li></ul>
 <h3>Stjörnukrukkan</h3>
-<p>Öll börnin á heimilinu safna í sömu krukkuna. Þið veljið hversu margar stjörnur þarf og hver umbunin er, til dæmis bíóferð eða pizzukvöld. Þegar krukkan fyllist sjá börnin það á upphafssíðunni og þið tæmið hana í stillingunum.</p>
+<p>Sjálfgefið safna öll börnin á heimilinu í sömu krukkuna. Þið veljið hversu margar stjörnur þarf og hver umbunin er, til dæmis bíóferð eða pizzukvöld. Þegar krukkan fyllist sjá börnin það á upphafssíðunni og þið tæmið hana í stillingunum.</p>
+<p>Undir Stillingar → Stjörnukrukkan getið þið líka valið að hvert barn safni í sína eigin krukku og vinni fyrir sinni umbun, eða falið krukkuna alveg. Börnin safna þá áfram stjörnum.</p>
 <h3>Gefa stjörnur</h3>
 <p>Á mælaborðinu er Gefa stjörnur. Þar getið þið gefið eina, þrjár eða fimm stjörnur, til dæmis fyrir lestur í skólanum. Barnið fær tilkynningu næst þegar það opnar appið.</p>`,go:[['Opna stjörnukrukkuna','jar']]},
  {id:'ferd',ic:'globe',t:'Ferðalögin',d:'Ísland, heimurinn og vegabréfið',b:`
@@ -6955,7 +7084,7 @@ const HB=[
  {id:'heima',ic:'hhome',t:'Heimalestur',d:'Lestur í bókum og kvittun fyrir skólann',b:`
 <p>Lestur í venjulegum bókum telst líka með. Hann gefur stjörnur og getur fært barnið á næsta stað á kortinu.</p>
 <h3>Barnið skráir sjálft</h3>
-<p>Á heimasíðu barnsins er hnappurinn Ég las bók heima. Barnið velur mínúturnar og þú staðfestir með lykilorði foreldra.</p>
+<p>Á heimasíðu barnsins er hnappurinn Ég las bók heima. Barnið stillir mínúturnar með + og −, velur hvort lesið var í dag, í gær eða í fyrradag og þú staðfestir með lykilorði foreldra.</p>
 <h3>Foreldri skráir</h3>
 <p>Á mælaborðinu er Skrá heimalestur. Þar er hægt að skrá lestur aftur í tímann, til dæmis ef gleymdist að skrá í gær. Ef færslu er eytt eru stjörnurnar dregnar frá.</p>
 <h3>Kvittun fyrir skólann</h3>
@@ -6966,7 +7095,7 @@ const HB=[
 <h3>Leshraði</h3>
 <p>Leshraðinn er reiknaður í orðum á mínútu út frá tímanum sem hver síða er opin. Pásur og tími í myndaverkefnum teljast ekki með og síður sem eru opnar mjög stutt eða mjög lengi eru ekki teknar með. Línuritið sýnir framfarir síðustu vikna.</p>
 <h3>Flipar hvers barns</h3>
-<ul><li><b>Yfirlit:</b> Stjörnur, leshraði, lestrardagar og hvernig gengur með spurningarnar.</li><li><b>Stillingar:</b> Nafn, þyngdarstig, stökk upp, atkvæðaskipting, ferðalagið og fleira.</li><li><b>Umbun:</b> Heimalestur, gefa stjörnur og viðurkenningarskjöl.</li><li><b>Upptökur:</b> Upplestur barnsins, ef það hefur tekið sig upp.</li><li><b>Saga:</b> Öll lestrarskipti með sögum, endum og svörum.</li></ul>
+<ul><li><b>Yfirlit:</b> Stjörnur, leshraði, lestrardagar og hvernig gengur með spurningarnar.</li><li><b>Stillingar:</b> Nafn, þyngdarstig, stökk upp, atkvæðaskipting, ferðalagið, útlit bókasafnsins og fleira.</li><li><b>Umbun:</b> Heimalestur, gefa stjörnur og viðurkenningarskjöl.</li><li><b>Upptökur:</b> Upplestur barnsins, ef það hefur tekið sig upp.</li><li><b>Saga:</b> Öll lestrarskipti með sögum, endum og svörum.</li></ul>
 <h3>Mamma eða pabbi les fyrst</h3>
 <p>Undir Sameiginlegt getur foreldri lesið sögu upphátt og tekið lesturinn upp. Barnið getur þá hlustað á söguna áður en það les hana sjálft.</p>
 <h3>Stökk upp</h3>
@@ -7085,6 +7214,71 @@ function wlArt(){const lb=(x,y,r,t)=>`<circle cx="${x}" cy="${y}" r="${r}" fill=
    +dragon(82,188,.66,{mouth:'blow'})+lb(134,110,10,'A')+lb(156,86,8,'B')+lb(172,64,6.5,'Ö')
    +kid(206,194,.56,{arms:'wave'})+owl(258,152,.5)+puffin(296,186,.9)+fox(346,192,.6)+'</svg>'}
 try{$('wlArt').innerHTML=wlArt()}catch(e){}
+const WLTAGS=['Hver lestrardagur er nýtt ævintýri.','Lestu, veldu og ferðastu um heiminn.','Litlar lestrarstundir, stór ævintýri.','Þar sem lesturinn verður að ævintýri.','Sögur sem krakkar vilja klára.'];
+let WLI=0;try{WLI=(+localStorage.getItem('lestrarstund.tag')+1||0)%WLTAGS.length;localStorage.setItem('lestrarstund.tag',WLI)}catch(e){WLI=Math.floor(Math.random()*WLTAGS.length)}
+$('wlTag').textContent=WLTAGS[WLI];
+setInterval(()=>{if($('welcome').hidden||document.hidden)return;const t=$('wlTag'),go=()=>{WLI=(WLI+1)%WLTAGS.length;t.textContent=WLTAGS[WLI];t.classList.remove('fade')};
+  if(matchMedia('(prefers-reduced-motion: reduce)').matches)return go();t.classList.add('fade');setTimeout(go,450)},7000);
+
+let MAPBACK=false;
+/* ---------- Útlit bókasafnsins: B (sjálfgefið), D opin bók, E hringekja, F bókaskápurinn ---------- */
+const LIBSTYLES=[['B','Kápur og flipar'],['D','Opin bók'],['E','Hringekja'],['F','Bókaskápurinn']];
+const LIBLBL={p:'Þú ert hetjan',a:'Ævintýri',b:'Íþróttastjörnur',c:'Saga og náttúra',m:'Sögusmiðjan',j:'Stökk upp'};
+const LA={cat:null,i:0};
+function libStyle(){return (PR&&PR.settings.lib)||'B'}
+function libCats(){const all=Object.values(STORIES),out=[];
+  for(const g of ['p','a','b','c','m']){const L=all.filter(s=>s.age===PR.age&&s.group===g);if(L.length)out.push({g,label:g==='m'?$('headM').textContent:LIBLBL[g],L})}
+  if(jumpOpen(PR)){const J=jumpStories();if(J.length)out.push({g:'j',label:LIBLBL.j,L:J})}
+  return out}
+function lcover(st,w,o={}){const bp=(PR.books||{})[st.id]||0,mark=st.book&&bp>0&&bp<st.len?'<span class="brib" aria-hidden="true"></span>':'';
+  return `<span class="lcv" style="width:${w}px"><span class="bcov" style="--c:${bkCol(st.id)}">${mark}<span class="bimg">${svgWrap(drawScene(st.thumb,st.id),'')}</span><span class="btb"><b>${st.title}</b></span></span></span>`}
+function lstars(st){const f=(PR.endings[st.id]||[]).length,t=(st.endings||[]).length;return `<span class="lstars" title="Endar fundnir: ${f} af ${t}">${Array.from({length:t},(_,i)=>`<i class="${i<f?'on':''}">${STARSVG}</i>`).join('')}</span>`}
+function renderLibAlt(){const sty=libStyle(),box=$('libAlt');$('libB').hidden=sty!=='B';box.hidden=sty==='B';box.className='libalt lib'+sty;if(sty==='B')return;
+  const cats=libCats();if(!cats.length){box.innerHTML='';return}
+  if(!cats.some(c=>c.g===LA.cat))LA.cat=cats[0].g;const cur=cats.find(c=>c.g===LA.cat);
+  if(sty==='D'){box.innerHTML=`<div class="ldspread"><div class="ldpg ldl"><h3>Bókasafnið mitt</h3><p class="ldsub">Efnisyfirlit</p><div class="ldtoc">${cats.map((c,i)=>`<button type="button" class="ldti${c.g===LA.cat?' on':''}" data-lcat="${c.g}"><span class="n">${i+1}.</span>${esc(c.label)}<span class="dl"></span><em>${c.L.length}</em></button>`).join('')}</div><div class="ldfoot">1</div></div>
+    <div class="ldpg ldr"><h3>${esc(cur.label)}</h3><div class="ldgr">${cur.L.map(st=>`<button type="button" class="ldbk" data-story="${st.id}" aria-label="${esc(st.title)}">${lcover(st,118)}<b>${st.title}</b>${st.book?'':lstars(st)}</button>`).join('')}</div><div class="ldfoot">2</div></div></div>`;return}
+  if(sty==='E'){const L=cur.L;LA.i=Math.max(0,Math.min(L.length-1,LA.i));const st=L[LA.i],f=(PR.endings[st.id]||[]).length,t=(st.endings||[]).length;
+    const books=L.map((s,i)=>{const d=i-LA.i,ad=Math.abs(d);if(ad>3)return '';const sc=[1,.8,.64,.5][ad],x=(d<0?-1:1)*[0,180,305,400][ad],ry=d===0?0:(d<0?35:-35);
+      return `<button type="button" class="lebk" data-ei="${i}" style="transform:translateX(calc(-50% + ${d===0?0:x}px)) scale(${sc}) rotateY(${ry}deg);z-index:${10-ad};opacity:${ad>2?.6:1}" aria-label="${esc(s.title)}"${d===0?' aria-current="true"':''}>${lcover(s,190)}</button>`}).join('');
+    box.innerHTML=`<div class="lechips">${cats.map(c=>`<button type="button" class="${c.g===LA.cat?'on':''}" data-lcat="${c.g}">${esc(c.label)}</button>`).join('')}</div>
+    <div class="leflow"><button type="button" class="learr l" data-emove="-1" aria-label="Fyrri bók"${LA.i?'':' disabled'}>‹</button>${books}<button type="button" class="learr r" data-emove="1" aria-label="Næsta bók"${LA.i<L.length-1?'':' disabled'}>›</button></div>
+    <div class="leinfo"><small>${esc(cur.label)}${st.book?` · ${st.len} kaflar`:''}</small><h3>${st.title}</h3>${st.book?'':`<div class="les">${lstars(st)}<span>${f} af ${t} endum fundinn</span></div>`}<button type="button" class="btn primary legob" data-story="${st.id}">Lesa söguna</button></div>
+    <div class="ledots" aria-hidden="true">${L.map((_,i)=>`<i class="${i===LA.i?'on':''}"></i>`).join('')}</div>`;return}
+  if(sty==='F'){box.innerHTML=`<div class="lfcab">${cats.map((c,ci)=>`<div class="lfrow"><div class="lfsh">${c.L.map((st,i)=>(i+ci)%3===0?`<button type="button" class="lfbk" data-story="${st.id}" aria-label="${esc(st.title)}">${lcover(st,108)}</button>`:`<button type="button" class="lfsp" data-story="${st.id}" style="--c:${bkCol(st.id)};height:${136+((i*17+ci*11)%26)}px;width:${38+((i*7)%10)}px" aria-label="${esc(st.title)}"><b>${st.title}</b></button>`).join('')}</div><span class="lfplate">${esc(c.label)}</span></div>`).join('')}</div>`;return}}
+$('libAlt').addEventListener('click',e=>{const c=e.target.closest('[data-lcat]');if(c){LA.cat=c.dataset.lcat;LA.i=0;renderLibAlt();return}
+  const m=e.target.closest('[data-emove]');if(m){LA.i+=+m.dataset.emove;renderLibAlt();return}
+  const ei=e.target.closest('[data-ei]');if(ei&&+ei.dataset.ei!==LA.i){LA.i=+ei.dataset.ei;renderLibAlt();return}
+  const s=e.target.closest('[data-story]');if(s)startStory(s.dataset.story)});
+{let x0=null;$('libAlt').addEventListener('pointerdown',e=>{if(libStyle()==='E')x0=e.clientX});$('libAlt').addEventListener('pointerup',e=>{if(x0==null)return;const dx=e.clientX-x0;x0=null;if(Math.abs(dx)>50){const L=(libCats().find(c=>c.g===LA.cat)||{L:[]}).L;LA.i=Math.max(0,Math.min(L.length-1,LA.i+(dx<0?1:-1)));renderLibAlt()}})}
+
+/* ---------- Kortið á upphafssíðunni: hvar eru allir? ---------- */
+function iceAllHTML(ids){const coast='M'+ISLCOAST.map(([a,b])=>PX(a,b).join(' ')).join(' L')+'Z',pts=TRIP.map(t=>PX(t[2],t[3]));
+  const road='M'+pts.map(q=>q.join(' ')).join(' L')+'Z';
+  const gl=[[-16.8,64.4,34,16],[-19.0,64.85,12,7],[-20.2,64.62,12,6],[-22.25,66.17,8,5]].map(([a,b,rx,ry])=>{const q=PX(a,b);return `<ellipse cx="${q[0]}" cy="${q[1]}" rx="${rx}" ry="${ry}" fill="#fff" opacity=".95"/>`}).join('');
+  const lbl=TRIP.map((t,i)=>{const q=pts[i];return `<circle cx="${q[0]}" cy="${q[1]}" r="3.4" fill="#fff" stroke="#0A60D6" stroke-width="1.5"/>`}).join('');
+  const at=id=>(S.profiles[id].trip||0)%TRIP.length;
+  const pins=ids.map((id,i)=>{const q=pts[at(id)],dup=ids.slice(0,i).filter(j=>at(j)===at(id)).length;return `<span class="mpin" style="left:${f1(q[0]/4)}%;top:${f1(q[1]/2.9)}%;margin-left:${dup*18}px" title="${esc(S.profiles[id].name)}">${avatarSVG(avId(S.profiles[id],id))}</span>`}).join('');
+  return `<div class="mamap ice"><svg viewBox="0 0 400 290" aria-hidden="true"><rect width="400" height="290" fill="#BFE3F5"/><path d="${coast}" fill="#C3E7AE" stroke="#fff" stroke-width="3" stroke-linejoin="round"/>${gl}<path d="${road}" fill="none" stroke="#0A60D6" stroke-width="1.6" stroke-dasharray="4 3.5" opacity=".6"/>${lbl}</svg>${pins}</div>`}
+function worldAllHTML(ids){const W=960,H=462,P=ids.map(id=>S.profiles[id]),best=P.reduce((a,b)=>!a||(b.world||0)>(a.world||0)?b:a,null);
+  const key=p=>'w'+wpos(p);
+  const pins=ids.map((id,i)=>wpinHTML(S.profiles[id],id,W,H,ids.slice(0,i).filter(j=>key(S.profiles[j])===key(S.profiles[id])).length)).join('');
+  return `<div class="mamap wld"><div class="wmin">${wmapSVG(best,{W,H,pr:6})}${pins}</div></div>`}
+function renderMapAll(){const ids=visIds(),wIds=ids.filter(id=>worldOpen(S.profiles[id])),iIds=ids.filter(id=>!worldOpen(S.profiles[id]));
+  let h='';
+  if(wIds.length)h+=`<div class="pcard"><h3>Ferðalagið um heiminn</h3>${worldAllHTML(wIds)}</div>`;
+  if(iIds.length)h+=`<div class="pcard"><h3>Ferðalagið um Ísland</h3>${iceAllHTML(iIds)}</div>`;
+  $('maMaps').innerHTML=h;
+  $('maList').innerHTML=ids.map(id=>{const p=S.profiles[id],w=worldOpen(p);let where,sub,flag='';
+    if(w){const ps=wpos(p),cur=ps?WORLD[ps-1]:null;where=`${esc(p.name)} er ${wloc(p)}`;sub=cur?(cur.k==='aq'?'Leynilegur bónus':`Land ${WNUM(ps-1)} af ${WTOT}`)+` · næst: ${esc(wnextName(p))}`:`Næst: ${esc(wnextName(p))}`;if(cur)flag=wflag(cur.k,34)}
+    else{const at=(p.trip||0)%TRIP.length;where=`${esc(p.name)} er ${TRIP[at][1]}`;sub=`Staður ${at+1} af ${TRIP.length} · næst: ${esc(TRIP[(at+1)%TRIP.length][0])}`}
+    return `<button type="button" class="maitem" data-mapk="${id}"><span class="maav">${avatarSVG(avId(p,id))}</span><span class="matx"><b>${where}</b><small>${sub}</small></span>${flag}${CHEV}</button>`}).join('')}
+$('startMap').addEventListener('click',()=>{renderMapAll();show('mapall')});
+$('startMap').setAttribute('role','button');$('startMap').setAttribute('tabindex','0');$('startMap').setAttribute('aria-label','Opna kortið og sjá hvar allir eru');
+$('startMap').addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();renderMapAll();show('mapall')}});
+$('maBack').addEventListener('click',()=>{renderStart();show('start')});
+$('maList').addEventListener('click',e=>{const b=e.target.closest('[data-mapk]');if(!b)return;PR=S.profiles[b.dataset.mapk];document.body.classList.toggle('age9',PR.age===9);selMin=Math.max(1,Math.min(60,+PR.settings.min||15));renderHome();
+  MAPBACK=true;if(worldOpen(PR)){renderWorld();show('world')}else{renderTrip();show('trip')}});
 
 /* ---------- Lestrarvinir ---------- */
 function renderBuddy(){const kid7=S.profiles.p7;$('buddyLead').textContent=`Veldu sögu til að lesa upphátt fyrir litla bróður þinn. Taktu upp lesturinn, þá getur ${nm(kid7)} hlustað á hann seinna. Þið fáið báðir stjörnur.`;
@@ -7097,7 +7291,7 @@ function buddyFinish(){const kid7=S.profiles.p7;addStars(PR,2);addStars(kid7,1);
   $('rAgain').hidden=true;$('rCert').hidden=true;$('rPick').textContent='Aftur á forsíðuna';Q={mode:'buddy',items:[],i:0,score:0};
   $('bigStars').innerHTML=STARSVG+STARSVG;$('rTitle').textContent='Takk fyrir upplesturinn!';
   $('rText').textContent=`Þú last „${STORIES[run.story].title}“ upphátt fyrir litla bróður þinn. Þú færð tvær stjörnur og ${nm(kid7)} fær eina.`;
-  $('rTotal').textContent=`Stjörnusafnið þitt: ${stjornur(PR.stars)}`;$('rJar').textContent=`Krukkan ykkar: ${nf(Math.min(S.jar.n,S.jar.goal))} af ${nf(S.jar.goal)} stjörnum`;show('reward')}
+  $('rTotal').textContent=`Stjörnusafnið þitt: ${stjornur(PR.stars)}`;rJarSet();show('reward')}
 
 /* ---------- Sögusmiðjan ---------- */
 const MK_BG=[['garden','Garður',()=>bgGarden()],['town','Bærinn',()=>bgTown()],['room','Herbergi',()=>bgRoom()],['stadium','Fótboltavöllur',()=>bgStadium()],['beach','Strönd',()=>bgBeach()],['forest','Skógur',()=>bgForest()],['space','Geimurinn',()=>bgSpace()],['farm','Sveitin',()=>bgFarm()],['sea','Hafið',()=>bgSea()],['snow','Snjór',()=>snowyYard(3)],['longhouse','Víkingaskáli',()=>bgLonghouse()],['stage','Svið',()=>bgStage()]];
@@ -7246,7 +7440,13 @@ function obErr(m){OB.err=m;const e=$('obErr');if(e)e.textContent=m;else obRender
 function obBusy(on){OB.busy=on;document.querySelectorAll('#obBox [data-ob]').forEach(b=>{if(b.classList.contains('obbtn'))b.disabled=on})}
 function obPull(){const n=$('obKName');if(n&&OB.f)OB.f.name=n.value;if($('obName'))OB.sv.name=$('obName').value;if($('obEmail'))OB.sv.email=$('obEmail').value;if($('obPw')&&OB.step!=='reauth')OB.sv.pw=$('obPw').value;const t=$('obTerms')||$('obTerms2');if(t)OB.terms=t.checked}
 function errText(e){const c=(e&&e.code)||'';const M={'auth/email-already-in-use':'Þetta netfang er þegar skráð. Skráðu þig inn í staðinn.','auth/invalid-email':'Netfangið er ekki gilt.','auth/weak-password':'Lykilorðið þarf að vera minnst 8 stafir.','auth/missing-password':'Skrifaðu lykilorðið.','auth/invalid-credential':'Rangt netfang eða lykilorð.','auth/invalid-login-credentials':'Rangt netfang eða lykilorð.','auth/wrong-password':'Rangt lykilorð.','auth/user-not-found':'Enginn aðgangur fannst með þessu netfangi.','auth/too-many-requests':'Of margar tilraunir. Reyndu aftur eftir smá stund.','auth/network-request-failed':'Ekkert netsamband. Athugaðu tenginguna og reyndu aftur.','auth/popup-blocked':'Vafrinn lokaði innskráningarglugganum. Leyfðu sprettiglugga og reyndu aftur.','auth/popup-closed-by-user':'','auth/cancelled-popup-request':'','auth/requires-recent-login':'Skráðu þig inn aftur til að staðfesta.','auth/user-mismatch':'Þetta er ekki sami aðgangur og appið er tengt.','permission-denied':'Aðgangi var hafnað.','ls/bad-code':'Þessi boðskóði fannst ekki. Athugaðu stafina.','ls/expired':'Boðskóðinn er útrunninn. Biddu hitt foreldrið um nýjan.','off':'Netaðgangar eru ekki virkir í þessari útgáfu.'};
-  if(c in M)return M[c];if(navigator.onLine===false||/import|fetch/i.test(String(e&&e.message)))return M['auth/network-request-failed'];return 'Eitthvað fór úrskeiðis. Reyndu aftur.'}
+  if(c in M)return M[c];
+  if(c==='auth/unauthorized-domain')return `Þetta lén (${location.hostname}) er ekki leyft í Firebase. Bættu því við undir Authentication → Settings → Authorized domains.`;
+  if(c==='auth/operation-not-allowed')return 'Þessi innskráningarleið er ekki virk í Firebase. Kveiktu á henni undir Authentication → Sign-in method.';
+  if(/referer|api-key|invalid-api-key/i.test(c))return `Firebase hafnaði beiðninni frá þessu léni (${c}). Athugaðu lykilinn og takmarkanir á honum.`;
+  if(navigator.onLine===false)return M['auth/network-request-failed'];
+  if(/import|fetch|module/i.test(String(e&&e.message)))return 'Ekki tókst að sækja innskráningu frá Google (www.gstatic.com). Prófaðu á vefslóð appsins, ekki í forskoðun, og athugaðu hvort auglýsingavörn sé að loka á Google.';
+  return 'Eitthvað fór úrskeiðis. Reyndu aftur.'+(c?` (villa: ${c})`:'')}
 const mailOk=v=>/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v);
 function obGoBack(){const s=OB.step,f=OB.flow;
   if(s==='pin'&&f==='new'){OB.step='kids';OB.pin='';OB.pin1='';OB.stage=1;OB.err='';obRender();return}

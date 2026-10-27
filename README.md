@@ -25,7 +25,7 @@ npx serve .
 
 Tengdu þetta repo við Netlify. Þá fer ný útgáfa sjálfkrafa í loftið í hvert sinn sem breyting er sett inn á `main`.
 
-Þegar `index.html` breytist þarf að hækka útgáfunúmerið sem sést neðst á velkomnaskjánum og í stillingum (leitaðu að „útgáfa 28“ í `index.html`) og útgáfunúmerið efst í `sw.js` (t.d. `lestrarstund-v28` → `lestrarstund-v29`), annars getur tækið haldið áfram að sýna gömlu útgáfuna.
+Þegar `index.html` breytist þarf að hækka útgáfunúmerið sem sést neðst á velkomnaskjánum og í stillingum (leitaðu að „útgáfa 33“ í `index.html`) og útgáfunúmerið efst í `sw.js` (t.d. `lestrarstund-v33` → `lestrarstund-v34`), annars getur tækið haldið áfram að sýna gömlu útgáfuna.
 
 Firebase er þegar tengt í þessari útgáfu (verkefnið `lestrarstund`).
 
@@ -35,7 +35,7 @@ Appið virkar án aðgangs. Þá eru öll gögn aðeins á tækinu, eins og áð
 
 1. Farðu á [console.firebase.google.com](https://console.firebase.google.com) og stofnaðu nýtt verkefni (t.d. `lestrarstund`). Slökktu á Google Analytics, appið notar það ekki.
 2. **Authentication** → *Get started* → *Sign-in method*: kveiktu á **Email/Password** og **Google**.
-3. **Authentication** → *Settings* → *Authorized domains*: bættu við léninu á Netlify (t.d. `lestrarstund.netlify.app`) og eigin léni ef það er til.
+3. **Authentication** → *Settings* → *Authorized domains*: bættu við léninu sem appið er á, t.d. `lestrarstund.github.io`, og eigin léni ef það er til.
 4. **Firestore Database** → *Create database* → *Production mode*. Veldu staðsetningu í Evrópu, t.d. `europe-west1` (Belgía). Þetta er ekki hægt að breyta seinna.
 5. **Firestore Database** → *Rules*: afritaðu innihald `firestore.rules` yfir það sem er þar og ýttu á *Publish*.
 6. **Project settings** (tannhjólið) → *Your apps* → veldu vefapp (`</>`), gefðu því nafn og afritaðu `firebaseConfig`.
