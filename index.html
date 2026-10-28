@@ -1361,7 +1361,7 @@ button.wps{cursor:pointer}
         <p class="wllead">Íslenskt lestrarapp fyrir krakka 7–10 ára. Barnið les, velur hvernig sagan fer og safnar stjörnum.</p>
         <ul class="wlft"><li><i style="background:#0A60D6"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5C6.5 4 9.5 4 12 6c2.5-2 5.5-2 8-.5V19c-2.5-1.5-5.5-1.5-8 .5-2.5-2-5.5-2-8-.5z M12 6v13.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></i><div><b>Sögur þar sem barnið velur leiðina</b><span>Yfir 40 sögur á tveimur þyngdarstigum</span></div></li><li><i style="background:#AF52DE"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 00-3.6 10.8c.6.5 1 1.2 1.1 2V16h5v-.2c.1-.8.5-1.5 1.1-2A6 6 0 0012 3z"/></svg></i><div><b>Byggir upp lesskilning</b><span>Spurningar í lok hverrar sögu dýpka skilning á textanum</span></div></li><li><i style="background:#1E8E3E"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></i><div><b>Yfirlit fyrir foreldra</b><span>Lestrardagar, mínútur og leshraði</span></div></li><li><i style="background:#C25E00"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9a15 15 0 0120 0M5 12.5a10 10 0 0114 0M8.5 16a5 5 0 017 0"/><circle cx="12" cy="19.5" r="1"/></svg></i><div><b>Virkar líka án nets</b><span>Í spjaldtölvu og síma</span></div></li></ul>
         <div class="wlacts"><button class="obbtn primary" id="wlNew" type="button">Stofna aðgang</button><button class="obbtn soft" id="wlLogin" type="button">Ég er með aðgang: skrá inn</button><button class="obbtn plain" id="wlLocal" type="button">Prófa fyrst án aðgangs</button><button class="obbtn plain wlguide" id="wlGuide" type="button">Hvernig virkar appið?</button></div>
-        <p class="wlfoot"><button type="button" class="oblink" data-legal="privacy">Persónuvernd</button> · <button type="button" class="oblink" data-legal="terms">Skilmálar</button><span class="wlver">Útgáfa 33</span></p>
+        <p class="wlfoot"><button type="button" class="oblink" data-legal="privacy">Persónuvernd</button> · <button type="button" class="oblink" data-legal="terms">Skilmálar</button><span class="wlver">Útgáfa 35</span></p>
       </div>
     </div>
   </section>
@@ -1663,7 +1663,7 @@ button.wps{cursor:pointer}
         <div class="ngh">Sameiginlegt</div><div class="ngrp" id="pNavShared"></div>
         <div class="ngh">Gögn</div><div class="ngrp" id="pNavData"></div>
         <div class="ngh">Hjálp</div><div class="ngrp" id="pNavHelp"></div>
-        <p class="pver">Lestrarstund · útgáfa 33</p>
+        <p class="pver">Lestrarstund · útgáfa 35</p>
       </nav>
       <div class="pmain">
         <button class="pback pback2" id="pBack2" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Stillingar</button>
@@ -1789,7 +1789,7 @@ button.wps{cursor:pointer}
           <div class="jarmini" id="jarParent"></div>
           <div class="formgrid">
             <label>Stjörnur í fullri krukku<input id="jarGoal" type="number" min="5" max="500" inputmode="numeric"></label>
-            <label>Umbun<input id="jarReward" type="text" maxlength="60" placeholder="t.d. pizzukvöld eða bíóferð"></label>
+            <label>Umbun<input id="jarReward" type="text" maxlength="60" placeholder="t.d. pítsukvöld eða bíóferð"></label>
           </div>
           <div class="actions"><button class="btn primary" id="jarSave" type="button">Vista krukkuna</button><button class="btn ghost" id="jarEmpty" type="button">Umbun veitt: byrja nýja krukku</button></div>
           <div class="confirm" id="jarConfirm" hidden><p>Tæma krukkuna og byrja að safna upp á nýtt? Stjörnur umfram markmiðið flytjast yfir í nýju krukkuna.</p><div class="cbtns"><button type="button" class="yes" id="jarYes">Já, ný krukka</button><button type="button" class="no" id="jarNo">Hætta við</button></div></div>
@@ -3405,7 +3405,7 @@ const STORIES={
     {task:{type:'tap',prompt:'Ýttu á takkann sem ræsir vélina.',answer:'green',hint:'Lestu aftur. Hvaða litur ræsir vélina?',good:'Brrrúmm! Vélin er farin í gang.'}}),
   g2b:P('„Bíp, bíp! Tunglið þarf hjálp,“ segir Bíbí. „Ljósið þess er að slokkna.“ Ari lítur upp. Tunglið er dauft og grátt. „Við verðum að hjálpa því,“ segir Ari. Þrír, tveir, einn... af stað!','g_yardBibi',
     [['Fljúga fram hjá stjörnunum','g3a'],['Fljúga í gegnum loftsteinana','g3b']],['Hvað segir Bíbí?',['Bíp, bíp','Mjá, mjá','Hó, hó']],'Bíbí segir að tunglið þurfi hjálp'),
-  g3a:P('Geimskipið þýtur upp í himininn. Allt í kring glitra stjörnurnar. Allt í einu flýgur {stjörnuhrap|stjarna sem þýtur yfir himininn} fram hjá. „Óskaðu þér!“ segir Bíbí. Ari lokar augunum. „Ég óska að tunglið verði bjart.“','g_wish',
+  g3a:P('Geimskipið þýtur upp í himininn. Allt í kring glitra stjörnurnar. Allt í einu flýgur {stjörnuhrap|stjarna sem þýtur yfir himininn} fram hjá. „Óskaðu þér!“ segir Bíbí. Ari lokar augunum. „Ég óska þess að tunglið verði bjart.“','g_wish',
     [['Lenda í stóra gígnum','g4a'],['Lenda við tunglfjallið','g4b']],['Hvers óskaði Ari sér?',['Að tunglið yrði bjart','Að fá ís','Að fara heim']],'Ari óskar sér'),
   g3b:P('Geimskipið þýtur upp í himininn. Fram undan eru {loftsteinar|stórir steinar sem svífa í geimnum}. Þeir eru alls staðar! „Haltu þér fast,“ segir Bíbí. Hann stýrir til vinstri og svo til hægri. Vúúúss!','g_rocks',
     [['Lenda í stóra gígnum','g4a'],['Lenda við tunglfjallið','g4b']],['Hvað var fram undan í geimnum?',['Loftsteinar','Fuglar','Ský']],'Bíbí stýrir fram hjá loftsteinum'),
@@ -3449,7 +3449,7 @@ const STORIES={
   r5b:P('Embla og Doppa læðast á bak við fossinn. Það skvettist á þær og Doppa skríkir. Hinum megin er grænn dalur. Þar eru margar risaeðlur að borða lauf af háum trjám.','r_falls',
     [['Leita að mömmu Doppu','r_e2'],['Klifra upp á stóran stein','r_e3']],['Hvað voru risaeðlurnar að gera?',['Borða lauf','Synda','Sofa']],'Þær finna Risadal'),
   r_e1:P('„Halló!“ kallar Embla. Skugginn kemur nær. Það er stór blá risaeðla með doppur, alveg eins og Doppa! Það er mamma hennar. Doppa hleypur til hennar og þær nudda saman nefjum.','r_mom',
-    null,['Hvernig var mamma Doppu?',['Blá með doppur','Græn með röndum','Rauð með horn']],'Doppa finnur mömmu sína',{end:'Mamma Doppu'}),
+    null,['Hvernig var mamma Doppu?',['Blá með doppum','Græn með röndum','Rauð með horn']],'Doppa finnur mömmu sína',{end:'Mamma Doppu'}),
   r_e2:P('Mamma Doppu kemur og knúsar hana með hálsinum. Doppa á heima hér. Embla verður smá leið. En mamman kinkar kolli. Doppa má heimsækja Emblu á hverju sumri!','r_visit',
     null,['Hvenær má Doppa heimsækja Emblu?',['Á hverju sumri','Á jólunum','Aldrei']],'Doppa má koma í heimsókn',{end:'Sjáumst í sumar'}),
   r_e3:P('Embla klifrar upp á steininn. Þá kemur stór blá risaeðla og lyftir henni upp á bakið. Það er mamma Doppu! Þær fara í ferð um allan dalinn. Doppa hleypur hlæjandi á eftir.','r_ride',
@@ -3479,7 +3479,7 @@ const STORIES={
     [['Gefa krabbanum fisk','s_e2'],['Syngja fyrir krabbann','s_e3']],['Hver sat á kistunni?',['Stór krabbi','Lítill fugl','Gamall köttur']],'Krabbi situr á kistunni'),
   s_e1:P('Kári leitar og leitar. Undir stórum steini liggur ryðgaður lykill. Hann passar! Kistan opnast. Hún er full af gylltum peningum. Kári bítur í einn. Þeir eru úr súkkulaði!','s_choco',
     null,['Úr hverju voru peningarnir?',['Súkkulaði','Gulli','Pappír']],'Kistan er full af súkkulaði',{end:'Súkkulaðipeningarnir'}),
-  s_e2:P('Lási hjálpar. Hann pikkar í lásinn með goggnum. Smell! Kistan opnast. Í henni er gamall sjóræningjahattur og kíkir. Kári setur upp hattinn. „Nú ert þú skipstjóri,“ segir Lási.','s_captain',
+  s_e2:P('Lási hjálpar. Hann pikkar í lásinn með gogginum. Smell! Kistan opnast. Í henni er gamall sjóræningjahattur og kíkir. Kári setur upp hattinn. „Nú ert þú skipstjóri,“ segir Lási.','s_captain',
     null,['Hvað var í kistunni?',['Hattur og kíkir','Gull og demantar','Gamlir sokkar']],'Kári verður skipstjóri',{end:'Skipstjórinn Kári'}),
   s_e3:P('Kári syngur lag um hafið. Krabbinn fer að dansa! Hann dansar burt af kistunni. Kári opnar hana. Hún er full af skeljum. Kári leggur eina að eyranu. Þá heyrir hann hafið syngja.','s_shells',
     null,['Hvað heyrði Kári í skelinni?',['Hafið syngja','Hund gelta','Klukku hringja']],'Krabbinn dansar burt',{end:'Söngur hafsins'}),
@@ -3574,8 +3574,8 @@ const STORIES={
  messi:{id:'messi',group:'b',title:'Lionel Messi',label:'Sönn saga',thumb:'m_wc22',start:'m1',pages:{
   m1:P('Þetta er sönn saga um Lionel Messi. Hann fæddist árið 1987 í borginni Rosario í Argentínu. Allir kalla hann Leo. Hann á tvo eldri bræður. Þeir spiluðu oft fótbolta saman úti á götu.','m_rosario',
     [['Lesa um ömmu hans','m2a'],['Lesa um fyrsta stóra liðið hans','m2b']],['Í hvaða landi fæddist Leo?',['Argentínu','Spáni','Noregi']],'Leo fæðist í Rosario í Argentínu'),
-  m2a:P('Amma hans Leos hét Celia. Hún fór með hann á fótboltaæfingar. Hún bað þjálfarann að leyfa Leo að spila, þó hann væri minnstur. Í dag bendir Leo upp til himins þegar hann skorar. Þannig minnist hann ömmu sinnar.','m_celia',
-    [['Lesa um hvernig hann fór til Spánar','m3a'],['Lesa um servíettuna','m3b']],['Hvað hét amma Leos?',['Celia','Rósa','Embla']],'Amma Celia fer með Leo á æfingar',
+  m2a:P('Amma hans Leo hét Celia. Hún fór með hann á fótboltaæfingar. Hún bað þjálfarann að leyfa Leo að spila, þó hann væri minnstur. Í dag bendir Leo upp til himins þegar hann skorar. Þannig minnist hann ömmu sinnar.','m_celia',
+    [['Lesa um hvernig hann fór til Spánar','m3a'],['Lesa um servíettuna','m3b']],['Hvað hét amma hans Leo?',['Celia','Rósa','Embla']],'Amma Celia fer með Leo á æfingar',
     {task:{type:'tap',prompt:'Hvert bendir Leo þegar hann skorar? Ýttu þangað.',answer:'sky',hint:'Lestu aftur. Hvert bendir Leo?',good:'Rétt! Upp til himins.'}}),
   m2b:P('Sex ára byrjaði Leo að æfa með liðinu Newell’s Old Boys. Búningurinn er rauður og svartur. Liðið hans tapaði næstum aldrei. Það var kallað „Vélin“, því strákarnir spiluðu eins og vél sem stoppar aldrei.','m_newells',
     [['Lesa um hvernig hann fór til Spánar','m3a'],['Lesa um servíettuna','m3b']],['Hvað var liðið hans kallað?',['Vélin','Ljónin','Eldingarnar']],'Leo spilar með Newell’s Old Boys',
@@ -3628,7 +3628,7 @@ const STORIES={
   v_e2:P('Í lampaherberginu situr Gunnar gamli vitavörður. Hurðin hafði skollið í lás á eftir honum og hann komst ekki út. Síminn hans var batteríslaus. Þá notaði hann gamla lampann til að senda SOS, eins og í gamla daga. Skömmu seinna kemur amma með teppi og heitt kakó. „Þið björguðuð mér,“ segir Gunnar og þurrkar sér um augun.','v_gunnar',
     null,['Hvernig sendi Gunnar neyðarkallið?',['Með gamla lampanum','Með símanum','Með flautu']],'Þau bjarga Gunnari',{end:'Vitavörðurinn'}),
   v_e3:P('Á lampaborðinu stendur stór hrafn og pikkar í gamlan rofa. Í hvert skipti sem hann pikkar kviknar ljósið. Í kringum hann liggja glansandi hlutir: skeiðar, skrúfur og gamall hringur. Hrafninn hefur safnað þeim í hreiðrið sitt! Amma hlær dátt þegar hún heyrir söguna. Hringurinn reynist vera giftingarhringurinn hennar, sem týndist fyrir mörgum árum.','v_raven',
-    null,['Hvað safnaði hrafninn?',['Glansandi hlutum','Fiskum','Laufblöðum']],'Hrafninn kveikir ljósið',{end:'Hrafninn og hringurinn'}),
+    null,['Hverju safnaði hrafninn?',['Glansandi hlutum','Fiskum','Laufblöðum']],'Hrafninn kveikir ljósið',{end:'Hrafninn og hringurinn'}),
  }},
  landnam:{id:'landnam',age:9,title:'Tímaflakk til landnámsins',label:'Tímaflakk',thumb:'l_ship',start:'l1',pages:{
   l1:P('Sól og Dagur eru tvíburar. Í skólaferð á Þjóðminjasafnið sjá þau glæran stein í glerkassa. Á skiltinu stendur að víkingar hafi kannski notað svona {sólarstein|glæran kristal sem sýnir hvar sólin er, jafnvel í skýjuðu veðri} til að rata á sjó. Allt í einu fer steinninn að glóa. Dagur leggur fingurinn á glerið og allt verður skjannahvítt.','l_museum',
@@ -3647,7 +3647,7 @@ const STORIES={
   l4b:P('Langhúsið er langt og dimmt. Veggirnir eru úr torfi og grjóti og það vex gras á þakinu. Í miðju gólfinu logar {langeldur|langt eldstæði í miðju gólfi sem hitar allt húsið}. Reykurinn fer út um gat á þakinu. Fólkið situr á bekkjum við veggina og borðar skyr úr tréskálum. Dagur fær að smakka. Það er súrt, en ótrúlega gott.','l_house',
     [['Læra rúnir','l5a'],['Prófa sólarsteininn','l5b']],['Úr hverju voru veggirnir í langhúsinu?',['Torfi og grjóti','Steypu','Gleri']],'Þau borða skyr í langhúsinu',
     {task:{type:'tap',prompt:'Hvert fer reykurinn af langeldinum? Ýttu á staðinn.',answer:'hole',hint:'Lestu aftur. Hvar fer reykurinn út?',good:'Rétt! Út um gatið á þakinu.'}}),
-  l5a:P('Gamall maður situr við eldinn og ristir stafi í spýtu með hnífnum sínum. „Þetta eru {rúnir|stafirnir sem víkingar notuðu},“ segir hann. Hann kennir þeim að rista nöfnin sín. Sól er mjög stolt af sínu nafni. Það er bara þrír stafir, en samt tekur það heila eilífð að rista þá. Allt í einu fer sólarsteinninn í vasa Dags að glóa aftur.','l_runes',
+  l5a:P('Gamall maður situr við eldinn og ristir stafi í spýtu með hnífnum sínum. „Þetta eru {rúnir|stafirnir sem víkingar notuðu},“ segir hann. Hann kennir þeim að rista nöfnin sín. Sól er mjög stolt af sínu nafni. Það eru bara þrír stafir, en samt tekur það heila eilífð að rista þá. Allt í einu fer sólarsteinninn í vasa Dags að glóa aftur.','l_runes',
     [['Taka rúnaspýtuna með heim','l_e1'],['Gefa Ingólfi steininn','l_e2']],['Hvað eru rúnir?',['Stafir sem víkingar notuðu','Litlir steinar','Víkingaskip']],'Gamall maður kennir þeim rúnir'),
   l5b:P('Úti er skýjað og sólin sést hvergi. Dagur heldur sólarsteininum upp að himninum og snýr honum hægt. Allt í einu birtist bjartur blettur inni í steininum. „Þarna er sólin,“ segir hann og bendir. Ingólfur rekur upp stór augu. Hann hefur aldrei séð svona stein áður. Þá fer steinninn að glóa og hitna í lófanum á Degi.','l_sunstone',
     [['Gefa Ingólfi steininn','l_e2'],['Kveðja og fara heim','l_e3']],['Hvernig var veðrið þegar Dagur prófaði steininn?',['Skýjað','Sól og blíða','Snjóbylur']],'Dagur sýnir Ingólfi sólarsteininn'),
@@ -3671,7 +3671,7 @@ const STORIES={
     [['Fylgjast með úr öruggri fjarlægð','e4a'],['Hjálpa til við varnargarðinn','e4b']],['Hvernig var lyktin?',['Eins og af fúleggjum','Eins og af blómum','Eins og af pönnukökum']],'Dróninn finnur sprungu'),
   e3b:P('Í stjórnstöðinni sitja margir við tölvur. Á stórum skjá er kort af Reykjanesi með rauðum punktum. Hver punktur er einn jarðskjálfti. Punktarnir raða sér í langa, beina línu. „Kvikan er að brjóta sér leið upp á yfirborðið,“ segir kona með heyrnartól. „Við þurfum að vara fólkið í bænum við strax.“','f9_control',
     [['Fylgjast með úr öruggri fjarlægð','e4a'],['Hjálpa til við varnargarðinn','e4b']],['Hvað táknaði hver rauður punktur?',['Einn jarðskjálfta','Eitt hús','Einn bíl']],'Þær heimsækja stjórnstöðina'),
-  e4a:P('Um kvöldið opnast jörðin. Löng sprunga lýsist upp og glóandi kvika spýtist hátt upp í loftið. Rán og Kría horfa á úr öruggri fjarlægð, uppi á hæð langt frá sprungunni. „Hraunið er meira en þúsund gráðu heitt,“ segir Rán. „Það er tíu sinnum heitara en sjóðandi vatn.“ Himinninn er appelsínugulur og Kría tekur mynd.','f9_erupt',
+  e4a:P('Um kvöldið opnast jörðin. Löng sprunga lýsist upp og glóandi kvika spýtist hátt upp í loftið. Rán og Kría horfa á úr öruggri fjarlægð, uppi á hæð langt frá sprungunni. „Hraunið er meira en þúsund gráða heitt,“ segir Rán. „Það er tíu sinnum heitara en sjóðandi vatn.“ Himinninn er appelsínugulur og Kría tekur mynd.','f9_erupt',
     [['Stýra drónanum','e5a'],['Taka sýni af hrauninu','e5b']],['Hversu heitt er hraunið?',['Meira en þúsund gráður','Hundrað gráður','Tíu gráður']],'Gosið hefst',
     {task:{type:'drag',prompt:'Dragðu Kríu á staðinn þar sem hún horfir á gosið.',answer:'hill',hint:'Lestu aftur. Hvar stóðu Rán og Kría?',good:'Rétt! Uppi á hæðinni, langt frá sprungunni.'}}),
   e4b:P('Stórar vinnuvélar keyra fram og til baka og ýta upp háum garði úr grjóti og möl. „Þetta er {varnargarður|hár veggur úr grjóti sem stýrir hrauninu framhjá},“ segir Rán. „Hraun rennur alltaf niður í móti, alveg eins og vatn. Garðurinn beinir því frá húsunum.“ Kría fær að sitja hjá bílstjóranum í stærstu gröfunni og stýra skóflunni smá.','f9_wall',
@@ -3684,7 +3684,7 @@ const STORIES={
     null,['Hvernig komust kindurnar í burtu?',['Bóndinn og Rán ráku þær út','Þær flugu','Þær syntu']],'Kindunum er bjargað',{end:'Kindunum bjargað'}),
   f_e2:P('Eftir fríið fer Kría með hraunmolann í skólann. Hún segir bekknum frá kvikunni, flekunum og varnargarðinum og sýnir myndirnar sínar á stóra skjánum. Allir fá að halda á molanum. Kennarinn spyr hvort hún vilji verða eldfjallafræðingur þegar hún verður stór. „Ég er eiginlega orðin það nú þegar,“ segir Kría og hlær.','f9_school',
     null,['Hvað sýndi Kría bekknum?',['Hraunmola og myndir','Lifandi kind','Dróna']],'Kría segir bekknum frá gosinu',{end:'Litli eldfjallafræðingurinn'}),
-  f_e3:P('Eftir nokkrar vikur hættir gosið. Rán og Kría ganga varlega út á nýja hraunið. Það er enn hlýtt undir fótunum og sumstaðar rýkur upp úr því. „Þetta land var ekki til fyrir mánuði,“ segir Rán. „Þú ert ein af fyrstu manneskjunum í heiminum sem stígur á það.“ Kría stendur kyrr og hlustar á vindinn. Ísland er alltaf að stækka.','f9_newland',
+  f_e3:P('Eftir nokkrar vikur hættir gosið. Rán og Kría ganga varlega út á nýja hraunið. Það er enn hlýtt undir fótunum og sums staðar rýkur upp úr því. „Þetta land var ekki til fyrir mánuði,“ segir Rán. „Þú ert ein af fyrstu manneskjunum í heiminum sem stígur á það.“ Kría stendur kyrr og hlustar á vindinn. Ísland er alltaf að stækka.','f9_newland',
     null,['Hvað sagði Rán um nýja hraunið?',['Að það hefði ekki verið til fyrir mánuði','Að það væri úr súkkulaði','Að það væri ískalt']],'Þær ganga á nýja hrauninu',{end:'Nýtt land'}),
  }},
  geimstod:{id:'geimstod',age:9,title:'Geimstöðin Norðurljós',label:'Geimurinn',thumb:'s9_window',start:'g1',pages:{
@@ -3740,7 +3740,7 @@ const STORIES={
     [['Láta Tappa keyra hraðar','r_e3'],['Halda sama hraða','r_e2']],['Hvað tók Ísak eftir hjá stóru vélmennunum?',['Þau voru lengi að snúa sér','Þau voru öll blá','Þau gátu flogið']],'Ísak vill láta Tappa keyra hraðar'),
   r_e1:P('Í seinni tilrauninni fer Tappi alveg eins og á æfingu. Hann snertir engan vegg og grípur fánann. Tíminn er 43 sekúndur. Það dugar í annað sætið! Ísak og Freyja fá silfurpening um hálsinn. Liðið sem vann kemur og spyr hvernig þau smíðuðu Tappa. „Úr safafernu,“ segir Freyja stolt. Þau verða öll vinir.','r9_silver',
     null,['Í hvaða sæti lentu Ísak og Freyja?',['Öðru sæti','Fyrsta sæti','Síðasta sæti']],'Tappi nær í annað sætið',{end:'Silfrið'}),
-  r_e2:P('Tappi fer rólega en örugglega í gegnum völundarhúsið. Hann snertir engan vegg. Tíminn er 40 sekúndur. Enginn hefur verið fljótari í dag! Ísak og Freyja hoppa upp og niður. Dómarinn réttir þeim bikar sem á stendur: Fyrsta sæti. Freyja hvíslar að Ísak: „Stundum er hægt hraðara en hratt.“','r9_gold',
+  r_e2:P('Tappi fer rólega en örugglega í gegnum völundarhúsið. Hann snertir engan vegg. Tíminn er 40 sekúndur. Enginn hefur verið fljótari í dag! Ísak og Freyja hoppa upp og niður. Dómarinn réttir þeim bikar sem á stendur: Fyrsta sæti. Freyja hvíslar að Ísaki: „Stundum er hægt hraðara en hratt.“','r9_gold',
     null,['Hvað sagði Freyja í lokin?',['Stundum er hægt hraðara en hratt','Við hefðum átt að fara hraðar','Tappi er of lítill']],'Tappi vinnur keppnina',{end:'Hægt og örugglega'}),
   r_e3:P('Tappi þýtur af stað eins og raketta. Hann fer í gegnum fyrstu beygjurnar á methraða. En í síðustu beygjunni nær hann ekki að stoppa og keyrir beint út úr völundarhúsinu. Áhorfendur hlæja, en ekki illa. Ísak og Freyja fá sérstök verðlaun fyrir hugrekki. „Á næsta ári,“ segir Freyja, „smíðum við bremsur.“','r9_fast',
     null,['Hvað ætlar Freyja að smíða á næsta ári?',['Bremsur','Vængi','Stærri fernu']],'Tappi fer of hratt',{end:'Of hratt'}),
@@ -3905,7 +3905,7 @@ const STORIES={
     null,['Á hvaða tveimur stórmótum var Björgvin Páll með?',['Ólympíuleikunum 2008 og EM 2026','Bara HM 2018','Engum']],'Björgvin Páll er enn í markinu',{end:'Markvörðurinn sem hætti ekki'}),
  }},
  karfa9:{id:'karfa9',age:9,group:'b',title:'Risarnir í körfunni',label:'Sönn saga',thumb:'k9_tryggvi',start:'kb1',pages:{
-  kb1:P('Þetta er sönn saga um íslenska körfuboltalandsliðið. Í körfubolta skiptir hæð oft máli, og Ísland á ótrúlega marga hávaxna körfuboltamenn. Lengi vel komst landsliðið þó aldrei á stórmót. En smám saman byggði lítil þjóð upp lið sem gat staðið í þeim bestu í Evrópu.','k9_court',
+  kb1:P('Þetta er sönn saga um íslenska körfuboltalandsliðið. Í körfubolta skiptir hæð oft máli, og Ísland á ótrúlega marga hávaxna körfuboltamenn. Lengi vel komst landsliðið þó aldrei á stórmót. En smám saman byggði lítil þjóð upp lið sem gat keppt við þau bestu í Evrópu.','k9_court',
     [['Lesa um fyrsta Íslendinginn í NBA','kb2a'],['Lesa um reglurnar','kb2b']],['Hvað skiptir oft máli í körfubolta?',['Hæð','Hárlitur','Skóstærð']],'Ísland byggir upp körfuboltalið'),
   kb2a:P('Pétur Guðmundsson var fyrsti Íslendingurinn sem spilaði í NBA-deildinni í Bandaríkjunum, sterkustu körfuboltadeild í heimi. Hann var 2,18 metrar á hæð. Árið 1981 byrjaði hann að spila með Portland Trail Blazers. Seinna lék hann líka með Los Angeles Lakers og San Antonio Spurs. Hann var einn af fyrstu Evrópubúunum í deildinni.','k9_petur',
     [['Lesa um Hlyn','kb3a'],['Lesa um Ægi','kb3b']],['Hvað var Pétur Guðmundsson hár?',['2,18 metrar','1,50 metrar','3 metrar']],'Pétur verður fyrsti Íslendingurinn í NBA',
@@ -3961,7 +3961,7 @@ const STORIES={
     {task:{type:'tap',prompt:'Ýttu á fánann sem Bjarki heldur á.',answer:'starflag',hint:'Lestu aftur. Hvernig er fáninn hans Bjarka?',good:'Rétt! Blár fáni með hvítri stjörnu.'}}),
   sj4b:P('Bjarki fer út á körfuboltavöllinn við skólann. Hann æfir sig að skjóta eins og Ægir og að taka fráköst eins og Hlynur. Fyrst hittir hann ekki neitt. En eftir tuttugu skot fer boltinn loksins ofan í!','sj_practice',
     [['Lesa um meistaratitilinn','sj5a'],['Lesa um landsliðið','sj5b']],['Hve mörg skot tók það Bjarka að hitta?',['Tuttugu','Eitt','Hundrað']],'Bjarki æfir sig úti',
-    {task:{type:'tap',prompt:'Hvar fór boltinn að lokum? Ýttu á hann.',answer:'in',hint:'Lestu aftur. Hvað gerðist eftir tuttugu skot?',good:'Rétt! Boltinn fór ofan í körfuna.'}}),
+    {task:{type:'tap',prompt:'Hvert fór boltinn að lokum? Ýttu á hann.',answer:'in',hint:'Lestu aftur. Hvað gerðist eftir tuttugu skot?',good:'Rétt! Boltinn fór ofan í körfuna.'}}),
   sj5a:P('Í úrslitunum vorið 2025 voru leikirnir æsispennandi. Stjarnan vann og fékk bikarinn! Ægir var valinn besti leikmaður úrslitanna. Allir í Garðabæ fögnuðu.','sj_trophy',
     [['Sjá fagnaðarlætin','sj_e1'],['Byrja að æfa','sj_e2']],['Hver var valinn bestur í úrslitunum?',['Ægir','Bjarki','Mamma']],'Stjarnan vinnur úrslitin'),
   sj5b:P('Sumarið 2025 spilaði íslenska landsliðið á Evrópumótinu í Póllandi. Ægir, Orri og Hilmar voru allir í liðinu. Þrír strákar úr meistaraliði Stjörnunnar á stórmóti!','sj_national',
@@ -3995,7 +3995,7 @@ addLevels('vitinn',['v2a','v2b'],[
    t:'Amma stendur í dyrunum með hendur á mjöðmum. „Lofið mér tveimur hlutum,“ segir hún. „Þið farið ekki inn í neitt sem ykkur finnst hættulegt, og þið hringið strax ef eitthvað gerist.“ Hekla og Jónas lofa því hátíðlega. Svo stingur amma heitum kleinum í vasana á regnstökkunum þeirra.'}]]);
 addLevels('landnam',['l2a','l2b'],[
  [{l:'Spyrja um siglinguna',s:'l_ship',e:'Ingólfur segir frá siglingunni',q:['Hvað borðaði fólkið á skipinu?',['Harðfisk og þurrkað kjöt','Pítsu','Súkkulaði']],
-   t:'Ferðin yfir hafið hafði tekið margar vikur. Á skipinu var þröngt og kalt. Fólkið svaf undir skinnfeldum og borðaði harðfisk og þurrkað kjöt. Ingólfur sýnir Degi hvernig hann les í öldurnar og flug fuglanna. „Þegar þú sérð fugla fljúga með æti í goggnum er land ekki langt undan,“ segir hann.'},
+   t:'Ferðin yfir hafið hafði tekið margar vikur. Á skipinu var þröngt og kalt. Fólkið svaf undir skinnfeldum og borðaði harðfisk og þurrkað kjöt. Ingólfur sýnir Degi hvernig hann les í öldurnar og flug fuglanna. „Þegar þú sérð fugla fljúga með æti í gogginum er land ekki langt undan,“ segir hann.'},
   {l:'Hjálpa til með dýrin',s:'l_horses',e:'Sól hjálpar til með dýrin',q:['Hvernig voru hestarnir?',['Smávaxnir en sterkir','Risastórir','Röndóttir']],
    t:'Sól hjálpar til við að gefa dýrunum. Kindurnar eru hræddar eftir langa ferð og jarma hátt. Hestarnir eru smávaxnir en sterkir. „Þetta eru forfeður íslenska hestsins,“ hugsar Sól. Hún strýkur litlum, brúnum hesti um makkann. Hann ýtir mjúku nefinu í lófann á henni, eins og hann sé að leita að sykurmola.'}],
  [{l:'Sofa úti fyrstu nóttina',s:'l_night',e:'Þau sofa úti fyrstu nóttina',q:['Hvernig var nóttin?',['Björt','Kolsvört','Full af snjó']],
@@ -4074,8 +4074,8 @@ addLevels('mbappe',['b4a','b4b'],[
 addLevels('yamal',['y3a','y3b'],[
  [{l:'Lesa um götuboltann',s:'y9_street',e:'Lamine lærir á götunni',q:['Hvað lærði Lamine á steyptu völlunum?',['Að hafa boltann alveg við fótinn','Að synda','Að hjóla']],
    t:'Í Rocafonda léku krakkarnir fótbolta á litlum steyptum völlum, oft með bolta sem var orðinn snjáður. Á steypunni lærði Lamine að hafa boltann alveg við fótinn. Ef hann missti hann of langt frá sér tók einhver annar hann strax. Margir af bestu leikmönnum heims lærðu fótbolta á götunni, alveg eins og hann.'},
-  {l:'Lesa um fjölskylduna',s:'y9_post',e:'Pabbi Lamines setur myndina á netið',q:['Hvað skrifaði pabbi Lamines við myndina?',['Upphaf tveggja goðsagna','Góða nótt','Til hamingju með daginn']],
-   t:'Pabbi Lamines heitir Mounir og mamma hans heitir Sheila. Það var Mounir sem setti frægu myndina af Messi og litla barninu á netið sumarið 2024. Við myndina skrifaði hann: „Upphaf tveggja goðsagna.“ Myndin fór um allan heim á örfáum klukkutímum og milljónir manna deildu henni.'}],
+  {l:'Lesa um fjölskylduna',s:'y9_post',e:'Pabbi hans Lamine setur myndina á netið',q:['Hvað skrifaði pabbi hans Lamine við myndina?',['Upphaf tveggja goðsagna','Góða nótt','Til hamingju með daginn']],
+   t:'Pabbi hans Lamine heitir Mounir og mamma hans heitir Sheila. Það var Mounir sem setti frægu myndina af Messi og litla barninu á netið sumarið 2024. Við myndina skrifaði hann: „Upphaf tveggja goðsagna.“ Myndin fór um allan heim á örfáum klukkutímum og milljónir manna deildu henni.'}],
  [{l:'Lesa um vinstri fótinn',s:'y9_trivela',e:'Lamine sendir utanfótarsendingar',q:['Á hvaða kanti spilar Lamine oftast?',['Hægri kantinum','Vinstri kantinum','Í markinu']],
    t:'Lamine er örvfættur, eins og Messi. Hann spilar oftast á hægri kantinum. Þaðan getur hann sólað inn á völlinn og skotið með vinstri fæti. Hann er líka þekktur fyrir {utanfótarsendingar|þegar boltanum er spyrnt með ytri hluta fótarins svo hann snúist}. Boltinn snýst þá í boga framhjá varnarmönnum og beint til samherja.'},
   {l:'Lesa um félagann á hinum kantinum',s:'y9_nico',e:'Lamine og Nico Williams spila saman',q:['Með hverjum spilar Lamine oft á hinum kantinum?',['Nico Williams','Mbappé','Haaland']],
@@ -4092,7 +4092,7 @@ addLevels('island',['i2a','i2b'],[
  [{l:'Lesa um liðsandann',s:'i9_team',e:'Liðsheildin er sterkasta vopnið',q:['Hvað var sterkasta vopn Íslands?',['Liðsheildin','Hraðinn','Hæðin']],
    t:'Margir leikmannanna höfðu þekkst síðan þeir voru litlir og spilað saman í yngri landsliðum. Þeir voru ekki allir stórstjörnur, en þeir börðust hver fyrir annan. Ef einn gerði mistök hlupu hinir til að bæta fyrir þau. Margir sögðu að liðsheildin væri sterkasta vopn Íslands.'},
   {l:'Lesa um atvinnumennina',s:'i9_abroad',e:'Leikmennirnir spila í útlöndum',q:['Hvar spiluðu flestir leikmennirnir?',['Með félögum í útlöndum','Bara á Íslandi','Í Ameríku']],
-   t:'Flestir leikmenn landsliðsins spiluðu með félögum í útlöndum, til dæmis í Svíþjóð, Noregi, Þýskalandi og Englandi. Margir þeirra höfðu flutt út sem unglingar. Fyrir landsleiki komu þeir heim og hittust á æfingum í Reykjavík. Það var eins og að koma heim til stórrar fjölskyldu.'}],
+   t:'Flestir leikmenn landsliðsins spiluðu með félögum í útlöndum, til dæmis í Svíþjóð, Noregi, Þýskalandi og á Englandi. Margir þeirra höfðu flutt út sem unglingar. Fyrir landsleiki komu þeir heim og hittust á æfingum í Reykjavík. Það var eins og að koma heim til stórrar fjölskyldu.'}],
  [{l:'Lesa um ferðina til Frakklands',s:'i9_plane',e:'Þúsundir fara til Frakklands',q:['Í hvaða treyjum voru Íslendingarnir?',['Bláum','Rauðum','Grænum']],
    t:'Sumarið 2016 fóru þúsundir Íslendinga til Frakklands að styðja liðið. Sumir höfðu aldrei farið til útlanda áður. Flugvélarnar voru fullar af fólki í bláum treyjum. Sagt var að aldrei hefði jafn stór hluti heillar þjóðar ferðast saman á eitt íþróttamót.'},
   {l:'Lesa um fyrsta leikinn',s:'i9_anthem',e:'Þjóðsöngurinn á fyrsta leiknum',q:['Hvar var fyrsti leikur Íslands á EM?',['Í Saint-Étienne','Í Reykjavík','Í Nice']],
@@ -4127,7 +4127,7 @@ Object.assign(STORIES,{
   lk_e1:P('Í síðasta leiknum eru allir orðnir þreyttir. En liðið gefst ekki upp. Leikurinn endar 2–2. Kata safnar öllum saman. „Ég er svo stolt af ykkur,“ segir hún. „Þið spiluðuð sem lið.“','lk_huddle',
     null,['Hvernig fór síðasti leikurinn?',['2–2','5–0','0–1']],'Síðasti leikurinn endar 2–2',{end:'Liðið gafst ekki upp'}),
   lk_e2:P('Í lok mótsins fá allir krakkarnir verðlaunapening. Þinn er gylltur og glansar í sólinni. „Til hamingju, {NAFN}!“ segir Kata. Þú hengir peninginn um hálsinn. Þetta var besti dagur sumarsins!','lk_medal',
-    null,['Á hvernig lit var peningurinn?',['Gylltur','Rauður','Blár']],'Þú færð verðlaunapening',{end:'Gyllti peningurinn',
+    null,['Hvernig var peningurinn á litinn?',['Gylltur','Rauður','Blár']],'Þú færð verðlaunapening',{end:'Gyllti peningurinn',
     task:{type:'tap',prompt:'Ýttu á verðlaunapeninginn.',answer:'medal',hint:'Lestu aftur. Hvað fengu allir krakkarnir?',good:'Rétt! Gylltur peningur.'}}),
   lk_e3:P('Á leiðinni heim sofnar Óli í bílnum. Þú horfir út um gluggann og hugsar um daginn. Besta stundin var ekki markið. Það var þegar Lilja sagði takk. Það er gaman að hjálpa liðinu sínu.','lk_car',
     null,['Hvað var besta stundin?',['Þegar Lilja sagði takk','Þegar Óli sofnaði','Þegar það rigndi']],'Þú keyrir heim og hugsar um daginn',{end:'Góður liðsfélagi'}),
@@ -4150,15 +4150,15 @@ Object.assign(STORIES,{
     [['Tína ber','rf5a'],['Sjá fyrsta snjóinn','rf5b']],['Hvað var lundinn með í gogginum?',['Fiska','Ber','Stein']],'Mói sér lunda með fiska',
     {task:{type:'tap',prompt:'Ýttu á lundann með fiskana.',answer:'puffin',hint:'Lestu aftur. Hver er með fullan gogg?',good:'Rétt! Lundinn er með fiska í gogginum.'}}),
   rf4b:P('Allt í einu heyrist hátt garg. Stór mávur flýgur lágt yfir. Mói skýst inn í grenið og felur sig. Grenið er gott skjól. Þar er Mói alveg öruggur þangað til mávurinn er farinn.','rf_gull',
-    [['Tína ber','rf5a'],['Sjá fyrsta snjóinn','rf5b']],['Hvert faldi Mói sig?',['Inni í greninu','Uppi í tré','Í vatninu']],'Mói felur sig fyrir mávinum'),
+    [['Tína ber','rf5a'],['Sjá fyrsta snjóinn','rf5b']],['Hvar faldi Mói sig?',['Inni í greninu','Uppi í tré','Í vatninu']],'Mói felur sig fyrir mávinum'),
   rf5a:P('Í lok sumars verða berin þroskuð. Mói finnur lyng fullt af bláberjum og krækiberjum. Hann borðar og borðar þangað til trýnið er orðið blátt. Berin gefa orku fyrir veturinn.','rf_berries',
     [['Sjá vetrarfeldinn','rf_e1'],['Stækka','rf_e2']],['Hvernig varð trýnið á Móa?',['Blátt','Rautt','Grænt']],'Mói borðar ber',
     {task:{type:'tap',prompt:'Ýttu á bláberin.',answer:'blue',hint:'Lestu aftur. Hvernig ber gerðu trýnið blátt?',good:'Rétt! Þetta eru bláber.'}}),
   rf5b:P('Einn morguninn er allt orðið hvítt. Fyrsti snjórinn er kominn! Mói hleypur út og veltir sér í snjónum. Snjókornin kitla hann í trýnið. Veturinn er að koma.','rf_snow',
     [['Sjá vetrarfeldinn','rf_e1'],['Hitta ferðafólk','rf_e3']],['Hvað var komið?',['Fyrsti snjórinn','Sumarið','Rigning']],'Fyrsti snjórinn kemur'),
   rf_e1:P('Á veturna gerist dálítið skrýtið. Brúni feldurinn á Móa verður hvítur og þykkur! Nú sést hann varla í snjónum. Hvíti feldurinn heldur á honum hita og felur hann vel.','rf_white',
-    null,['Á hvernig lit verður feldurinn hans Móa á veturna?',['Hvítur','Rauður','Grænn']],'Feldurinn á Móa verður hvítur',{end:'Hvíti vetrarfeldurinn',
-    task:{type:'tap',prompt:'Geturðu fundið Móa í snjónum? Ýttu á hann.',answer:'fox',hint:'Lestu aftur. Á hvernig lit er feldurinn núna?',good:'Rétt! Mói er orðinn hvítur.'}}),
+    null,['Hvernig verður feldurinn hans Móa á litinn á veturna?',['Hvítur','Rauður','Grænn']],'Feldurinn á Móa verður hvítur',{end:'Hvíti vetrarfeldurinn',
+    task:{type:'tap',prompt:'Geturðu fundið Móa í snjónum? Ýttu á hann.',answer:'fox',hint:'Lestu aftur. Hvernig er feldurinn á litinn núna?',good:'Rétt! Mói er orðinn hvítur.'}}),
   rf_e2:P('Næsta vor er Mói orðinn stór. Hann finnur sér maka og saman grafa þau sitt eigið greni. Þegar sumarið kemur fæðast litlir yrðlingar. Sá minnsti er forvitnastur af öllum, alveg eins og Mói var.','rf_family',
     null,['Hvað gerðu Mói og makinn hans?',['Grófu greni','Byggðu hús','Fóru í flugvél']],'Mói eignast sína eigin yrðlinga',{end:'Nýir yrðlingar'}),
   rf_e3:P('Á Hornströndum á Vestfjörðum eru refir friðaðir. Þar má enginn veiða þá. Á sumrin kemur fólk þangað til að skoða refina. Mói situr á steini og horfir forvitinn á ferðafólkið. Ferðafólkið horfir forvitið á hann.','rf_hiker',
@@ -4186,8 +4186,8 @@ Object.assign(STORIES,{
     {task:{type:'tap',prompt:'Ýttu á blaðið með reglunum.',answer:'poster',hint:'Lestu aftur. Hvar hengdir þú reglurnar?',good:'Rétt! Reglurnar hanga á veggnum.'}}),
   fy5a:P('Í öðrum leiknum skorar Dísa óvart {sjálfsmark|mark sem leikmaður skorar óvart í sitt eigið mark}. Hún sest niður á grasið og fer að gráta. Þú hleypur til hennar og réttir henni höndina. „Allir gera mistök,“ segir þú. „Við klárum þetta saman.“ Dísa þurrkar tárin og stendur upp.','fy_disa',
     [['Velja vítaskyttu','fy6a'],['Taka vítaspyrnuna','fy6b']],['Hvað sagðir þú við Dísu?',['Allir gera mistök','Þetta var þér að kenna','Farðu út af']],'Þú huggar Dísu eftir sjálfsmark'),
-  fy5b:P('Allt í einu hellist rigningin niður og dómarinn stöðvar leikinn. Krakkarnir hlaupa skjálfandi inn í tjald. Þú byrjar að syngja liðslagið og brátt syngja allir með. Dísa, sem er yngst í liðinu, syngur hæst. Þegar stytti upp hlaupa allir glaðir aftur inn á völlinn.','fy_rain',
-    [['Velja vítaskyttu','fy6a'],['Taka vítaspyrnuna','fy6b']],['Hvað gerðir þú inni í tjaldinu?',['Byrjaðir að syngja','Fórst að sofa','Borðaðir pizzu']],'Liðið syngur í rigningunni'),
+  fy5b:P('Allt í einu hellist rigningin niður og dómarinn stöðvar leikinn. Krakkarnir hlaupa skjálfandi inn í tjald. Þú byrjar að syngja liðslagið og brátt syngja allir með. Dísa, sem er yngst í liðinu, syngur hæst. Þegar styttir upp hlaupa allir glaðir aftur inn á völlinn.','fy_rain',
+    [['Velja vítaskyttu','fy6a'],['Taka vítaspyrnuna','fy6b']],['Hvað gerðir þú inni í tjaldinu?',['Byrjaðir að syngja','Fórst að sofa','Borðaðir pítsu']],'Liðið syngur í rigningunni'),
   fy6a:P('Liðið fær vítaspyrnu. Allir horfa á þig, því fyrirliðinn velur hver tekur hana. Þú lítur á Dísu, sem hefur ekki enn skorað á mótinu. „Þú tekur hana,“ segir þú. Dísa andar djúpt, tekur tilhlaup og skorar! Hún hleypur til þín og faðmar þig.','fy_penalty',
     [['Fara á kvöldvöku','fy7a'],['Skrifa í dagbókina','fy7b']],['Hver tók vítaspyrnuna?',['Dísa','Gunna','Bjössi']],'Dísa skorar úr víti',
     {task:{type:'tap',prompt:'Hvar endaði vítaspyrnan hennar Dísu? Ýttu á boltann.',answer:'goalball',hint:'Lestu aftur. Skoraði Dísa?',good:'Rétt! Boltinn fór í netið.'}}),
@@ -4277,11 +4277,11 @@ Object.assign(STORIES,{
     {task:{type:'tap',prompt:'Ýttu á bikarinn sem Sara vann.',answer:'cl',hint:'Lestu aftur. Hvað vann Sara með Lyon?',good:'Rétt! Meistaradeildarbikarinn.'}}),
   st5b:P('Árið 2017 komst Ísland á sitt þriðja Evrópumót í röð. Mótið var haldið í Hollandi. Leikirnir voru jafnir, en liðið tapaði þeim öllum. Fanndís Friðriksdóttir skoraði eina mark Íslands á mótinu. Leikmennirnir lærðu mikið og ætluðu sér að koma sterkari til baka.','sk_2017',
     [['Lesa um endurkomu Söru','st6a'],['Lesa um Sveindísi','st6b']],['Hver skoraði mark Íslands á EM 2017?',['Fanndís Friðriksdóttir','Margrét Lára','Glódís Perla']],'Ísland spilar á EM 2017 í Hollandi'),
-  st6a:P('Árið 2021 eignaðist Sara Björk barn. Sumir héldu að hún myndi hætta í fótbolta. En hún æfði af kappi og sneri aftur á völlinn í mars 2022. Aðeins nokkrum mánuðum seinna spilaði hún á Evrópumótinu í Englandi. Hún sýndi að það er hægt að vera bæði mamma og atvinnumaður í fótbolta.','sk_comebacksara',
+  st6a:P('Árið 2021 eignaðist Sara Björk barn. Sumir héldu að hún myndi hætta í fótbolta. En hún æfði af kappi og sneri aftur á völlinn í mars 2022. Aðeins nokkrum mánuðum seinna spilaði hún á Evrópumótinu á Englandi. Hún sýndi að það er hægt að vera bæði mamma og atvinnumaður í fótbolta.','sk_comebacksara',
     [['Lesa um EM 2022','st7a'],['Lesa um vítið gegn Frakklandi','st7b']],['Hvenær sneri Sara aftur á völlinn?',['Í mars 2022','Árið 1981','Aldrei']],'Sara Björk snýr aftur eftir barnsburð'),
   st6b:P('Sveindís Jane Jónsdóttir ólst upp í Keflavík. Hún byrjaði að spila með meistaraflokki Keflavíkur þegar hún var aðeins fjórtán ára. Seinna varð hún atvinnukona og lék í nokkur ár með Wolfsburg í Þýskalandi. Árið 2025 flutti hún til Bandaríkjanna og byrjaði að spila með Angel City í Los Angeles.','sk_sveindis',
     [['Lesa um EM 2022','st7a'],['Lesa um vítið gegn Frakklandi','st7b']],['Hvar ólst Sveindís upp?',['Í Keflavík','Í Los Angeles','Í Wolfsburg']],'Sveindís fer frá Keflavík út í heim'),
-  st7a:P('Á Evrópumótinu 2022 í Englandi gerði Ísland jafntefli í öllum leikjunum. Fyrst 1–1 gegn Belgíu, svo 1–1 gegn Ítalíu og loks 1–1 gegn Frakklandi. Liðið tapaði engum leik, en það dugði ekki til að komast áfram. Ísland varð fyrsta liðið í sögu mótsins sem féll úr keppni án þess að tapa leik.','sk_2022',
+  st7a:P('Á Evrópumótinu 2022 á Englandi gerði Ísland jafntefli í öllum leikjunum. Fyrst 1–1 gegn Belgíu, svo 1–1 gegn Ítalíu og loks 1–1 gegn Frakklandi. Liðið tapaði engum leik, en það dugði ekki til að komast áfram. Ísland varð fyrsta liðið í sögu mótsins sem féll úr keppni án þess að tapa leik.','sk_2022',
     [['Lesa um Glódísi','st8a'],['Lesa um EM 2025','st8b']],['Hvernig fóru allir leikir Íslands á EM 2022?',['1–1','0–3','5–0']],'Ísland gerir þrjú jafntefli á EM 2022'),
   st7b:P('Í síðasta leiknum á EM 2022 mætti Ísland Frakklandi. Frakkar skoruðu eftir aðeins 43 sekúndur. Íslenska liðið barðist allan leikinn. Í lok uppbótartímans fékk Ísland vítaspyrnu. Dagný Brynjarsdóttir skoraði og jafnaði 1–1. Það var síðasta spyrna leiksins.','sk_penalty',
     [['Lesa um Glódísi','st8a'],['Lesa um EM 2025','st8b']],['Hver skoraði úr vítaspyrnunni?',['Dagný Brynjarsdóttir','Sara Björk','Margrét Lára']],'Dagný jafnar gegn Frakklandi',
@@ -4335,10 +4335,10 @@ const BOOKEV={bk1:'Strákurinn heyrir um bankaránið í útvarpinu',bk2:'Strák
 const bkText=(n,from,to,think)=>`Náðu í bókina Bankaránið og lestu ${n} kafla, ${to?`frá blaðsíðu ${from} til ${to}`:`frá blaðsíðu ${from} og út bókina`}. Lestu hægt og vel og skoðaðu myndirnar. Hugsaðu um þetta á meðan þú lest: ${think} Þegar kaflinn er búinn ýtir þú á hnappinn hér fyrir neðan.`;
 Object.assign(STORIES,{
  bankaranid:{id:'bankaranid',age:7,group:'h',book:true,title:'Bankaránið',label:'Bókin heima',thumb:'bk_thumb',start:'bk1',pages:{
-  bk1:P(bkText('fyrsta',3,7,'Hvað vakti strákinn um morguninn?'),'bk_c1',[['Ég er búinn með kafla 1','bk2']],BOOKQ.bk1[0],BOOKEV.bk1,{cq:BOOKQ.bk1,ch:1}),
-  bk2:P(bkText('annan',8,11,'Hvernig ætlar strákurinn að hjálpa lögreglunni?'),'bk_c2',[['Ég er búinn með kafla 2','bk3']],BOOKQ.bk2[0],BOOKEV.bk2,{cq:BOOKQ.bk2,ch:2}),
-  bk3:P(bkText('þriðja',12,19,'Hvað heyra strákarnir í klefanum?'),'bk_c3',[['Ég er búinn með kafla 3','bk4']],BOOKQ.bk3[0],BOOKEV.bk3,{cq:BOOKQ.bk3,ch:3}),
-  bk4:P(bkText('fjórða',20,25,'Hverjum ákveða strákarnir að segja frá?'),'bk_c4',[['Ég er búinn með kafla 4','bk5']],BOOKQ.bk4[0],BOOKEV.bk4,{cq:BOOKQ.bk4,ch:4}),
+  bk1:P(bkText('fyrsta',3,7,'Hvað vakti strákinn um morguninn?'),'bk_c1',[['Áfram í 2. kafla','bk2']],BOOKQ.bk1[0],BOOKEV.bk1,{cq:BOOKQ.bk1,ch:1}),
+  bk2:P(bkText('annan',8,11,'Hvernig ætlar strákurinn að hjálpa lögreglunni?'),'bk_c2',[['Áfram í 3. kafla','bk3']],BOOKQ.bk2[0],BOOKEV.bk2,{cq:BOOKQ.bk2,ch:2}),
+  bk3:P(bkText('þriðja',12,19,'Hvað heyra strákarnir í klefanum?'),'bk_c3',[['Áfram í 4. kafla','bk4']],BOOKQ.bk3[0],BOOKEV.bk3,{cq:BOOKQ.bk3,ch:3}),
+  bk4:P(bkText('fjórða',20,25,'Hverjum ákveða strákarnir að segja frá?'),'bk_c4',[['Áfram í 5. kafla','bk5']],BOOKQ.bk4[0],BOOKEV.bk4,{cq:BOOKQ.bk4,ch:4}),
   bk5:P(bkText('fimmta',26,0,'Hvað gera mennirnir þegar fjölskyldan er komin út?'),'bk_c5',null,['Hvert voru mennirnir að fara þegar fjölskyldan kom út?',['Inn í gufubaðið','Heim að sofa','Í bankann']],BOOKEV.bk5,{ch:5,end:'Bókin er búin'}),
  }},
 });
@@ -4380,9 +4380,9 @@ const ADV=[
   t9:'Í nótt snjóaði svo mikið að bílarnir í götunni eru eins og hvítir hólar. Vísbending dagsins er stutt: „Bútur sex er kaldur en hlýr um hálsinn.“ Þú skilur hana ekki alveg. Eftir hádegi búið þið vinirnir til risastóran snjókarl. Hann fær gulrót í nef, steina í augu og grein í hvora hönd. Þegar þú setur gamlan trefil um hálsinn á honum skilur þú allt í einu vísbendinguna. Undir treflinum, ofan á köldum snjónum, liggur kortabútur. Kaldur, en hlýr um hálsinn!',
   q9:[['Hvernig litu bílarnir út eftir snjókomuna?',['Eins og hvítir hólar','Eins og bátar','Eins og eldfjöll']],['Hvað þýddi vísbendingin?',['Búturinn var undir treflinum á snjókarlinum','Búturinn var í frystinum','Búturinn var í peysunni']]],
   find:'Ýttu á kortabútinn undir treflinum.'},
- {t7:'Í dag bakar fjölskyldan piparkökur. Það ilmar allt húsið. Þú skerð út stjörnur, hjörtu og jólasveina. Í flórsykrinum finnur þú bút sjö. Hann er allur hvítur!',
-  q7:[['Hvað bakaði fjölskyldan?',['Piparkökur','Pizzu','Brauð']],['Hvar var bútur sjö?',['Í flórsykrinum','Í ofninum','Í mjólkinni']]],
-  t9:'Í dag bakar fjölskyldan piparkökur. Mamma flettir deiginu út og þú skerð út stjörnur, hjörtu og jólasveina. Það ilmar allt húsið af kanil og negul. Vísbending Stúfs í dag var: „Bútur sjö er þar sem snjórinn er sætur og fínn.“ Þú lítur út um gluggann en skilur ekki hvað hann á við. Snjór er ekki sætur. Seinna biður mamma þig að ná í flórsykurinn fyrir glassúrinn. Þegar þú opnar pokann sérðu bútinn, allan hvítan. Flórsykurinn er eins og sætur, fínn snjór, hugsar þú og hlærð.',
+ {t7:'Í dag bakar fjölskyldan piparkökur. Allt húsið ilmar. Þú skerð út stjörnur, hjörtu og jólasveina. Í flórsykrinum finnur þú bút sjö. Hann er allur hvítur!',
+  q7:[['Hvað bakaði fjölskyldan?',['Piparkökur','Pítsu','Brauð']],['Hvar var bútur sjö?',['Í flórsykrinum','Í ofninum','Í mjólkinni']]],
+  t9:'Í dag bakar fjölskyldan piparkökur. Mamma flettir deiginu út og þú skerð út stjörnur, hjörtu og jólasveina. Allt húsið ilmar af kanil og negul. Vísbending Stúfs í dag var: „Bútur sjö er þar sem snjórinn er sætur og fínn.“ Þú lítur út um gluggann en skilur ekki hvað hann á við. Snjór er ekki sætur. Seinna biður mamma þig að ná í flórsykurinn fyrir glassúrinn. Þegar þú opnar pokann sérðu bútinn, allan hvítan. Flórsykurinn er eins og sætur, fínn snjór, hugsar þú og hlærð.',
   q9:[['Hvaða krydd ilmaði í húsinu?',['Kanill og negull','Pipar og salt','Mynta']],['Af hverju var flórsykurinn eins og snjór?',['Hann er hvítur og fínn','Hann er kaldur','Hann fellur af himnum']]],
   find:'Ýttu á flórsykurpokann með kortabútnum.'},
  {t7:'Amma kemur í heimsókn og þið búið til laufabrauð. Þú skerð falleg mynstur í þunnar kökurnar. Laufabrauð er gamall íslenskur jólasiður. Í kökuboxinu hennar ömmu er bútur átta.',
@@ -4446,11 +4446,11 @@ const ADV=[
   q9:[['Úr hverju er skyr búið til?',['Mjólk','Kartöflum','Fiski']],['Hve marga búta vantar eftir bút nítján?',['Fimm','Einn','Tíu']]],
   find:'Ýttu á tómu skyrdósina.'},
  {t7:'Bjúgnakrækir kom í nótt. Hann klifrar upp í rjáfur og stelur bjúgum. Bjúgu eru reyktar pylsur. Í skónum er bútur tuttugu og poki með kakói.',
-  q7:[['Hvað stelur Bjúgnakrækir?',['Bjúgum','Pönnum','Kertum']],['Hvert klifrar hann?',['Upp í rjáfur','Upp á fjall','Upp í tré']]],
+  q7:[['Hverju stelur Bjúgnakrækir?',['Bjúgum','Pönnum','Kertum']],['Hvert klifrar hann?',['Upp í rjáfur','Upp á fjall','Upp í tré']]],
   t9:'Í gamla daga voru bjúgu, sem eru reyktar pylsur, hengd upp í rjáfrið í eldhúsinu. Þar héngu þau í reyknum frá eldinum. Bjúgnakrækir var fimur að klifra. Hann laumaðist upp í rjáfrið og stal bjúgunum, einu af öðru. Í nótt kom hann til byggða. Í skónum er lítill poki með kakói og miði frá Stúfi: „Bróðir minn bað mig að segja að hann hefði ekki fundið nein bjúgu hjá ykkur. Hann var frekar svekktur.“ Þú hlærð. Bútur tuttugu liggur ofan á kakópokanum. Á honum sést vegurinn heim að húsinu þínu.',
   q9:[['Hvar voru bjúgun geymd í gamla daga?',['Uppi í rjáfrinu','Í ísskápnum','Í kjallaranum']],['Af hverju var Bjúgnakrækir svekktur?',['Hann fann engin bjúgu','Hann datt','Það var kalt']]],
   find:'Ýttu á kortabútinn í skónum.'},
- {t7:'Gluggagægir kom í nótt. Hann kíkir inn um gluggana. Þegar þú lítur út sérðu fótspor í snjónum. Þau liggja að bút tuttugu og eitt!',
+ {t7:'Gluggagægir kom í nótt. Hann kíkir inn um gluggana. Þegar þú lítur út sérðu fótspor í snjónum. Þau liggja að bút númer tuttugu og eitt!',
   q7:[['Hvað gerir Gluggagægir?',['Kíkir inn um glugga','Skellir hurðum','Sleikir askana']],['Hvað sást þú í snjónum?',['Fótspor','Bíl','Hest']]],
   t9:'Þegar þú dregur frá glugganum í morgun sérðu stórt nefafar á rúðunni, utan frá. Gluggagægir kom í nótt! Hann er forvitnastur af bræðrunum og getur ekki stillt sig um að kíkja inn um gluggana á húsunum. Í gamla daga leitaði hann að einhverju til að taka með sér. Fyrir neðan gluggann eru fótspor í snjónum, og þau liggja yfir garðinn að ruslatunnunni. Á lokinu á tunnunni, undir þunnu snjólagi, liggur bútur tuttugu og eitt.',
   q9:[['Hvað sást þú á rúðunni?',['Nefafar','Ís','Rigningu']],['Hvert lágu fótsporin?',['Að ruslatunnunni','Að bílnum','Að skólanum']]],
@@ -4463,7 +4463,7 @@ const ADV=[
  {t7:'Í dag er Þorláksmessa. Ketkrókur kom í nótt. Hann er með langan krók og stelur kjöti. Bútur tuttugu og þrjú hangir á krók í eldhúsinu. Nú vantar bara einn!',
   q7:[['Hvað stelur Ketkrókur?',['Kjöti','Kertum','Skyri']],['Hvað heitir dagurinn fyrir aðfangadag?',['Þorláksmessa','Sumardagurinn fyrsti','Öskudagur']]],
   t9:'Í dag er Þorláksmessa, dagurinn fyrir aðfangadag. Á mörgum heimilum er borðuð skata og húsið angar af sterkri lykt. Í nótt kom Ketkrókur. Hann er með langan staf með krók á endanum. Í gamla daga stakk hann króknum niður um strompinn og krækti í hangikjötið sem var að sjóða. Hangikjötið ykkar er sem betur fer óhreyft í ísskápnum. En á króknum þar sem svuntan hans pabba hangir er bútur tuttugu og þrjú. Á morgun kemur síðasti búturinn og síðasti bróðirinn.',
-  q9:[['Hvað er borðað á mörgum heimilum á Þorláksmessu?',['Skata','Pizza','Ís']],['Hvernig náði Ketkrókur í kjötið í gamla daga?',['Hann stakk krók niður um strompinn','Hann keypti það','Hann bað um það']]],
+  q9:[['Hvað er borðað á mörgum heimilum á Þorláksmessu?',['Skata','Pítsa','Ís']],['Hvernig náði Ketkrókur í kjötið í gamla daga?',['Hann stakk krók niður um strompinn','Hann keypti það','Hann bað um það']]],
   find:'Ýttu á kortabútinn á króknum.'},
  {t7:'Í dag er aðfangadagur. Kertasníkir kom í nótt. Honum finnst kerti fallegust af öllu. Í skónum er síðasti búturinn og bréf frá Stúfi: „Takk, {NAFN}! Við rötuðum öll til byggða. Gleðileg jól!“',
   q7:[['Hvað finnst Kertasníki fallegast?',['Kerti','Skyr','Pönnur']],['Hvað stóð í bréfinu frá Stúfi?',['Gleðileg jól','Góða nótt','Til hamingju með afmælið']]],
@@ -4535,7 +4535,7 @@ ADVSC.forEach((fn,i)=>{SC['adv_'+(i+1)]=fn});
 SC.adv_thumb=()=>winRoom({seed:30,out:lad(250,140,.42,{hat:'#C9262C',arms:'wave'})})+shoeX(170,142,.9)+mapPiece(200,128,.9,10)+`<text x="200" y="228" text-anchor="middle" font-family="Baloo 2, sans-serif" font-weight="800" font-size="20" fill="#C9262C" stroke="#fff" stroke-width="5" paint-order="stroke">JÓLADAGATALIÐ</text>`;
 for(const age of [7,9])ADV.forEach((d,i)=>{const n=i+1,id=`adv${age}_${n}`;
   STORIES[id]={id,age,group:'x',advent:n,title:`${n}. desember`,label:'Jóladagatalið',thumb:'adv_'+n,start:'a',pages:{
-    a:P(age===7?d.t7:d.t9,'adv_'+n,null,(age===7?d.q7:d.q9)[0],`Dagur ${n}`,{end:`Bútur ${n} af 24`,aq:age===7?d.q7:d.q9,task:{type:'tap',prompt:d.find,answer:'piece',hint:'Leitaðu vel í myndinni. Kortabúturinn er brúnleitur pappírsbútur.',good:`Rétt! Þú fannst bút ${n}.`}})}}});
+    a:P(age===7?d.t7:d.t9,'adv_'+n,null,(age===7?d.q7:d.q9)[0],`Dagur ${n}`,{end:`Bútur ${n} af 24`,aq:age===7?d.q7:d.q9,task:{type:'tap',prompt:d.find,answer:'piece',hint:'Leitaðu vel á myndinni. Kortabúturinn er brúnleitur pappírsbútur.',good:`Rétt! Þú fannst bút ${n}.`}})}}});
 
 /* ================= Framhaldssögur: Mói og veturinn, Fyrirliðinn 2 ================= */
 const winterBg=(o={})=>`<rect width="400" height="240" fill="${o.night?'url(#gNight)':'#C9D7E6'}"/>${o.night?starsField(40,o.seed||4,120):''}<path d="M-10 150 L60 96 L130 136 L210 84 L290 130 L410 96 V240 H-10Z" fill="#F2F6FA"/><path d="M0 182 Q200 164 400 184 V240 H0Z" fill="#FFFFFF"/>`;
@@ -4590,7 +4590,7 @@ Object.assign(STORIES,{
     [['Hitta rjúpuna','mv3a'],['Fara niður í fjöru','mv3b']],['Af hverju fela refir mat á haustin?',['Til að eiga mat á veturna','Til að stríða hinum','Af því að þeir eru saddir']],'Mói finnur matinn sem hann faldi',
     {task:{type:'tap',prompt:'Ýttu á fiskinn sem Mói faldi.',answer:'fish',hint:'Lestu aftur. Hvar faldi Mói matinn?',good:'Rétt! Fiskurinn var falinn við steininn.'}}),
   mv3a:P('Á snjóbreiðunni situr rjúpa. Hún er líka hvít á veturna, alveg eins og Mói. Mói sér hana varla. En rjúpan sér Móa og flýgur burt með miklum vængjaslætti.','mv_ptarmigan',
-    [['Horfa á himininn','mv4a'],['Lenda í stormi','mv4b']],['Á hvernig lit er rjúpan á veturna?',['Hvít','Rauð','Svört']],'Mói sér hvíta rjúpu',
+    [['Horfa á himininn','mv4a'],['Lenda í stormi','mv4b']],['Hvernig er rjúpan á litinn á veturna?',['Hvít','Rauð','Svört']],'Mói sér hvíta rjúpu',
     {task:{type:'tap',prompt:'Geturðu fundið rjúpuna í snjónum? Ýttu á hana.',answer:'bird',hint:'Lestu aftur. Hún er hvít eins og snjórinn.',good:'Rétt! Rjúpan er nánast ósýnileg í snjónum.'}}),
   mv3b:P('Í fjörunni er minni snjór. Sjórinn skolar alls konar dóti á land. Mói finnur skel og þang. Hann hittir líka sel sem liggur á steini og horfir á hann með stórum, svörtum augum.','mv_seal',
     [['Horfa á himininn','mv4a'],['Lenda í stormi','mv4b']],['Hvern hitti Mói í fjörunni?',['Sel','Hval','Hest']],'Mói hittir sel í fjörunni'),
@@ -4840,13 +4840,13 @@ Object.assign(STORIES,{
     [['Lesa um ferðina til Evrópu','sa3a'],['Lesa um vinstri fótinn','sa3b']],['Hve lengi var Mo á leiðinni á æfingu?',['Fjóra tíma','Fimm mínútur','Einn dag']],'Mo ferðast langt á hverja æfingu',
     {task:{type:'tap',prompt:'Hvernig ferðaðist Mo á æfingar? Ýttu á það.',answer:'bus',hint:'Lestu aftur. Hverju þurfti Mo að skipta um?',good:'Rétt! Hann fór með strætó.'}}),
   sa2b:P('Þegar Mo var lítill horfði hann á stóra leiki í sjónvarpinu. Uppáhaldsleikmennirnir hans voru Zidane, Totti og brasilíski Ronaldo. Eftir leikina hljóp hann út og reyndi að gera eins og þeir. Besti vinur hans sagði: „Þú verður stórstjarna einn daginn.“','sa_tv',
-    [['Lesa um ferðina til Evrópu','sa3a'],['Lesa um vinstri fótinn','sa3b']],['Hvað sagði besti vinur Mos?',['Að hann yrði stórstjarna','Að hann ætti að hætta','Að hann ætti að verða kokkur']],'Mo horfir á hetjurnar sínar í sjónvarpinu'),
-  sa3a:P('Mo spilaði svo vel í Egyptalandi að lið í Evrópu tóku eftir honum. Fyrst fór hann til Basel í Sviss. Svo spilaði hann með Chelsea í Englandi og síðan á Ítalíu, með Fiorentina og Roma. Á Ítalíu skoraði hann mörg mörk.','sa_europe',
+    [['Lesa um ferðina til Evrópu','sa3a'],['Lesa um vinstri fótinn','sa3b']],['Hvað sagði besti vinur hans Mo?',['Að hann yrði stórstjarna','Að hann ætti að hætta','Að hann ætti að verða kokkur']],'Mo horfir á hetjurnar sínar í sjónvarpinu'),
+  sa3a:P('Mo spilaði svo vel í Egyptalandi að lið í Evrópu tóku eftir honum. Fyrst fór hann til Basel í Sviss. Svo spilaði hann með Chelsea á Englandi og síðan á Ítalíu, með Fiorentina og Roma. Á Ítalíu skoraði hann mörg mörk.','sa_europe',
     [['Lesa um Liverpool','sa4a'],['Lesa um Meistaradeildina','sa4b']],['Í hvaða landi spilaði Mo með Roma?',['Ítalíu','Noregi','Brasilíu']],'Mo spilar í Sviss, Englandi og á Ítalíu'),
   sa3b:P('Mo sparkar næstum alltaf með vinstri fæti. Hann hleypur hratt upp hægri kantinn, snýr svo inn á völlinn og skrúfar boltann í hornið. Varnarmennirnir vita hvað hann ætlar að gera. Samt ná þeir ekki að stoppa hann!','sa_left',
     [['Lesa um Liverpool','sa4a'],['Lesa um Meistaradeildina','sa4b']],['Með hvaða fæti sparkar Mo oftast?',['Vinstri','Hægri','Hvorugum']],'Mo skrúfar boltann í hornið með vinstri',
     {task:{type:'tap',prompt:'Hvar endaði boltinn? Ýttu á hann.',answer:'net',hint:'Lestu aftur. Hvert skrúfar Mo boltann?',good:'Rétt! Boltinn fór í hornið á markinu.'}}),
-  sa4a:P('Árið 2017 fór Mo til Liverpool í Englandi. Treyjan er rauð. Á fyrsta tímabilinu skoraði hann 32 mörk í ensku úrvalsdeildinni. Það var met á þeim tíma! Stuðningsmennirnir sungu um hann og kölluðu hann egypska kónginn.','sa_lfc',
+  sa4a:P('Árið 2017 fór Mo til Liverpool á Englandi. Treyjan er rauð. Á fyrsta tímabilinu skoraði hann 32 mörk í ensku úrvalsdeildinni. Það var met á þeim tíma! Stuðningsmennirnir sungu um hann og kölluðu hann egypska kónginn.','sa_lfc',
     [['Lesa um meistaratitilinn','sa5a'],['Lesa um landsliðið','sa5b']],['Hve mörg mörk skoraði Mo á fyrsta tímabilinu?',['32','3','100']],'Mo skorar 32 mörk fyrir Liverpool'),
   sa4b:P('Árið 2019 spilaði Liverpool til úrslita í Meistaradeild Evrópu á móti Tottenham. Eftir aðeins tvær mínútur fékk Liverpool víti. Mo tók vítið og skoraði! Liverpool vann leikinn 2–0 og Mo lyfti stóra bikarnum.','sa_cl19',
     [['Lesa um meistaratitilinn','sa5a'],['Lesa um landsliðið','sa5b']],['Hvenær í leiknum skoraði Mo?',['Eftir tvær mínútur','Alveg í lokin','Í hálfleik']],'Liverpool vinnur Meistaradeildina',
@@ -4859,9 +4859,9 @@ Object.assign(STORIES,{
   sa_e1:P('Árið 2025 varð Liverpool aftur enskur meistari. Mo skoraði flest mörk allra í deildinni. Hann var líka valinn besti leikmaðurinn í þriðja sinn. Enginn annar hefur verið valinn þrisvar!','sa_2025',
     null,['Hvenær varð Liverpool aftur meistari?',['Árið 2025','Árið 1900','Í gær']],'Mo verður meistari á ný',{end:'Meistari aftur'}),
   sa_e2:P('Mo gleymir aldrei þorpinu sínu, Nagrig. Hann hefur gefið peninga til að byggja skóla og stöð fyrir sjúkrabíla handa fólkinu þar. Hann var sjálfur bara strákur með draum. Krakkarnir í Nagrig vita núna að draumar geta ræst.','sa_nagrig',
-    null,['Hvað hét þorpið hans Mos?',['Nagrig','Kaíró','Liverpool']],'Mo hjálpar fólkinu í þorpinu sínu',{end:'Draumurinn rættist'}),
+    null,['Hvað hét þorpið hans Mo?',['Nagrig','Kaíró','Liverpool']],'Mo hjálpar fólkinu í þorpinu sínu',{end:'Draumurinn rættist'}),
   sa_e3:P('Þegar Mo skorar krýpur hann stundum á grasinu og snertir það með enninu, til að þakka fyrir sig. Stuðningsmennirnir syngja þá lagið hans. Hvernig myndir þú fagna ef þú skoraðir mark?','sa_kneel',
-    null,['Hvað gerir Mo stundum þegar hann skorar?',['Krýpur á grasinu','Klifrar upp í mark','Dansar uppi á þaki']],'Mo fagnar markinu',{end:'Fagnið hans Mos'}),
+    null,['Hvað gerir Mo stundum þegar hann skorar?',['Krýpur á grasinu','Klifrar upp í mark','Dansar uppi á þaki']],'Mo fagnar markinu',{end:'Fagnið hans Mo'}),
  }},
  vini:{id:'vini',age:7,group:'b',title:'Vinícius Júnior',label:'Sönn saga',thumb:'vi_ucl22',start:'vi1',pages:{
   vi1:P('Þetta er sönn saga um Vinícius Júnior. Hann fæddist árið 2000 í borginni São Gonçalo í Brasilíu. Allir kalla hann Vini. Þegar hann var lítill var hann alltaf með bolta á tánum.','vi_brazil',
@@ -4884,7 +4884,7 @@ Object.assign(STORIES,{
     {task:{type:'tap',prompt:'Ýttu á treyju númer 7.',answer:'s7',hint:'Lestu aftur. Hvaða númer fékk Vini seinna?',good:'Rétt! Númer 7.'}}),
   vi5a:P('Árið 2024 komst Real Madrid aftur í úrslitaleikinn, núna á móti Dortmund. Vini skoraði aftur! Enginn svona ungur hafði áður skorað í tveimur úrslitaleikjum í Meistaradeildinni.','vi_ucl24',
     [['Lesa um verðlaunin','vi_e1'],['Lesa um skólann','vi_e2']],['Á móti hvaða liði spilaði Real Madrid árið 2024?',['Dortmund','Liverpool','Flamengo']],'Vini skorar í öðrum úrslitaleik'),
-  vi5b:P('Vini er ótrúlega snöggur. Hann hleypur upp vinstri kantinn og varnarmennirnir ruglast. Þegar hann skorar dansar hann stundum með félögunum sínum. Áhorfendurnir dansa með.','vi_dance',
+  vi5b:P('Vini er ótrúlega snöggur. Hann hleypur upp vinstri kantinn og varnarmennirnir ruglast. Þegar hann skorar dansar hann stundum með félögum sínum. Áhorfendurnir dansa með.','vi_dance',
     [['Lesa um skólann','vi_e2'],['Lesa um gulu treyjuna','vi_e3']],['Hvað gerir Vini stundum þegar hann skorar?',['Dansar','Sefur','Syngur óperu']],'Vini dansar eftir mark'),
   vi_e1:P('Í lok ársins 2024 var Vini valinn besti leikmaður heims hjá FIFA. Hann þakkaði fjölskyldu sinni og Flamengo, þar sem allt byrjaði. Litli strákurinn frá São Gonçalo var orðinn bestur í heimi.','vi_best',
     null,['Hvaða ár var Vini valinn bestur hjá FIFA?',['2024','1990','2010']],'Vini er valinn bestur í heimi',{end:'Bestur í heimi'}),
@@ -4898,7 +4898,7 @@ Object.assign(STORIES,{
   be1:P('Þetta er sönn saga um Jude Bellingham. Hann fæddist 29. júní árið 2003 í bænum Stourbridge á Englandi. Pabbi hans, Mark, var lögreglumaður en spilaði líka fótbolta með áhugamannaliðum og skoraði þar yfir sjö hundruð mörk. Jude ólst því upp með fótbolta allt í kringum sig og byrjaði ungur að æfa með Birmingham City.','be_home',
     [['Lesa um yngri bróðurinn','be2a'],['Lesa um fyrsta leikinn','be2b']],['Í hvaða landi fæddist Jude?',['Englandi','Spáni','Brasilíu']],'Jude fæðist í Stourbridge á Englandi'),
   be2a:P('Jude á yngri bróður sem heitir Jobe. Bræðurnir spiluðu endalaust saman í garðinum heima og kepptu um allt. Hver gæti haldið boltanum oftast á lofti? Hver gæti skorað flottasta markið? Jobe varð líka atvinnumaður. Hann hefur meðal annars spilað með Sunderland og Dortmund, alveg eins og stóri bróðir.','be_bros',
-    [['Lesa um treyju númer 22','be3a'],['Lesa um flutninginn til Þýskalands','be3b']],['Hvað heitir yngri bróðir Judes?',['Jobe','Harry','Mo']],'Jude og Jobe keppa í garðinum',
+    [['Lesa um treyju númer 22','be3a'],['Lesa um flutninginn til Þýskalands','be3b']],['Hvað heitir yngri bróðir hans Jude?',['Jobe','Harry','Mo']],'Jude og Jobe keppa í garðinum',
     {task:{type:'tap',prompt:'Bræðurnir kepptu um að halda boltanum á lofti. Ýttu á boltann.',answer:'ball',hint:'Lestu aftur. Hvað héldu bræðurnir á lofti?',good:'Rétt! Boltinn er hátt á lofti.'}}),
   be2b:P('Jude var aðeins 16 ára þegar hann spilaði fyrsta leikinn sinn með aðalliði Birmingham City í ágúst 2019. Enginn yngri hafði nokkurn tímann spilað fyrir aðallið félagsins. Nokkrum vikum seinna varð hann líka yngsti markaskorari í sögu þess. Stuðningsmennirnir trúðu varla eigin augum.','be_debut',
     [['Lesa um treyju númer 22','be3a'],['Lesa um flutninginn til Þýskalands','be3b']],['Hvað var Jude gamall í fyrsta leiknum?',['16 ára','12 ára','25 ára']],'Jude spilar fyrsta leikinn með Birmingham'),
@@ -4934,8 +4934,8 @@ Object.assign(STORIES,{
     null,['Hvaða verðlaun fékk Jude fyrstur Englendinga?',['Kopa-bikarinn','Nóbelsverðlaunin','Gullhnöttinn í körfubolta']],'Jude fær Kopa-bikarinn',{end:'Verðlaunin'}),
   be_e2:P('Hjá Real Madrid spilaði Jude með reyndum stjörnum eins og Luka Modrić og Toni Kroos. Hann fylgdist vel með þeim á hverri æfingu og lærði af þeim. Góðir leikmenn hætta aldrei að læra, sama hvað þeir eru frægir. Foreldrar hans hafa líka stutt hann alla leið, frá garðinum í Stourbridge til Madrídar.','be_mentors',
     null,['Af hverjum lærði Jude hjá Real Madrid?',['Modrić og Kroos','Engum','Bara af sjónvarpinu']],'Jude lærir af reyndum stjörnum',{end:'Alltaf að læra'}),
-  be_e3:P('Þegar Jude skorar stendur hann oft kyrr, breiðir út faðminn og horfir upp í stúkuna. Krakkar út um allan heim herma eftir honum í frímínútum og á æfingum. Kannski hefur þú gert það líka? Næst þegar þú skorar á æfingu gætir þú prófað fagnið hans Judes.','be_hey',
-    null,['Hvað gerir Jude oft þegar hann skorar?',['Breiðir út faðminn','Fer í kollhnís','Hleypur heim']],'Krakkar herma eftir fagninu',{end:'Fagnið hans Judes'}),
+  be_e3:P('Þegar Jude skorar stendur hann oft kyrr, breiðir út faðminn og horfir upp í stúkuna. Krakkar út um allan heim herma eftir honum í frímínútum og á æfingum. Kannski hefur þú gert það líka? Næst þegar þú skorar á æfingu gætir þú prófað fagnið hans Jude.','be_hey',
+    null,['Hvað gerir Jude oft þegar hann skorar?',['Breiðir út faðminn','Fer í kollhnís','Hleypur heim']],'Krakkar herma eftir fagninu',{end:'Fagnið hans Jude'}),
  }},
 });
 
@@ -5080,7 +5080,7 @@ Object.assign(STORIES,{
     [['Heyra um stærsta dýrið','hv5a'],['Horfa á fuglana','hv5b']],['Af hverju stökkva hvalir?',['Það veit enginn alveg','Þeir eru að læra að fljúga','Þeir eru að sækja póstinn']],'Hnúfubakur stekkur upp úr sjónum',
     {task:{type:'tap',prompt:'Ýttu á hvalinn sem stekkur.',answer:'whale',hint:'Lestu aftur. Hver stökk upp úr sjónum?',good:'Rétt! SPLASS!'}}),
   hv5a:P('Ragna segir frá stærsta dýri sem hefur nokkurn tímann lifað á jörðinni. Það er {steypireyður|stærsta dýr jarðar, risastór hvalur}. Stundum sést hún hér í Skjálfanda á sumrin. Hún er stærri en allar risaeðlur sem hafa verið til!','hv_blue',
-    [['Heyra hvað steypireyðurin borðar','hv_e1'],['Sjá háhyrninga','hv_e2']],['Hvert er stærsta dýr sem hefur lifað?',['Steypireyður','Fíll','Risaeðla']],'Ragna segir frá steypireyðinum'),
+    [['Heyra hvað steypireyðurin borðar','hv_e1'],['Sjá háhyrninga','hv_e2']],['Hvert er stærsta dýr sem hefur lifað?',['Steypireyður','Fíll','Risaeðla']],'Ragna segir frá steypireyðinni'),
   hv5b:P('„Sjáðu, lundar!“ segir pabbi. Lítill hópur af lundum flýgur yfir sjóinn. Lundarnir eru líka að veiða. Þeir kafa eftir litlum fiskum, alveg eins og hvalirnir. Hafið við Ísland er fullt af mat.','hv_puff',
     [['Sjá háhyrninga','hv_e2'],['Sigla heim','hv_e3']],['Hvað veiða lundarnir?',['Litla fiska','Hvali','Ber']],'Embla sér lunda veiða',
     {task:{type:'tap',prompt:'Ýttu á lundann.',answer:'puffin',hint:'Lundinn er með litríkan gogg.',good:'Rétt! Þetta er lundi.'}}),
@@ -5128,14 +5128,14 @@ Object.assign(STORIES,{
     [['Fleyta kerlingar á vatninu','as_e2'],['Taka mynd eins og geimfararnir','as_e3']],['Hvernig þurftu geimfararnir að vera?',['Forvitnir, þolinmóðir og nákvæmir','Háværir og fljótir','Latir og syfjaðir']],'Jónas hugsar um hvað þarf til'),
   as_e1:P('Í safninu er gestabók. Jónas skrifar í hana með fallegustu skriftinni sinni: „Jónas, verðandi geimfari.“ Amma tekur mynd af honum við myndirnar af geimförunum. Kannski, einn daginn, verður hann sá sem gengur á Mars og hugsar um Öskju.','as_book',
     null,['Hvað skrifaði Jónas í gestabókina?',['Jónas, verðandi geimfari','Takk fyrir matinn','Ekkert']],'Jónas skrifar í gestabókina',{end:'Verðandi geimfari'}),
-  as_e2:P('Jónas finnur flatan stein og fleytir kerlingar á Öskjuvatni. Einn, tveir, þrír, fjórir hopp! Amma klappar. „Á tunglinu gætir þú ekki fleytt kerlingar,“ segir hún. „Þar er ekkert vatn. En þú gætir hoppað miklu hærra en hér, því {þyngdarkrafturinn|krafturinn sem togar okkur niður að jörðinni} er sex sinnum minni.“','as_skip',
-    null,['Af hverju gæti maður hoppað hærra á tunglinu?',['Þyngdarkrafturinn er minni','Það er heitara þar','Skórnir eru betri']],'Jónas fleytir kerlingar',{end:'Fleytt kerlingar'}),
+  as_e2:P('Jónas finnur flatan stein og fleytir kerlingar á Öskjuvatni. Eitt, tvö, þrjú, fjögur hopp! Amma klappar. „Á tunglinu gætir þú ekki fleytt kerlingar,“ segir hún. „Þar er ekkert vatn. En þú gætir hoppað miklu hærra en hér, því {þyngdarkrafturinn|krafturinn sem togar okkur niður að jörðinni} er sex sinnum minni.“','as_skip',
+    null,['Af hverju gæti maður hoppað hærra á tunglinu?',['Þyngdarkrafturinn er minni','Það er heitara þar','Skórnir eru betri']],'Jónas fleytir kerlingar',{end:'Að fleyta kerlingar'}),
   as_e3:P('Jónas biður ömmu að taka mynd af sér í hrauninu, með bakpoka og hamar, alveg eins og geimfararnir árið 1967. Þegar hann kemur heim prentar hann myndina út og hengir hana upp við hliðina á mynd af Neil Armstrong. „Tveir geimfarar í Öskju,“ skrifar hann undir.','as_photo',
     null,['Við hliðina á hverjum hengdi Jónas myndina?',['Neil Armstrong','Messi','Ömmu sinni']],'Jónas tekur geimfaramynd',{end:'Tveir geimfarar'}),
  }},
  nordurljos:{id:'nordurljos',age:9,group:'c',title:'Norðurljósin dansa',label:'Náttúra',thumb:'nl_corona',start:'nl1',pages:{
   nl1:P('Það er kalt og stjörnubjart kvöld í október. Silja er að fara að sofa þegar pabbi kallar: „Komdu út, fljótt!“ Hún hleypur út á sokkunum. Yfir fjöllunum dansar grænt ljós, eins og risastór slæða sem bylgjast í vindinum. Norðurljós!','nl_out',
-    [['Spyrja hvað norðurljós eru','nl2a'],['Ná í myndavélina','nl2b']],['Á hvernig lit voru norðurljósin?',['Græn','Rauð og gul','Svört']],'Silja sér norðurljós'),
+    [['Spyrja hvað norðurljós eru','nl2a'],['Ná í myndavélina','nl2b']],['Hvernig voru norðurljósin á litinn?',['Græn','Rauð og gul','Svört']],'Silja sér norðurljós'),
   nl2a:P('„Hvað eru norðurljós eiginlega?“ spyr Silja. „Þau byrja langt úti í geimnum, á sólinni,“ segir pabbi. „Sólin sendir stöðugt frá sér örsmáar agnir. Það kallast {sólvindur|straumur af örsmáum ögnum sem þjóta frá sólinni út í geiminn}. Agnirnar þjóta í átt að jörðinni á ógnarhraða.“','nl_sun',
     [['Spyrja af hverju ljósin sjást hér','nl3a'],['Spyrja um litina','nl3b']],['Hvaðan kemur sólvindurinn?',['Frá sólinni','Frá tunglinu','Úr sjónum']],'Pabbi segir frá sólvindinum'),
   nl2b:P('Silja nær í myndavélina hans pabba. Hún festir hana á lítinn {þrífót|stand með þremur fótum sem heldur myndavélinni stöðugri} svo myndin verði ekki óskýr. „Myndavélin þarf að safna ljósi lengi,“ segir pabbi. Silja telur upp að tíu. Á skjánum birtist mynd þar sem grænu ljósin eru enn skærari en með berum augum.','nl_cam',
@@ -5169,7 +5169,7 @@ Object.assign(STORIES,{
   nl_e1:P('Daginn eftir segir Silja bekknum frá norðurljósunum. Hún útskýrir sólvindinn, segulsviðið og súrefnið sem lýsir grænt. Bekkurinn hlustar af athygli. Kennarinn er svo hrifinn að hann biður Silju að segja yngri bekkjunum frá líka.','nl_school',
     null,['Hvað bað kennarinn Silju að gera?',['Segja yngri bekkjunum frá','Fara heim','Teikna hest']],'Silja segir bekknum frá',{end:'Litli vísindamaðurinn'}),
   nl_e2:P('Silja sendir myndina sína til frænku sinnar sem býr í Danmörku. Frænkan hringir strax. „Ég hef ekki séð norðurljós síðan ég flutti,“ segir hún glöð. „Takk fyrir að senda mér smá bita af Íslandi.“ Silja ákveður að senda henni nýja mynd í hvert sinn sem ljósin dansa.','nl_phone',
-    null,['Til hverrar sendi Silja myndina?',['Frænku sinnar í Danmörku','Forsetans','Kennarans']],'Silja sendir mynd til Danmerkur',{end:'Bréf til Danmerkur'}),
+    null,['Hverjum sendi Silja myndina?',['Frænku sinni í Danmörku','Forsetanum','Kennaranum']],'Silja sendir mynd til Danmerkur',{end:'Bréf til Danmerkur'}),
   nl_e3:P('Næsta dag gerir Silja tilraun með pabba. Þau setja segul undir blað og strá járnsvarfi yfir. Svarfið raðar sér í boga frá öðrum enda segulsins til hins. „Svona lítur segulsvið jarðarinnar út,“ segir pabbi. „Agnirnar frá sólinni elta þessa boga að pólunum.“','nl_magnet',
     null,['Hvað settu þau undir blaðið?',['Segul','Snjóbolta','Kex']],'Silja gerir segultilraun',{end:'Segultilraunin'}),
  }},
@@ -5194,7 +5194,7 @@ Object.assign(STORIES,{
   su5b:P('Einu sinni fundu vísindamennirnir litla tómatplöntu sem óx í Surtsey. Hvernig í ósköpunum komst hún þangað? Í ljós kom að einn vísindamaðurinn hafði farið á klósettið úti í náttúrunni, og tómatfræ úr matnum hans hafði spírað! Plantan var auðvitað fjarlægð strax.','su_tomato',
     [['Lesa um selina','su6a'],['Lesa um smádýrin','su6b']],['Hvernig komst tómatfræið til Surtseyjar?',['Með vísindamanni','Með fugli','Með vindinum']],'Tómatplanta finnst í Surtsey',
     {task:{type:'tap',prompt:'Ýttu á tómatplöntuna.',answer:'tomato',hint:'Lestu aftur. Tómatplantan er með rauða tómata.',good:'Rétt! Þetta var óvæntur gestur.'}}),
-  su6a:P('Selir fóru líka að eignast kópa í fjörunni í Surtsey. {Útselir|stór selategund sem eignast kópa á haustin} liggja á klöppunum og hvíla sig. Í kringum eyjuna synda fiskar, og lundar kafa eftir síli. Eyjan sem eitt sinn var bara heitur, svartur sandur er orðin heimili ótal dýra.','su_seal',
+  su6a:P('Selir fóru líka að eignast kópa í fjörunni í Surtsey. {Útselir|stórir selir sem eignast kópa á haustin} liggja á klöppunum og hvíla sig. Í kringum eyjuna synda fiskar, og lundar kafa eftir síli. Eyjan sem eitt sinn var bara heitur, svartur sandur er orðin heimili ótal dýra.','su_seal',
     [['Lesa um minnkandi eyjuna','su7a'],['Lesa um heimsminjaskrána','su7b']],['Hvaða dýr eignast kópa í fjörunni?',['Selir','Kýr','Hestar']],'Selir eignast kópa í Surtsey',
     {task:{type:'tap',prompt:'Ýttu á selinn.',answer:'seal',hint:'Lestu aftur. Hver liggur á klöppunum?',good:'Rétt! Þetta er útselur.'}}),
   su6b:P('Pínulítil dýr komu líka. Skordýr og köngulær bárust með vindinum, á rekavið eða með fuglum. Vísindamenn hafa fundið hundruð tegunda af smádýrum í Surtsey. Sumar litlar köngulær geta svifið langar leiðir á silkiþræði, eins og örsmáar fallhlífar.','su_spider',
@@ -5346,7 +5346,7 @@ Object.assign(STORIES,{
     [['Spila í vörn','hb3a'],['Spila í horninu','hb3b']],['Hver má vera inni í teignum?',['Bara markmaðurinn','Allir','Dómarinn']],'Þú skoðar handboltasalinn',
     {task:{type:'tap',prompt:'Ýttu á markið.',answer:'goal',hint:'Markið er rautt og hvítt.',good:'Rétt! Fyrir framan markið er teigurinn.'}}),
   hb3a:P('Hanna setur þig í vörnina. Hitt liðið er í gulum treyjum og þau eru hröð. Þú stendur í miðjunni með hendurnar uppi, eins og veggur. Stór strákur ætlar að skjóta, en boltinn skellur í höndunum á þér!','hb_def',
-    [['Skjóta á markið','hb4a'],['Gefa á Lilju','hb4b']],['Á hvernig lit voru treyjur hins liðsins?',['Gular','Bláar','Bleikar']],'Þú stoppar skot í vörninni',
+    [['Skjóta á markið','hb4a'],['Gefa á Lilju','hb4b']],['Hvernig voru treyjur hins liðsins á litinn?',['Gular','Bláar','Bleikar']],'Þú stoppar skot í vörninni',
     {task:{type:'tap',prompt:'Ýttu á boltann sem þú stoppaðir.',answer:'ball',hint:'Lestu aftur. Hvar skall boltinn?',good:'Rétt! Þú varðir með höndunum.'}}),
   hb3b:P('Hanna setur þig út í horn. Þar er lítið pláss og erfitt að skora. „Stökktu inn yfir teiginn og skjóttu áður en þú lendir,“ segir Hanna. Það er leyfilegt í handbolta, svo lengi sem maður stekkur upp fyrir utan línuna.','hb_corner',
     [['Skjóta á markið','hb4a'],['Gefa á Lilju','hb4b']],['Hvar áttu að stökkva upp?',['Fyrir utan línuna','Inni í markinu','Uppi á bekknum']],'Hanna setur þig út í horn'),
@@ -6583,7 +6583,7 @@ function buildUserBooks(){
       b.chapters.forEach((ch,i)=>{const n=i+1,qs=(ch.qs||[]).filter(q=>q&&q[0]&&q[1]&&q[1][0]).map(q=>[clean(q[0]),q[1].map(clean).filter(Boolean)]).filter(q=>q[1].length>=2);
         const pr=ch.from&&ch.to?`, frá blaðsíðu ${ch.from} til ${ch.to}`:ch.from?`, frá blaðsíðu ${ch.from}`:'';
         const txt=`Náðu í bókina ${title} og lestu ${ORD[n]||n+'.'} kafla${pr}. Lestu hægt og vel og skoðaðu myndirnar. ${n<N?'Þegar kaflinn er búinn ýtir þú á hnappinn hér fyrir neðan.':'Þetta er síðasti kaflinn. Þegar hann er búinn ýtir þú á hnappinn.'}`;
-        pages['c'+n]=P(txt,'ubk_'+b.id,n<N?[[`Ég er búinn með kafla ${n}`,'c'+(n+1)]]:null,qs[0]||['Hvaða bók varstu að lesa?',[title,'Dagblað','Engin bók']],`Kafli ${n}`,{cq:qs,ch:n,...(n===N?{end:'Bókin er búin'}:{})})});
+        pages['c'+n]=P(txt,'ubk_'+b.id,n<N?[[`Áfram í ${n+1}. kafla`,'c'+(n+1)]]:null,qs[0]||['Hvaða bók varstu að lesa?',[title,'Dagblað','Engin bók']],`Kafli ${n}`,{cq:qs,ch:n,...(n===N?{end:'Bókin er búin'}:{})})});
       STORIES[id]={id,age,group:'h',book:true,ub:b.id,title,label:'Bókin heima',thumb:'ubk_'+b.id,start:'c1',pages,endings:['c'+N],len:N};}
   });
 }
@@ -7045,13 +7045,15 @@ const HB=[
 <p>Fjögurra stafa lykilorð læsir foreldrasvæðinu og heimalestri. Ekki nota sama númer og á greiðslukorti eða síma. Foreldrasvæðið læsist sjálfkrafa eftir tvær mínútur án notkunar.</p>`,go:[['Opna aðgang','acct']]},
  {id:'lestur',ic:'play',t:'Daglegur lestur',d:'Svona les barnið sögu frá upphafi til enda',b:`
 <ol class="hbsteps"><li><b>Barnið ýtir á myndina sína</b> á upphafssíðunni. Hringurinn í kringum myndina sýnir hversu langt lestri dagsins er komið.</li>
-<li><b>Velur lestrartíma og sögu.</b> Á heimasíðu barnsins er valið hversu lengi á að lesa, sjálfgefið 15 mínútur, og hvort hver síða er lesin einu sinni eða tvisvar. Valið geymist.</li>
+<li><b>Velur lestrartíma og sögu.</b> Á heimasíðu barnsins er valið hversu lengi á að lesa, sjálfgefið 15 mínútur, og hvort hver síða er lesin einu sinni eða tvisvar. Sjálfgefið lesa 8 ára og yngri hverja síðu tvisvar en 9 ára og eldri einu sinni. Ef barnið breytir því geymist valið.</li>
 <li><b>Les og ræður framhaldinu.</b> Neðst á hverri síðu velur barnið hvað gerist næst. Hver saga á sér þrjá ólíka enda.</li>
 <li><b>Klárar daginn.</b> Klukkan telur niður. Þegar tíminn er búinn klárar barnið síðuna í rólegheitum og dagurinn telst sem lestrardagur.</li></ol>
 <h3>Hnapparnir efst</h3>
 <p><b>Pása</b> stöðvar klukkuna, til dæmis ef barnið þarf að fara frá. <b>Ég er búinn</b> lýkur lestrinum. Mínúturnar sem barnið las teljast samt með.</p>
 <h3>Sögurnar</h3>
 <p>Sögurnar skiptast í flokkana Þú ert hetjan, Ævintýri, Sannar sögur um íþróttastjörnur og Saga og náttúra. Í desember bætist jóladagatalið við ef það er opið.</p>
+<h3>Útlit bókasafnsins</h3>
+<p>Sögurnar geta birst á fjóra vegu: sem kápur í flipum, sem opin bók með efnisyfirliti, sem hringekja þar sem flett er á milli bóka eða sem bókaskápur með hillu fyrir hvern flokk. Þið veljið útlitið fyrir hvert barn undir Stillingar → barnið → Stillingar → Útlit bókasafnsins. Allt annað á heimasíðunni helst eins.</p>
 <div class="hbtip"><b>Skipta um mynd:</b> Barnið heldur fingri á myndinni sinni á upphafssíðunni í þrjár sekúndur.</div>`},
  {id:'skilningur',ic:'bulb',t:'Lestrarhjálp og lesskilningur',d:'Orðskýringar, atkvæði, lesstika og spurningar',b:`
 <h3>Á meðan barnið les</h3>
@@ -7068,7 +7070,7 @@ const HB=[
 <h3>Svona fær barnið stjörnur</h3>
 <ul><li>Ein stjarna fyrir hverja kláraða sögu og ein fyrir hvert rétt svar.</li><li>Ein stjarna fyrir eigin endi á sögu, 12 orð eða fleiri.</li><li>Ein stjarna fyrir hverjar 5 mínútur af heimalestri, mest fjórar á dag.</li><li>Tvær stjörnur fyrir hvern stimpil í vegabréfið.</li></ul>
 <h3>Stjörnukrukkan</h3>
-<p>Sjálfgefið safna öll börnin á heimilinu í sömu krukkuna. Þið veljið hversu margar stjörnur þarf og hver umbunin er, til dæmis bíóferð eða pizzukvöld. Þegar krukkan fyllist sjá börnin það á upphafssíðunni og þið tæmið hana í stillingunum.</p>
+<p>Sjálfgefið safna öll börnin á heimilinu í sömu krukkuna. Þið veljið hversu margar stjörnur þarf og hver umbunin er, til dæmis bíóferð eða pítsukvöld. Þegar krukkan fyllist sjá börnin það á upphafssíðunni og þið tæmið hana í stillingunum.</p>
 <p>Undir Stillingar → Stjörnukrukkan getið þið líka valið að hvert barn safni í sína eigin krukku og vinni fyrir sinni umbun, eða falið krukkuna alveg. Börnin safna þá áfram stjörnum.</p>
 <h3>Gefa stjörnur</h3>
 <p>Á mælaborðinu er Gefa stjörnur. Þar getið þið gefið eina, þrjár eða fimm stjörnur, til dæmis fyrir lestur í skólanum. Barnið fær tilkynningu næst þegar það opnar appið.</p>`,go:[['Opna stjörnukrukkuna','jar']]},
@@ -7076,6 +7078,8 @@ const HB=[
 <p>Hver lestrardagur færir barnið á nýjan stað á kortinu. Fyrst fer það hringinn um Ísland og svo um heiminn.</p>
 <h3>Hvenær telst dagur sem lestrardagur?</h3>
 <p>Þegar barnið hefur lesið jafn lengi og lestrartíminn segir til um, í appinu eða í heimalestri sem þið skráið. Hver dagur telst aðeins einu sinni.</p>
+<h3>Hvar eru allir?</h3>
+<p>Ýttu á kortið á upphafssíðunni. Þá sést hvar hvert barn er statt, á Íslandi eða úti í heimi, og hvert það fer næst. Ýttu á nafn barns til að opna stóra kortið þess.</p>
 <h3>Ísland og heimurinn</h3>
 <p>Hringurinn um Ísland er 23 staðir og hverjum fylgir fróðleiksmoli. Eftir hringinn fær barnið vegabréf og flýgur til 30 landa í öllum heimsálfum, auk leynilegs bónuss. Í hverju landi les barnið um sögu landsins, sér þjóðfánann og lærir að heilsa. Rétt svar við spurningunni gefur stimpil og tvær stjörnur.</p>
 <h3>Að opna heimsferðina strax</h3>
@@ -7121,6 +7125,8 @@ const FAQ=[
  ['Hvernig færi ég barn á milli þyngdarstiga?','Veldu barnið í stillingunum, opnaðu flipann Stillingar og veldu Styttri sögur (7–8 ára) eða Lengri sögur (9–10 ára) undir Aldur og sögur.'],
  ['Hvað gerist ef barnið missir úr degi?','Sjálfgefið ekkert. Barnið færist áfram á kortinu fyrir hvern lestrardag. Ef þið hafið valið að barnið þurfi að lesa samfleytt fer það einn reit til baka eða aftur heim til Íslands.'],
  ['Hvernig skrái ég mig út?','Farðu í Stillingar → Aðgangur og ýttu á „Skrá út af þessu tæki“. Lesturinn er geymdur í aðganginum og kemur aftur þegar þú skráir þig inn. Upptökur eru aðeins á tækinu og eyðast, svo vistaðu afrit fyrst ef þú vilt halda þeim.'],
+ ['Hvernig breyti ég útliti bókasafnsins?','Veldu barnið í stillingunum, opnaðu flipann Stillingar og veldu undir Útlit bókasafnsins: Kápur og flipar, Opin bók, Hringekja eða Bókaskápurinn. Hægt er að hafa ólíkt útlit fyrir hvert barn.'],
+ ['Barnið gleymdi að skrá heimalestur. Hvað geri ég?','Undir Ég las bók heima er hægt að velja í dag, í gær eða í fyrradag. Lengra aftur í tímann skráir þú lesturinn á mælaborðinu undir Skrá heimalestur.'],
  ['Virkar appið án nettengingar?','Já. Þegar appið hefur verið opnað einu sinni virkar það líka án nets og samstillist þegar tenging kemst aftur á.'],
  ['Hvert fara upptökurnar af lestrinum?','Þær eru eingöngu geymdar á tækinu og fara aldrei í skýið. Ef þú vilt geyma þær er best að vista afrit.'],
  ['Barnið sér ekki nýjustu útgáfuna af appinu.','Lokaðu appinu alveg og opnaðu það aftur. Ef það dugar ekki skaltu endurhlaða síðuna einu sinni.'],
@@ -7171,7 +7177,7 @@ function tourArt(i){
 const TOUR=[
  ['Barnið les á hverjum degi','Barnið ýtir á myndina sína og velur sögu. Klukkan telur niður lestrartímann og á hverri síðu ræður barnið framhaldinu. Hver saga á sér þrjá ólíka enda.'],
  ['Spurningar dýpka skilninginn','Í lok sögunnar svarar barnið spurningum. Rétt svör gefa stjörnur sem fara í sameiginlega stjörnukrukku. Þið veljið umbunina þegar krukkan fyllist.'],
- ['Hver lestrardagur færir barnið áfram','Fyrst ferðast barnið hringinn um Ísland og svo um heiminn. Kortið á upphafssíðunni sýnir hvar hvert barn er statt.'],
+ ['Hver lestrardagur færir barnið áfram','Fyrst ferðast barnið hringinn um Ísland og svo um heiminn. Ýttu á kortið á upphafssíðunni til að sjá hvar hvert barn er statt.'],
  ['Þið fylgist með í foreldrasvæðinu','Ýttu á Foreldrar og sláðu inn lykilorðið. Þar eru leshraði, vikuyfirlit, heimalestur og allar stillingar. Handbókin er þar líka, undir Hjálp.'],
 ];
 const TV={i:0,from:'onb'};

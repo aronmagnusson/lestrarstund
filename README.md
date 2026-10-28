@@ -25,7 +25,7 @@ npx serve .
 
 Tengdu þetta repo við Netlify. Þá fer ný útgáfa sjálfkrafa í loftið í hvert sinn sem breyting er sett inn á `main`.
 
-Þegar `index.html` breytist þarf að hækka útgáfunúmerið sem sést neðst á velkomnaskjánum og í stillingum (leitaðu að „útgáfa 33“ í `index.html`) og útgáfunúmerið efst í `sw.js` (t.d. `lestrarstund-v33` → `lestrarstund-v34`), annars getur tækið haldið áfram að sýna gömlu útgáfuna.
+Þegar `index.html` breytist þarf að hækka útgáfunúmerið sem sést neðst á velkomnaskjánum og í stillingum (leitaðu að „útgáfa 35“ í `index.html`) og útgáfunúmerið efst í `sw.js` (t.d. `lestrarstund-v35` → `lestrarstund-v36`), annars getur tækið haldið áfram að sýna gömlu útgáfuna.
 
 Firebase er þegar tengt í þessari útgáfu (verkefnið `lestrarstund`).
 
